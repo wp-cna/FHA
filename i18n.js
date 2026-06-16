@@ -121,7 +121,13 @@
     "A stakeholder meeting on White Plains street safety, plan goals, and early findings.": "Reunión de partes interesadas sobre la seguridad vial en White Plains, las metas del plan y los primeros hallazgos.",
     "A public workshop on downtown White Plains priorities like open space, public art, and bike lanes.": "Taller público sobre prioridades del centro de White Plains como espacios abiertos, arte público y ciclovías.",
     "Fisher Hill's annual block party returns — food, music, a kids' zone, and a meet-your-neighbors table. Street closed to traffic.": "El regreso de la fiesta de barrio anual de Fisher Hill: comida, música, una zona infantil y una mesa para conocer a los vecinos. Calle cerrada al tráfico.",
-    "Help clear litter, open walking paths, and prepare planting beds along the neighborhood greenway. Gloves and supplies provided.": "Ayude a recoger basura, despejar senderos y preparar los canteros a lo largo del corredor verde del vecindario. Se proporcionan guantes y materiales."
+    "Help clear litter, open walking paths, and prepare planting beds along the neighborhood greenway. Gloves and supplies provided.": "Ayude a recoger basura, despejar senderos y preparar los canteros a lo largo del corredor verde del vecindario. Se proporcionan guantes y materiales.",
+    "White Plains Farmers Market": "Mercado de Agricultores de White Plains",
+    "Free Document Shredding Day": "Día de Trituración de Documentos Gratis",
+    "A free drop-in group for adults who want to practice everyday English. Meets weekly.": "Grupo gratuito y sin cita para adultos que quieren practicar el inglés cotidiano. Se reúne cada semana.",
+    "Local produce, baked goods, and vendors downtown — held weekly through the summer and fall season.": "Productos locales, panadería y vendedores en el centro — todas las semanas durante el verano y el otoño.",
+    "A free citywide celebration inspired by the FIFA World Cup 2026™, turning downtown into a fan-filled destination with music, food, and activities.": "Una celebración gratuita en toda la ciudad inspirada en la Copa Mundial de la FIFA 2026™, que convierte el centro en un destino lleno de aficionados con música, comida y actividades.",
+    "Bring confidential personal documents to the Gedney Yard for free on-site shredding. Junk mail, newspapers, and cardboard are not accepted.": "Lleve documentos personales confidenciales al Gedney Yard para trituración gratuita en el lugar. No se aceptan correo basura, periódicos ni cartón."
   };
 
   function getLang() {
