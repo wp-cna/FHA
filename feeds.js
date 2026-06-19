@@ -24,6 +24,19 @@
   }
   function afterRender() { if (window.fhaApplyI18n) window.fhaApplyI18n(); }
 
+  // Today's local date as YYYY-MM-DD. ISO date strings compare correctly as text,
+  // so an event is "past" once its date is lexicographically before today's.
+  function todayISO() {
+    var d = new Date(), p = function (n) { return (n < 10 ? "0" : "") + n; };
+    return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate());
+  }
+  function upcomingFirst(a, b) {
+    var x = a.date || "", y = b.date || "";
+    return x < y ? -1 : x > y ? 1 : 0;
+  }
+  // Keep events dated today or later; undated entries are kept (treated as evergreen).
+  function notPast(it) { return !it.date || it.date >= todayISO(); }
+
   function eventCard(e) {
     var card = el("article", "feed-card");
     var body = el("div", "feed-body");
@@ -77,10 +90,15 @@
   var evBox = document.getElementById("events-feed");
   if (evBox) {
     fetch("data/events.json").then(function (r) { return r.json(); }).then(function (d) {
-      var items = (d.events || []);
+      // Drop events that have already passed, then show the soonest first.
+      var items = (d.events || []).filter(notPast).sort(upcomingFirst);
       var lim = parseInt(evBox.getAttribute("data-limit"), 10);
       if (lim > 0) items = items.slice(0, lim);
-      render(evBox, items, eventCard);
+      if (!items.length) {
+        evBox.innerHTML = '<p class="feed-empty">No upcoming events right now — check back soon.</p>';
+      } else {
+        render(evBox, items, eventCard);
+      }
       afterRender();
     }).catch(function () { evBox.innerHTML = '<p class="feed-empty">Events are unavailable right now.</p>'; });
   }
