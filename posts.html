@@ -35,11 +35,103 @@
       <p class="lede">Updates serving Fisher Hill and White Plains — neighborhood events, civic notices, and volunteer opportunities. Every posting is reviewed before it appears.</p>
       <div id="posts-feed"></div>
     </section>
+
+    <section>
+      <h2 class="title" style="font-size:clamp(1.6rem,3vw,2.1rem)">Post to the board.</h2>
+      <p class="lede">The board is for Fisher Hill neighbors and the businesses that serve our streets. You're welcome to post if you live in Fisher Hill, or if you run a business along our retail blocks — Post Road, South Lexington, East Post Road, and Irving Place. Posts from outside the neighborhood aren't accepted.</p>
+
+      <h3 class="subhead">What's welcome</h3>
+      <ul class="rules">
+        <li>A local service or business serving Fisher Hill — paid services and lessons are fine</li>
+        <li>Something you're looking for — a dog walker, a book club, help with a project</li>
+        <li>A yard sale, bake sale, or block party</li>
+        <li>A neighborhood drive or volunteer effort, like a blood drive or a cleanup</li>
+      </ul>
+
+      <h3 class="subhead">What we can't post</h3>
+      <ul class="rules">
+        <li>Posts from people or businesses outside Fisher Hill</li>
+        <li>Offensive, harassing, or discriminatory content</li>
+        <li>General advertising unrelated to the neighborhood</li>
+        <li>Anything inaccurate or misleading</li>
+      </ul>
+
+      <h3 class="subhead">How it works</h3>
+      <p>Every submission is reviewed before it appears. If your post fits these guidelines, we'll add it to the board. If it can't run, Michael Dalton, the Association's president, will email you from the FHA's address to explain why — a person reviews every decision, so nothing is rejected automatically.</p>
+
+      <!-- TODO (backend, blocked on Michael): on submit, send the post to a compliance
+           check, then EITHER auto-publish to the board if it meets the guidelines above,
+           OR route a rejection to the FHA shared inbox (fisherhill.info@gmail.com) for
+           Michael Dalton to review and reply from. A human confirms every rejection — no
+           silent auto-reject. Until wired, this shows a local confirmation only and
+           does not submit anything. -->
+      <form class="cform" id="post-form" novalidate>
+        <div>
+          <label for="pf-name">Name</label>
+          <input id="pf-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="pf-email">Email</label>
+          <input id="pf-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="pf-phone">Phone <span class="cform-opt">(optional)</span></label>
+          <input id="pf-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <fieldset class="cform-group">
+          <legend>You are a</legend>
+          <label class="cform-radio"><input type="radio" name="poster" value="resident" required> Fisher Hill resident</label>
+          <label class="cform-radio"><input type="radio" name="poster" value="business"> Fisher Hill business</label>
+        </fieldset>
+        <div>
+          <label for="pf-address">Fisher Hill address or business location</label>
+          <input id="pf-address" name="address" type="text" autocomplete="street-address" required>
+        </div>
+        <div>
+          <label for="pf-category">What kind of post is this?</label>
+          <select id="pf-category" name="category" required>
+            <option value="" selected disabled>Choose one…</option>
+            <option value="service">Service or business offered</option>
+            <option value="wanted">Something I'm looking for</option>
+            <option value="event">Event or gathering</option>
+            <option value="sale">Yard sale or for sale</option>
+            <option value="volunteer">Volunteer or community drive</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="pf-title">Post title</label>
+          <input id="pf-title" name="title" type="text" required>
+        </div>
+        <div>
+          <label for="pf-details">Post details</label>
+          <textarea id="pf-details" name="details" required></textarea>
+        </div>
+        <button class="btn" type="submit">Submit a post</button>
+        <p class="cform-status" id="pf-status" role="status" hidden></p>
+        <p class="cform-note">Posts are reviewed by a board member before they appear. We'll be in touch if anything needs clarifying.</p>
+      </form>
+    </section>
+
     <div class="foot">The Fisher Hill Association · White Plains, NY · <a href="credits.html">Image credits</a></div>
   </div>
 </main>
 
 <script src="feeds.js"></script>
+<script>
+(function(){
+  var f=document.getElementById('post-form');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){ f.reportValidity(); return; }
+    var s=document.getElementById('pf-status');
+    s.hidden=false;
+    s.textContent='Thanks — your post has been submitted for review. A board member will check it against the guidelines and follow up if anything needs clarifying.';
+    f.reset();
+  });
+})();
+</script>
 <script src="i18n.js"></script>
 </body>
 </html>
