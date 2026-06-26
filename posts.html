@@ -36,80 +36,63 @@
       <div id="posts-feed"></div>
     </section>
 
-    <section>
-      <h2 class="title" style="font-size:clamp(1.6rem,3vw,2.1rem)">Post to the board.</h2>
-      <p class="lede">The board is for Fisher Hill neighbors and the businesses that serve our streets. You're welcome to post if you live in Fisher Hill, or if you run a business along our retail blocks — Post Road, South Lexington, East Post Road, and Irving Place. Posts from outside the neighborhood aren't accepted.</p>
+    <section class="board-policy" id="submit">
+      <p class="kicker">Post to the board</p>
+      <h2>Share something with the neighborhood.</h2>
+      <p class="lede">A place for neighbors to find each other and find what's nearby — local businesses and services, lost-and-found pets, tag sales and giveaways, recommendations, and neighbor-to-neighbor needs and offers. Every submission is reviewed before it appears.</p>
 
-      <h3 class="subhead">What's welcome</h3>
-      <ul class="rules">
-        <li>A local service or business serving Fisher Hill — paid services and lessons are fine</li>
-        <li>Something you're looking for — a dog walker, a book club, help with a project</li>
-        <li>A yard sale, bake sale, or block party</li>
-        <li>A neighborhood drive or volunteer effort, like a blood drive or a cleanup</li>
-      </ul>
+      <div class="policy-grid">
+        <div class="policy-card policy-yes">
+          <h3>Welcome on the board</h3>
+          <ul class="policy-list">
+            <li>Local businesses, shops, and services</li>
+            <li>Lost &amp; found — pets or items</li>
+            <li>Tag sales, yard sales, and giveaways</li>
+            <li>Neighbor-to-neighbor needs, offers, and local recommendations</li>
+            <li>Civil and truthful, with your own contact info</li>
+            <li>Only images you own or have permission to post</li>
+          </ul>
+        </div>
+        <div class="policy-card policy-no">
+          <h3>Not allowed</h3>
+          <ul class="policy-list">
+            <li>Spam — bulk, repeated, automated, or bot submissions</li>
+            <li>Scams or fraudulent offers</li>
+            <li>Naming, targeting, or disparaging a specific individual</li>
+            <li>Harassing, threatening, or defamatory language</li>
+            <li>AI-generated, manipulated, or fake images of any person</li>
+            <li>Airing a personal dispute between neighbors</li>
+            <li>Sharing someone else's personal information without their consent</li>
+            <li>Anything unrelated to Fisher Hill or White Plains</li>
+          </ul>
+        </div>
+      </div>
 
-      <h3 class="subhead">What we can't post</h3>
-      <ul class="rules">
-        <li>Posts from people or businesses outside Fisher Hill</li>
-        <li>Offensive, harassing, or discriminatory content</li>
-        <li>General advertising unrelated to the neighborhood</li>
-        <li>Anything inaccurate or misleading</li>
-      </ul>
-
-      <h3 class="subhead">How it works</h3>
-      <p>Every submission is reviewed before it appears. If your post fits these guidelines, we'll add it to the board. If it can't run, Michael Dalton, the Association's president, will email you from the FHA's address to explain why — a person reviews every decision, so nothing is rejected automatically.</p>
-
-      <!-- TODO (backend, blocked on Michael): on submit, send the post to a compliance
-           check, then EITHER auto-publish to the board if it meets the guidelines above,
-           OR route a rejection to the FHA shared inbox (fisherhill.info@gmail.com) for
-           Michael Dalton to review and reply from. A human confirms every rejection — no
-           silent auto-reject. Until wired, this shows a local confirmation only and
-           does not submit anything. -->
-      <form class="cform" id="post-form" novalidate>
+      <!-- TODO: POST to the review endpoint instead of the local stub. -->
+      <form class="cform board-form" id="post-form" novalidate>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div>
-          <label for="pf-name">Name</label>
-          <input id="pf-name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div>
-          <label for="pf-email">Email</label>
-          <input id="pf-email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div>
-          <label for="pf-phone">Phone <span class="cform-opt">(optional)</span></label>
-          <input id="pf-phone" name="phone" type="tel" autocomplete="tel">
-        </div>
-        <fieldset class="cform-group">
-          <legend>You are a</legend>
-          <label class="cform-radio"><input type="radio" name="poster" value="resident" required> Fisher Hill resident</label>
-          <label class="cform-radio"><input type="radio" name="poster" value="business"> Fisher Hill business</label>
-        </fieldset>
-        <div>
-          <label for="pf-address">Fisher Hill address or business location</label>
-          <input id="pf-address" name="address" type="text" autocomplete="street-address" required>
-        </div>
-        <div>
-          <label for="pf-category">What kind of post is this?</label>
-          <select id="pf-category" name="category" required>
-            <option value="" selected disabled>Choose one…</option>
-            <option value="service">Service or business offered</option>
-            <option value="wanted">Something I'm looking for</option>
-            <option value="event">Event or gathering</option>
-            <option value="sale">Yard sale or for sale</option>
-            <option value="volunteer">Volunteer or community drive</option>
-            <option value="other">Other</option>
+          <label for="pf-type">Post type</label>
+          <select id="pf-type" name="postType" required>
+            <option value="">Choose one…</option>
+            <option>Local business or service</option>
+            <option>Lost &amp; found (pet or item)</option>
+            <option>Tag sale / yard sale / giveaway</option>
+            <option>Neighbor need or offer</option>
+            <option>Recommendation</option>
+            <option>Other</option>
           </select>
         </div>
-        <div>
-          <label for="pf-title">Post title</label>
-          <input id="pf-title" name="title" type="text" required>
-        </div>
-        <div>
-          <label for="pf-details">Post details</label>
-          <textarea id="pf-details" name="details" required></textarea>
-        </div>
-        <button class="btn" type="submit">Submit a post</button>
+        <div><label for="pf-title">Title</label><input id="pf-title" name="title" type="text" maxlength="120" required></div>
+        <div><label for="pf-message">Details</label><textarea id="pf-message" name="message" maxlength="900" required></textarea></div>
+        <div><label for="pf-name">Your name</label><input id="pf-name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="pf-email">Your email (for follow-up — not published)</label><input id="pf-email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="pf-phone">Your phone (optional — shown only if you include it)</label><input id="pf-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <label class="check"><input type="checkbox" name="imagesOk" required> Any images I include are my own or I have permission to post them — and none are AI-generated or altered images of a person.</label>
+        <label class="check"><input type="checkbox" name="agree" required> I've read the guidelines and understand posts are reviewed before they appear.</label>
+        <button class="btn" type="submit">Submit for review</button>
         <p class="cform-status" id="pf-status" role="status" hidden></p>
-        <p class="cform-note">Posts are reviewed by a board member before they appear. We'll be in touch if anything needs clarifying.</p>
+        <p class="cform-note">Submissions are reviewed before posting. Submitting does not guarantee publication.</p>
       </form>
     </section>
 
@@ -120,14 +103,14 @@
 <script src="feeds.js"></script>
 <script>
 (function(){
-  var f=document.getElementById('post-form');
-  if(!f) return;
+  var f=document.getElementById('post-form'); if(!f) return;
   f.addEventListener('submit',function(e){
     e.preventDefault();
+    if(f.website && f.website.value){ f.reset(); return; }   // honeypot: bots fill this, real users can't see it
     if(!f.checkValidity()){ f.reportValidity(); return; }
     var s=document.getElementById('pf-status');
     s.hidden=false;
-    s.textContent='Thanks — your post has been submitted for review. A board member will check it against the guidelines and follow up if anything needs clarifying.';
+    s.textContent='Thanks — your post was submitted for review. If it fits the guidelines, it will appear on the board.';
     f.reset();
   });
 })();
