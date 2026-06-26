@@ -33,6 +33,7 @@
     <section>
       <h1 class="title">From around Fisher Hill.</h1>
       <p class="lede">Updates serving Fisher Hill and White Plains — neighborhood events, civic notices, and volunteer opportunities. Every posting is reviewed before it appears.</p>
+      <p><a class="btn" href="#submit">Submit a post</a></p>
       <div id="posts-feed"></div>
     </section>
 
@@ -113,6 +114,23 @@
     s.textContent='Thanks — your post was submitted for review. If it fits the guidelines, it will appear on the board.';
     f.reset();
   });
+})();
+
+(function(){
+  function settleSubmitHash(){
+    if(location.hash !== '#submit') return;
+    var target=document.getElementById('submit');
+    if(target) target.scrollIntoView({ block:'start' });
+  }
+  if(location.hash === '#submit'){
+    if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', settleSubmitHash);
+    else settleSubmitHash();
+    window.addEventListener('load', function(){
+      settleSubmitHash();
+      setTimeout(settleSubmitHash, 250);
+      setTimeout(settleSubmitHash, 900);
+    });
+  }
 })();
 </script>
 <script src="i18n.js"></script>
