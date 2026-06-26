@@ -2,7 +2,7 @@
  * Set API_BASE to your deployed Worker URL to go live. While it's empty the
  * forms still work in "confirmation only" mode (nothing is sent). */
 (function () {
-  var API_BASE = ""; // e.g. "https://fha-forms.<your-subdomain>.workers.dev"
+  var API_BASE = "https://fha-forms.fisher-hill.workers.dev"; // FHA forms Worker (Cloudflare)
 
   function wire(formId, route, statusId, successMsg) {
     var f = document.getElementById(formId);

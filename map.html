@@ -199,6 +199,21 @@ const BRAND = "#7c3aed";
   if(scene.globe) scene.globe.show = false;
   scene.skyAtmosphere.show = true;
 
+  // Cesium can initialize before #cesiumContainer has its final layout size — most
+  // often inside the lazy-loaded hero <iframe> on the home page. When that happens the
+  // canvas is sized 0×0, the camera frustum is degenerate, and 3D-tile traversal stalls
+  // at zero tiles forever (root.json loads but no geometry is ever requested). A
+  // ResizeObserver re-syncs the canvas the moment the container gets real dimensions,
+  // which kicks traversal back into gear. The rAF/timeout nudges cover first paint.
+  function nudgeResize(){ try { viewer.resize(); viewer.scene.requestRender(); } catch(e){} }
+  try {
+    var _ro = new ResizeObserver(nudgeResize);
+    _ro.observe(document.getElementById("cesiumContainer"));
+  } catch(e){}
+  requestAnimationFrame(nudgeResize);
+  setTimeout(nudgeResize, 250);
+  setTimeout(nudgeResize, 1200);
+
   /* Controls.  Mouse: left-drag rotates, right-drag pans, wheel zooms.
      Trackpad: drag rotates, Shift-drag pans, scroll zooms.
      Touch: one-finger drag pans, pinch zooms, on-screen buttons rotate/tilt. */

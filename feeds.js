@@ -24,6 +24,19 @@
   }
   function afterRender() { if (window.fhaApplyI18n) window.fhaApplyI18n(); }
 
+  // Board freshness: posts expire by category so the board never becomes a billboard.
+  // Mirrors the TTLs the Worker stamps; also covers older posts that have no "expires".
+  var POST_TTL = { "Lost & Found": 7, "Tag Sale": 7, "Neighbor": 7, "Business": 90,
+                   "Neighborhood Event": 2, "Volunteer": 5 };  // curated FHA event posts drop after they pass
+  var DEFAULT_TTL = 14;
+  function todayStr() { var t = new Date(); return t.getFullYear() + "-" + String(t.getMonth() + 1).padStart(2, "0") + "-" + String(t.getDate()).padStart(2, "0"); }
+  function addDays(iso, n) { var d = new Date(iso + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+  function postExpiry(p) {
+    if (p.expires) return p.expires;                       // stamped by the Worker
+    var ttl = POST_TTL[p.category] != null ? POST_TTL[p.category] : DEFAULT_TTL;
+    return addDays(p.date || todayStr(), ttl);             // fallback for older posts
+  }
+
   function eventCard(e) {
     var card = el("article", "feed-card");
     var body = el("div", "feed-body");
@@ -94,7 +107,12 @@
   var postBox = document.getElementById("posts-feed");
   if (postBox) {
     fetch("data/posts.json").then(function (r) { return r.json(); }).then(function (d) {
-      render(postBox, (d.posts || []), postCard);
+      var today = todayStr();
+      var items = (d.posts || [])
+        .filter(function (p) { return postExpiry(p) >= today; })            // drop expired posts
+        .sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); });  // newest first
+      if (!items.length) { postBox.innerHTML = '<p class="feed-empty">No neighborhood posts right now — check back soon.</p>'; afterRender(); return; }
+      render(postBox, items, postCard);
       afterRender();
     }).catch(function () { postBox.innerHTML = '<p class="feed-empty">Posts are unavailable right now.</p>'; });
   }

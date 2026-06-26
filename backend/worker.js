@@ -19,13 +19,14 @@
 
 const MODEL = "claude-haiku-4-5-20251001"; // swap to a stronger model if desired
 
-const REVIEW_SYSTEM = `You review submissions to the Fisher Hill Association neighborhood board before they are published. The board is a friendly neighborly classifieds board: its PURPOSE is to help local businesses get known, and to let neighbors post lost-and-found pets, tag sales, giveaways, needs, offers, and recommendations.
+const REVIEW_SYSTEM = `You review submissions to the Fisher Hill Association neighborhood board before they are published. The board is a friendly neighborly classifieds board: its PURPOSE is to help local businesses get known, and to let neighbors post lost-and-found pets, tag sales, giveaways, and neighbor-to-neighbor needs and offers.
 
-Your posture is PERMISSIVE: when in doubt, publish. The board should feel open. You are a light filter, not a gatekeeper. Promotion, prices, and yard sales are WELCOME — do not reject a post just because it advertises a local business or sale.
+Your posture is PERMISSIVE: when in doubt, publish. The board should feel open. You are a light filter, not a gatekeeper. Promotion, prices, and yard sales are WELCOME — do not reject a post just because it advertises a local business or sale. A business announcing or introducing itself is welcome.
 
-The two things you guard against:
+The three things you guard against:
 1. SPAM — bulk, repeated, automated, bot, or link-farm submissions, or off-area solicitation. Reject these.
-2. Clear, serious violations — naming/attacking a specific person; harassing, threatening, or defamatory language; scams; or sharing a third party's private info. Reject the clear cases; ESCALATE the ambiguous ones.
+2. BUSINESS REVIEWS — this board is NOT Yelp or Google Reviews. A neighbor reviewing, rating, ranking, praising, or criticizing a business or service (positive OR negative), or comparing businesses, does not belong here. Reject reviews; a business simply announcing itself is fine.
+3. Clear, serious violations — naming/attacking a specific person; harassing, threatening, or defamatory language; scams; or sharing a third party's private info. Reject the clear cases; ESCALATE the ambiguous ones.
 
 Be lenient on tone (only clearly abusive language fails), relevance, and writing quality. Prefer fixing over rejecting: if a small edit makes a post publishable (remove a third party's phone number, trim a slur), choose APPROVE_WITH_EDITS and return cleaned text. You cannot verify facts — never reject on suspicion alone; ESCALATE instead.
 
@@ -37,10 +38,21 @@ const CATEGORY = {
   "Lost & found (pet or item)": "Lost & Found",
   "Tag sale / yard sale / giveaway": "Tag Sale",
   "Neighbor need or offer": "Neighbor",
-  "Recommendation": "Recommendation",
   "Other": "Neighborhood"
 };
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+// How long a post stays on the board before it must be renewed (days).
+// Time-sensitive neighbor posts expire weekly so the board stays fresh; business
+// listings and recommendations live much longer. Anything not listed uses DEFAULT_TTL.
+const POST_TTL = {
+  "Lost & Found": 7,   // lost pets etc. — renew weekly
+  "Tag Sale": 7,
+  "Neighbor": 7,
+  "Business": 90       // local businesses stay "known" for a quarter
+};
+const DEFAULT_TTL = 14;
+function addDays(iso, n) { const d = new Date(iso + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
 
 export default {
   async fetch(request, env) {
@@ -153,12 +165,15 @@ async function appendPost(env, b, r) {
   const data = JSON.parse(b64decode((cur.content || "").replace(/\n/g, "")));
   const today = new Date().toISOString().slice(0, 10);
   const [y, mo, d] = today.split("-").map(Number);
+  const category = CATEGORY[b.postType] || "Neighborhood";
+  const ttl = POST_TTL[category] != null ? POST_TTL[category] : DEFAULT_TTL;
   data.posts.unshift({
     title: r.editedTitle || b.title,
-    category: CATEGORY[b.postType] || "Neighborhood",
+    category: category,
     fh: true,
     date: today,
     dateLabel: `${MONTHS[mo - 1]} ${d}, ${y}`,
+    expires: addDays(today, ttl),   // board hides the post after this date unless renewed
     time: "",
     location: "",
     summary: (r.editedBody || b.message).slice(0, 400),
