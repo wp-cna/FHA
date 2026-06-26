@@ -24,19 +24,6 @@
   }
   function afterRender() { if (window.fhaApplyI18n) window.fhaApplyI18n(); }
 
-  // Today's local date as YYYY-MM-DD. ISO date strings compare correctly as text,
-  // so an event is "past" once its date is lexicographically before today's.
-  function todayISO() {
-    var d = new Date(), p = function (n) { return (n < 10 ? "0" : "") + n; };
-    return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate());
-  }
-  function upcomingFirst(a, b) {
-    var x = a.date || "", y = b.date || "";
-    return x < y ? -1 : x > y ? 1 : 0;
-  }
-  // Keep events dated today or later; undated entries are kept (treated as evergreen).
-  function notPast(it) { return !it.date || it.date >= todayISO(); }
-
   function eventCard(e) {
     var card = el("article", "feed-card");
     var body = el("div", "feed-body");
@@ -46,7 +33,8 @@
     body.appendChild(el("h3", "feed-title", e.title));
     var ed = dateLabel(e); if (ed) body.appendChild(el("p", "feed-date", ed));
     body.appendChild(meta(e.time, e.location));
-    if (e.summary) body.appendChild(el("p", "feed-summary", e.summary));
+    var esum = (lang() === "es" && e.summary_es) ? e.summary_es : e.summary;
+    if (esum) body.appendChild(el("p", "feed-summary", esum));
     var actions = el("div", "feed-actions");
     if (e.url) {
       var a = el("a", "feed-btn", e.ctaLabel || "Details");
@@ -90,15 +78,15 @@
   var evBox = document.getElementById("events-feed");
   if (evBox) {
     fetch("data/events.json").then(function (r) { return r.json(); }).then(function (d) {
-      // Drop events that have already passed, then show the soonest first.
-      var items = (d.events || []).filter(notPast).sort(upcomingFirst);
+      var t = new Date();
+      var today = t.getFullYear() + "-" + String(t.getMonth() + 1).padStart(2, "0") + "-" + String(t.getDate()).padStart(2, "0");
+      var items = (d.events || [])
+        .filter(function (e) { return (e.date || "9999-99-99") >= today; })   // drop past events automatically
+        .sort(function (a, b) { return (a.date || "").localeCompare(b.date || ""); });
       var lim = parseInt(evBox.getAttribute("data-limit"), 10);
       if (lim > 0) items = items.slice(0, lim);
-      if (!items.length) {
-        evBox.innerHTML = '<p class="feed-empty">No upcoming events right now — check back soon.</p>';
-      } else {
-        render(evBox, items, eventCard);
-      }
+      if (!items.length) { evBox.innerHTML = '<p class="feed-empty">No upcoming events right now — check back soon.</p>'; afterRender(); return; }
+      render(evBox, items, eventCard);
       afterRender();
     }).catch(function () { evBox.innerHTML = '<p class="feed-empty">Events are unavailable right now.</p>'; });
   }

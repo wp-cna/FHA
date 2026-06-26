@@ -33,7 +33,6 @@
     <section>
       <h1 class="title">From around Fisher Hill.</h1>
       <p class="lede">Updates serving Fisher Hill and White Plains — neighborhood events, civic notices, and volunteer opportunities. Every posting is reviewed before it appears.</p>
-      <p><a class="btn" href="#submit">Submit a post</a></p>
       <div id="posts-feed"></div>
     </section>
 
@@ -51,7 +50,6 @@
             <li>Tag sales, yard sales, and giveaways</li>
             <li>Neighbor-to-neighbor needs, offers, and local recommendations</li>
             <li>Civil and truthful, with your own contact info</li>
-            <li>Only images you own or have permission to post</li>
           </ul>
         </div>
         <div class="policy-card policy-no">
@@ -61,7 +59,6 @@
             <li>Scams or fraudulent offers</li>
             <li>Naming, targeting, or disparaging a specific individual</li>
             <li>Harassing, threatening, or defamatory language</li>
-            <li>AI-generated, manipulated, or fake images of any person</li>
             <li>Airing a personal dispute between neighbors</li>
             <li>Sharing someone else's personal information without their consent</li>
             <li>Anything unrelated to Fisher Hill or White Plains</li>
@@ -69,7 +66,7 @@
         </div>
       </div>
 
-      <!-- TODO: POST to the review endpoint instead of the local stub. -->
+      <!-- TODO: POST to the review endpoint (see MODERATION.md) instead of the local stub. -->
       <form class="cform board-form" id="post-form" novalidate>
         <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div>
@@ -89,7 +86,6 @@
         <div><label for="pf-name">Your name</label><input id="pf-name" name="name" type="text" autocomplete="name" required></div>
         <div><label for="pf-email">Your email (for follow-up — not published)</label><input id="pf-email" name="email" type="email" autocomplete="email" required></div>
         <div><label for="pf-phone">Your phone (optional — shown only if you include it)</label><input id="pf-phone" name="phone" type="tel" autocomplete="tel"></div>
-        <label class="check"><input type="checkbox" name="imagesOk" required> Any images I include are my own or I have permission to post them — and none are AI-generated or altered images of a person.</label>
         <label class="check"><input type="checkbox" name="agree" required> I've read the guidelines and understand posts are reviewed before they appear.</label>
         <button class="btn" type="submit">Submit for review</button>
         <p class="cform-status" id="pf-status" role="status" hidden></p>
@@ -102,37 +98,7 @@
 </main>
 
 <script src="feeds.js"></script>
-<script>
-(function(){
-  var f=document.getElementById('post-form'); if(!f) return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(f.website && f.website.value){ f.reset(); return; }   // honeypot: bots fill this, real users can't see it
-    if(!f.checkValidity()){ f.reportValidity(); return; }
-    var s=document.getElementById('pf-status');
-    s.hidden=false;
-    s.textContent='Thanks — your post was submitted for review. If it fits the guidelines, it will appear on the board.';
-    f.reset();
-  });
-})();
-
-(function(){
-  function settleSubmitHash(){
-    if(location.hash !== '#submit') return;
-    var target=document.getElementById('submit');
-    if(target) target.scrollIntoView({ block:'start' });
-  }
-  if(location.hash === '#submit'){
-    if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', settleSubmitHash);
-    else settleSubmitHash();
-    window.addEventListener('load', function(){
-      settleSubmitHash();
-      setTimeout(settleSubmitHash, 250);
-      setTimeout(settleSubmitHash, 900);
-    });
-  }
-})();
-</script>
+<script src="forms.js"></script>
 <script src="i18n.js"></script>
 </body>
 </html>

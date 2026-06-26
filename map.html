@@ -135,8 +135,8 @@
     <p>The neighborhood's residents' association.</p>
     <ul>
       <li><strong>Michael Dalton</strong>, President · <a href="tel:9144977236">914-497-7236</a></li>
-      <li><strong>Jonah Robbins</strong>, Vice President</li>
-      <li><strong>Joanne McLaughlin</strong>, Treasurer</li>
+      <li><strong>Jonna Robbins</strong>, Vice President</li>
+      <li><strong>Jane Prout</strong>, Treasurer</li>
     </ul>
   </div>
 </main>
@@ -151,7 +151,7 @@
    PASTE YOUR GOOGLE MAPS API KEY BETWEEN THE QUOTES BELOW.
    It must be a browser key restricted to the Map Tiles API, with an HTTP-referrer
    restriction that includes wherever this page is hosted
-   (e.g. https://wp-cna.github.io/* ) plus http://localhost:8080/* for local tests.
+   (e.g. https://never-nude.github.io/* ) plus http://localhost:8080/* for local tests.
    ─────────────────────────────────────────────────────────────────────────── */
 const GOOGLE_MAPS_API_KEY = "AIzaSyBbt1tLWE9t_VGmGba_zInHC_yx_3LwUjI";
 
@@ -166,10 +166,8 @@ const FH_BOUNDARY = [
   [-73.778413,41.015689],[-73.776610,41.018959]
 ];
 
-/* Default hero camera — a wide, oblique bird's-eye overview: the whole Fisher Hill
-   boundary in frame with downtown White Plains reading in the distance to the upper-right.
-   Not a tight detail. To re-tune in the browser, frame it and press "c" to copy a new CAM. */
-const CAM = { lat:40.99900, lng:-73.78450, height:2550, heading:25, pitch:-33 };
+/* Default hero camera (derived from a confirmed Google Earth framing). */
+const CAM = { lat:41.0020, lng:-73.7885, height:1450, heading:24, pitch:-31 };  // entire Fisher Hill boundary centered, downtown to upper-right
 const BRAND = "#7c3aed";
 
 (function(){
@@ -311,35 +309,28 @@ const BRAND = "#7c3aed";
     viewer.entities.add({ polyline:{ positions:positions.concat([positions[0]]), width:5, material:lineColor,
       clampToGround:true, classificationType:Cesium.ClassificationType.CESIUM_3D_TILE } });
 
-    // Nearby landmarks — show Fisher Hill's proximity to downtown without burying it.
-    // Labels splay OUTWARD from the downtown core (ho/vo/off set each one's direction),
-    // and the two that sat right on top of the core (Public Library, City Hall) are
-    // dropped so the downtown stays readable. Re-add or re-aim by editing this list.
-    const HO_RIGHT = Cesium.HorizontalOrigin.LEFT;   // label sits to the dot's right
-    const HO_LEFT  = Cesium.HorizontalOrigin.RIGHT;  // label sits to the dot's left
-    const HO_CTR   = Cesium.HorizontalOrigin.CENTER;
-    const VO_ABOVE = Cesium.VerticalOrigin.BOTTOM;   // label sits above the dot
-    const VO_BELOW = Cesium.VerticalOrigin.TOP;      // label sits below the dot
+    // Nearby landmarks — show Fisher Hill's proximity to them.
     const LANDMARKS = [
-      { name:"White Plains Hospital",     lat:41.02583, lng:-73.76931, ho:HO_RIGHT, vo:VO_ABOVE, off:[12,-6] },
-      { name:"Metro-North Station",       lat:41.03360, lng:-73.77010, ho:HO_CTR,   vo:VO_ABOVE, off:[0,-14] },
-      { name:"Westchester County Center", lat:41.03694, lng:-73.77861, ho:HO_LEFT,  vo:VO_ABOVE, off:[-12,-6] },
-      { name:"Post Road School",          lat:41.02031, lng:-73.77419, ho:HO_CTR,   vo:VO_BELOW, off:[0,14] }
+      { name:"White Plains Hospital",     lat:41.02583, lng:-73.76931 },
+      { name:"Metro-North Station",       lat:41.03360, lng:-73.77010 },
+      { name:"White Plains Public Library", lat:41.03035, lng:-73.76998 },
+      { name:"City Hall",                 lat:41.03333, lng:-73.76555 },
+      { name:"Westchester County Center", lat:41.03694, lng:-73.77861 },
+      { name:"Post Road School",          lat:41.02031, lng:-73.77419 }
     ];
     LANDMARKS.forEach(function(L){
       viewer.entities.add({
         position: Cesium.Cartesian3.fromDegrees(L.lng, L.lat),
         point: { pixelSize:9, color:markerColor, outlineColor:Cesium.Color.WHITE, outlineWidth:2,
                  disableDepthTestDistance:Number.POSITIVE_INFINITY },
-        label: { text:L.name, font:'600 12px Inter, "Helvetica Neue", sans-serif',
+        label: { text:L.name, font:'600 13px Inter, "Helvetica Neue", sans-serif',
                  fillColor:Cesium.Color.WHITE, showBackground:true,
                  backgroundColor:Cesium.Color.fromCssColorString("#241a3a").withAlpha(0.82),
                  backgroundPadding:new Cesium.Cartesian2(7,4),
-                 horizontalOrigin:L.ho, verticalOrigin:L.vo,
-                 pixelOffset:new Cesium.Cartesian2(L.off[0], L.off[1]),
+                 verticalOrigin:Cesium.VerticalOrigin.BOTTOM,
+                 pixelOffset:new Cesium.Cartesian2(0,-12),
                  disableDepthTestDistance:Number.POSITIVE_INFINITY,
-                 translucencyByDistance:new Cesium.NearFarScalar(4000, 1.0, 9000, 0.0),
-                 scaleByDistance:new Cesium.NearFarScalar(800, 1.0, 9000, 0.5) } });
+                 scaleByDistance:new Cesium.NearFarScalar(800, 1.0, 9000, 0.55) } });
     });
     scene.requestRender();
   }).catch(function(err){

@@ -41,11 +41,12 @@
       <h2 class="subhead">Dues</h2>
       <p>Annual dues are $5 for an individual or $10 for a family. After you submit the form below, you can pay electronically or mail a check — payment details are confirmed once a board member verifies your Fisher Hill connection.</p>
 
-      <!-- TODO (backend, blocked on Michael): on submit, email the FHA shared inbox
-           (fisherhill.info@gmail.com) for human review of residency; on approval, send
-           the Venmo link (tied to the FHA Chase account) or the mailing address for a
-           check. No AI auto-approval here — a board member confirms membership. Until
-           wired, the form shows a local confirmation only and does not send or collect payment. -->
+      <!-- TODO (backend, blocked on Michael): on submit, /join emails the FHA shared
+      inbox (fha.wp.info@gmail.com) for human review of residency; on approval, send
+      the Venmo link (tied to the FHA Chase account) or the mailing address for a
+      check. No AI auto-approval here — a board member confirms membership. Until the
+      Worker is deployed (forms.js API_BASE empty), the form shows a local confirmation
+      only and does not send or collect payment. -->
       <form class="cform" id="join-form" novalidate>
         <div>
           <label for="jf-name">Name</label>
@@ -73,6 +74,7 @@
           <label for="jf-note">Anything you'd like the board to know? <span class="cform-opt">(optional)</span></label>
           <textarea id="jf-note" name="note"></textarea>
         </div>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button class="btn" type="submit">Submit membership request</button>
         <p class="cform-status" id="jf-status" role="status" hidden></p>
         <p class="cform-note">A board member reviews each request and follows up with payment details. Submitting this form does not charge you.</p>
@@ -82,20 +84,7 @@
   </div>
 </main>
 
-<script>
-(function(){
-  var f=document.getElementById('join-form');
-  if(!f) return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(!f.checkValidity()){ f.reportValidity(); return; }
-    var s=document.getElementById('jf-status');
-    s.hidden=false;
-    s.textContent='Thanks — your membership request has been received. A board member will verify your Fisher Hill connection and follow up with payment details.';
-    f.reset();
-  });
-})();
-</script>
+<script src="forms.js"></script>
 <script src="i18n.js"></script>
 </body>
 </html>

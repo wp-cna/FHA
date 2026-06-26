@@ -32,74 +32,6 @@
     // Posts
     "From around Fisher Hill.": "Desde Fisher Hill.",
     "Updates serving Fisher Hill and White Plains — neighborhood events, civic notices, and volunteer opportunities. Every posting is reviewed before it appears.": "Novedades para Fisher Hill y White Plains: eventos del vecindario, avisos cívicos y oportunidades de voluntariado. Cada publicación se revisa antes de aparecer.",
-    // Posts — guidelines + submission form
-    "Post to the board.": "Publique en el tablón.",
-    "The board is for Fisher Hill neighbors and the businesses that serve our streets. You're welcome to post if you live in Fisher Hill, or if you run a business along our retail blocks — Post Road, South Lexington, East Post Road, and Irving Place. Posts from outside the neighborhood aren't accepted.": "El tablón es para los vecinos de Fisher Hill y los negocios que sirven a nuestras calles. Puede publicar si vive en Fisher Hill o si tiene un negocio en nuestras cuadras comerciales: Post Road, South Lexington, East Post Road e Irving Place. No se aceptan publicaciones de fuera del vecindario.",
-    "What's welcome": "Qué se acepta",
-    "A local service or business serving Fisher Hill — paid services and lessons are fine": "Un servicio o negocio local que sirve a Fisher Hill; los servicios y las clases de pago están permitidos",
-    "Something you're looking for — a dog walker, a book club, help with a project": "Algo que busca: un paseador de perros, un club de lectura, ayuda con un proyecto",
-    "A yard sale, bake sale, or block party": "Una venta de garaje, una venta de pasteles o una fiesta de barrio",
-    "A neighborhood drive or volunteer effort, like a blood drive or a cleanup": "Una campaña vecinal o esfuerzo de voluntariado, como una donación de sangre o una limpieza",
-    "What we can't post": "Lo que no podemos publicar",
-    "Posts from people or businesses outside Fisher Hill": "Publicaciones de personas o negocios de fuera de Fisher Hill",
-    "Offensive, harassing, or discriminatory content": "Contenido ofensivo, de acoso o discriminatorio",
-    "General advertising unrelated to the neighborhood": "Publicidad general sin relación con el vecindario",
-    "Anything inaccurate or misleading": "Cualquier cosa inexacta o engañosa",
-    "How it works": "Cómo funciona",
-    "Every submission is reviewed before it appears. If your post fits these guidelines, we'll add it to the board. If it can't run, Michael Dalton, the Association's president, will email you from the FHA's address to explain why — a person reviews every decision, so nothing is rejected automatically.": "Cada envío se revisa antes de aparecer. Si su publicación cumple estas pautas, la agregaremos al tablón. Si no puede publicarse, Michael Dalton, el presidente de la Asociación, le escribirá desde el correo de la FHA para explicarle por qué; una persona revisa cada decisión, así que nada se rechaza automáticamente.",
-    "Phone": "Teléfono",
-    "You are a": "Usted es",
-    "Fisher Hill resident": "Residente de Fisher Hill",
-    "Fisher Hill business": "Negocio de Fisher Hill",
-    "Fisher Hill address or business location": "Dirección en Fisher Hill o ubicación del negocio",
-    "What kind of post is this?": "¿Qué tipo de publicación es?",
-    "Choose one…": "Elija una opción…",
-    "Service or business offered": "Servicio o negocio que ofrece",
-    "Something I'm looking for": "Algo que busco",
-    "Event or gathering": "Evento o encuentro",
-    "Yard sale or for sale": "Venta de garaje o artículos en venta",
-    "Volunteer or community drive": "Voluntariado o campaña comunitaria",
-    "Other": "Otro",
-    "Post title": "Título de la publicación",
-    "Post details": "Detalles de la publicación",
-    "Submit a post": "Enviar una publicación",
-    "Posts are reviewed by a board member before they appear. We'll be in touch if anything needs clarifying.": "Un miembro de la directiva revisa las publicaciones antes de que aparezcan. Nos comunicaremos si algo necesita aclararse.",
-    "Thanks — your post has been submitted for review. A board member will check it against the guidelines and follow up if anything needs clarifying.": "Gracias: su publicación se ha enviado para revisión. Un miembro de la directiva la comparará con las pautas y se comunicará si algo necesita aclararse.",
-    "Post to the board": "Publicar en el tablón",
-    "Share something with the neighborhood.": "Comparta algo con el vecindario.",
-    "A place for neighbors to find each other and find what's nearby — local businesses and services, lost-and-found pets, tag sales and giveaways, recommendations, and neighbor-to-neighbor needs and offers. Every submission is reviewed before it appears.": "Un lugar para que los vecinos se encuentren y descubran lo que hay cerca: negocios y servicios locales, mascotas perdidas y encontradas, ventas de garaje y artículos gratis, recomendaciones, y necesidades y ofrecimientos entre vecinos. Cada publicación se revisa antes de aparecer.",
-    "Welcome on the board": "Bienvenido en el tablón",
-    "Not allowed": "No permitido",
-    "Local businesses, shops, and services": "Negocios, tiendas y servicios locales",
-    "Lost & found — pets or items": "Objetos y mascotas perdidos y encontrados",
-    "Tag sales, yard sales, and giveaways": "Ventas de garaje y artículos gratis",
-    "Neighbor-to-neighbor needs, offers, and local recommendations": "Necesidades, ofrecimientos y recomendaciones entre vecinos",
-    "Civil and truthful, with your own contact info": "Cortés y veraz, con su propia información de contacto",
-    "Only images you own or have permission to post": "Solo imágenes que usted posee o tiene permiso para publicar",
-    "Spam — bulk, repeated, automated, or bot submissions": "Spam: publicaciones masivas, repetidas, automáticas o de bots",
-    "Scams or fraudulent offers": "Estafas u ofertas fraudulentas",
-    "Naming, targeting, or disparaging a specific individual": "Nombrar, señalar o menospreciar a una persona en concreto",
-    "Harassing, threatening, or defamatory language": "Lenguaje de acoso, amenazante o difamatorio",
-    "AI-generated, manipulated, or fake images of any person": "Imágenes generadas por IA, manipuladas o falsas de cualquier persona",
-    "Airing a personal dispute between neighbors": "Ventilar una disputa personal entre vecinos",
-    "Sharing someone else's personal information without their consent": "Compartir la información personal de otra persona sin su consentimiento",
-    "Anything unrelated to Fisher Hill or White Plains": "Cualquier cosa ajena a Fisher Hill o White Plains",
-    "Post type": "Tipo de publicación",
-    "Title": "Título",
-    "Details": "Detalles",
-    "Your name": "Su nombre",
-    "Your email (for follow-up — not published)": "Su correo electrónico (para seguimiento — no se publica)",
-    "Your phone (optional — shown only if you include it)": "Su teléfono (opcional — se muestra solo si lo incluye)",
-    "Local business or service": "Negocio o servicio local",
-    "Lost & found (pet or item)": "Perdido y encontrado (mascota u objeto)",
-    "Tag sale / yard sale / giveaway": "Venta de garaje / artículos gratis",
-    "Neighbor need or offer": "Necesidad u ofrecimiento entre vecinos",
-    "Recommendation": "Recomendación",
-    "Any images I include are my own or I have permission to post them — and none are AI-generated or altered images of a person.": "Las imágenes que incluyo son mías o tengo permiso para publicarlas, y ninguna es una imagen generada por IA ni alterada de una persona.",
-    "I've read the guidelines and understand posts are reviewed before they appear.": "He leído las pautas y entiendo que las publicaciones se revisan antes de aparecer.",
-    "Submit for review": "Enviar para revisión",
-    "Submissions are reviewed before posting. Submitting does not guarantee publication.": "Las publicaciones se revisan antes de aparecer. Enviar no garantiza la publicación.",
-    "Thanks — your post was submitted for review. If it fits the guidelines, it will appear on the board.": "Gracias: su publicación se envió para revisión. Si cumple las pautas, aparecerá en el tablón.",
     // Events
     "What's coming up.": "Próximamente.",
     "Association meetings, neighborhood cleanups, and events across White Plains. WPCNA meets monthly — typically the second Tuesday at 7:00 p.m.": "Reuniones de la Asociación, limpiezas del vecindario y eventos por todo White Plains. La WPCNA se reúne cada mes, generalmente el segundo martes a las 7:00 p.m.",
@@ -120,9 +52,8 @@
     "Fisher Hill is a historic neighborhood within walking distance of the central business district of White Plains, New York. Residential development began around 1900, and many of the large vintage homes from that era still define the neighborhood's character today. Fisher Hill is notably diverse in ethnicity, age, and income.": "Fisher Hill es un barrio histórico a poca distancia a pie del centro comercial de White Plains, Nueva York. El desarrollo residencial comenzó alrededor de 1900, y muchas de las grandes casas antiguas de esa época aún definen el carácter del vecindario. Fisher Hill destaca por su diversidad de origen, edad e ingresos.",
     "The neighborhood is bounded by the Bronx River Parkway to the west and Post Road to the east, with White Plains Hospital, the public library, the Metro-North station, and City Center all just beyond its edges. The Fisher Hill Association represents residents within the White Plains Council of Neighborhood Associations (WPCNA).": "El vecindario está delimitado por el Bronx River Parkway al oeste y Post Road al este, con el Hospital de White Plains, la biblioteca pública, la estación Metro-North y el City Center justo al lado. La Asociación de Fisher Hill representa a los residentes dentro del Consejo de Asociaciones de Vecinos de White Plains (WPCNA).",
     "Association officers": "Directiva de la Asociación",
-    "Fisher Hill Association Officers": "Directiva de la Asociación de Fisher Hill",
     "— President": "— Presidente",
-    "— Vice President": "— Vicepresidente",
+    "— Vice President": "— Vicepresidenta",
     "— Treasurer": "— Tesorera",
     "To reach the board, use the": "Para comunicarse con la directiva, use el",
     "contact form": "formulario de contacto",
@@ -133,37 +64,34 @@
     "Membership keeps the Association running and gives you a voice in what happens around the neighborhood. Dues are modest and support events and advocacy on behalf of Fisher Hill.": "La membresía mantiene en marcha a la Asociación y le da voz en lo que sucede en el vecindario. Las cuotas son modestas y apoyan los eventos y la representación en nombre de Fisher Hill.",
     "Members receive neighborhood updates, a say in Association positions before the city and the WPCNA, and an invitation to every meeting and gathering.": "Los miembros reciben novedades del vecindario, voz en las posturas de la Asociación ante la ciudad y la WPCNA, y una invitación a cada reunión y encuentro.",
     "Get in touch to join": "Comuníquese para unirse",
-    // Join — membership criteria + form
     "Who can join": "Quién puede unirse",
     "Membership is open to current Fisher Hill residents and to former residents who'd like to stay connected. If you've moved away, just list the Fisher Hill address where you used to live.": "La membresía está abierta a los residentes actuales de Fisher Hill y a los exresidentes que deseen mantenerse conectados. Si se ha mudado, solo indique la dirección de Fisher Hill donde vivía.",
     "Dues": "Cuotas",
-    "Annual dues are $5 for an individual or $10 for a family. After you submit the form below, you can pay electronically or mail a check — payment details are confirmed once a board member verifies your Fisher Hill connection.": "Las cuotas anuales son de $5 por persona o $10 por familia. Después de enviar el formulario, puede pagar electrónicamente o enviar un cheque por correo; los detalles de pago se confirman cuando un miembro de la directiva verifica su vínculo con Fisher Hill.",
+    "Annual dues are $5 for an individual or $10 for a family. After you submit the form below, you can pay electronically or mail a check — payment details are confirmed once a board member verifies your Fisher Hill connection.": "Las cuotas anuales son de $5 por persona o $10 por familia. Después de enviar el formulario a continuación, puede pagar electrónicamente o enviar un cheque por correo — los detalles de pago se confirman una vez que un miembro de la directiva verifica su vínculo con Fisher Hill.",
+    "Name": "Nombre",
+    "Email": "Correo electrónico",
     "Residency": "Residencia",
     "Current Fisher Hill resident": "Residente actual de Fisher Hill",
     "Former Fisher Hill resident": "Exresidente de Fisher Hill",
+    "Fisher Hill address": "Dirección en Fisher Hill",
+    "(current, or former if you've moved)": "(actual, o anterior si se ha mudado)",
     "Membership": "Membresía",
     "Individual — $5/year": "Individual — $5/año",
-    "Family — $10/year": "Familia — $10/año",
-    "Anything you'd like the board to know?": "¿Algo que quiera que sepa la directiva?",
-    "(current, or former if you've moved)": "(actual, o anterior si se ha mudado)",
+    "Family — $10/year": "Familiar — $10/año",
+    "Anything you'd like the board to know?": "¿Algo que quiera que la directiva sepa?",
+    "(optional)": "(opcional)",
     "Submit membership request": "Enviar solicitud de membresía",
-    "A board member reviews each request and follows up with payment details. Submitting this form does not charge you.": "Un miembro de la directiva revisa cada solicitud y le da seguimiento con los detalles de pago. Enviar este formulario no genera ningún cobro.",
-    "Thanks — your membership request has been received. A board member will verify your Fisher Hill connection and follow up with payment details.": "Gracias: hemos recibido su solicitud de membresía. Un miembro de la directiva verificará su vínculo con Fisher Hill y le dará seguimiento con los detalles de pago.",
+    "A board member reviews each request and follows up with payment details. Submitting this form does not charge you.": "Un miembro de la directiva revisa cada solicitud y da seguimiento con los detalles de pago. Enviar este formulario no genera ningún cargo.",
+    "Thanks — your membership request has been received. A board member will verify your Fisher Hill connection and follow up with payment details.": "Gracias: hemos recibido su solicitud de membresía. Un miembro de la directiva verificará su vínculo con Fisher Hill y dará seguimiento con los detalles de pago.",
     // Contact
     "Reach the board.": "Comuníquese con la directiva.",
-    "Get in touch.": "Póngase en contacto.",
     "Questions, posts, or membership? Send the Fisher Hill Association a note and someone will get back to you.": "¿Preguntas, publicaciones o membresía? Envíe una nota a la Asociación de Fisher Hill y alguien se comunicará con usted.",
-    "Have a question, an idea, or something the Association should know about? Send us a note below and a board member will get back to you.": "¿Tiene una pregunta, una idea o algo que la Asociación deba saber? Envíenos una nota a continuación y un miembro de la directiva se comunicará con usted.",
     "Name": "Nombre",
     "Email": "Correo electrónico",
     "Subject": "Asunto",
     "Message": "Mensaje",
-    "Fisher Hill address": "Dirección en Fisher Hill",
-    "(optional)": "(opcional)",
-    "What would you like to discuss?": "¿Qué desea comentar?",
     "Send message": "Enviar mensaje",
     "Messages go to the Fisher Hill Association board.": "Los mensajes llegan a la directiva de la Asociación de Fisher Hill.",
-    "Your message goes to the Fisher Hill Association and is reviewed by a board member, who will reply from the Association's email.": "Su mensaje llega a la Asociación de Fisher Hill y es revisado por un miembro de la directiva, que responderá desde el correo de la Asociación.",
     "Thanks — your message has been sent. The board will be in touch.": "Gracias: su mensaje ha sido enviado. La directiva se comunicará con usted.",
     // Footer / credits
     "Image credits": "Créditos de imágenes",
@@ -175,6 +103,9 @@
     // Feed UI
     "Details": "Detalles",
     "Open city page": "Abrir la página de la ciudad",
+    "Open library page": "Abrir la página de la biblioteca",
+    "Open event page": "Abrir la página del evento",
+    "Open show page": "Abrir la página del espectáculo",
     "Posted by Fisher Hill Association": "Publicado por la Asociación de Fisher Hill",
     // Feed categories
     "Family": "Familia", "Civic": "Cívico", "Learning": "Educación", "Workshop": "Taller",
@@ -218,7 +149,45 @@
     "A free drop-in group for adults who want to practice everyday English. Meets weekly.": "Grupo gratuito y sin cita para adultos que quieren practicar el inglés cotidiano. Se reúne cada semana.",
     "Local produce, baked goods, and vendors downtown — held weekly through the summer and fall season.": "Productos locales, panadería y vendedores en el centro — todas las semanas durante el verano y el otoño.",
     "A free citywide celebration inspired by the FIFA World Cup 2026™, turning downtown into a fan-filled destination with music, food, and activities.": "Una celebración gratuita en toda la ciudad inspirada en la Copa Mundial de la FIFA 2026™, que convierte el centro en un destino lleno de aficionados con música, comida y actividades.",
-    "Bring confidential personal documents to the Gedney Yard for free on-site shredding. Junk mail, newspapers, and cardboard are not accepted.": "Lleve documentos personales confidenciales al Gedney Yard para trituración gratuita en el lugar. No se aceptan correo basura, periódicos ni cartón."
+    "Bring confidential personal documents to the Gedney Yard for free on-site shredding. Junk mail, newspapers, and cardboard are not accepted.": "Lleve documentos personales confidenciales al Gedney Yard para trituración gratuita en el lugar. No se aceptan correo basura, periódicos ni cartón.",
+    "Post to the board": "Publicar en el tablón",
+    "Share something with the neighborhood.": "Comparta algo con el vecindario.",
+    "A place for neighbors to find each other and find what's nearby — local businesses and services, lost-and-found pets, tag sales and giveaways, recommendations, and neighbor-to-neighbor needs and offers. Every submission is reviewed before it appears.": "Un lugar para que los vecinos se encuentren y descubran lo que hay cerca: negocios y servicios locales, mascotas perdidas y encontradas, ventas de garaje y artículos gratis, recomendaciones, y necesidades y ofrecimientos entre vecinos. Cada publicación se revisa antes de aparecer.",
+    "Welcome on the board": "Bienvenido en el tablón",
+    "Not allowed": "No permitido",
+    "Local businesses, shops, and services": "Negocios, tiendas y servicios locales",
+    "Lost & found — pets or items": "Objetos y mascotas perdidos y encontrados",
+    "Tag sales, yard sales, and giveaways": "Ventas de garaje y artículos gratis",
+    "Neighbor-to-neighbor needs, offers, and local recommendations": "Necesidades, ofrecimientos y recomendaciones entre vecinos",
+    "Civil and truthful, with your own contact info": "Cortés y veraz, con su propia información de contacto",
+    "Only images you own or have permission to post": "Solo imágenes que usted posee o tiene permiso para publicar",
+    "Spam — bulk, repeated, automated, or bot submissions": "Spam: publicaciones masivas, repetidas, automáticas o de bots",
+    "Scams or fraudulent offers": "Estafas u ofertas fraudulentas",
+    "Naming, targeting, or disparaging a specific individual": "Nombrar, señalar o menospreciar a una persona en concreto",
+    "Harassing, threatening, or defamatory language": "Lenguaje de acoso, amenazante o difamatorio",
+    "AI-generated, manipulated, or fake images of any person": "Imágenes generadas por IA, manipuladas o falsas de cualquier persona",
+    "Airing a personal dispute between neighbors": "Ventilar una disputa personal entre vecinos",
+    "Sharing someone else's personal information without their consent": "Compartir la información personal de otra persona sin su consentimiento",
+    "Anything unrelated to Fisher Hill or White Plains": "Cualquier cosa ajena a Fisher Hill o White Plains",
+    "Post type": "Tipo de publicación",
+    "Title": "Título",
+    "Details": "Detalles",
+    "Your name": "Su nombre",
+    "Your email (for follow-up — not published)": "Su correo electrónico (para seguimiento — no se publica)",
+    "Your phone (optional — shown only if you include it)": "Su teléfono (opcional — se muestra solo si lo incluye)",
+    "Choose one…": "Elija una opción…",
+    "Local business or service": "Negocio o servicio local",
+    "Lost & found (pet or item)": "Perdido y encontrado (mascota u objeto)",
+    "Tag sale / yard sale / giveaway": "Venta de garaje / artículos gratis",
+    "Neighbor need or offer": "Necesidad u ofrecimiento entre vecinos",
+    "Recommendation": "Recomendación",
+    "Other": "Otro",
+    "Any images I include are my own or I have permission to post them — and none are AI-generated or altered images of a person.": "Las imágenes que incluyo son mías o tengo permiso para publicarlas, y ninguna es una imagen generada por IA ni alterada de una persona.",
+    "I've read the guidelines and understand posts are reviewed before they appear.": "He leído las pautas y entiendo que las publicaciones se revisan antes de aparecer.",
+    "Submit for review": "Enviar para revisión",
+    "Submissions are reviewed before posting. Submitting does not guarantee publication.": "Las publicaciones se revisan antes de aparecer. Enviar no garantiza la publicación.",
+    "Thanks — your post was submitted for review. If it fits the guidelines, it will appear on the board.": "Gracias: su publicación se envió para revisión. Si cumple las pautas, aparecerá en el tablón.",
+    "No upcoming events right now — check back soon.": "No hay eventos próximos por ahora — vuelva pronto."
   };
 
   function getLang() {
@@ -248,26 +217,23 @@
   }
 
   function buildToggle(lang) {
-    var side = document.querySelector(".side");
-    if (!side) return;
     var box = document.createElement("div");
     box.className = "lang-toggle";
-    var LABELS = { en: "English", es: "Español" };
+    var LABELS = { en: "ENG", es: "ESP" };
+    var FULL = { en: "English", es: "Español" };
     ["en", "es"].forEach(function (l) {
       var b = document.createElement("button");
       b.className = "lang-btn" + (l === lang ? " active" : "");
       b.type = "button";
       b.textContent = LABELS[l];
-      b.setAttribute("aria-label", LABELS[l]);
+      b.setAttribute("aria-label", FULL[l]);
       b.addEventListener("click", function () {
         try { localStorage.setItem("fha-lang", l); } catch (e) {}
         location.reload();
       });
       box.appendChild(b);
     });
-    var foot = side.querySelector(".side-foot");
-    if (foot) side.insertBefore(box, foot);   // just above the light footer copy
-    else side.appendChild(box);
+    document.body.appendChild(box);   // fixed top-right (see styles.css)
   }
 
   window.fhaApplyI18n = function () { translate(document.body); };

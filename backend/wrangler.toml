@@ -1,0 +1,21 @@
+name = "fha-forms"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://wp-cna.github.io"
+BOARD_EMAIL = "fha.wp.info@gmail.com"
+# Until you verify a sending domain in Resend, you can use their test sender:
+MAIL_FROM = "FHA Board <onboarding@resend.dev>"
+GITHUB_REPO = "wp-cna/FHA"
+
+# Optional: per-sender rate limiting. Create a KV namespace and uncomment:
+#   wrangler kv namespace create RATE_LIMIT
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "<paste-the-id>"
+
+# Secrets are NOT stored here. Set them with:
+#   wrangler secret put RESEND_API_KEY
+#   wrangler secret put ANTHROPIC_API_KEY
+#   wrangler secret put GITHUB_TOKEN
