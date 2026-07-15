@@ -9,6 +9,13 @@ BOARD_EMAIL = "fha.wp.info@gmail.com"
 MAIL_FROM = "FHA Board <onboarding@resend.dev>"
 GITHUB_REPO = "wp-cna/FHA"
 
+# REQUIRED: pending board posts awaiting a human decision (the action links in
+# the review email). Create the namespace and paste its id below before deploying:
+#   wrangler kv namespace create PENDING
+[[kv_namespaces]]
+binding = "PENDING"
+id = "<paste-the-id-from-wrangler-kv-namespace-create-PENDING>"
+
 # Optional: per-sender rate limiting. Create a KV namespace and uncomment:
 #   wrangler kv namespace create RATE_LIMIT
 # [[kv_namespaces]]
