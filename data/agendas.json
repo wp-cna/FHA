@@ -1,0 +1,15 @@
+{
+  "_howto": "Add a document: drop the PDF into assets/agendas/, then add { year, title, file } to the matching list below (annual = Annual Meetings, board = Board Meetings, mayor = Mayor's Office Meetings), e.g. { \"year\": 2026, \"title\": \"Annual Meeting 2026 — agenda\", \"file\": \"assets/agendas/annual-2026-agenda.pdf\" }. Lists render newest year first; entries without a \"file\" render as unlinked titles. The entries below are PLACEHOLDERS — replace them as real PDFs come in.",
+  "annual": [
+    { "year": 2026, "title": "[Placeholder] Annual Meeting 2026 — agenda" },
+    { "year": 2025, "title": "[Placeholder] Annual Meeting 2025 — recap" }
+  ],
+  "board": [
+    { "year": 2026, "title": "[Placeholder] Board Meeting April 2026 — minutes" },
+    { "year": 2025, "title": "[Placeholder] Board Meeting November 2025 — agenda" }
+  ],
+  "mayor": [
+    { "year": 2026, "title": "[Placeholder] Mayor's Office Meeting Spring 2026 — minutes" },
+    { "year": 2025, "title": "[Placeholder] Mayor's Office Meeting Fall 2025 — agenda" }
+  ]
+}

@@ -15,6 +15,7 @@
   <a class="side-brand" href="index.html">The<br>Fisher&nbsp;Hill<br>Association</a>
   <div class="side-rule"></div>
   <nav class="side-nav" aria-label="Main">
+    <a href="index.html">Home</a>
     <a href="posts.html">Neighborhood Posts</a>
     <a href="events.html">Events</a>
     <a href="agendas.html" class="active" aria-current="page">Agendas</a>
@@ -33,12 +34,28 @@
     <section>
       <h1 class="title">Meeting agendas &amp; minutes.</h1>
       <p class="lede">Agendas and minutes from Fisher Hill Association meetings.</p>
-      <div class="agenda-grid">
-        <a class="agenda-box" href="#"><span class="agenda-box-title">FHA Annual Meeting 2025</span><span class="agenda-box-bar"></span></a>
-        <a class="agenda-box" href="#"><span class="agenda-box-title">FHA Board Meeting April 2026</span><span class="agenda-box-bar"></span></a>
-        <a class="agenda-box" href="#"><span class="agenda-box-title">FHA Board Meeting Nov 2025</span><span class="agenda-box-bar"></span></a>
-        <a class="agenda-box" href="#"><span class="agenda-box-title">FHA Board Meeting Aug 2025</span><span class="agenda-box-bar"></span></a>
-        <a class="agenda-box" href="#"><span class="agenda-box-title">FHA Annual Meeting 2024</span><span class="agenda-box-bar"></span></a>
+      <!--
+        HOW TO ADD A DOCUMENT (Michael):
+        1. Drop the PDF into assets/agendas/  (e.g. assets/agendas/annual-2026-agenda.pdf)
+        2. Add an entry to data/agendas.json under "annual", "board", or "mayor":
+             { "year": 2026, "title": "Annual Meeting 2026 — agenda", "file": "assets/agendas/annual-2026-agenda.pdf" }
+        3. Commit both files — the lists below render from that JSON, newest year first.
+           (An entry without a "file" renders as an unlinked title.)
+        The entries currently in agendas.json are placeholders; replace them as real PDFs come in.
+      -->
+      <div class="agenda-cats">
+        <details class="agenda-cat" open>
+          <summary><span class="agenda-cat-title">Annual Meetings</span><span class="agenda-cat-sub">Agendas &amp; meeting recaps</span></summary>
+          <ul class="doc-list" id="agendas-annual"><li class="placeholder">Loading documents…</li></ul>
+        </details>
+        <details class="agenda-cat">
+          <summary><span class="agenda-cat-title">Board Meetings</span><span class="agenda-cat-sub">Agendas &amp; minutes</span></summary>
+          <ul class="doc-list" id="agendas-board"><li class="placeholder">Loading documents…</li></ul>
+        </details>
+        <details class="agenda-cat">
+          <summary><span class="agenda-cat-title">Mayor's Office Meetings</span><span class="agenda-cat-sub">Agendas &amp; minutes — the FHA meets with the mayor's office and city commissioners 2–3 times a year</span></summary>
+          <ul class="doc-list" id="agendas-mayor"><li class="placeholder">Loading documents…</li></ul>
+        </details>
       </div>
     </section>
     <section>
@@ -51,6 +68,47 @@
 </main>
 
 <script>
+/* Agenda archive — renders data/agendas.json into the three category lists. */
+(function(){
+  var CATS = { annual:"agendas-annual", board:"agendas-board", mayor:"agendas-mayor" };
+  function setPlaceholder(list, msg){
+    list.innerHTML = "";
+    var li = document.createElement("li");
+    li.className = "placeholder";
+    li.textContent = msg;
+    list.appendChild(li);
+  }
+  fetch("data/agendas.json")
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(data){
+      Object.keys(CATS).forEach(function(cat){
+        var list = document.getElementById(CATS[cat]);
+        if(!list) return;
+        var docs = (data && Array.isArray(data[cat])) ? data[cat].slice() : [];
+        if(!docs.length){ setPlaceholder(list, "No documents posted yet — check back soon."); return; }
+        list.innerHTML = "";
+        docs.sort(function(a,b){ return (b.year||0) - (a.year||0); });
+        docs.forEach(function(d){
+          var li = document.createElement("li");
+          var y = document.createElement("span"); y.className = "doc-year"; y.textContent = d.year || "";
+          var t;
+          if(d.file){ t = document.createElement("a"); t.href = d.file; t.rel = "noopener"; }
+          else { t = document.createElement("span"); t.className = "doc-pending"; }
+          t.textContent = d.title || "Untitled document";
+          li.appendChild(y); li.appendChild(t);
+          list.appendChild(li);
+        });
+      });
+      if(window.fhaApplyI18n) window.fhaApplyI18n();
+    })
+    .catch(function(){
+      Object.keys(CATS).forEach(function(cat){
+        var list = document.getElementById(CATS[cat]);
+        if(list) setPlaceholder(list, "Documents are unavailable right now.");
+      });
+      if(window.fhaApplyI18n) window.fhaApplyI18n();
+    });
+})();
 (function(){
   fetch("fisher-hill-mentions.json")
     .then(function(r){ return r.ok ? r.json() : null; })
@@ -70,6 +128,7 @@
         if(m.pdf){ var a = document.createElement("a"); a.href = m.pdf; a.rel = "external noopener"; a.textContent = "Read the minutes →"; li.appendChild(a); }
         list.appendChild(li);
       });
+      if(window.fhaApplyI18n) window.fhaApplyI18n();
     })
     .catch(function(){
       var empty = document.getElementById("fha-mins-empty");
