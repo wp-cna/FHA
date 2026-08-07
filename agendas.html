@@ -92,7 +92,8 @@
           var li = document.createElement("li");
           var y = document.createElement("span"); y.className = "doc-year"; y.textContent = d.year || "";
           var t;
-          if(d.file){ t = document.createElement("a"); t.href = d.file; t.rel = "noopener"; }
+          /* CMS-saved paths may start with "/" or "./" — normalize to relative so links stay inside the /FHA/ subpath. */
+          if(d.file){ t = document.createElement("a"); t.href = String(d.file).replace(/^(\.?\/)+/, ""); t.rel = "noopener"; }
           else { t = document.createElement("span"); t.className = "doc-pending"; }
           t.textContent = d.title || "Untitled document";
           li.appendChild(y); li.appendChild(t);
