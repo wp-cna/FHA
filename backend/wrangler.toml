@@ -12,16 +12,15 @@ GITHUB_REPO = "wp-cna/FHA"
 # REQUIRED: pending board posts awaiting a human decision (the action links in
 # the review email).
 #
-# NOTE: this Worker is live at fha-forms.fisher-hill.workers.dev, i.e. on the
-# Cloudflare account whose workers.dev subdomain is "fisher-hill" — NOT on
-# michael.kushman@gmail.com's personal account. KV namespace ids are per-account,
-# so create this while logged into the fisher-hill account or the deploy fails
-# with "KV namespace ... is not valid [code: 10042]":
-#   wrangler login          # choose the account that owns fisher-hill.workers.dev
+# NOTE: KV namespace ids are per-account. This id belongs to
+# michael.conor.kushman@gmail.com's account (6d17479a…), which is where this
+# Worker now lives. Deploying from a different Cloudflare login fails with
+# "KV namespace ... is not valid [code: 10042]" — create a new namespace there
+# instead of reusing this id:
 #   wrangler kv namespace create PENDING
 [[kv_namespaces]]
 binding = "PENDING"
-id = "<paste-the-id-from-wrangler-kv-namespace-create-PENDING>"
+id = "ed0dfb74d906428eaa6bbaa26c6d0e33"
 
 # Optional: per-sender rate limiting. Create a KV namespace and uncomment:
 #   wrangler kv namespace create RATE_LIMIT
