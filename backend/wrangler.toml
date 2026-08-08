@@ -10,7 +10,14 @@ MAIL_FROM = "FHA Board <onboarding@resend.dev>"
 GITHUB_REPO = "wp-cna/FHA"
 
 # REQUIRED: pending board posts awaiting a human decision (the action links in
-# the review email). Create the namespace and paste its id below before deploying:
+# the review email).
+#
+# NOTE: this Worker is live at fha-forms.fisher-hill.workers.dev, i.e. on the
+# Cloudflare account whose workers.dev subdomain is "fisher-hill" — NOT on
+# michael.kushman@gmail.com's personal account. KV namespace ids are per-account,
+# so create this while logged into the fisher-hill account or the deploy fails
+# with "KV namespace ... is not valid [code: 10042]":
+#   wrangler login          # choose the account that owns fisher-hill.workers.dev
 #   wrangler kv namespace create PENDING
 [[kv_namespaces]]
 binding = "PENDING"
