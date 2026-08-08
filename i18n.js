@@ -164,7 +164,6 @@
     "Local produce, baked goods, and vendors downtown — held weekly through the summer and fall season.": "Productos locales, panadería y vendedores en el centro — todas las semanas durante el verano y el otoño.",
     "A free citywide celebration inspired by the FIFA World Cup 2026™, turning downtown into a fan-filled destination with music, food, and activities.": "Una celebración gratuita en toda la ciudad inspirada en la Copa Mundial de la FIFA 2026™, que convierte el centro en un destino lleno de aficionados con música, comida y actividades.",
     "Bring confidential personal documents to the Gedney Yard for free on-site shredding. Junk mail, newspapers, and cardboard are not accepted.": "Lleve documentos personales confidenciales al Gedney Yard para trituración gratuita en el lugar. No se aceptan correo basura, periódicos ni cartón.",
-    "Post to the board": "Publicar en el tablón",
     "Share something with the neighborhood.": "Comparta algo con el vecindario.",
     "A place for neighbors to find each other and find what's nearby — local businesses and services, lost-and-found pets, tag sales and giveaways, and neighbor-to-neighbor needs and offers. Every submission is reviewed before it appears.": "Un lugar para que los vecinos se encuentren y descubran lo que hay cerca: negocios y servicios locales, mascotas perdidas y encontradas, ventas de garaje y artículos gratis, y necesidades y ofrecimientos entre vecinos. Cada publicación se revisa antes de aparecer.",
     "Welcome to post": "Se puede publicar",
