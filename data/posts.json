@@ -4,15 +4,15 @@
   "posts": [
     {
       "title": "Fisher Hill Block Party",
-      "category": "Neighborhood",
+      "category": "Neighborhood Event",
       "fh": true,
-      "date": "2026-08-08",
-      "dateLabel": "August 8, 2026",
-      "expires": "2026-08-22",
+      "date": "2026-09-19",
+      "dateLabel": "September 19, 2026",
+      "expires": "2026-09-20",
       "time": "",
-      "location": "",
-      "summary": "The FHA is will be sponsoring a Fisher Hill Block Party on Sept 19th. The Block Party will be held on Ridgeview Ave between Midland Ave and Tibbits Ave. Ridgeview will be closed to automobiles between Midland and Tibbits. ",
-      "source": "Michael Dalton "
+      "location": "Ridgeview Ave (Midland Ave to Tibbits Ave)",
+      "summary": "The FHA will be sponsoring a Fisher Hill Block Party on Sept 19th. The Block Party will be held on Ridgeview Ave between Midland Ave and Tibbits Ave. Ridgeview will be closed to automobiles between Midland and Tibbits.",
+      "source": "Michael Dalton"
     },
     {
       "title": "Walworth Avenue Block Party",
