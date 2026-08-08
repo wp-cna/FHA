@@ -15,12 +15,20 @@
   }
   function lang() { try { return localStorage.getItem("fha-lang") || "en"; } catch (e) { return "en"; } }
   var MES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  function isIsoDate(s) { return typeof s === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s); }
   function dateLabel(it) {
-    if (lang() === "es" && it.date) {
+    if (lang() === "es" && isIsoDate(it.date)) {
       var p = it.date.split("-");
       return parseInt(p[2], 10) + " de " + MES[parseInt(p[1], 10) - 1] + " de " + p[0];
     }
-    return it.dateLabel || "";
+    if (it.dateLabel) return it.dateLabel;
+    // No hand-written label (e.g. left blank in the admin) — build one from the date.
+    if (isIsoDate(it.date)) {
+      var q = it.date.split("-");
+      return MONTHS[parseInt(q[1], 10) - 1] + " " + parseInt(q[2], 10) + ", " + q[0];
+    }
+    return "";
   }
   function afterRender() { if (window.fhaApplyI18n) window.fhaApplyI18n(); }
 
@@ -32,9 +40,15 @@
   function todayStr() { var t = new Date(); return t.getFullYear() + "-" + String(t.getMonth() + 1).padStart(2, "0") + "-" + String(t.getDate()).padStart(2, "0"); }
   function addDays(iso, n) { var d = new Date(iso + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
   function postExpiry(p) {
-    if (p.expires) return p.expires;                       // stamped by the Worker
     var ttl = POST_TTL[p.category] != null ? POST_TTL[p.category] : DEFAULT_TTL;
-    return addDays(p.date || todayStr(), ttl);             // fallback for older posts
+    var end = p.expires || addDays(p.date || todayStr(), ttl);   // expires is stamped by the Worker
+    // Safety net: a post must never drop off the board before the day it is
+    // about, however stale its "expires" is (e.g. the date was edited later).
+    if (isIsoDate(p.date)) {
+      var floor = addDays(p.date, 1);
+      if (floor > end) end = floor;
+    }
+    return end;
   }
 
   function eventCard(e) {
