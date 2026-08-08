@@ -44,6 +44,7 @@ Respond with ONLY a JSON object, no prose:
 {"decision":"APPROVE|APPROVE_WITH_EDITS|ESCALATE|REJECT","reason":"one sentence","failedCriteria":["..."],"editedTitle":null,"editedBody":null,"confidence":0.0}`;
 
 const CATEGORY = {
+  "Neighborhood event": "Neighborhood Event",
   "Local business or service": "Business",
   "Lost & found (pet or item)": "Lost & Found",
   "Tag sale / yard sale / giveaway": "Tag Sale",
@@ -62,7 +63,17 @@ const POST_TTL = {
   "Business": 90       // local businesses stay "known" for a quarter
 };
 const DEFAULT_TTL = 14;
+// An event post is dated by when the event happens, not when it was submitted,
+// and must outlive the usual TTL so it is still on the board on the day itself.
+const MIN_EVENT_DAYS = 2;   // floor, so a mistyped past date still gets seen
 function addDays(iso, n) { const d = new Date(iso + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+// Shape AND calendar validity: "2026-02-31" parses to March 3 and "2026-13-01"
+// yields an Invalid Date whose toISOString() throws, which would fail Publish.
+function isIsoDate(s) {
+  if (typeof s !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
+  const d = new Date(s + "T00:00:00Z");
+  return !isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s;
+}
 
 // How long a pending submission (and its action links) stays valid, in seconds.
 const PENDING_TTL = 14 * 24 * 60 * 60;
@@ -314,18 +325,26 @@ async function appendPost(env, b, r) {
   const cur = await curRes.json();
   const data = JSON.parse(b64decode((cur.content || "").replace(/\n/g, "")));
   const today = new Date().toISOString().slice(0, 10);
-  const [y, mo, d] = today.split("-").map(Number);
   const category = CATEGORY[b.postType] || "Neighborhood";
   const ttl = POST_TTL[category] != null ? POST_TTL[category] : DEFAULT_TTL;
+  // A post is dated by the day it is ABOUT when the submitter gave an event
+  // date; otherwise by the day it was submitted. An event stays up until the
+  // day after it happens, never less than MIN_EVENT_DAYS from today.
+  const eventDate = isIsoDate(b.eventDate) ? b.eventDate : null;
+  const postDate = eventDate || today;
+  const [y, mo, d] = postDate.split("-").map(Number);
+  const floor = addDays(today, MIN_EVENT_DAYS);
+  const eventExpiry = eventDate ? addDays(eventDate, 1) : null;
   data.posts.unshift({
     title: r.editedTitle || b.title,
     category: category,
     fh: true,
-    date: today,
+    date: postDate,
     dateLabel: `${MONTHS[mo - 1]} ${d}, ${y}`,
-    expires: addDays(today, ttl),   // board hides the post after this date unless renewed
-    time: "",
-    location: "",
+    // board hides the post after this date unless renewed
+    expires: eventExpiry ? (eventExpiry > floor ? eventExpiry : floor) : addDays(today, ttl),
+    time: String(b.eventTime || "").slice(0, 60),
+    location: String(b.location || "").slice(0, 120),
     summary: (r.editedBody || b.message).slice(0, 400),
     source: b.name
   });
@@ -349,7 +368,15 @@ async function sendEmail(env, { to, subject, text, replyTo }) {
 }
 
 function submissionText(b) {
-  return `Type: ${b.postType}\nTitle: ${b.title}\nDetails: ${b.message}\n\nSubmitted by: ${b.name} <${b.email}>${b.phone ? " · " + b.phone : ""}`;
+  // The event date is what the board is really approving — a wrong one dates the
+  // card wrongly and can retire it early, so show it next to the details.
+  const when = [
+    isIsoDate(b.eventDate) ? `Event date: ${b.eventDate}` : null,
+    b.eventTime ? `Event time: ${b.eventTime}` : null,
+    b.location ? `Location: ${b.location}` : null
+  ].filter(Boolean).join("\n");
+  return `Type: ${b.postType}\nTitle: ${b.title}${when ? "\n" + when : ""}\n` +
+    `Details: ${b.message}\n\nSubmitted by: ${b.name} <${b.email}>${b.phone ? " · " + b.phone : ""}`;
 }
 function json(o, status, cors) {
   return new Response(JSON.stringify(o), { status: status || 200, headers: { "Content-Type": "application/json", ...cors } });

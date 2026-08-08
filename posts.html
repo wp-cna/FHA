@@ -44,8 +44,9 @@
 
       <div class="policy-grid">
         <div class="policy-card policy-yes">
-          <h3>Welcome on the board</h3>
+          <h3>Welcome to post</h3>
           <ul class="policy-list">
+            <li>Neighborhood events, meetings, and gatherings</li>
             <li>Local businesses, shops, and services</li>
             <li>Lost &amp; found — pets or items</li>
             <li>Tag sales, yard sales, and giveaways</li>
@@ -73,16 +74,22 @@
         <div>
           <label for="pf-type">Post type</label>
           <select id="pf-type" name="postType" required>
+            <!-- Explicit values: the visible text is translated in Spanish, and
+                 without a value the translated label would be submitted. -->
             <option value="">Choose one…</option>
-            <option>Local business or service</option>
-            <option>Lost &amp; found (pet or item)</option>
-            <option>Tag sale / yard sale / giveaway</option>
-            <option>Neighbor need or offer</option>
-            <option>Other</option>
+            <option value="Neighborhood event">Neighborhood event</option>
+            <option value="Local business or service">Local business or service</option>
+            <option value="Lost &amp; found (pet or item)">Lost &amp; found (pet or item)</option>
+            <option value="Tag sale / yard sale / giveaway">Tag sale / yard sale / giveaway</option>
+            <option value="Neighbor need or offer">Neighbor need or offer</option>
+            <option value="Other">Other</option>
           </select>
         </div>
         <div><label for="pf-title">Title</label><input id="pf-title" name="title" type="text" maxlength="120" required></div>
         <div><label for="pf-message">Details</label><textarea id="pf-message" name="message" maxlength="900" required></textarea></div>
+        <div><label for="pf-eventdate">Event date — the day it happens, not today</label><input id="pf-eventdate" name="eventDate" type="date"></div>
+        <div><label for="pf-eventtime">Event time — for example 1:00 PM to 6:00 PM (optional)</label><input id="pf-eventtime" name="eventTime" type="text" maxlength="60"></div>
+        <div><label for="pf-location">Location — the street or place (optional)</label><input id="pf-location" name="location" type="text" maxlength="120"></div>
         <div><label for="pf-name">Your name</label><input id="pf-name" name="name" type="text" autocomplete="name" required></div>
         <div><label for="pf-email">Your email (for follow-up — not published)</label><input id="pf-email" name="email" type="email" autocomplete="email" required></div>
         <div><label for="pf-phone">Your phone (optional — shown only if you include it)</label><input id="pf-phone" name="phone" type="tel" autocomplete="tel"></div>
@@ -100,5 +107,21 @@
 <script src="feeds.js"></script>
 <script src="forms.js"></script>
 <script src="i18n.js"></script>
+<script>
+/* An event post must carry the day it happens. Left blank, the Worker falls back
+   to the submission date — which is what neighbours then read as the event date. */
+(function () {
+  var type = document.getElementById("pf-type"), date = document.getElementById("pf-eventdate");
+  if (!type || !date) return;
+  function sync() {
+    var isEvent = type.value === "Neighborhood event";
+    date.required = isEvent;
+    if (isEvent) date.min = new Date().toISOString().slice(0, 10);
+    else date.removeAttribute("min");
+  }
+  type.addEventListener("change", sync);
+  sync();
+})();
+</script>
 </body>
 </html>
