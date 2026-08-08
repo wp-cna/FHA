@@ -40,13 +40,13 @@ collections:
               - { name: title, label: "Title", widget: string }
               - { name: category, label: "Category", widget: select, options: ["Business", "Lost & Found", "Tag Sale", "Neighbor", "Neighborhood Event", "Volunteer", "Neighborhood"] }
               - { name: fh, label: "Fisher Hill post?", widget: boolean, default: true }
-              - { name: date, label: "Date", widget: string, hint: "YYYY-MM-DD" }
-              - { name: dateLabel, label: "Date (as shown on the site)", widget: string, hint: 'e.g. "June 26, 2026"' }
+              - { name: date, label: "Date this post is about", widget: string, hint: "YYYY-MM-DD, e.g. 2026-09-19. For an event, the day the event happens — not today's date. For anything else, today's date is fine." }
+              - { name: dateLabel, label: "Date as shown on the site", widget: string, required: false, hint: 'e.g. "September 19, 2026". Leave blank and the site fills it in from the date above.' }
               - { name: time, label: "Time", widget: string, required: false, hint: 'e.g. "1:00 PM – 6:00 PM"' }
               - { name: location, label: "Location", widget: string, required: false }
               - { name: summary, label: "Summary", widget: text }
               - { name: source, label: "Posted by", widget: string }
-              - { name: expires, label: "Expires", widget: string, required: false, hint: "YYYY-MM-DD — the site hides the post after this date" }
+              - { name: expires, label: "Expires", widget: string, required: false, hint: "YYYY-MM-DD — the site hides the post after this date. For an event, set this to the day AFTER it happens." }
 
   - name: agendas
     label: "Agendas & Minutes"

@@ -44,6 +44,12 @@ Every "Save" in the admin becomes a commit to the `wp-cna/FHA` repository, and
 GitHub Pages republishes the live site automatically. Changes appear at
 https://wp-cna.github.io/FHA/ within about a minute — no other steps.
 
-One caution: **Events** are imported automatically every night from the city
-calendar and are not edited in the admin. Everything else — Neighborhood
+One caution: the **Events** page is imported automatically every night from the
+city calendar, so it is not edited in the admin. Everything else — Neighborhood
 Posts, Agendas & Minutes — is yours to edit.
+
+That is not the same as an FHA event. To announce something the Association is
+running — a block party, a cleanup, a meeting — add a **Neighborhood Post** and
+choose the category "Neighborhood Event". Set its date to **the day the event
+happens**, not the day you are writing it: the site shows that date on the card
+and keeps the post up until the event has passed.
