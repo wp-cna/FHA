@@ -40,6 +40,18 @@ function summaryEs(title, summary) {
   return `${title} aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación.`;
 }
 
+/* Upstream ships each source either as a bare array or wrapped in an object
+   ({ events: [...] }, as the curated feed has been since the events page was
+   expanded). Accept both so a future reshape degrades to a skipped source
+   rather than a crash that quietly freezes the feed. */
+export function asEventArray(raw) {
+  if (Array.isArray(raw)) return raw;
+  if (raw && typeof raw === "object") {
+    for (const k of ["events", "items", "data"]) if (Array.isArray(raw[k])) return raw[k];
+  }
+  return null;
+}
+
 export function toFhaEvents(rawArrays, today) {
   const seen = new Set();
   const out = [];
@@ -55,9 +67,11 @@ export function toFhaEvents(rawArrays, today) {
         date: e.startDate,
         dateLabel: dlabel(e.startDate),
         time: tlabel(e.startTime, e.endTime),
-        location: e.locationName || "White Plains",
+        location: [e.locationName, e.locationAddress].filter(Boolean).join(", ") || "White Plains",
         summary: e.shortSummary || "",
-        url: e.externalUrl || e.sourceUrl || "",
+        // Curated entries often carry only a flyer link, so prefer it over the
+        // organizer's bare homepage.
+        url: e.externalUrl || e.flyerPdf || e.sourceUrl || "",
         ctaLabel: e.ctaLabel || "Open city page",
         source: e.organizer || e.sourceLabel || "City of White Plains"
       };
@@ -73,18 +87,43 @@ export function toFhaEvents(rawArrays, today) {
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
   const arrays = [];
+  const problems = [];
   for (const f of SOURCES) {
     try {
       const r = await fetch(BASE + f);
-      if (r.ok) arrays.push(await r.json());
-      else console.error(`skip ${f}: HTTP ${r.status}`);
-    } catch (err) { console.error(`skip ${f}: ${err.message}`); }
+      if (!r.ok) { problems.push(`${f}: HTTP ${r.status}`); continue; }
+      const list = asEventArray(await r.json());
+      if (!list) { problems.push(`${f}: unrecognised shape (no array of events)`); continue; }
+      arrays.push(list);
+      console.log(`${f}: ${list.length} entries`);
+    } catch (err) { problems.push(`${f}: ${err.message}`); }
   }
-  if (!arrays.length) { console.error("No source data fetched — leaving events.json unchanged."); return; }
+  // Never overwrite a good file with a broken fetch: bail loudly instead, so the
+  // scheduled run goes red and the site keeps the last known-good events.
+  if (!arrays.length) {
+    throw new Error("No usable source data:\n  " + problems.join("\n  ") +
+      "\nLeaving data/events.json unchanged.");
+  }
   const events = toFhaEvents(arrays, today);
+  if (!events.length) {
+    throw new Error(`Fetched ${arrays.reduce((n, a) => n + a.length, 0)} raw entries but none are ` +
+      `upcoming as of ${today}. Leaving data/events.json unchanged — check the upstream feed.`);
+  }
   const out = { updated: today, note: "Auto-updated from the WPCNA / White Plains city calendar feed.", events };
   await fs.writeFile(OUT, JSON.stringify(out, null, 2) + "\n");
   console.log(`Wrote ${events.length} upcoming events to data/events.json`);
+  // A partial success still means one feed is rotting. Exit 2 so CI publishes
+  // what we did get and *then* raises the alarm, rather than silently limping.
+  if (problems.length) {
+    console.error("Some sources were unusable:\n  " + problems.join("\n  "));
+    return 2;
+  }
+  return 0;
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) main().catch(e => { console.error(e); process.exit(1); });
+/* Exit codes: 0 = healthy, 2 = wrote but a source is unhealthy (still commit,
+   then alert), 1 = nothing written (keep the last good file, alert). */
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main().then(code => process.exit(code || 0))
+        .catch(e => { console.error(e.message || e); process.exit(1); });
+}

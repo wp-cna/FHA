@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   update:
@@ -17,10 +18,25 @@ jobs:
         with:
           node-version: 20
 
+      # Exit 0 = healthy, 2 = wrote but a source is unhealthy, 1 = nothing written.
+      # Capture the code instead of failing here so a partial refresh still gets
+      # committed before we raise the alarm.
       - name: Refresh events from the WPCNA feed
-        run: node scripts/update-events.mjs
+        id: refresh
+        run: |
+          set +e
+          node scripts/update-events.mjs 2>err.log
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+          cat err.log || true
+          {
+            echo "detail<<EOF"
+            cat err.log || true
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Commit if changed
+        if: steps.refresh.outputs.code != '1'
         run: |
           if git diff --quiet -- data/events.json; then
             echo "No changes."
@@ -30,4 +46,34 @@ jobs:
             git add data/events.json
             git commit -m "Refresh events from WPCNA feed"
             git push
+          fi
+
+      # The last outage ran 40 nights unnoticed because a red run is easy to miss.
+      # Open (or bump) an issue instead — that emails whoever watches the repo.
+      - name: Raise the alarm if the feed is unhealthy
+        if: steps.refresh.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DETAIL: ${{ steps.refresh.outputs.detail }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="Events feed is not updating"
+          BODY=$(printf '%s\n\n```\n%s\n```\n\n[Failed run](%s)\n\nThe Events page keeps showing the last good data until this is fixed. Usual cause: the WPCNA feed at https://github.com/wp-cna/demo14/tree/main/src/_data changed shape or moved.' \
+            "The nightly events sync reported a problem on $(date -u +%Y-%m-%d)." "$DETAIL" "$RUN_URL")
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
+          exit 1
+
+      - name: Close the alarm once healthy again
+        if: steps.refresh.outputs.code == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          EXISTING=$(gh issue list --state open --search "Events feed is not updating in:title" --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "Events sync succeeded again — closing automatically."
           fi
