@@ -1,31 +1,7 @@
 {
-  "updated": "2026-08-08",
+  "updated": "2026-08-09",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "R&B Soul Line Dancing",
-      "category": "Learning",
-      "date": "2026-08-08",
-      "dateLabel": "August 8, 2026",
-      "time": "1:00 PM – 2:00 PM",
-      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Dance your way to better balance, coordination, and focus - all while having a great time!",
-      "url": "https://calendar.whiteplainslibrary.org/event/16079000",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Earring Making Workshop",
-      "category": "Workshop",
-      "date": "2026-08-08",
-      "dateLabel": "August 8, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16232113",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Trolls Jr.",
       "category": "Arts",
