@@ -1,7 +1,19 @@
 {
-  "updated": "2026-08-08",
+  "updated": "2026-08-10",
   "note": "Community postings serving Fisher Hill. Reviewed before posting.",
   "posts": [
+    {
+      "title": "Tag Sale",
+      "category": "Tag Sale",
+      "fh": true,
+      "date": "2026-08-16",
+      "dateLabel": "August 16, 2026",
+      "expires": "2026-08-17",
+      "time": "11 am",
+      "location": "10 Sterling Ave, White Plains NY 10606",
+      "summary": "Moving out tag sale.",
+      "source": "Michael Kushman"
+    },
     {
       "title": "Fisher Hill Block Party",
       "category": "Neighborhood Event",
