@@ -5,6 +5,7 @@ compatibility_date = "2024-11-01"
 [vars]
 ALLOWED_ORIGIN = "https://wp-cna.github.io"
 BOARD_EMAIL = "fha.wp.info@gmail.com"
+BOARD_EMAILS = "fha.wp.info@gmail.com,michael@mdalton.com,michael.kushman@gmail.com"
 # Until you verify a sending domain in Resend, you can use their test sender:
 MAIL_FROM = "FHA Board <onboarding@resend.dev>"
 GITHUB_REPO = "wp-cna/FHA"

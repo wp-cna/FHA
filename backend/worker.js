@@ -1,7 +1,7 @@
 /* Fisher Hill Association — forms backend (Cloudflare Worker)
  *
  * Endpoints:
- *   POST /contact  → emails the board (fha.wp.info@gmail.com)
+ *   POST /contact  → emails the configured board recipients
  *   POST /join     → emails the board a membership request for HUMAN review
  *                    (residency + dues; no AI auto-approval)
  *   POST /post     → runs the AI reviewer (see MODERATION.md), then — no matter
@@ -22,7 +22,7 @@
  * Secrets (set with `wrangler secret put NAME`):
  *   RESEND_API_KEY, ANTHROPIC_API_KEY, GITHUB_TOKEN
  * Vars (wrangler.toml):
- *   ALLOWED_ORIGIN, BOARD_EMAIL, MAIL_FROM, GITHUB_REPO
+ *   ALLOWED_ORIGIN, BOARD_EMAIL, BOARD_EMAILS, MAIL_FROM, GITHUB_REPO
  * KV bindings: PENDING (required — pending submissions awaiting a board decision),
  *   RATE_LIMIT (required — hourly sender/IP counters and exact-post dedupe)
  */
@@ -163,7 +163,7 @@ async function sha256(value) {
 async function handleContact(b, env, cors) {
   if (!b.name || !b.email || !b.message) return json({ error: "Missing required fields." }, 400, cors);
   await sendEmail(env, {
-    to: env.BOARD_EMAIL,
+    to: boardRecipients(env),
     replyTo: b.email,
     subject: `[FHA Contact] ${b.subject || "(no subject)"} — ${b.name}`,
     text: `From: ${b.name} <${b.email}>\nSubject: ${b.subject || "(none)"}\n\n${b.message}`
@@ -179,7 +179,7 @@ async function handleJoin(b, env, cors) {
   const dues = b.membership === "family" ? "Family — $10/year" : "Individual — $5/year";
   const res = b.residency === "former" ? "Former Fisher Hill resident" : "Current Fisher Hill resident";
   await sendEmail(env, {
-    to: env.BOARD_EMAIL,
+    to: boardRecipients(env),
     replyTo: b.email,
     subject: `[FHA Membership] ${b.name} — ${res}`,
     text: `New membership request — verify the Fisher Hill connection, then send payment details (Venmo / FHA Chase, or mailing address for a check).\n\n` +
@@ -222,7 +222,7 @@ async function handlePost(b, env, cors, origin) {
   const mailto = "mailto:" + encodeURIComponent(b.email).replace(/%40/g, "@") +
     "?subject=" + encodeURIComponent("About your Fisher Hill board post: " + b.title);
   await sendEmail(env, {
-    to: env.BOARD_EMAIL, replyTo: b.email,
+    to: boardRecipients(env), replyTo: b.email,
     subject: `[FHA Board] ${r.decision || "REVIEW"}: ${b.title}`,
     text:
       "New board submission — nothing publishes until you act on it.\n\n" +
@@ -477,13 +477,19 @@ async function appendPost(env, b, r) {
 }
 
 async function sendEmail(env, { to, subject, text, replyTo }) {
+  const recipients = Array.isArray(to) ? to : [to];
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: env.MAIL_FROM, to: [to], subject, text, reply_to: replyTo })
+    body: JSON.stringify({ from: env.MAIL_FROM, to: recipients, subject, text, reply_to: replyTo })
   });
   if (!res.ok) throw new Error("Email send failed: " + res.status);
   return res;
+}
+
+function boardRecipients(env) {
+  const configured = [env.BOARD_EMAIL, env.BOARD_EMAILS].filter(Boolean).join(",");
+  return [...new Set(String(configured).split(",").map(email => email.trim()).filter(Boolean))];
 }
 
 function submissionText(b) {
@@ -503,4 +509,4 @@ function json(o, status, cors) {
 function b64encode(str) { const bytes = new TextEncoder().encode(str); let bin = ""; bytes.forEach(c => bin += String.fromCharCode(c)); return btoa(bin); }
 function b64decode(b64) { const bin = atob(b64); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
 
-export { enforceRateLimits, normalizeReview, postFingerprint, reviewFallback, sha256, validatePost };
+export { boardRecipients, enforceRateLimits, normalizeReview, postFingerprint, reviewFallback, sha256, validatePost };

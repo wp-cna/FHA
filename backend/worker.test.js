@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  boardRecipients,
   enforceRateLimits,
   normalizeReview,
   postFingerprint,
@@ -18,6 +19,63 @@ const validPost = {
   eventDate: "",
   location: "Fisher Hill"
 };
+
+test("board notifications go to both moderators without duplicate recipients", () => {
+  assert.deepEqual(
+    boardRecipients({
+      BOARD_EMAIL: "fha.wp.info@gmail.com",
+      BOARD_EMAILS: "fha.wp.info@gmail.com, michael@mdalton.com, fha.wp.info@gmail.com"
+    }),
+    ["fha.wp.info@gmail.com", "michael@mdalton.com"]
+  );
+});
+
+test("board recipients fall back to the primary reply address", () => {
+  assert.deepEqual(
+    boardRecipients({ BOARD_EMAIL: "fha.wp.info@gmail.com" }),
+    ["fha.wp.info@gmail.com"]
+  );
+});
+
+test("contact submissions send one Resend message to all three recipients", async () => {
+  const originalFetch = globalThis.fetch;
+  let resendPayload;
+  globalThis.fetch = async (url, options) => {
+    assert.equal(url, "https://api.resend.com/emails");
+    resendPayload = JSON.parse(options.body);
+    return new Response(JSON.stringify({ id: "email_test" }), { status: 200 });
+  };
+
+  try {
+    const request = new Request("https://example.test/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: "Test Neighbor",
+        email: "neighbor@example.com",
+        subject: "Question",
+        message: "Could someone from the board please follow up?"
+      })
+    });
+    const response = await worker.fetch(request, {
+      ALLOWED_ORIGIN: "https://example.test",
+      BOARD_EMAIL: "fha.wp.info@gmail.com",
+      BOARD_EMAILS: "michael@mdalton.com,michael.kushman@gmail.com",
+      MAIL_FROM: "FHA Board <notifications@mail.wp-cna.org>",
+      RESEND_API_KEY: "test-key"
+    });
+
+    assert.equal(response.status, 200);
+    assert.deepEqual(resendPayload.to, [
+      "fha.wp.info@gmail.com",
+      "michael@mdalton.com",
+      "michael.kushman@gmail.com"
+    ]);
+    assert.equal(resendPayload.reply_to, "neighbor@example.com");
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
 
 test("the permissive policy accepts a substantive local business announcement", () => {
   assert.equal(validatePost({ ...validPost }), null);

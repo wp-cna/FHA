@@ -155,5 +155,5 @@ The endpoint validates this object, then stores the submission and recommendatio
 
 - **Endpoint:** the Cloudflare Worker runs honeypot/rate-limit/dedupe and substance checks, asks the LLM for a recommendation, and parks every result in `PENDING` for a human decision.
 - **Publishing:** only the confirmation-page POST behind the board's Publish link uses the **GitHub API** to append an item to `data/posts.json` on `wp-cna/FHA` and commit it (Pages redeploys automatically).
-- **Notifications:** the FHA board address **fha.wp.info@gmail.com** gets every submission with Publish and Reject links. A confirmed rejection sends the submitter the reason using the same Resend path as the contact form.
+- **Notifications:** **fha.wp.info@gmail.com**, **michael@mdalton.com**, and **michael.kushman@gmail.com** get every submission with Publish and Reject links. Any moderator can act first; each action link is single-use. A confirmed rejection sends the submitter the reason using the same Resend path as the contact form.
 - **Audit:** pending submissions live in KV for 14 days, GitHub records every publication, and Worker logs record failures without exposing submission content or credentials.

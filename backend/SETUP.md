@@ -4,7 +4,7 @@ A Cloudflare Worker that powers the **Contact** form and the **Posting board** (
 The static site keeps working without it; deploying this turns the forms real.
 
 ## What it does
-- `POST /contact` → emails the board at **fha.wp.info@gmail.com** (via Resend).
+- `POST /contact` → emails the configured board recipients (via Resend).
 - `POST /join` → emails the board a **membership request** for human review (residency + dues). No AI — a board member verifies and follows up with payment details.
 - `POST /post` → runs the AI reviewer (`../MODERATION.md`), stores every submission in `PENDING`, and emails the board Publish/Reject links. Nothing publishes or sends a rejection until a board member confirms it.
 
@@ -15,7 +15,7 @@ Each provider has a free tier. Sign in to Resend/Anthropic with the **fha.wp.inf
 
 | Key | Where | Notes |
 |-----|-------|-------|
-| `RESEND_API_KEY` | resend.com → API Keys → Create | Test mode sends only **to your own** address (the board's) — perfect for the board emails. Submitter-rejection emails need a verified domain (see bottom). |
+| `RESEND_API_KEY` | resend.com → API Keys → Create | Test mode sends only **to your own** address. Multiple board recipients and submitter-rejection emails require a verified sending domain (see bottom). |
 | `ANTHROPIC_API_KEY` | console.anthropic.com → API Keys | Powers the posting-board reviewer. |
 | `GITHUB_TOKEN` | github.com → Settings → Developer settings → **Fine-grained tokens** | Repo access: **wp-cna/FHA** only. Permission: **Contents → Read and write**. Lets approved posts commit to `data/posts.json`. |
 
