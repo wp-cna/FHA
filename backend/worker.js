@@ -226,16 +226,23 @@ async function handlePost(b, env, cors, origin) {
     subject: `[FHA Board] ${r.decision || "REVIEW"}: ${b.title}`,
     text:
       "New board submission — nothing publishes until you act on it.\n\n" +
-      submissionText(b) + "\n\n" +
+      "AI VETTING\n" +
       `AI reviewer: ${r.decision || "(no decision)"} · confidence ${conf}\n` +
       `Reason: ${r.reason || "(none given)"}\n` +
       (hasEdits
-        ? `\nAI-cleaned version (this is what Publish posts):\nTitle: ${r.editedTitle || b.title}\nDetails: ${r.editedBody || b.message}\n`
+        ? `\nAI-cleaned version (this is what approval publishes):\nTitle: ${r.editedTitle || b.title}\nDetails: ${r.editedBody || b.message}\n`
         : "") +
-      "\nActions — each link opens a confirmation page, acts once, and expires in 14 days:\n\n" +
-      `1) Publish${hasEdits ? " (the AI-cleaned version)" : ""}:\n   ${origin}/action/publish?token=${token}\n\n` +
-      `2) Reject — email the submitter a polite AI-drafted note:\n   ${origin}/action/reject?token=${token}\n\n` +
-      `3) Reject — write your own note instead:\n   ${mailto}\n`
+      "\nAPPROVE & PUBLISH (one click)\n" +
+      `${origin}/action/publish?token=${token}\n` +
+      `Clicking this publishes${hasEdits ? " the AI-cleaned version" : " the submission"} after a confirmation page.\n\n` +
+      "REJECT & NOTIFY SUBMITTER (one click)\n" +
+      `${origin}/action/reject?token=${token}\n` +
+      "Clicking this rejects the submission and emails a polite AI-drafted note after a confirmation page.\n\n" +
+      "Both action links are single-use and expire in 14 days.\n\n" +
+      "SUBMISSION DETAILS\n" +
+      submissionText(b) + "\n\n" +
+      "WRITE YOUR OWN RESPONSE INSTEAD\n" +
+      `${mailto}\n`
   });
 
   if (duplicateKey) {

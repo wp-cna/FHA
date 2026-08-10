@@ -77,6 +77,67 @@ test("contact submissions send one Resend message to all three recipients", asyn
   }
 });
 
+test("posting submissions email every moderator with the two standard actions", async () => {
+  const originalFetch = globalThis.fetch;
+  let resendPayload;
+  const pending = new Map();
+  globalThis.fetch = async (url, options) => {
+    if (url === "https://api.anthropic.com/v1/messages") {
+      return Response.json({
+        content: [{
+          type: "text",
+          text: JSON.stringify({
+            decision: "APPROVE",
+            reason: "A suitable local announcement.",
+            failedCriteria: [],
+            editedTitle: null,
+            editedBody: null,
+            confidence: 0.95
+          })
+        }]
+      });
+    }
+    assert.equal(url, "https://api.resend.com/emails");
+    resendPayload = JSON.parse(options.body);
+    return Response.json({ id: "posting_email_test" });
+  };
+
+  try {
+    const request = new Request("https://example.test/post", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(validPost)
+    });
+    const response = await worker.fetch(request, {
+      ALLOWED_ORIGIN: "https://example.test",
+      BOARD_EMAIL: "fha.wp.info@gmail.com",
+      BOARD_EMAILS: "michael@mdalton.com,michael.kushman@gmail.com",
+      MAIL_FROM: "FHA Board <notifications@mail.wp-cna.org>",
+      RESEND_API_KEY: "test-resend-key",
+      ANTHROPIC_API_KEY: "test-anthropic-key",
+      PENDING: {
+        put: async (key, value) => pending.set(key, value)
+      }
+    });
+
+    assert.equal(response.status, 200);
+    assert.equal(pending.size, 1);
+    assert.deepEqual(resendPayload.to, [
+      "fha.wp.info@gmail.com",
+      "michael@mdalton.com",
+      "michael.kushman@gmail.com"
+    ]);
+    assert.match(resendPayload.text, /AI VETTING/);
+    assert.match(resendPayload.text, /APPROVE & PUBLISH \(one click\)/);
+    assert.match(resendPayload.text, /https:\/\/example\.test\/action\/publish\?token=/);
+    assert.match(resendPayload.text, /REJECT & NOTIFY SUBMITTER \(one click\)/);
+    assert.match(resendPayload.text, /https:\/\/example\.test\/action\/reject\?token=/);
+    assert.match(resendPayload.text, /SUBMISSION DETAILS/);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test("the permissive policy accepts a substantive local business announcement", () => {
   assert.equal(validatePost({ ...validPost }), null);
 });
