@@ -105,7 +105,7 @@
     "Subject": "Asunto",
     "Message": "Mensaje",
     "Send message": "Enviar mensaje",
-    "Messages go to the Fisher Hill Association board.": "Los mensajes llegan a la directiva de la Asociación de Fisher Hill.",
+    "Messages go to the Fisher Hill Association board at": "Los mensajes llegan a la directiva de la Asociación de Fisher Hill en",
     "Thanks — your message has been sent. The board will be in touch.": "Gracias: su mensaje ha sido enviado. La directiva se comunicará con usted.",
     // Footer / credits
     "Image credits": "Créditos de imágenes",
