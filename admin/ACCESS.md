@@ -4,43 +4,34 @@ The admin lives at **https://wp-cna.github.io/FHA/admin/** — sign in with your
 GitHub account. Bookmark that link.
 
 There is no separate username/password list for the admin. Signing in happens
-through GitHub, and anyone whose GitHub account has **write access to the
-`wp-cna/FHA` repository** can edit the site. That's the whole access system:
-being added as a "collaborator" on the repository *is* being given an admin
-login.
+through GitHub, and any GitHub account with **write access to the `wp-cna/FHA`
+repository** can edit the site.
 
-## Michael Dalton — first-time setup
+## How to get in (both editors, today)
 
-You already have a GitHub account, so there is nothing to sign up for. Two steps:
+Michael Dalton and Mike Kushman both have the **`wp-cna`** GitHub account, which
+owns this repository — so there is nothing to set up:
 
-1. Send the holder of the `wp-cna` account your **GitHub username** (or the
-   email address your GitHub account uses). They add you once:
-   **https://github.com/wp-cna/FHA/settings/access** → **Add people** → type
-   your username → **Add to this repository**. (Collaborators get edit access
-   automatically — there is no role to choose.)
-2. GitHub emails you an invitation — open it and click **Accept invitation**.
+1. Go to **https://wp-cna.github.io/FHA/admin/**
+2. Click **Sign in with GitHub**.
+3. If prompted, sign in as **wp-cna**, then **Authorize** the app (first time only).
 
-Done, forever. From then on: go to **https://wp-cna.github.io/FHA/admin/**,
-click **Sign in with GitHub**, and edit. No developer needed, and you never
-touch the `wp-cna` account or share a password.
+That's it — you're in the editor. Bookmark the admin link.
 
-## Mike Kushman
+## Optional later: sign in as yourself instead
 
-Same — add the existing GitHub account tied to **michael.kushman@gmail.com**
-(username `mike-kushman`) as a collaborator using step 1 above. Signing in to
-the admin with your own account means no switching between GitHub logins to do
-everyday content work.
+Using the shared `wp-cna` login works, but every change is recorded as having
+been made by "wp-cna," so the history can't tell the two of you apart. If you'd
+rather each sign in under your own name, add your personal GitHub account once:
 
-(Note: an older account `never-nude` also exists. Add whichever one you are
-actually signed into day to day — or both; there is no harm in two.)
+- Signed in as `wp-cna`, go to **https://github.com/wp-cna/FHA/settings/access**
+  → **Add people** → type the username → **Add to this repository**.
+- That person clicks **Accept invitation** in the email GitHub sends.
+- Mike's account is `mike-kushman` (an older `never-nude` account also exists —
+  add whichever you actually use, or both).
 
-## Fallback
-
-The **`wp-cna`** GitHub account that owns the repository always works as a
-login of last resort. It should be held by **one designated person** (GitHub
-accounts may not be shared between people) and used only if the normal
-collaborator logins are ever locked out — day to day, everyone signs in with
-their own account.
+After that, each of you signs in to the admin with your own GitHub account and
+no one needs the shared password for day-to-day editing.
 
 ## What saving does
 
