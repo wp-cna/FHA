@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09",
+  "updated": "2026-08-10",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -347,18 +347,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Boys Varsity Football vs. Harrison",
-      "category": "Sports",
-      "date": "2026-08-28",
-      "dateLabel": "August 28, 2026",
-      "time": "6:00 PM",
-      "location": "White Plains High School, White Plains, NY",
-      "summary": "Boys Varsity Football hosts Harrison at White Plains High School.",
-      "url": "/sports/football/",
-      "ctaLabel": "See the full schedule",
-      "source": "White Plains High School Athletics"
-    },
-    {
       "title": "DJ Days – Saxon Woods Pool",
       "category": "Parks & Recreation",
       "date": "2026-08-30",
@@ -444,6 +432,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17085083",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Girls Varsity Swimming/Diving vs. Harrison",
+      "category": "Sports",
+      "date": "2026-09-08",
+      "dateLabel": "September 8, 2026",
+      "time": "4:30 PM",
+      "location": "White Plains High School, White Plains, NY",
+      "summary": "Girls Varsity Swimming/Diving hosts Harrison at White Plains High School.",
+      "url": "/sports/swimming-diving/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "Common Council Meeting",
