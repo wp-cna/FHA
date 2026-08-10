@@ -15,7 +15,7 @@ Each provider has a free tier. Sign in to Resend/Anthropic with the **fha.wp.inf
 
 | Key | Where | Notes |
 |-----|-------|-------|
-| `RESEND_API_KEY` | resend.com → API Keys → Create | Test mode sends only **to your own** address. Multiple board recipients and submitter-rejection emails require a verified sending domain (see bottom). |
+| `RESEND_API_KEY` | resend.com → API Keys → Create | Multiple board recipients and submitter-rejection emails require the configured `mail.wp-cna.org` sending domain to be verified before deployment (see bottom). |
 | `ANTHROPIC_API_KEY` | console.anthropic.com → API Keys | Powers the posting-board reviewer. |
 | `GITHUB_TOKEN` | github.com → Settings → Developer settings → **Fine-grained tokens** | Repo access: **wp-cna/FHA** only. Permission: **Contents → Read and write**. Lets approved posts commit to `data/posts.json`. |
 
