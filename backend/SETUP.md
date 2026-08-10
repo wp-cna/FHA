@@ -6,9 +6,9 @@ The static site keeps working without it; deploying this turns the forms real.
 ## What it does
 - `POST /contact` → emails the board at **fha.wp.info@gmail.com** (via Resend).
 - `POST /join` → emails the board a **membership request** for human review (residency + dues). No AI — a board member verifies and follows up with payment details.
-- `POST /post` → runs the AI reviewer (`../MODERATION.md`), then publishes approved posts to `data/posts.json`, emails the board for escalations, or emails the submitter on rejection.
+- `POST /post` → runs the AI reviewer (`../MODERATION.md`), stores every submission in `PENDING`, and emails the board Publish/Reject links. Nothing publishes or sends a rejection until a board member confirms it.
 
-All three are spam-guarded: a hidden honeypot field and (optional) per-sender rate limiting.
+All three are spam-guarded by a hidden honeypot plus hourly sender/IP limits. Posting-board submissions also get minimum-substance validation and 24-hour exact-duplicate suppression before the AI is called.
 
 ## Step 0 — Grab three API keys (browser, unavoidable)
 Each provider has a free tier. Sign in to Resend/Anthropic with the **fha.wp.info@gmail.com** account and GitHub with **wp-cna**. You only copy a key from each — everything else is terminal.
@@ -27,9 +27,8 @@ npm install -g wrangler
 cd backend
 wrangler login                              # opens a browser tab once to authorize Cloudflare
 
-# optional but recommended: anti-spam rate limiting (5 submissions/sender/hour)
-wrangler kv namespace create RATE_LIMIT     # prints an id — paste it into wrangler.toml,
-                                            # then uncomment the [[kv_namespaces]] block there
+# RATE_LIMIT and PENDING are already provisioned and bound in wrangler.toml.
+# Create replacements only when moving the Worker to a different Cloudflare account.
 
 # paste each key when prompted (input is hidden)
 wrangler secret put RESEND_API_KEY
@@ -53,13 +52,13 @@ curl -sX POST $W/contact -H 'content-type: application/json' \
 curl -sX POST $W/join -H 'content-type: application/json' \
   -d '{"name":"Test","email":"you@example.com","residency":"current","address":"1 Fisher Hill","membership":"individual"}'
 
-# board post (runs the AI reviewer; a clean post should publish to data/posts.json)
+# board post (runs the AI reviewer and emails the board; it remains pending)
 curl -sX POST $W/post -H 'content-type: application/json' \
   -d '{"name":"Test","email":"you@example.com","postType":"Local business or service","title":"Joe'\''s Bakery","message":"New bakery open on Mitchell Place — come say hi."}'
 ```
 Each returns `{"ok":true}`. Watch it live with `wrangler tail` in another terminal.
 
-> Heads-up: a passing `/post` test **publishes a real card** to `data/posts.json` (it commits to the repo). Either use an obvious test title and delete that entry afterward, or skip the `/post` curl and test it from the live form once you're happy.
+> A passing `/post` test creates a real pending item and emails the board. Open the Reject link and confirm it after testing; do not press Publish unless the post is intentionally real.
 
 ## Step 3 — Point the site at the Worker
 ```bash

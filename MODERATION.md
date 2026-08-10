@@ -37,12 +37,16 @@ Resident submits the form on posts.html
 Review endpoint (serverless function / Cloudflare Worker)
         │  cheap anti-spam pre-checks  →  AI review (LLM)
         ▼
-   ┌── APPROVE / APPROVE-WITH-EDITS ─▶ append item to data/posts.json (GitHub API) ─▶ Pages redeploys ─▶ post appears
-   ├── ESCALATE ─▶ board member gets a one-click approve / decline
-   └── REJECT  ─▶ submitter gets the reason
+Store every result in PENDING KV for up to 14 days
+        │
+        ▼
+Email the board the original post + AI recommendation + action links
+        │
+        ├── Board confirms Publish ─▶ append to data/posts.json ─▶ Pages redeploys
+        └── Board confirms Reject  ─▶ send the submitter a polite note
 ```
 
-Approved posts are just new objects appended to the same `posts.json` the feed already reads.
+The AI is advisory. Nothing publishes or sends a rejection until a board member confirms the action. Published posts are new objects appended to the same `posts.json` the feed already reads.
 
 ---
 
@@ -51,8 +55,8 @@ Approved posts are just new objects appended to the same `posts.json` the feed a
 Layered, cheapest first — most spam never reaches the AI:
 
 1. **Honeypot** — the form has a hidden `website` field (`.hp`). Humans can't see it; bots fill it. Any submission with it filled is silently dropped. (Already in `posts.html`.)
-2. **Rate limit** — cap submissions per email + per IP (e.g., 3/day, 1/minute). Block obvious floods.
-3. **Dedupe** — reject near-identical text from the same sender within a window.
+2. **Rate limit** — cap submissions separately per email and per IP. The current Worker allows 5 per sender and 20 per IP per endpoint each hour.
+3. **Dedupe** — suppress an exact repeated post from the same sender for 24 hours. Similar-but-not-identical posts still proceed to human review so this remains permissive.
 4. **Minimum substance** — require a real title + body; reject empty/link-only posts.
 5. **AI spam check** — the agent flags promotional bulk blasts, link farms, off-area solicitation, and bot-pattern text as `REJECT` with `failedCriteria: ["spam"]`.
 
@@ -135,7 +139,7 @@ Return ONLY the JSON described, no prose.
 }
 ```
 
-Endpoint acts on `decision`: APPROVE/APPROVE_WITH_EDITS → append `{title, category, summary, date, source, …}` to `data/posts.json` and commit; ESCALATE → notify board; REJECT → notify submitter.
+The endpoint validates this object, then stores the submission and recommendation in `PENDING`. The board email shows the recommendation, but the same human confirmation step applies to APPROVE, APPROVE_WITH_EDITS, ESCALATE, and REJECT.
 
 ---
 
@@ -149,6 +153,7 @@ Endpoint acts on `decision`: APPROVE/APPROVE_WITH_EDITS → append `{title, cate
 
 ## 9. Implementation options
 
-- **Endpoint:** a Cloudflare Worker or small serverless function. Runs honeypot/rate-limit/dedupe, then the LLM review, then uses the **GitHub API** to append approved items to `data/posts.json` on `wp-cna/FHA` and commit (Pages redeploys automatically).
-- **Notifications:** the FHA board address **fha.wp.info@gmail.com** gets ESCALATE items (with approve/decline links); the submitter gets the reason on REJECT — same email path as the contact form.
-- **Audit:** log every submission + decision so the board can spot-check and tune the spam threshold over time.
+- **Endpoint:** the Cloudflare Worker runs honeypot/rate-limit/dedupe and substance checks, asks the LLM for a recommendation, and parks every result in `PENDING` for a human decision.
+- **Publishing:** only the confirmation-page POST behind the board's Publish link uses the **GitHub API** to append an item to `data/posts.json` on `wp-cna/FHA` and commit it (Pages redeploys automatically).
+- **Notifications:** the FHA board address **fha.wp.info@gmail.com** gets every submission with Publish and Reject links. A confirmed rejection sends the submitter the reason using the same Resend path as the contact form.
+- **Audit:** pending submissions live in KV for 14 days, GitHub records every publication, and Worker logs record failures without exposing submission content or credentials.
