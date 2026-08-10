@@ -24,7 +24,7 @@
  * Vars (wrangler.toml):
  *   ALLOWED_ORIGIN, BOARD_EMAIL, MAIL_FROM, GITHUB_REPO
  * KV bindings: PENDING (required — pending submissions awaiting a board decision),
- *   RATE_LIMIT (optional — per-sender rate limiting)
+ *   RATE_LIMIT (required — hourly sender/IP counters and exact-post dedupe)
  */
 
 const MODEL = "claude-haiku-4-5-20251001"; // swap to a stronger model if desired
@@ -77,6 +77,11 @@ function isIsoDate(s) {
 
 // How long a pending submission (and its action links) stays valid, in seconds.
 const PENDING_TTL = 14 * 24 * 60 * 60;
+const RATE_WINDOW = 60 * 60;
+const DEDUPE_TTL = 24 * 60 * 60;
+const SENDER_LIMIT = 5;
+const IP_LIMIT = 20;
+const REVIEW_DECISIONS = new Set(["APPROVE", "APPROVE_WITH_EDITS", "ESCALATE", "REJECT"]);
 
 export default {
   async fetch(request, env) {
@@ -93,8 +98,8 @@ export default {
     // (so email link scanners that prefetch URLs can't trigger anything); the
     // page's button POSTs back to the same URL, which performs the action and
     // consumes the token.
-    if (path.endsWith("/action/publish") || path.endsWith("/action/reject")) {
-      const act = path.endsWith("/action/publish") ? "publish" : "reject";
+    if (path === "/action/publish" || path === "/action/reject") {
+      const act = path === "/action/publish" ? "publish" : "reject";
       if (request.method === "GET") return confirmAction(url, env, act);
       if (request.method === "POST") return handleAction(url, env, act);
       return json({ error: "Method not allowed" }, 405, cors);
@@ -107,25 +112,53 @@ export default {
     // 1) Honeypot — bots fill this hidden field. Pretend success, do nothing.
     if (body.website) return json({ ok: true }, 200, cors);
 
-    // 2) Rate limit (optional, needs a RATE_LIMIT KV binding)
-    const who = (body.email || "") + "|" + (request.headers.get("CF-Connecting-IP") || "");
-    if (env.RATE_LIMIT) {
-      const k = "rl:" + who;
-      const n = parseInt(await env.RATE_LIMIT.get(k) || "0", 10);
-      if (n >= 5) return json({ error: "Too many submissions — please try again later." }, 429, cors);
-      await env.RATE_LIMIT.put(k, String(n + 1), { expirationTtl: 3600 });
-    }
+    // 2) Rate limit by sender and IP without storing either value in KV keys.
+    // Separate counters keep a changing email address from bypassing the IP cap.
+    const limited = await enforceRateLimits(env, path, body, request, cors);
+    if (limited) return limited;
 
     try {
-      if (path.endsWith("/contact")) return await handleContact(body, env, cors);
-      if (path.endsWith("/post")) return await handlePost(body, env, cors, url.origin);
-      if (path.endsWith("/join")) return await handleJoin(body, env, cors);
+      if (path === "/contact") return await handleContact(body, env, cors);
+      if (path === "/post") return await handlePost(body, env, cors, url.origin);
+      if (path === "/join") return await handleJoin(body, env, cors);
       return json({ error: "Not found" }, 404, cors);
     } catch (e) {
+      console.error("FHA forms request failed", { path, error: String(e && e.message || e) });
       return json({ error: "Server error" }, 500, cors);
     }
   }
 };
+
+async function enforceRateLimits(env, path, body, request, cors) {
+  if (!env.RATE_LIMIT) return null;
+  try {
+    const email = String(body.email || "").trim().toLowerCase();
+    const ip = String(request.headers.get("CF-Connecting-IP") || "").trim();
+    const checks = [];
+    if (email) checks.push(["sender", `${path}|${email}`, SENDER_LIMIT]);
+    if (ip) checks.push(["ip", `${path}|${ip}`, IP_LIMIT]);
+
+    for (const [kind, value, limit] of checks) {
+      const key = `rl:${kind}:${await sha256(value)}`;
+      const count = Number.parseInt(await env.RATE_LIMIT.get(key) || "0", 10);
+      if (Number.isFinite(count) && count >= limit) {
+        return json({ error: "Too many submissions — please try again later." }, 429, cors);
+      }
+      await env.RATE_LIMIT.put(key, String((Number.isFinite(count) ? count : 0) + 1),
+        { expirationTtl: RATE_WINDOW });
+    }
+  } catch (error) {
+    // A temporary anti-abuse storage problem must not take every form offline.
+    console.error("Rate-limit storage unavailable", { error: String(error && error.message || error) });
+  }
+  return null;
+}
+
+async function sha256(value) {
+  const bytes = new TextEncoder().encode(String(value));
+  const digest = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
+  return Array.from(digest, byte => byte.toString(16).padStart(2, "0")).join("");
+}
 
 async function handleContact(b, env, cors) {
   if (!b.name || !b.email || !b.message) return json({ error: "Missing required fields." }, 400, cors);
@@ -160,8 +193,23 @@ async function handleJoin(b, env, cors) {
 // parked in PENDING under a random token and the board gets one email with the
 // AI's verdict and Publish / Reject action links carrying that token.
 async function handlePost(b, env, cors, origin) {
-  if (!b.title || !b.message || !b.name || !b.email || !b.postType)
-    return json({ error: "Missing required fields." }, 400, cors);
+  const invalid = validatePost(b);
+  if (invalid) return json({ error: invalid }, 400, cors);
+
+  b.title = b.title.trim();
+  b.message = b.message.trim();
+  b.name = b.name.trim();
+  b.email = b.email.trim().toLowerCase();
+
+  // Exact repeats usually come from a double click or retry. Treat them as a
+  // successful submission without paying for another review or emailing the
+  // board twice. Similar-but-not-identical posts still go to human review.
+  const duplicateKey = env.RATE_LIMIT
+    ? "dedupe:" + await sha256(postFingerprint(b))
+    : null;
+  if (duplicateKey && await env.RATE_LIMIT.get(duplicateKey)) {
+    return json({ ok: true, duplicate: true }, 200, cors);
+  }
 
   const r = await review(b, env);
 
@@ -190,8 +238,36 @@ async function handlePost(b, env, cors, origin) {
       `3) Reject — write your own note instead:\n   ${mailto}\n`
   });
 
+  if (duplicateKey) {
+    await env.RATE_LIMIT.put(duplicateKey, "1", { expirationTtl: DEDUPE_TTL });
+  }
+
   // The submitter always sees a neutral "submitted for review" message on the site.
   return json({ ok: true }, 200, cors);
+}
+
+function validatePost(b) {
+  for (const field of ["title", "message", "name", "email", "postType"]) {
+    if (typeof b[field] !== "string" || !b[field].trim()) return "Missing required fields.";
+  }
+  const title = b.title.trim();
+  const message = b.message.trim();
+  if (title.length < 3 || title.length > 120) return "Please use a title between 3 and 120 characters.";
+  if (message.length < 12 || message.length > 900) return "Please add 12 to 900 characters of useful detail.";
+  if (b.name.trim().length > 120) return "Please shorten the name field.";
+  if (b.email.trim().length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(b.email.trim()))
+    return "Please enter a valid email address.";
+  if (b.postType === "Neighborhood event" && !isIsoDate(b.eventDate))
+    return "Please include the date when the event happens.";
+
+  const wordsBeyondLinks = message.replace(/https?:\/\/\S+/gi, "").match(/[\p{L}\p{N}]/gu) || [];
+  if (wordsBeyondLinks.length < 8) return "Please add a short description instead of submitting only a link.";
+  return null;
+}
+
+function postFingerprint(b) {
+  const normalize = value => String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
+  return [b.email, b.postType, b.title, b.message, b.eventDate, b.location].map(normalize).join("|");
 }
 
 // Shared validation for the two action endpoints. Returns { key, raw } on
@@ -305,15 +381,58 @@ function page(title, msg, status, confirm) {
 
 async function review(b, env) {
   const user = submissionText(b);
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "Content-Type": "application/json" },
-    body: JSON.stringify({ model: MODEL, max_tokens: 400, system: REVIEW_SYSTEM, messages: [{ role: "user", content: user }] })
-  }).then(r => r.json());
-  const text = (res.content && res.content[0] && res.content[0].text) || "{}";
-  const m = text.match(/\{[\s\S]*\}/);
-  try { return JSON.parse(m ? m[0] : text); }
-  catch { return { decision: "ESCALATE", reason: "Reviewer output could not be parsed." }; }
+  try {
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "Content-Type": "application/json" },
+      body: JSON.stringify({ model: MODEL, max_tokens: 400, system: REVIEW_SYSTEM, messages: [{ role: "user", content: user }] })
+    });
+    if (!response.ok) {
+      console.error("AI review request failed", { status: response.status });
+      return reviewFallback("The automated reviewer was unavailable; a board member should review this submission.");
+    }
+    const res = await response.json();
+    const text = (res.content && res.content[0] && res.content[0].text) || "{}";
+    const m = text.match(/\{[\s\S]*\}/);
+    return normalizeReview(JSON.parse(m ? m[0] : text));
+  } catch (error) {
+    console.error("AI review could not be parsed", { error: String(error && error.message || error) });
+    return reviewFallback("The automated reviewer could not complete its review; a board member should decide.");
+  }
+}
+
+function reviewFallback(reason) {
+  return {
+    decision: "ESCALATE",
+    reason,
+    failedCriteria: [],
+    editedTitle: null,
+    editedBody: null,
+    confidence: 0
+  };
+}
+
+function normalizeReview(value) {
+  if (!value || typeof value !== "object" || !REVIEW_DECISIONS.has(value.decision)) {
+    return reviewFallback("The automated reviewer returned an invalid decision; a board member should decide.");
+  }
+  const decision = value.decision;
+  const reason = typeof value.reason === "string" && value.reason.trim()
+    ? value.reason.trim().slice(0, 500)
+    : "No reason was supplied; a board member should review the submission.";
+  const failedCriteria = Array.isArray(value.failedCriteria)
+    ? value.failedCriteria.filter(item => typeof item === "string").map(item => item.slice(0, 80)).slice(0, 8)
+    : [];
+  const editedTitle = decision === "APPROVE_WITH_EDITS" && typeof value.editedTitle === "string"
+    ? value.editedTitle.trim().slice(0, 120) || null
+    : null;
+  const editedBody = decision === "APPROVE_WITH_EDITS" && typeof value.editedBody === "string"
+    ? value.editedBody.trim().slice(0, 900) || null
+    : null;
+  const confidence = typeof value.confidence === "number" && Number.isFinite(value.confidence)
+    ? Math.max(0, Math.min(1, value.confidence))
+    : 0;
+  return { decision, reason, failedCriteria, editedTitle, editedBody, confidence };
 }
 
 async function appendPost(env, b, r) {
@@ -383,3 +502,5 @@ function json(o, status, cors) {
 }
 function b64encode(str) { const bytes = new TextEncoder().encode(str); let bin = ""; bytes.forEach(c => bin += String.fromCharCode(c)); return btoa(bin); }
 function b64decode(b64) { const bin = atob(b64); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
+
+export { enforceRateLimits, normalizeReview, postFingerprint, reviewFallback, sha256, validatePost };

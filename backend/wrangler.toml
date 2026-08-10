@@ -22,11 +22,12 @@ GITHUB_REPO = "wp-cna/FHA"
 binding = "PENDING"
 id = "1ee1131f07f34e55bb123733aea2c08e"
 
-# Optional: per-sender rate limiting. Create a KV namespace and uncomment:
-#   wrangler kv namespace create RATE_LIMIT
-# [[kv_namespaces]]
-# binding = "RATE_LIMIT"
-# id = "<paste-the-id>"
+# Shared anti-abuse state: hourly sender/IP counters plus exact-submission
+# fingerprints. This is intentionally separate from PENDING so rate-limit and
+# dedupe keys can expire independently from board action links.
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "6f257facb5404553b35521ff1bb72b3a"
 
 # Secrets are NOT stored here. Set them with:
 #   wrangler secret put RESEND_API_KEY
