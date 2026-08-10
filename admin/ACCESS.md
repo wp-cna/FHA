@@ -11,24 +11,28 @@ login.
 
 ## Michael Dalton — first-time setup
 
-1. Create a free GitHub account using **michael@mdalton.com**: go to
-   [github.com](https://github.com) → **Sign up**, follow the prompts, and pick
-   any username you like.
-2. Tell the holder of the `wp-cna` account your new username. They will add
-   you: on GitHub, repository `wp-cna/FHA` → **Settings** → **Collaborators** →
-   **Add people** → type your username → click **Add to this repository**.
-   (Collaborators automatically get edit access — there is no role to choose.)
-3. You'll get an email invitation from GitHub — open it and click **Accept
-   invitation**.
-4. Done, forever. From now on: go to
-   **https://wp-cna.github.io/FHA/admin/**, click **Sign in with GitHub**, and
-   edit. No developer needed.
+You already have a GitHub account, so there is nothing to sign up for. Two steps:
+
+1. Send the holder of the `wp-cna` account your **GitHub username** (or the
+   email address your GitHub account uses). They add you once:
+   **https://github.com/wp-cna/FHA/settings/access** → **Add people** → type
+   your username → **Add to this repository**. (Collaborators get edit access
+   automatically — there is no role to choose.)
+2. GitHub emails you an invitation — open it and click **Accept invitation**.
+
+Done, forever. From then on: go to **https://wp-cna.github.io/FHA/admin/**,
+click **Sign in with GitHub**, and edit. No developer needed, and you never
+touch the `wp-cna` account or share a password.
 
 ## Mike Kushman
 
-Same idea — add the existing GitHub account tied to
-**michael.kushman@gmail.com** as a collaborator on `wp-cna/FHA`
-(steps 2–3 above).
+Same — add the existing GitHub account tied to **michael.kushman@gmail.com**
+(username `mike-kushman`) as a collaborator using step 1 above. Signing in to
+the admin with your own account means no switching between GitHub logins to do
+everyday content work.
+
+(Note: an older account `never-nude` also exists. Add whichever one you are
+actually signed into day to day — or both; there is no harm in two.)
 
 ## Fallback
 
