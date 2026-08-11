@@ -1,53 +1,16 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
-      "title": "Trolls Jr.",
-      "category": "Arts",
-      "date": "2026-08-10",
-      "dateLabel": "August 10, 2026",
-      "time": "",
-      "location": "White Plains Performing Arts Center, 11 City Place, 3rd Floor, White Plains, NY 10601",
-      "summary": "Trolls JR. is based on the irreverent DreamWorks Animation movie franchise and features a colorful, wondrous world populated by hilariously unforgettable…",
-      "url": "https://wppac.com/shows/trolls-jr/",
-      "ctaLabel": "Open show page",
-      "source": "White Plains Performing Arts Center"
-    },
-    {
-      "title": "TIPS for Teens",
+      "title": "Earth, Wind, Fire and Zombies!",
       "category": "Learning",
-      "date": "2026-08-10",
-      "dateLabel": "August 10, 2026",
-      "time": "3:00 PM – 4:30 PM",
+      "date": "2026-08-11",
+      "dateLabel": "August 11, 2026",
+      "time": "11:00 AM – 12:30 PM",
       "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "TIPS (Teen Information and Peer Services) is a leadership program where teens have the opportunity to discuss and learn about topics of community importance,…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16395256",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Neighborhood Nights",
-      "category": "Parks & Recreation",
-      "date": "2026-08-10",
-      "dateLabel": "August 10, 2026",
-      "time": "6:30 PM",
-      "location": "Mattison Park, White Plains, NY",
-      "summary": "Neighborhood Nights is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4347&month=8&year=2026&day=10&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Neighborhood Nights aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Destination College Workshop Series",
-      "category": "Civic",
-      "date": "2026-08-10",
-      "dateLabel": "August 10, 2026",
-      "time": "7:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Workshop 11: Pathways Beyond College (Trade Schools, Gap Years & Entrepreneurship) Focus: Exploring nontraditional and hands-on paths to success.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15097167",
+      "summary": "Survive the zombie apocalypse with Zach Jones of Our Elements Outdoor Learning, a nature-based outdoor education organization rooted in the Hudson Valley.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16741087",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -64,6 +27,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Earth, Wind, Fire and Zombies!",
+      "category": "Learning",
+      "date": "2026-08-12",
+      "dateLabel": "August 12, 2026",
+      "time": "11:00 AM – 12:30 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Survive the zombie apocalypse with Zach Jones of Our Elements Outdoor Learning, a nature-based outdoor education organization rooted in the Hudson Valley.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16741088",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Reading Buddies",
       "category": "Learning",
       "date": "2026-08-12",
@@ -72,6 +47,18 @@
       "location": "White Plains Public Library, The Castle, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Boost your child&rsquo;s reading skills!",
       "url": "https://calendar.whiteplainslibrary.org/event/16481414",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Earth, Wind, Fire and Zombies!",
+      "category": "Learning",
+      "date": "2026-08-13",
+      "dateLabel": "August 13, 2026",
+      "time": "11:00 AM – 12:30 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Survive the zombie apocalypse with Zach Jones of Our Elements Outdoor Learning, a nature-based outdoor education organization rooted in the Hudson Valley.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16741089",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -238,6 +225,30 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "August 19 — Downtown White Plains Rock the Block",
+      "category": "Music & Family",
+      "date": "2026-08-19",
+      "dateLabel": "August 19, 2026",
+      "time": "5:30 PM – 8:30 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "— Wednesday, August 19th 5:30 pm – 8:30 pm —The Band MemoBrass Queens THE BAND MEMO indie/alt rock, jam band that burst on the NYC scene last year with their…",
+      "url": "https://wpbid.com/events/august-19-downtown-white-plains-rock-the-block/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
+    },
+    {
+      "title": "Downtown White Plains Rock the Block 2026",
+      "category": "Music & Family",
+      "date": "2026-08-19",
+      "dateLabel": "August 19, 2026",
+      "time": "5:30 PM – 8:30 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Location: Mamaroneck Ave.",
+      "url": "https://wpbid.com/events/rock-the-block-2026/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
+    },
+    {
       "title": "Rock the Block",
       "category": "Parks & Recreation",
       "date": "2026-08-19",
@@ -292,7 +303,7 @@
       "date": "2026-08-24",
       "dateLabel": "August 24, 2026",
       "time": "7:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Workshop 12: The Transition Ahead (Decisions, Deposits & Life Skills) Focus: Preparing for independence and success after high school.",
       "url": "https://calendar.whiteplainslibrary.org/event/15097221",
       "ctaLabel": "Open library page",
@@ -606,6 +617,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Hispanic Heritage Month: Arepas",
+      "category": "Learning",
+      "date": "2026-09-18",
+      "dateLabel": "September 18, 2026",
+      "time": "1:00 PM – 2:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "In honor of Hispanic Heritage Month, join us to make homemade arepas filled with seasoned black beans and a delicious salsa verde.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17160499",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Back-To-School Nature Escape",
       "category": "Parks & Recreation",
       "date": "2026-09-19",
@@ -665,6 +688,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "JazzFest Downtown White Plains 2026",
+      "category": "Food & Downtown",
+      "date": "2026-09-23",
+      "dateLabel": "September 23, 2026",
+      "time": "12:00 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Celebrating its 15th year, JazzFest White Plains returns this fall with a bold, artist-driven lineup that reflects the vitality of jazz today.",
+      "url": "https://wpbid.com/events/jazzfest-downtown-white-plains-2026/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
     },
     {
       "title": "Music at the Market",
@@ -961,6 +996,30 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Beginner Painting Workshop",
+      "category": "Workshop",
+      "date": "2026-10-16",
+      "dateLabel": "October 16, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Discover the joy of bringing canvas to life!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17158497",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Creative Upcycling: The Junk Journal Workshop",
+      "category": "Workshop",
+      "date": "2026-10-19",
+      "dateLabel": "October 19, 2026",
+      "time": "6:00 PM – 7:30 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Discover the art of junk journaling!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17158508",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Virtual College Financial Aid Workshop",
       "category": "Workshop",
       "date": "2026-10-19",
@@ -1032,6 +1091,18 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
       "url": "https://calendar.whiteplainslibrary.org/event/16748716",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Earring Making Workshop",
+      "category": "Workshop",
+      "date": "2026-10-23",
+      "dateLabel": "October 23, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17124673",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1222,6 +1293,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Art 101 *Name Mandalas*",
+      "category": "Workshop",
+      "date": "2026-11-20",
+      "dateLabel": "November 20, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Turn your name into a work of art!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17139841",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Sustainable White Plains",
       "category": "Learning",
       "date": "2026-11-21",
@@ -1230,6 +1313,18 @@
       "location": "White Plains Public Library, Auditorium,Library Plaza,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Bring in your broken household items and work with a volunteer Repair Coach to fix them!",
       "url": "https://calendar.whiteplainslibrary.org/event/15958436",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Soap Making Class",
+      "category": "Workshop",
+      "date": "2026-11-22",
+      "dateLabel": "November 22, 2026",
+      "time": "1:00 PM – 2:30 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Ever wondered how a few simple oils can turn into a luxurious, bubbly bar of soap?",
+      "url": "https://calendar.whiteplainslibrary.org/event/17056419",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
