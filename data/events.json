@@ -1,43 +1,7 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Earth, Wind, Fire and Zombies!",
-      "category": "Learning",
-      "date": "2026-08-12",
-      "dateLabel": "August 12, 2026",
-      "time": "11:00 AM – 12:30 PM",
-      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Survive the zombie apocalypse with Zach Jones of Our Elements Outdoor Learning, a nature-based outdoor education organization rooted in the Hudson Valley.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16741088",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Free Summer Meals at the Library",
-      "category": "Learning",
-      "date": "2026-08-12",
-      "dateLabel": "August 12, 2026",
-      "time": "11:30 AM – 1:00 PM",
-      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Youth up to age 18 can get a free lunch at the Library from 11:30-1.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16455449",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Reading Buddies",
-      "category": "Learning",
-      "date": "2026-08-12",
-      "dateLabel": "August 12, 2026",
-      "time": "3:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, The Castle, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Boost your child&rsquo;s reading skills!",
-      "url": "https://calendar.whiteplainslibrary.org/event/16481414",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Earth, Wind, Fire and Zombies!",
       "category": "Learning",
@@ -82,7 +46,7 @@
       "dateLabel": "August 13, 2026",
       "time": "2:00 PM – 3:00 PM",
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Come along for a musical journey with the delectable cabaret husband and wife duo, Dawn and Eric Spitz, and their friends: classically trained Soprano, Brett…",
+      "summary": "Come along for a musical journey with the delectable cabaret husband-and-wife duo, Dawn and Eric Spitz, and their friends: classically trained soprano Brett…",
       "url": "https://calendar.whiteplainslibrary.org/event/16616497",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -280,10 +244,23 @@
       "dateLabel": "August 19, 2026",
       "time": "6:00 PM – 7:00 PM",
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We will be hosting the following program in partnership with The College of Westchester Today&rsquo;s hiring process has evolved way beyond emailing resumes…",
+      "summary": "We will be hosting the following program in partnership with The College of Westchester.",
       "url": "https://calendar.whiteplainslibrary.org/event/15937620",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "City Pools Close",
+      "category": "Parks & Recreation",
+      "date": "2026-08-23",
+      "dateLabel": "August 23, 2026",
+      "time": "7:30 PM",
+      "location": "KIttrell Pool on Fisher Ave, Gardella Pool, Ferris Ave.",
+      "summary": "City Pools Close is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4538&month=8&year=2026&day=23&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "City Pools Close aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Shrek Kids",
@@ -308,6 +285,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/16395258",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Dog Swim",
+      "category": "Parks & Recreation",
+      "date": "2026-08-24",
+      "dateLabel": "August 24, 2026",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "Kittrell Park, White Plains, NY",
+      "summary": "Dog Swim is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4539&month=8&year=2026&day=24&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Dog Swim aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Destination College Workshop Series",
@@ -482,6 +472,19 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "9/11 Day of Remembrance Ceremony",
+      "category": "Parks & Recreation",
+      "date": "2026-09-11",
+      "dateLabel": "September 11, 2026",
+      "time": "8:30 AM",
+      "location": "Liberty Park, White Plains, NY",
+      "summary": "9/11 Day of Remembrance Ceremony is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4526&month=9&year=2026&day=11&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "9/11 Day of Remembrance Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Saxon Woods Garage Sale",
       "category": "Parks & Recreation",
       "date": "2026-09-12",
@@ -639,6 +642,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17160499",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Truck Day",
+      "category": "Community",
+      "date": "2026-09-19",
+      "dateLabel": "September 19, 2026",
+      "time": "10:00 AM – 2:00 PM",
+      "location": "Gillie Recycling Center, White Plains, NY",
+      "summary": "Truck Day is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4527&month=9&year=2026&day=19&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Truck Day aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Back-To-School Nature Escape",
@@ -814,6 +830,18 @@
       "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "In-Person Registration: Day of the Dead Altar Workshop",
+      "category": "Workshop",
+      "date": "2026-10-01",
+      "dateLabel": "October 1, 2026",
+      "time": "12:00 AM – 11:59 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17183809",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Wild America",
       "category": "Learning",
       "date": "2026-10-01",
@@ -838,6 +866,19 @@
       "source": "White Plains Performing Arts Center"
     },
     {
+      "title": "Outdoor Movie",
+      "category": "Community",
+      "date": "2026-10-02",
+      "dateLabel": "October 2, 2026",
+      "time": "6:45 PM",
+      "location": "Battle of White Plains Park, White Plains, NY",
+      "summary": "Outdoor Movie is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4528&month=10&year=2026&day=2&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Outdoor Movie aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Sustainable White Plains",
       "category": "Learning",
       "date": "2026-10-03",
@@ -848,6 +889,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/15859288",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Halloween Pumpkin Patch",
+      "category": "Community",
+      "date": "2026-10-04",
+      "dateLabel": "October 4, 2026",
+      "time": "10:00 AM – 2:00 PM",
+      "location": "Gillie Park, White Plains, NY",
+      "summary": "Halloween Pumpkin Patch is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4529&month=10&year=2026&day=4&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Halloween Pumpkin Patch aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Pollinators of White Plains",
@@ -948,6 +1002,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Day of the Dead Altar-Making Workshop",
+      "category": "Workshop",
+      "date": "2026-10-09",
+      "dateLabel": "October 9, 2026",
+      "time": "4:30 PM – 5:30 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17183978",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Boys Varsity Football vs. Roy C Ketcham/ Wappingers JHS",
       "category": "Sports",
       "date": "2026-10-09",
@@ -1018,6 +1084,44 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17158497",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Day of the Dead Altar-Making Workshop",
+      "category": "Workshop",
+      "date": "2026-10-16",
+      "dateLabel": "October 16, 2026",
+      "time": "4:30 PM – 5:30 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17185060",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Red Leaf, Yellow Leaf, Fall Nature Walk",
+      "category": "Community",
+      "date": "2026-10-17",
+      "dateLabel": "October 17, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "Jack Harrington Greenway, White Plains, NY",
+      "summary": "Red Leaf, Yellow Leaf, Fall Nature Walk is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4531&month=10&year=2026&day=17&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Red Leaf, Yellow Leaf, Fall Nature Walk aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Halloween Parade",
+      "category": "Learning",
+      "date": "2026-10-18",
+      "dateLabel": "October 18, 2026",
+      "time": "3:00 PM – 4:40 PM",
+      "location": "Library Plaza to Court Street, White Plains, NY",
+      "summary": "Halloween Parade is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4530&month=10&year=2026&day=18&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Creative Upcycling: The Junk Journal Workshop",
@@ -1117,6 +1221,31 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17124673",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Day of the Dead Altar-Making Workshop",
+      "category": "Workshop",
+      "date": "2026-10-23",
+      "dateLabel": "October 23, 2026",
+      "time": "4:30 PM – 5:30 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17185566",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Howl-o-Ween Bash - Dog Park Event",
+      "category": "Community",
+      "date": "2026-10-24",
+      "dateLabel": "October 24, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "Bark Dog Park, White Plains, NY",
+      "summary": "Howl-o-Ween Bash - Dog Park Event is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4532&month=10&year=2026&day=24&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Howl-o-Ween Bash - Dog Park Event aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "United Nations Day 2026",
@@ -1242,6 +1371,32 @@
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Sugar: The Play",
+      "category": "Parks & Recreation",
+      "date": "2026-11-10",
+      "dateLabel": "November 10, 2026",
+      "time": "5:00 PM – 8:00 PM",
+      "location": "White Plains Community Center, 65 Mitchell Place, White Plains, NY",
+      "summary": "Sugar: The Play is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4540&month=11&year=2026&day=10&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Sugar: The Play aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Veteran's Day Ceremony",
+      "category": "Community",
+      "date": "2026-11-11",
+      "dateLabel": "November 11, 2026",
+      "time": "10:30 AM",
+      "location": "Veteran's Memorial Garden located behind White Plains City Hall, 255 Main St., White Plains, NY",
+      "summary": "Veteran's Day Ceremony is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4533&month=11&year=2026&day=11&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Veteran's Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "WOW Factor: Developing Your Personal Brand",
       "category": "Workshop",
       "date": "2026-11-16",
@@ -1341,6 +1496,84 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-11-25",
+      "dateLabel": "November 25, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=25&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-11-26",
+      "dateLabel": "November 26, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=26&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-11-27",
+      "dateLabel": "November 27, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=27&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-11-28",
+      "dateLabel": "November 28, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=28&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-11-29",
+      "dateLabel": "November 29, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=29&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-11-30",
+      "dateLabel": "November 30, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=30&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Common Council Work Session",
       "category": "Civic",
       "date": "2026-11-30",
@@ -1352,6 +1585,45 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-01",
+      "dateLabel": "December 1, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=1&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "City Lights, Bright Holiday Lights - Tree Lighting",
+      "category": "Parks & Recreation",
+      "date": "2026-12-01",
+      "dateLabel": "December 1, 2026",
+      "time": "5:30 PM",
+      "location": "Renaissance Plaza Park, White Plains, NY",
+      "summary": "City Lights, Bright Holiday Lights - Tree Lighting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4535&month=12&year=2026&day=1&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "City Lights, Bright Holiday Lights - Tree Lighting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-02",
+      "dateLabel": "December 2, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=2&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Zoning Board of Appeals",
@@ -1367,6 +1639,45 @@
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-03",
+      "dateLabel": "December 3, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=3&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-04",
+      "dateLabel": "December 4, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=4&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-05",
+      "dateLabel": "December 5, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=5&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Up in the Arctic: VR Search and Find!",
       "category": "Learning",
       "date": "2026-12-05",
@@ -1377,6 +1688,32 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17082183",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-06",
+      "dateLabel": "December 6, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=6&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=7&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Common Council Meeting",
@@ -1392,6 +1729,57 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-08",
+      "dateLabel": "December 8, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=8&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-09",
+      "dateLabel": "December 9, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=9&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-10",
+      "dateLabel": "December 10, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=10&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Unsung Heroes Awards",
+      "category": "Learning",
+      "date": "2026-12-10",
+      "dateLabel": "December 10, 2026",
+      "time": "6:00 PM – 8:00 PM",
+      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "The White Plains Youth Bureau Unsung Heroes Campaign honors individuals and organizations in the community who do good work but typically \"fly under the radar\".",
+      "url": "https://calendar.whiteplainslibrary.org/event/16794316",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Disney’S Frozen",
       "category": "Arts",
       "date": "2026-12-11",
@@ -1402,6 +1790,58 @@
       "url": "https://wppac.com/shows/disneys-frozen/",
       "ctaLabel": "Open show page",
       "source": "White Plains Performing Arts Center"
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-11",
+      "dateLabel": "December 11, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=11&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-12",
+      "dateLabel": "December 12, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=12&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Santa's Mailbox",
+      "category": "Community",
+      "date": "2026-12-13",
+      "dateLabel": "December 13, 2026",
+      "time": "",
+      "location": "City Hall, 255 Main St.",
+      "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=13&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Skate with Frosty",
+      "category": "Parks & Recreation",
+      "date": "2026-12-13",
+      "dateLabel": "December 13, 2026",
+      "time": "1:00 PM – 3:00 PM",
+      "location": "Ebersole Ice Rink, White Plains, NY",
+      "summary": "Skate with Frosty is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4536&month=12&year=2026&day=13&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Skate with Frosty aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Transportation Commission Meeting",
@@ -1441,6 +1881,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "New Year's Eve Family Spectacular",
+      "category": "Family",
+      "date": "2026-12-31",
+      "dateLabel": "December 31, 2026",
+      "time": "10:30 PM",
+      "location": "Main St. and Court St., White Plains, NY",
+      "summary": "New Year's Eve Family Spectacular is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4537&month=12&year=2026&day=31&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "New Year's Eve Family Spectacular aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Common Council Meeting",
