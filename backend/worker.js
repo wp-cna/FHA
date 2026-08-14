@@ -109,10 +109,11 @@ export default {
 
     const body = await request.json().catch(() => ({}));
 
-    // 1) Honeypot — bots fill this hidden field. Pretend success, do nothing.
-    if (body.website) return json({ ok: true }, 200, cors);
+    // NOTE: a filled honeypot no longer short-circuits here — autofill and
+    // password managers fill hidden fields, which silently ate real neighbors'
+    // submissions. suspectTag() flags them on the board email instead.
 
-    // 2) Rate limit by sender and IP without storing either value in KV keys.
+    // Rate limit by sender and IP without storing either value in KV keys.
     // Separate counters keep a changing email address from bypassing the IP cap.
     const limited = await enforceRateLimits(env, path, body, request, cors);
     if (limited) return limited;
@@ -128,6 +129,12 @@ export default {
     }
   }
 };
+
+// A filled honeypot (fh_check, or the legacy "website" name bots still POST) is
+// only a hint — browser autofill and password managers fill hidden fields too.
+// Nothing is ever silently dropped: the board email is tagged instead, and a
+// human decides. AI review + moderation already gate what publishes.
+function suspectTag(b) { return (b.fh_check || b.website) ? "[SUSPECT] " : ""; }
 
 async function enforceRateLimits(env, path, body, request, cors) {
   if (!env.RATE_LIMIT) return null;
@@ -165,7 +172,7 @@ async function handleContact(b, env, cors) {
   await sendEmail(env, {
     to: boardRecipients(env),
     replyTo: b.email,
-    subject: `[FHA Contact] ${b.subject || "(no subject)"} — ${b.name}`,
+    subject: `${suspectTag(b)}[FHA Contact] ${b.subject || "(no subject)"} — ${b.name}`,
     text: `From: ${b.name} <${b.email}>\nSubject: ${b.subject || "(none)"}\n\n${b.message}`
   });
   return json({ ok: true }, 200, cors);
@@ -181,7 +188,7 @@ async function handleJoin(b, env, cors) {
   await sendEmail(env, {
     to: boardRecipients(env),
     replyTo: b.email,
-    subject: `[FHA Membership] ${b.name} — ${res}`,
+    subject: `${suspectTag(b)}[FHA Membership] ${b.name} — ${res}`,
     text: `New membership request — verify the Fisher Hill connection, then send payment details (Venmo / FHA Chase, or mailing address for a check).\n\n` +
           `Name: ${b.name} <${b.email}>\nResidency: ${res}\nFisher Hill address: ${b.address}\nMembership: ${dues}\n` +
           (b.note ? `\nNote from applicant:\n${b.note}\n` : "")
@@ -223,7 +230,7 @@ async function handlePost(b, env, cors, origin) {
     "?subject=" + encodeURIComponent("About your Fisher Hill board post: " + b.title);
   await sendEmail(env, {
     to: boardRecipients(env), replyTo: b.email,
-    subject: `[FHA Board] ${r.decision || "REVIEW"}: ${b.title}`,
+    subject: `${suspectTag(b)}[FHA Board] ${r.decision || "REVIEW"}: ${b.title}`,
     text:
       "New board submission — nothing publishes until you act on it.\n\n" +
       "AI VETTING\n" +

@@ -10,11 +10,12 @@
     var status = document.getElementById(statusId);
     f.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (f.website && f.website.value) { f.reset(); return; } // honeypot
       if (!f.checkValidity()) { f.reportValidity(); return; }
       var btn = f.querySelector("button[type=submit]");
+      // The honeypot (fh_check) is sent along; the Worker flags suspicious
+      // submissions for the board instead of anything being dropped silently.
       var data = {};
-      new FormData(f).forEach(function (v, k) { if (k !== "website") data[k] = v; });
+      new FormData(f).forEach(function (v, k) { data[k] = v; });
 
       function show(ok, msg) {
         if (status) { status.hidden = false; status.textContent = msg; status.style.color = ok ? "" : "#c0392b"; }

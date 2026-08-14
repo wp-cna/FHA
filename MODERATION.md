@@ -54,7 +54,7 @@ The AI is advisory. Nothing publishes or sends a rejection until a board member 
 
 Layered, cheapest first — most spam never reaches the AI:
 
-1. **Honeypot** — the form has a hidden `website` field (`.hp`). Humans can't see it; bots fill it. Any submission with it filled is silently dropped. (Already in `posts.html`.)
+1. **Honeypot** — the form has a hidden `fh_check` field (`.hp`). Humans can't see it; bots fill it. A submission with it filled is NOT dropped (browser autofill and password managers fill hidden fields too, which silently ate real neighbors' submissions until 2026-08-14): it goes through the normal flow with a `[SUSPECT]` tag on the board email, and a human decides. The field was renamed from `website` — a name autofill heuristics match — to a name they don't.
 2. **Rate limit** — cap submissions separately per email and per IP. The current Worker allows 5 per sender and 20 per IP per endpoint each hour.
 3. **Dedupe** — suppress an exact repeated post from the same sender for 24 hours. Similar-but-not-identical posts still proceed to human review so this remains permissive.
 4. **Minimum substance** — require a real title + body; reject empty/link-only posts.
