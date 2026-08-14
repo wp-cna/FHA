@@ -62,14 +62,9 @@ Each returns `{"ok":true}`. Watch it live with `wrangler tail` in another termin
 
 > A passing `/post` test creates a real pending item and emails the board. Open the Reject link and confirm it after testing; do not press Publish unless the post is intentionally real.
 
-## Step 3 — Point the site at the Worker
-```bash
-cd ..                                       # repo root
-# set API_BASE to your Worker URL (one line in forms.js)
-sed -i '' 's#var API_BASE = "";#var API_BASE = "'"$W"'";#' forms.js
-git add forms.js && git commit -m "Wire forms to the deployed Worker" && git push
-```
-(If you push from never-nude rather than wp-cna, hand `forms.js` to Codex instead.) Once it ships, the live Contact / Join / Posting-board forms are real.
+## Step 3 — Confirm the site points at the Worker
+
+The checked-in site already points `forms.js` and all three HTML form `action` attributes at `https://fha-forms.fisher-hill.workers.dev`. If `wrangler deploy` prints that URL, no source edit is needed. If the deployed URL differs, update `API_BASE` in `forms.js` and the `action` attributes in `contact.html`, `join.html`, and `posts.html` to the same origin before publishing the site.
 
 Each new moderation payload is initialized in its Durable Object before the board email is sent. The confirmation POST atomically claims Publish or Reject there before external I/O. `PENDING` is read only to migrate action links issued by the older Worker.
 
