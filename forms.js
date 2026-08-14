@@ -1,6 +1,5 @@
-/* Submits the Contact and Posting-board forms to the FHA Worker backend.
- * Set API_BASE to your deployed Worker URL to go live. While it's empty the
- * forms still work in "confirmation only" mode (nothing is sent). */
+/* Enhances the native POST forms with in-page status messages. Without
+ * JavaScript, the same forms navigate to a safe response page on the Worker. */
 (function () {
   var API_BASE = "https://fha-forms.fisher-hill.workers.dev"; // FHA forms Worker (Cloudflare)
 
@@ -15,14 +14,15 @@
       var btn = f.querySelector("button[type=submit]");
       var data = {};
       new FormData(f).forEach(function (v, k) { if (k !== "website") data[k] = v; });
+      // Rollout bridge: the previous Worker reads `phone`; the current Worker
+      // reads `publicContact`. Send both until the Worker rollout is complete.
+      if (route === "/post" && typeof data.publicContact === "string") data.phone = data.publicContact;
 
       function show(ok, msg) {
         if (status) { status.hidden = false; status.textContent = msg; status.style.color = ok ? "" : "#c0392b"; }
         if (ok) f.reset();
         if (btn) btn.disabled = false;
       }
-
-      if (!API_BASE) { show(true, successMsg); return; } // local fallback
 
       if (btn) btn.disabled = true;
       if (status) { status.hidden = false; status.style.color = ""; status.textContent = "Sending…"; }

@@ -32,18 +32,19 @@ The site is static; the board is `data/posts.json` → rendered by `feeds.js`. S
 
 ```
 Resident submits the form on posts.html
-        │  (POST — honeypot + rate-limit checked first)
+        │  (POST — native form or JavaScript; 16 KiB cap + validation)
         ▼
 Review endpoint (serverless function / Cloudflare Worker)
-        │  cheap anti-spam pre-checks  →  AI review (LLM)
+        │  native IP/email rate-limit bindings → AI review (LLM)
         ▼
-Store every result in PENDING KV for up to 14 days
+Store every result in its per-token SQLite-backed Durable Object
+        │  (PENDING KV is only a legacy-token fallback)
         │
         ▼
 Email the board the original post + AI recommendation + action links
         │
-        ├── Board confirms Publish ─▶ append to data/posts.json ─▶ Pages redeploys
-        └── Board confirms Reject  ─▶ send the submitter a polite note
+        ├── First atomic claim: Publish ─▶ append to data/posts.json ─▶ Pages redeploys
+        └── First atomic claim: Reject  ─▶ send the submitter a polite note
 ```
 
 The AI is advisory. Nothing publishes or sends a rejection until a board member confirms the action. Published posts are new objects appended to the same `posts.json` the feed already reads.
@@ -55,7 +56,7 @@ The AI is advisory. Nothing publishes or sends a rejection until a board member 
 Layered, cheapest first — most spam never reaches the AI:
 
 1. **Honeypot** — the form has a hidden `website` field (`.hp`). Humans can't see it; bots fill it. Any submission with it filled is silently dropped. (Already in `posts.html`.)
-2. **Rate limit** — cap submissions separately per email and per IP. The current Worker allows 5 per sender and 20 per IP per endpoint each hour.
+2. **Rate limit** — Cloudflare's Rate Limiting bindings cap submissions at 5 per validated email and 20 per IP each minute. Missing or unavailable bindings fail closed before upstream APIs are called.
 3. **Dedupe** — suppress an exact repeated post from the same sender for 24 hours. Similar-but-not-identical posts still proceed to human review so this remains permissive.
 4. **Minimum substance** — require a real title + body; reject empty/link-only posts.
 5. **AI spam check** — the agent flags promotional bulk blasts, link farms, off-area solicitation, and bot-pattern text as `REJECT` with `failedCriteria: ["spam"]`.
@@ -139,7 +140,7 @@ Return ONLY the JSON described, no prose.
 }
 ```
 
-The endpoint validates this object, then stores the submission and recommendation in `PENDING`. The board email shows the recommendation, but the same human confirmation step applies to APPROVE, APPROVE_WITH_EDITS, ESCALATE, and REJECT.
+The endpoint validates this object, then stores the submission and recommendation in the token's Durable Object. The board email shows the recommendation, but the same human confirmation step applies to APPROVE, APPROVE_WITH_EDITS, ESCALATE, and REJECT.
 
 ---
 
@@ -153,7 +154,12 @@ The endpoint validates this object, then stores the submission and recommendatio
 
 ## 9. Implementation options
 
-- **Endpoint:** the Cloudflare Worker runs honeypot/rate-limit/dedupe and substance checks, asks the LLM for a recommendation, and parks every result in `PENDING` for a human decision.
+- **Endpoint:** the Worker enforces a streaming body cap, strict schemas, honeypot/rate-limit/dedupe and substance checks, asks the LLM for a recommendation, and stores every result in a per-token Durable Object. Native HTML forms and the JavaScript enhancement use the same endpoints.
 - **Publishing:** only the confirmation-page POST behind the board's Publish link uses the **GitHub API** to append an item to `data/posts.json` on `wp-cna/FHA` and commit it (Pages redeploys automatically).
-- **Notifications:** **fha.wp.info@gmail.com**, **michael@mdalton.com**, and **michael.kushman@gmail.com** get every submission with Publish and Reject links. Any moderator can act first; each action link is single-use. A confirmed rejection sends the submitter the reason using the same Resend path as the contact form.
-- **Audit:** pending submissions live in KV for 14 days, GitHub records every publication, and Worker logs record failures without exposing submission content or credentials.
+- **Atomic action:** opening a link is read-only. Its confirmation POST persists the first Publish or Reject claim in the token's SQLite-backed Durable Object before any GitHub or email call. Later or conflicting confirmations cannot repeat the side effect. Failed automation remains claimed for manual follow-up.
+- **Notifications:** **fha.wp.info@gmail.com**, **michael@mdalton.com**, and **michael.kushman@gmail.com** get every submission with confirmation links. A confirmed rejection sends the submitter the reason using the same Resend path as the contact form.
+- **Audit:** pending payloads and claims live in per-token Durable Objects for up to 14 days; `PENDING` KV supports links issued by the pre-Durable-Object Worker only. GitHub records publications, and structured Worker logs record failures without submission content or credentials.
+
+### Rollout order
+
+Deploy the Worker before publishing the static pages so native form POSTs can receive the Worker's HTML response and approved posts can persist the new public-contact field. During a staggered rollout, `forms.js` sends the consented contact as both `publicContact` and legacy `phone`; the old Worker can include it in the board review email, but only the updated Worker writes it into a published post. Without JavaScript, browsers navigate cross-origin to the Worker and receive a minimal response page; no form uses GET and no submitted values are reflected into that page or a URL.
