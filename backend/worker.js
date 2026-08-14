@@ -87,6 +87,8 @@ const EMAIL_RE = /^[^\s@/?#]+@[^\s@/?#]+\.[^\s@/?#]+$/;
 const REVIEW_DECISIONS = new Set(["APPROVE", "APPROVE_WITH_EDITS", "ESCALATE", "REJECT"]);
 
 const CONTACT_FIELDS = {
+  fh_check: { max: 200 },
+  // Accept the old honeypot name while cached pages and existing bots age out.
   website: { max: 200 },
   name: { required: true, max: 120, singleLine: true },
   email: { required: true, max: 254, singleLine: true, email: true, lower: true },
@@ -94,6 +96,7 @@ const CONTACT_FIELDS = {
   message: { required: true, max: 4000 }
 };
 const JOIN_FIELDS = {
+  fh_check: { max: 200 },
   website: { max: 200 },
   name: { required: true, max: 120, singleLine: true },
   email: { required: true, max: 254, singleLine: true, email: true, lower: true },
@@ -103,6 +106,7 @@ const JOIN_FIELDS = {
   note: { max: 2000 }
 };
 const POST_FIELDS = {
+  fh_check: { max: 200 },
   website: { max: 200 },
   postType: { required: true, max: 40, values: Object.keys(CATEGORY) },
   title: { required: true, max: 120, singleLine: true },
@@ -285,9 +289,6 @@ export default {
     if (checked.error) return respond({ error: checked.error }, 400);
     const body = checked.value;
 
-    // Honeypot submissions stop before the email limiter, AI, KV, or email APIs.
-    if (body.website) return respond({ ok: true }, 200);
-
     // The email has been type-, length-, and syntax-validated at this point.
     const emailLimited = await enforceEmailRateLimit(env, body.email, respond);
     if (emailLimited) return emailLimited;
@@ -306,6 +307,14 @@ export default {
 async function enforceIpRateLimit(env, request, respond) {
   const ip = String(request.headers.get("CF-Connecting-IP") || "unknown").trim().slice(0, 128);
   return enforceRateLimit(env.IP_RATE_LIMITER, "ip", await sha256("ip:" + ip), respond);
+}
+
+// A filled honeypot (fh_check, or the legacy "website" name bots still POST) is
+// only a hint — browser autofill and password managers fill hidden fields too.
+// Nothing is ever silently dropped: the board email is tagged instead, and a
+// human decides. AI review + moderation already gate what publishes.
+function suspectTag(body) {
+  return body && (body.fh_check || body.website) ? "[SUSPECT] " : "";
 }
 
 async function enforceEmailRateLimit(env, email, respond) {
@@ -469,7 +478,7 @@ async function handleContact(b, env, respond) {
   await sendEmail(env, {
     to: boardRecipients(env),
     replyTo: b.email,
-    subject: `[FHA Contact] ${b.subject || "(no subject)"} — ${b.name}`,
+    subject: `${suspectTag(b)}[FHA Contact] ${b.subject || "(no subject)"} — ${b.name}`,
     text: `From: ${b.name} <${b.email}>\nSubject: ${b.subject || "(none)"}\n\n${b.message}`
   });
   return respond({ ok: true }, 200);
@@ -483,7 +492,7 @@ async function handleJoin(b, env, respond) {
   await sendEmail(env, {
     to: boardRecipients(env),
     replyTo: b.email,
-    subject: `[FHA Membership] ${b.name} — ${res}`,
+    subject: `${suspectTag(b)}[FHA Membership] ${b.name} — ${res}`,
     text: `New membership request — verify the Fisher Hill connection, then send the current payment instructions.\n\n` +
           `Name: ${b.name} <${b.email}>\nResidency: ${res}\nFisher Hill address: ${b.address}\nMembership: ${dues}\n` +
           (b.note ? `\nNote from applicant:\n${b.note}\n` : "")
@@ -537,7 +546,7 @@ async function handlePost(b, env, respond, origin) {
     "?subject=" + encodeURIComponent("About your Fisher Hill board post: " + b.title);
   await sendEmail(env, {
     to: boardRecipients(env), replyTo: b.email,
-    subject: `[FHA Board] ${r.decision || "REVIEW"}: ${b.title}`,
+    subject: `${suspectTag(b)}[FHA Board] ${r.decision || "REVIEW"}: ${b.title}`,
     text:
       "New board submission — nothing publishes until you act on it.\n\n" +
       "AI VETTING\n" +

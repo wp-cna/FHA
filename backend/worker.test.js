@@ -341,6 +341,31 @@ test("native URL-encoded contact POST returns a safe HTML result page", async ()
   }
 });
 
+test("filled current and legacy honeypots are delivered with a suspect tag", async () => {
+  const originalFetch = globalThis.fetch;
+  const subjects = [];
+  globalThis.fetch = async (_url, init) => {
+    subjects.push(JSON.parse(init.body).subject);
+    return Response.json({ id: "suspect_contact" });
+  };
+  try {
+    const env = {
+      ...passingRateBindings(),
+      BOARD_EMAIL: "fha.wp.info@gmail.com",
+      MAIL_FROM: "FHA Board <notifications@mail.wp-cna.org>",
+      RESEND_API_KEY: "test-key"
+    };
+    for (const honeypot of [{ fh_check: "autofilled.example" }, { website: "legacy-bot.example" }]) {
+      const response = await worker.fetch(jsonRequest("/contact", { ...validContact, ...honeypot }), env);
+      assert.equal(response.status, 200);
+    }
+    assert.equal(subjects.length, 2);
+    assert.ok(subjects.every(subject => subject.startsWith("[SUSPECT] [FHA Contact]")));
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test("native multipart membership POST is parsed after the streaming cap", async () => {
   const originalFetch = globalThis.fetch;
   globalThis.fetch = async () => Response.json({ id: "native_join" });
@@ -369,9 +394,13 @@ test("static forms have real POST actions and the JavaScript payload keeps the l
     const source = await readFile(new URL("../" + file, import.meta.url), "utf8");
     assert.match(source, new RegExp(`<form[^>]+method="post"[^>]+action="https://fha-forms\\.fisher-hill\\.workers\\.dev/${route}"`));
     assert.doesNotMatch(source, /<form[^>]+novalidate/);
+    assert.match(source, /<input[^>]+name="fh_check"/);
+    assert.doesNotMatch(source, /<input[^>]+name="website"/);
   }
   const formsJs = await readFile(new URL("../forms.js", import.meta.url), "utf8");
   assert.match(formsJs, /data\.phone\s*=\s*data\.publicContact/);
+  assert.match(formsJs, /new FormData\(f\).*data\[k\]\s*=\s*v/);
+  assert.doesNotMatch(formsJs, /f\.website|k\s*!==\s*["']website/);
   assert.doesNotMatch(formsJs, /confirmation only/);
 });
 
@@ -422,6 +451,8 @@ test("contact schema rejects objects, bad email, unknown fields, and every confi
     { ...validContact, email: "not-an-email" },
     { ...validContact, subject: "x".repeat(161) },
     { ...validContact, message: "x".repeat(4001) },
+    { ...validContact, fh_check: { nested: true } },
+    { ...validContact, fh_check: "x".repeat(201) },
     { ...validContact, website: { nested: true } },
     { ...validContact, surprise: "field" }
   ];

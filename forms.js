@@ -9,11 +9,12 @@
     var status = document.getElementById(statusId);
     f.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (f.website && f.website.value) { f.reset(); return; } // honeypot
       if (!f.checkValidity()) { f.reportValidity(); return; }
       var btn = f.querySelector("button[type=submit]");
+      // The honeypot (fh_check) is sent along; the Worker flags suspicious
+      // submissions for the board instead of anything being dropped silently.
       var data = {};
-      new FormData(f).forEach(function (v, k) { if (k !== "website") data[k] = v; });
+      new FormData(f).forEach(function (v, k) { data[k] = v; });
       // Rollout bridge: the previous Worker reads `phone`; the current Worker
       // reads `publicContact`. Send both until the Worker rollout is complete.
       if (route === "/post" && typeof data.publicContact === "string") data.phone = data.publicContact;
