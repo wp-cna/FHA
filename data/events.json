@@ -1,69 +1,7 @@
 {
-  "updated": "2026-08-13",
+  "updated": "2026-08-14",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Earth, Wind, Fire and Zombies!",
-      "category": "Learning",
-      "date": "2026-08-13",
-      "dateLabel": "August 13, 2026",
-      "time": "11:00 AM – 12:30 PM",
-      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Survive the zombie apocalypse with Zach Jones of Our Elements Outdoor Learning, a nature-based outdoor education organization rooted in the Hudson Valley.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16741089",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Free Summer Meals at the Library",
-      "category": "Learning",
-      "date": "2026-08-13",
-      "dateLabel": "August 13, 2026",
-      "time": "11:30 AM – 1:00 PM",
-      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Youth up to age 18 can get a free lunch at the Library from 11:30-1.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16455450",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Concerts at Renaissance Plaza",
-      "category": "Parks & Recreation",
-      "date": "2026-08-13",
-      "dateLabel": "August 13, 2026",
-      "time": "12:00 PM",
-      "location": "Renaissance Plaza Park, White Plains, NY",
-      "summary": "Concerts at Renaissance Plaza is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4351&month=8&year=2026&day=13&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Concerts at Renaissance Plaza aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Afternoon Concert: Four for a Song",
-      "category": "Learning",
-      "date": "2026-08-13",
-      "dateLabel": "August 13, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Come along for a musical journey with the delectable cabaret husband-and-wife duo, Dawn and Eric Spitz, and their friends: classically trained soprano Brett…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16616497",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Neighborhood Nights",
-      "category": "Parks & Recreation",
-      "date": "2026-08-13",
-      "dateLabel": "August 13, 2026",
-      "time": "6:30 PM",
-      "location": "Library Auditorium, White Plains, NY",
-      "summary": "Neighborhood Nights is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4348&month=8&year=2026&day=13&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Neighborhood Nights aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Free Summer Meals at the Library",
       "category": "Learning",
@@ -435,6 +373,19 @@
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Delfino Park Barbeque",
+      "category": "Parks & Recreation",
+      "date": "2026-09-03",
+      "dateLabel": "September 3, 2026",
+      "time": "11:30 AM – 1:30 PM",
+      "location": "Delfino Park, White Plains, NY",
+      "summary": "Delfino Park Barbeque is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4543&month=9&year=2026&day=3&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Delfino Park Barbeque aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Intro to Google Sheets, Part 1",
       "category": "Learning",
       "date": "2026-09-08",
@@ -470,6 +421,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Girls Varsity Tennis at Harrison",
+      "category": "Sports",
+      "date": "2026-09-10",
+      "dateLabel": "September 10, 2026",
+      "time": "4:30 PM",
+      "location": "HS Tennis Courts",
+      "summary": "Girls Varsity Tennis travels to face Harrison at HS Tennis Courts.",
+      "url": "/sports/tennis/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "9/11 Day of Remembrance Ceremony",
@@ -802,6 +765,18 @@
       "url": "https://parksevents.westchestercountyny.gov/event/fireside-nature-storytime-3",
       "ctaLabel": "Open county parks page",
       "source": "Westchester County Parks"
+    },
+    {
+      "title": "Girls Varsity Tennis vs. Harrison",
+      "category": "Sports",
+      "date": "2026-09-28",
+      "dateLabel": "September 28, 2026",
+      "time": "4:30 PM",
+      "location": "White Plains High School, White Plains, NY",
+      "summary": "Girls Varsity Tennis hosts Harrison at White Plains High School.",
+      "url": "/sports/tennis/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "Common Council Work Session",
@@ -1333,6 +1308,19 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Hispanic Heritage Luncheon",
+      "category": "Parks & Recreation",
+      "date": "2026-10-30",
+      "dateLabel": "October 30, 2026",
+      "time": "11:30 AM – 1:30 PM",
+      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
+      "summary": "Hispanic Heritage Luncheon is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4544&month=10&year=2026&day=30&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Hispanic Heritage Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Future is Female",
       "category": "Learning",
       "date": "2026-11-02",
@@ -1494,6 +1482,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17056419",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Thanksgiving Luncheon",
+      "category": "Parks & Recreation",
+      "date": "2026-11-24",
+      "dateLabel": "November 24, 2026",
+      "time": "11:30 AM – 1:30 PM",
+      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
+      "summary": "Thanksgiving Luncheon is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4545&month=11&year=2026&day=24&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Thanksgiving Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Santa's Mailbox",
@@ -1857,6 +1858,19 @@
       "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Holiday Luncheon",
+      "category": "Parks & Recreation",
+      "date": "2026-12-15",
+      "dateLabel": "December 15, 2026",
+      "time": "11:30 AM – 1:30 PM",
+      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
+      "summary": "Holiday Luncheon is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4546&month=12&year=2026&day=15&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Holiday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Planning Board Meeting",
       "category": "Civic",
       "date": "2026-12-15",
@@ -1920,6 +1934,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Fall/Winter Birthday Luncheon",
+      "category": "Parks & Recreation",
+      "date": "2027-01-13",
+      "dateLabel": "January 13, 2027",
+      "time": "11:30 AM – 1:30 PM",
+      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
+      "summary": "Fall/Winter Birthday Luncheon is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4547&month=1&year=2027&day=13&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Conservation Board Meeting",
