@@ -1,21 +1,23 @@
 # FHA forms backend — setup
 
-A Cloudflare Worker that powers the **Contact** form and the **Posting board** (with AI review).
-The static site keeps working without it; deploying this turns the forms real.
+A Cloudflare Worker that powers the **Contact**, **Membership**, and **Posting board** forms.
+Deploy the Worker before publishing matching static-form changes.
 
 ## What it does
 - `POST /contact` → emails the configured board recipients (via Resend).
 - `POST /join` → emails the board a **membership request** for human review (residency + dues). No AI — a board member verifies and follows up with payment details.
-- `POST /post` → runs the AI reviewer (`../MODERATION.md`), stores every submission in `PENDING`, and emails the board Publish/Reject links. Nothing publishes or sends a rejection until a board member confirms it.
+- `POST /post` → runs the AI reviewer (`../MODERATION.md`), stores every submission in a per-token SQLite-backed Durable Object, and emails the board Publish/Reject confirmation links. Nothing publishes or sends a rejection until a board member confirms it.
 
-All three are spam-guarded by a hidden honeypot plus hourly sender/IP limits. Posting-board submissions also get minimum-substance validation and 24-hour exact-duplicate suppression before the AI is called.
+All three enforce a 16 KiB streaming body cap, strict schemas, a hidden honeypot, and Cloudflare Rate Limiting bindings (20/IP/minute before body parsing and 5/validated email/minute). Missing rate-limit bindings fail closed. Posting-board submissions also get minimum-substance validation and 24-hour exact-duplicate suppression before the AI is called.
+
+The HTML forms have real POST actions for no-JavaScript delivery. Native submissions receive a minimal Worker-hosted HTML result page; JavaScript submissions keep JSON+CORS responses. During rollout, `forms.js` sends both `publicContact` and legacy `phone` so the older Worker still receives the consented contact for board review. Only the updated Worker persists it into a published post, which is why the Worker must deploy first.
 
 ## Step 0 — Grab three API keys (browser, unavoidable)
 Each provider has a free tier. Sign in to Resend/Anthropic with the **fha.wp.info@gmail.com** account and GitHub with **wp-cna**. You only copy a key from each — everything else is terminal.
 
 | Key | Where | Notes |
 |-----|-------|-------|
-| `RESEND_API_KEY` | resend.com → API Keys → Create | Multiple board recipients and submitter-rejection emails require the configured `mail.wp-cna.org` sending domain to be verified before deployment (see bottom). |
+| `RESEND_API_KEY` | resend.com → API Keys → Create | Multiple board recipients and submitter notifications require the dedicated `mail.wp-cna.org` subdomain to show **Verified** in the FHA Resend account before deployment. |
 | `ANTHROPIC_API_KEY` | console.anthropic.com → API Keys | Powers the posting-board reviewer. |
 | `GITHUB_TOKEN` | github.com → Settings → Developer settings → **Fine-grained tokens** | Repo access: **wp-cna/FHA** only. Permission: **Contents → Read and write**. Lets approved posts commit to `data/posts.json`. |
 
@@ -27,8 +29,8 @@ npm install -g wrangler
 cd backend
 wrangler login                              # opens a browser tab once to authorize Cloudflare
 
-# RATE_LIMIT and PENDING are already provisioned and bound in wrangler.toml.
-# Create replacements only when moving the Worker to a different Cloudflare account.
+# RATE_LIMIT (dedupe) and PENDING (legacy moderation links) are already bound.
+# Native rate limiters and MODERATION_ACTIONS are declared in wrangler.toml.
 
 # paste each key when prompted (input is hidden)
 wrangler secret put RESEND_API_KEY
@@ -60,17 +62,14 @@ Each returns `{"ok":true}`. Watch it live with `wrangler tail` in another termin
 
 > A passing `/post` test creates a real pending item and emails the board. Open the Reject link and confirm it after testing; do not press Publish unless the post is intentionally real.
 
-## Step 3 — Point the site at the Worker
-```bash
-cd ..                                       # repo root
-# set API_BASE to your Worker URL (one line in forms.js)
-sed -i '' 's#var API_BASE = "";#var API_BASE = "'"$W"'";#' forms.js
-git add forms.js && git commit -m "Wire forms to the deployed Worker" && git push
-```
-(If you push from never-nude rather than wp-cna, hand `forms.js` to Codex instead.) Once it ships, the live Contact / Join / Posting-board forms are real.
+## Step 3 — Confirm the site points at the Worker
+
+The checked-in site already points `forms.js` and all three HTML form `action` attributes at `https://fha-forms.fisher-hill.workers.dev`. If `wrangler deploy` prints that URL, no source edit is needed. If the deployed URL differs, update `API_BASE` in `forms.js` and the `action` attributes in `contact.html`, `join.html`, and `posts.html` to the same origin before publishing the site.
+
+Each new moderation payload is initialized in its Durable Object before the board email is sent. The confirmation POST atomically claims Publish or Reject there before external I/O. `PENDING` is read only to migrate action links issued by the older Worker.
 
 ## Notes
-- **Sending domain (later):** to send *from* a real FHA address and to deliver rejection emails to arbitrary submitters, verify a domain in Resend and set `MAIL_FROM` in `wrangler.toml`, then `wrangler deploy`. Until then the board emails (to your own address) work in test mode.
+- **Sending domain (deployment gate):** `MAIL_FROM` uses `notifications@mail.wp-cna.org`. Add the FHA Resend account's three generated DNS records to that exact subdomain and wait for **Verified** before deploying. Do not reuse the root `wp-cna.org` records: they belong to the separate WPCNA Resend account and its DKIM value conflicts with FHA's.
 - **Model:** the reviewer uses `claude-haiku-4-5-20251001` (cheap/fast). Swap `MODEL` in `worker.js` for a stronger one if desired.
 - **Config** (non-secret) lives in `wrangler.toml`: allowed origin, board email, from address, repo.
 - **Re-deploy** after any `worker.js` or `wrangler.toml` change: `wrangler deploy`.

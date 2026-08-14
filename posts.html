@@ -68,9 +68,8 @@
         </div>
       </div>
 
-      <!-- TODO: POST to the review endpoint (see MODERATION.md) instead of the local stub. -->
-      <form class="cform board-form" id="post-form" novalidate>
-        <input type="text" name="fh_check" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <form class="cform board-form" id="post-form" method="post" action="https://fha-forms.fisher-hill.workers.dev/post">
+        <input type="text" name="fh_check" class="hp" maxlength="200" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div>
           <label for="pf-type">Post type</label>
           <select id="pf-type" name="postType" required>
@@ -90,9 +89,13 @@
         <div><label for="pf-eventdate">Event date — the day it happens, not today</label><input id="pf-eventdate" name="eventDate" type="date"></div>
         <div><label for="pf-eventtime">Event time — for example 1:00 PM to 6:00 PM (optional)</label><input id="pf-eventtime" name="eventTime" type="text" maxlength="60"></div>
         <div><label for="pf-location">Location — the street or place (optional)</label><input id="pf-location" name="location" type="text" maxlength="120"></div>
-        <div><label for="pf-name">Your name</label><input id="pf-name" name="name" type="text" autocomplete="name" required></div>
-        <div><label for="pf-email">Your email (for follow-up — not published)</label><input id="pf-email" name="email" type="email" autocomplete="email" required></div>
-        <div><label for="pf-phone">Your phone (optional — shown only if you include it)</label><input id="pf-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div><label for="pf-name">Your name</label><input id="pf-name" name="name" type="text" maxlength="120" autocomplete="name" required></div>
+        <div><label for="pf-email">Your email (for follow-up — not published)</label><input id="pf-email" name="email" type="email" maxlength="254" autocomplete="email" required></div>
+        <div>
+          <label for="pf-public-contact">Public contact (optional — published on your post)</label>
+          <input id="pf-public-contact" name="publicContact" type="text" maxlength="254" aria-describedby="pf-public-contact-help">
+          <p class="cform-note" id="pf-public-contact-help">Phone number, email address, or secure website URL. Leave blank if you do not want contact details shown on your post.</p>
+        </div>
         <label class="check"><input type="checkbox" name="agree" required> I've read the guidelines and understand posts are reviewed before they appear.</label>
         <button class="btn" type="submit">Submit for review</button>
         <p class="cform-status" id="pf-status" role="status" hidden></p>

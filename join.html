@@ -40,33 +40,18 @@
       <p>Membership is open to current Fisher Hill residents and to former residents who'd like to stay connected. If you've moved away, just list the Fisher Hill address where you used to live.</p>
 
       <h2 class="subhead">Dues</h2>
-      <p>Annual dues are $5 for an individual or $10 for a family. After you submit the form below, you can pay electronically or mail a check — payment details are confirmed once a board member verifies your Fisher Hill connection.</p>
+      <p>Annual dues are $5 for an individual or $10 for a family. Submit the request below; after a board member verifies your Fisher Hill connection, the Association will email the current payment instructions.</p>
 
-      <h2 class="subhead">How would you like to pay?</h2>
-      <!-- PLACEHOLDERS (Michael): replace the [bracketed] payment details below,
-           and update the matching Spanish entries in i18n.js when you do. -->
-      <ul class="rules">
-        <li><strong>Check or cash</strong> — mail or drop off a check payable to the Fisher Hill Association at the Association's mailing address: <em>[FHA mailing address — current president's home]</em></li>
-        <li><strong>Venmo</strong> — <em>[FHA Venmo handle]</em></li>
-        <li><strong>Zelle</strong> — <em>[FHA Zelle email or phone]</em></li>
-        <li><strong>PayPal</strong> — <em>[FHA PayPal link]</em></li>
-      </ul>
-      <p>Venmo, Zelle, and PayPal details are confirmed in the follow-up email after a board member verifies your membership.</p>
-
-      <!-- TODO (backend, blocked on Michael): on submit, /join emails the FHA shared
-      inbox (fha.wp.info@gmail.com) for human review of residency; on approval, send
-      the Venmo link (tied to the FHA Chase account) or the mailing address for a
-      check. No AI auto-approval here — a board member confirms membership. Until the
-      Worker is deployed (forms.js API_BASE empty), the form shows a local confirmation
-      only and does not send or collect payment. -->
-      <form class="cform" id="join-form" novalidate>
+      <h2 class="subhead">Payment follow-up</h2>
+      <p>Submit the membership request below. After a board member verifies your Fisher Hill connection, the Association will email the current payment options and instructions. No payment is collected on this website.</p>
+      <form class="cform" id="join-form" method="post" action="https://fha-forms.fisher-hill.workers.dev/join">
         <div>
           <label for="jf-name">Name</label>
-          <input id="jf-name" name="name" type="text" autocomplete="name" required>
+          <input id="jf-name" name="name" type="text" maxlength="120" autocomplete="name" required>
         </div>
         <div>
           <label for="jf-email">Email</label>
-          <input id="jf-email" name="email" type="email" autocomplete="email" required>
+          <input id="jf-email" name="email" type="email" maxlength="254" autocomplete="email" required>
         </div>
         <fieldset class="cform-group">
           <legend>Residency</legend>
@@ -75,7 +60,7 @@
         </fieldset>
         <div>
           <label for="jf-address">Fisher Hill address <span class="cform-opt">(current, or former if you've moved)</span></label>
-          <input id="jf-address" name="address" type="text" autocomplete="street-address" required>
+          <input id="jf-address" name="address" type="text" maxlength="240" autocomplete="street-address" required>
         </div>
         <fieldset class="cform-group">
           <legend>Membership</legend>
@@ -84,9 +69,9 @@
         </fieldset>
         <div>
           <label for="jf-note">Anything you'd like the board to know? <span class="cform-opt">(optional)</span></label>
-          <textarea id="jf-note" name="note"></textarea>
+          <textarea id="jf-note" name="note" maxlength="2000"></textarea>
         </div>
-        <input class="hp" type="text" name="fh_check" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input class="hp" type="text" name="fh_check" maxlength="200" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button class="btn" type="submit">Submit membership request</button>
         <p class="cform-status" id="jf-status" role="status" hidden></p>
         <p class="cform-note">A board member reviews each request and follows up with payment details. Submitting this form does not charge you.</p>

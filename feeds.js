@@ -32,6 +32,51 @@
   }
   function afterRender() { if (window.fhaApplyI18n) window.fhaApplyI18n(); }
 
+  // Convert only the three contact types accepted by the Worker. Unknown or
+  // old malformed data stays hidden instead of becoming an unsafe link.
+  function contactLink(value) {
+    var contact = String(value || "").trim();
+    if (!contact || contact.length > 254) return null;
+
+    if (/^[^\s@/?#]+@[^\s@/?#]+\.[^\s@/?#]+$/.test(contact)) {
+      return { href: "mailto:" + contact, external: false };
+    }
+
+    var phone = contact.match(/^(\+?[\d\s().-]+?)(?:\s*(?:x|ext\.?)\s*(\d{1,8}))?$/i);
+    if (phone) {
+      var digits = phone[1].replace(/\D/g, "");
+      if (digits.length >= 7 && digits.length <= 15) {
+        var number = (phone[1].trim().charAt(0) === "+" ? "+" : "") + digits;
+        return { href: "tel:" + number + (phone[2] ? ";ext=" + phone[2] : ""), external: false };
+      }
+    }
+
+    try {
+      var hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(contact);
+      var url = new URL(hasScheme ? contact : "https://" + contact);
+      if (url.protocol === "https:" && url.hostname && !url.username && !url.password &&
+          (url.hostname.indexOf(".") !== -1 || /^\d{1,3}(?:\.\d{1,3}){3}$/.test(url.hostname))) {
+        return { href: url.href, external: true };
+      }
+    } catch (error) {}
+    return null;
+  }
+
+  function appendPublicContact(body, value) {
+    var link = contactLink(value);
+    if (!link) return;
+    var row = el("p", "feed-contact");
+    row.appendChild(el("strong", null, "Contact: "));
+    var anchor = el("a", null, String(value).trim());
+    anchor.href = link.href;
+    if (link.external) {
+      anchor.target = "_blank";
+      anchor.rel = "external noopener noreferrer";
+    }
+    row.appendChild(anchor);
+    body.appendChild(row);
+  }
+
   // Board freshness: posts expire by category so the board never becomes a billboard.
   // Mirrors the TTLs the Worker stamps; also covers older posts that have no "expires".
   var POST_TTL = { "Lost & Found": 7, "Tag Sale": 7, "Neighbor": 7, "Business": 90,
@@ -86,6 +131,7 @@
     var pd = dateLabel(p); if (pd) body.appendChild(el("p", "feed-date", pd));
     body.appendChild(meta(p.time, p.location));
     if (p.summary) body.appendChild(el("p", "feed-summary", p.summary));
+    appendPublicContact(body, p.publicContact || p.phone);
     if (p.source) {
       var actions = el("div", "feed-actions");
       actions.appendChild(el("span", "feed-source", "Posted by " + p.source));

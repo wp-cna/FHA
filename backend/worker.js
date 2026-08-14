@@ -6,8 +6,8 @@
  *                    (residency + dues; no AI auto-approval)
  *   POST /post     → runs the AI reviewer (see MODERATION.md), then — no matter
  *                    what the reviewer decides — NOTHING auto-publishes. The
- *                    submission is parked in the PENDING KV namespace under an
- *                    unguessable token (TTL 14 days) and ONE email goes to the
+ *                    submission is stored in a per-token SQLite-backed Durable
+ *                    Object (TTL 14 days) and ONE email goes to the
  *                    board with the submission, the AI's verdict, and action links:
  *                      Publish            → /action/publish?token=…
  *                      Reject (AI note)   → /action/reject?token=…
@@ -16,15 +16,17 @@
  *   against email link scanners that prefetch URLs); its button POSTs back to
  *   the same URL, which performs the action — publish commits the post (the
  *   AI-cleaned version when present) to data/posts.json via the GitHub API;
- *   reject emails the submitter a polite AI-drafted note. Each token is
- *   single-use: the POST deletes it from KV (restored if the action fails).
+ *   reject emails the submitter a polite AI-drafted note. A SQLite-backed
+ *   Durable Object atomically claims the first confirmed action for each token
+ *   before any external I/O; PENDING KV is only a legacy-token fallback.
  *
  * Secrets (set with `wrangler secret put NAME`):
  *   RESEND_API_KEY, ANTHROPIC_API_KEY, GITHUB_TOKEN
  * Vars (wrangler.toml):
- *   ALLOWED_ORIGIN, BOARD_EMAIL, BOARD_EMAILS, MAIL_FROM, GITHUB_REPO
- * KV bindings: PENDING (required — pending submissions awaiting a board decision),
- *   RATE_LIMIT (required — hourly sender/IP counters and exact-post dedupe)
+ *   ALLOWED_ORIGIN, BOARD_EMAIL, BOARD_EMAILS, MAIL_FROM, GITHUB_REPO,
+ *   SITE_POSTS_URL
+ * Bindings: IP_RATE_LIMITER, EMAIL_RATE_LIMITER, MODERATION_ACTIONS
+ * KV bindings: PENDING (pending payloads), RATE_LIMIT (exact-post dedupe only)
  */
 
 const MODEL = "claude-haiku-4-5-20251001"; // swap to a stronger model if desired
@@ -77,14 +79,177 @@ function isIsoDate(s) {
 
 // How long a pending submission (and its action links) stays valid, in seconds.
 const PENDING_TTL = 14 * 24 * 60 * 60;
-const RATE_WINDOW = 60 * 60;
 const DEDUPE_TTL = 24 * 60 * 60;
-const SENDER_LIMIT = 5;
-const IP_LIMIT = 20;
+const MAX_BODY_BYTES = 16 * 1024;
+const PUBLIC_CONTACT_MAX = 254;
+const FORM_PATHS = new Set(["/contact", "/join", "/post"]);
+const EMAIL_RE = /^[^\s@/?#]+@[^\s@/?#]+\.[^\s@/?#]+$/;
 const REVIEW_DECISIONS = new Set(["APPROVE", "APPROVE_WITH_EDITS", "ESCALATE", "REJECT"]);
 
+const CONTACT_FIELDS = {
+  fh_check: { max: 200 },
+  // Accept the old honeypot name while cached pages and existing bots age out.
+  website: { max: 200 },
+  name: { required: true, max: 120, singleLine: true },
+  email: { required: true, max: 254, singleLine: true, email: true, lower: true },
+  subject: { max: 160, singleLine: true },
+  message: { required: true, max: 4000 }
+};
+const JOIN_FIELDS = {
+  fh_check: { max: 200 },
+  website: { max: 200 },
+  name: { required: true, max: 120, singleLine: true },
+  email: { required: true, max: 254, singleLine: true, email: true, lower: true },
+  residency: { required: true, max: 10, values: ["current", "former"] },
+  address: { required: true, max: 240, singleLine: true },
+  membership: { required: true, max: 10, values: ["individual", "family"] },
+  note: { max: 2000 }
+};
+const POST_FIELDS = {
+  fh_check: { max: 200 },
+  website: { max: 200 },
+  postType: { required: true, max: 40, values: Object.keys(CATEGORY) },
+  title: { required: true, max: 120, singleLine: true },
+  message: { required: true, max: 900 },
+  eventDate: { max: 10, singleLine: true },
+  eventTime: { max: 60, singleLine: true },
+  location: { max: 120, singleLine: true },
+  name: { required: true, max: 120, singleLine: true },
+  email: { required: true, max: 254, singleLine: true, email: true, lower: true },
+  publicContact: { max: PUBLIC_CONTACT_MAX, singleLine: true },
+  phone: { max: PUBLIC_CONTACT_MAX, singleLine: true },
+  agree: { max: 16, singleLine: true }
+};
+
+// Classic Durable Object entry point is used so the existing dependency-free
+// Node test suite can import this module. SQLite is authoritative for both the
+// payload and the first confirmed choice; no external I/O occurs in this class.
+export class ModerationAction {
+  constructor(state) {
+    this.state = state;
+    state.blockConcurrencyWhile(async () => {
+      state.storage.sql.exec(`
+        CREATE TABLE IF NOT EXISTS moderation_state (
+          singleton INTEGER PRIMARY KEY CHECK (singleton = 1),
+          payload TEXT,
+          expires_at INTEGER NOT NULL,
+          kind TEXT CHECK (kind IN ('publish', 'reject')),
+          claimed_at INTEGER,
+          completed_at INTEGER
+        )
+      `);
+    });
+  }
+
+  async initialize(payload, expiresAt) {
+    const result = initializeModerationAction(this.state.storage.sql, payload, expiresAt);
+    if (!result.expired) await this.state.storage.setAlarm(expiresAt);
+    return result;
+  }
+
+  read() {
+    return readModerationAction(this.state.storage.sql);
+  }
+
+  claim(kind) {
+    return claimModerationAction(this.state.storage.sql, kind);
+  }
+
+  complete(kind) {
+    return completeModerationAction(this.state.storage.sql, kind);
+  }
+
+  async alarm() {
+    this.state.storage.sql.exec("DELETE FROM moderation_state");
+  }
+
+  async fetch(request) {
+    const url = new URL(request.url);
+    if (request.method !== "POST")
+      return Response.json({ error: "Not found" }, { status: 404 });
+    try {
+      const input = await request.json();
+      if (url.pathname === "/initialize") return Response.json(await this.initialize(input.payload, input.expiresAt));
+      if (url.pathname === "/read") return Response.json(this.read());
+      if (url.pathname === "/claim") return Response.json(this.claim(input.kind));
+      if (url.pathname === "/complete") return Response.json(this.complete(input.kind));
+      return Response.json({ error: "Not found" }, { status: 404 });
+    } catch (error) {
+      return Response.json({ error: "Invalid moderation request" }, { status: 400 });
+    }
+  }
+}
+
+function initializeModerationAction(sql, payload, expiresAt, now = Date.now()) {
+  if (typeof payload !== "string" || !payload || payload.length > 32 * 1024)
+    throw new Error("Invalid moderation payload");
+  if (!Number.isSafeInteger(expiresAt) || expiresAt <= 0) throw new Error("Invalid action expiry");
+  const existing = readModerationRow(sql);
+  if (existing) return { initialized: false, expired: now >= existing.expiresAt, state: publicActionState(existing) };
+  if (now >= expiresAt) return { initialized: false, expired: true, state: null };
+  sql.exec(
+    "INSERT INTO moderation_state (singleton, payload, expires_at) VALUES (1, ?, ?)",
+    payload, expiresAt
+  );
+  return { initialized: true, expired: false, state: { kind: null, claimedAt: null, expiresAt } };
+}
+
+function readModerationAction(sql, now = Date.now()) {
+  const row = readModerationRow(sql);
+  if (!row) return { initialized: false, expired: false, state: null, payload: null };
+  return {
+    initialized: true,
+    expired: now >= row.expiresAt,
+    state: publicActionState(row),
+    payload: row.payload
+  };
+}
+
+function claimModerationAction(sql, kind, now = Date.now()) {
+  if (kind !== "publish" && kind !== "reject") throw new Error("Invalid moderation action");
+  const row = readModerationRow(sql);
+  if (!row) return { initialized: false, claimed: false, expired: false, state: null, payload: null };
+  if (now >= row.expiresAt)
+    return { initialized: true, claimed: false, expired: true, state: publicActionState(row), payload: null };
+  if (row.kind)
+    return { initialized: true, claimed: false, expired: false, state: publicActionState(row), payload: null };
+
+  sql.exec("UPDATE moderation_state SET kind = ?, claimed_at = ? WHERE singleton = 1 AND kind IS NULL", kind, now);
+  const claimed = readModerationRow(sql);
+  return {
+    initialized: true,
+    claimed: claimed.kind === kind && claimed.claimedAt === now,
+    expired: false,
+    state: publicActionState(claimed),
+    payload: claimed.kind === kind && claimed.claimedAt === now ? claimed.payload : null
+  };
+}
+
+function completeModerationAction(sql, kind, now = Date.now()) {
+  if (kind !== "publish" && kind !== "reject") throw new Error("Invalid moderation action");
+  sql.exec(
+    "UPDATE moderation_state SET payload = NULL, completed_at = ? WHERE singleton = 1 AND kind = ?",
+    now, kind
+  );
+  const row = readModerationRow(sql);
+  return { completed: !!(row && row.kind === kind && row.payload == null), state: row ? publicActionState(row) : null };
+}
+
+function readModerationRow(sql) {
+  const rows = sql.exec(
+    "SELECT payload, expires_at AS expiresAt, kind, claimed_at AS claimedAt, completed_at AS completedAt " +
+      "FROM moderation_state WHERE singleton = 1"
+  ).toArray();
+  return rows[0] || null;
+}
+
+function publicActionState(row) {
+  return { kind: row.kind || null, claimedAt: row.claimedAt || null, expiresAt: row.expiresAt,
+    completedAt: row.completedAt || null };
+}
+
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
     const cors = {
@@ -101,64 +266,206 @@ export default {
     if (path === "/action/publish" || path === "/action/reject") {
       const act = path === "/action/publish" ? "publish" : "reject";
       if (request.method === "GET") return confirmAction(url, env, act);
-      if (request.method === "POST") return handleAction(url, env, act);
+      if (request.method === "POST") return handleAction(url, env, act, ctx);
       return json({ error: "Method not allowed" }, 405, cors);
     }
 
     if (request.method !== "POST") return json({ error: "Method not allowed" }, 405, cors);
 
-    const body = await request.json().catch(() => ({}));
+    if (!FORM_PATHS.has(path)) return json({ error: "Not found" }, 404, cors);
 
-    // NOTE: a filled honeypot no longer short-circuits here — autofill and
-    // password managers fill hidden fields, which silently ate real neighbors'
-    // submissions. suspectTag() flags them on the board email instead.
+    const mediaType = requestMediaType(request);
+    const native = wantsHtml(request, mediaType);
+    const respond = (payload, status) => submissionResponse(native, path, payload, status, cors);
 
-    // Rate limit by sender and IP without storing either value in KV keys.
-    // Separate counters keep a changing email address from bypassing the IP cap.
-    const limited = await enforceRateLimits(env, path, body, request, cors);
-    if (limited) return limited;
+    // IP limiting runs before reading even one byte of an attacker-controlled body.
+    const ipLimited = await enforceIpRateLimit(env, request, respond);
+    if (ipLimited) return ipLimited;
+
+    const parsed = await readSubmissionBody(request, mediaType);
+    if (parsed.error) return respond({ error: parsed.error }, parsed.status);
+
+    const checked = validateSubmission(path, parsed.value);
+    if (checked.error) return respond({ error: checked.error }, 400);
+    const body = checked.value;
+
+    // The email has been type-, length-, and syntax-validated at this point.
+    const emailLimited = await enforceEmailRateLimit(env, body.email, respond);
+    if (emailLimited) return emailLimited;
 
     try {
-      if (path === "/contact") return await handleContact(body, env, cors);
-      if (path === "/post") return await handlePost(body, env, cors, url.origin);
-      if (path === "/join") return await handleJoin(body, env, cors);
-      return json({ error: "Not found" }, 404, cors);
+      if (path === "/contact") return await handleContact(body, env, respond);
+      if (path === "/post") return await handlePost(body, env, respond, url.origin);
+      return await handleJoin(body, env, respond);
     } catch (e) {
-      console.error("FHA forms request failed", { path, error: String(e && e.message || e) });
-      return json({ error: "Server error" }, 500, cors);
+      logError("forms_request_failed", { path, error: errorMessage(e) });
+      return respond({ error: "The service could not complete your submission. Please try again later." }, 500);
     }
   }
 };
+
+async function enforceIpRateLimit(env, request, respond) {
+  const ip = String(request.headers.get("CF-Connecting-IP") || "unknown").trim().slice(0, 128);
+  return enforceRateLimit(env.IP_RATE_LIMITER, "ip", await sha256("ip:" + ip), respond);
+}
 
 // A filled honeypot (fh_check, or the legacy "website" name bots still POST) is
 // only a hint — browser autofill and password managers fill hidden fields too.
 // Nothing is ever silently dropped: the board email is tagged instead, and a
 // human decides. AI review + moderation already gate what publishes.
-function suspectTag(b) { return (b.fh_check || b.website) ? "[SUSPECT] " : ""; }
+function suspectTag(body) {
+  return body && (body.fh_check || body.website) ? "[SUSPECT] " : "";
+}
 
-async function enforceRateLimits(env, path, body, request, cors) {
-  if (!env.RATE_LIMIT) return null;
+async function enforceEmailRateLimit(env, email, respond) {
+  return enforceRateLimit(env.EMAIL_RATE_LIMITER, "email", await sha256("email:" + email), respond);
+}
+
+async function enforceRateLimit(binding, kind, key, respond) {
+  if (!binding || typeof binding.limit !== "function") {
+    logError("rate_limit_binding_missing", { kind });
+    return respond({ error: "The submission service is temporarily unavailable." }, 503);
+  }
   try {
-    const email = String(body.email || "").trim().toLowerCase();
-    const ip = String(request.headers.get("CF-Connecting-IP") || "").trim();
-    const checks = [];
-    if (email) checks.push(["sender", `${path}|${email}`, SENDER_LIMIT]);
-    if (ip) checks.push(["ip", `${path}|${ip}`, IP_LIMIT]);
+    const result = await binding.limit({ key });
+    if (!result || typeof result.success !== "boolean") throw new Error("Invalid rate-limit response");
+    if (result.success) return null;
+    console.warn({ event: "form_rate_limited", kind });
+    return respond({ error: "Too many submissions — please try again later." }, 429);
+  } catch (error) {
+    logError("rate_limit_binding_unavailable", { kind, error: errorMessage(error) });
+    return respond({ error: "The submission service is temporarily unavailable." }, 503);
+  }
+}
 
-    for (const [kind, value, limit] of checks) {
-      const key = `rl:${kind}:${await sha256(value)}`;
-      const count = Number.parseInt(await env.RATE_LIMIT.get(key) || "0", 10);
-      if (Number.isFinite(count) && count >= limit) {
-        return json({ error: "Too many submissions — please try again later." }, 429, cors);
+function requestMediaType(request) {
+  return String(request.headers.get("Content-Type") || "").split(";", 1)[0].trim().toLowerCase();
+}
+
+function wantsHtml(request, mediaType) {
+  return mediaType !== "application/json" && /(?:^|,)\s*text\/html(?:\s*;|\s*,|$)/i.test(request.headers.get("Accept") || "");
+}
+
+async function readSubmissionBody(request, mediaType) {
+  const supported = new Set(["application/json", "application/x-www-form-urlencoded", "multipart/form-data"]);
+  if (!supported.has(mediaType)) {
+    return { error: "Content-Type must be application/json or a standard HTML form encoding.", status: 415 };
+  }
+
+  const declared = request.headers.get("Content-Length");
+  if (declared != null && declared !== "") {
+    const length = Number(declared);
+    if (!Number.isSafeInteger(length) || length < 0) return { error: "Invalid Content-Length.", status: 400 };
+    if (length > MAX_BODY_BYTES) return { error: "Submission is too large.", status: 413 };
+  }
+  if (!request.body) return { error: "Request body is required.", status: 400 };
+
+  const reader = request.body.getReader();
+  const chunks = [];
+  let size = 0;
+  try {
+    while (true) {
+      const part = await reader.read();
+      if (part.done) break;
+      size += part.value.byteLength;
+      if (size > MAX_BODY_BYTES) {
+        await reader.cancel("Body size limit exceeded").catch(() => {});
+        return { error: "Submission is too large.", status: 413 };
       }
-      await env.RATE_LIMIT.put(key, String((Number.isFinite(count) ? count : 0) + 1),
-        { expirationTtl: RATE_WINDOW });
+      chunks.push(part.value);
     }
   } catch (error) {
-    // A temporary anti-abuse storage problem must not take every form offline.
-    console.error("Rate-limit storage unavailable", { error: String(error && error.message || error) });
+    logError("request_body_read_failed", { error: errorMessage(error) });
+    return { error: "Request body could not be read.", status: 400 };
   }
-  return null;
+
+  const bytes = new Uint8Array(size);
+  let offset = 0;
+  for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+
+  if (mediaType === "multipart/form-data") {
+    try {
+      const copy = new Request("https://form-parser.invalid/", {
+        method: "POST",
+        headers: { "Content-Type": request.headers.get("Content-Type") },
+        body: bytes
+      });
+      return formEntriesToObject(await copy.formData());
+    } catch (error) {
+      return { error: "Malformed multipart form body.", status: 400 };
+    }
+  }
+
+  let text;
+  try { text = new TextDecoder("utf-8", { fatal: true }).decode(bytes); }
+  catch (error) { return { error: "Request body must be valid UTF-8.", status: 400 }; }
+
+  if (mediaType === "application/x-www-form-urlencoded") {
+    return formEntriesToObject(new URLSearchParams(text));
+  }
+  try {
+    const value = JSON.parse(text);
+    if (!value || typeof value !== "object" || Array.isArray(value))
+      return { error: "JSON body must be an object.", status: 400 };
+    return { value };
+  } catch (error) {
+    return { error: "Malformed JSON body.", status: 400 };
+  }
+}
+
+function formEntriesToObject(entries) {
+  const value = Object.create(null);
+  for (const [key, item] of entries.entries()) {
+    if (Object.prototype.hasOwnProperty.call(value, key))
+      return { error: "Duplicate form fields are not allowed.", status: 400 };
+    if (typeof item !== "string") return { error: "File uploads are not supported.", status: 400 };
+    value[key] = item;
+  }
+  return { value };
+}
+
+function validateSubmission(path, body) {
+  if (path === "/contact") return validateFields(body, CONTACT_FIELDS);
+  if (path === "/join") return validateFields(body, JOIN_FIELDS);
+  return validatePostBody(body);
+}
+
+function validateFields(body, schema) {
+  if (!body || typeof body !== "object" || Array.isArray(body)) return { error: "Form body must be an object." };
+  for (const key of Object.keys(body)) {
+    if (!Object.prototype.hasOwnProperty.call(schema, key)) return { error: "Unexpected form field." };
+  }
+
+  const value = {};
+  for (const [field, rule] of Object.entries(schema)) {
+    if (!Object.prototype.hasOwnProperty.call(body, field)) {
+      if (rule.required) return { error: "Missing required fields." };
+      value[field] = "";
+      continue;
+    }
+    const raw = body[field];
+    if (typeof raw !== "string") return { error: `${field} must be text.` };
+    if (raw.length > rule.max) return { error: `${field} is too long.` };
+    const normalized = raw.trim();
+    if (rule.required && !normalized) return { error: "Missing required fields." };
+    if (rule.singleLine && /[\r\n]/.test(normalized)) return { error: `${field} must be a single line.` };
+    if (rule.values && !rule.values.includes(normalized)) return { error: `${field} has an invalid value.` };
+    if (rule.email && !EMAIL_RE.test(normalized)) return { error: "Please enter a valid email address." };
+    value[field] = rule.lower ? normalized.toLowerCase() : normalized;
+  }
+  return { value };
+}
+
+function submissionResponse(native, path, payload, status, cors) {
+  if (!native) return json(payload, status, cors);
+  const ok = status >= 200 && status < 300;
+  const success = {
+    "/contact": "Your message was sent to the Fisher Hill Association board.",
+    "/join": "Your membership request was received. A board member will follow up with payment details.",
+    "/post": "Your neighborhood post was submitted for review."
+  };
+  return page(ok ? "Submission received" : "Unable to submit",
+    ok ? success[path] : (payload.error || "The submission could not be completed."), status);
 }
 
 async function sha256(value) {
@@ -167,62 +474,71 @@ async function sha256(value) {
   return Array.from(digest, byte => byte.toString(16).padStart(2, "0")).join("");
 }
 
-async function handleContact(b, env, cors) {
-  if (!b.name || !b.email || !b.message) return json({ error: "Missing required fields." }, 400, cors);
+async function handleContact(b, env, respond) {
   await sendEmail(env, {
     to: boardRecipients(env),
     replyTo: b.email,
     subject: `${suspectTag(b)}[FHA Contact] ${b.subject || "(no subject)"} — ${b.name}`,
     text: `From: ${b.name} <${b.email}>\nSubject: ${b.subject || "(none)"}\n\n${b.message}`
   });
-  return json({ ok: true }, 200, cors);
+  return respond({ ok: true }, 200);
 }
 
 // Membership requests get a HUMAN review (residency + dues) — no AI auto-approval.
 // The board verifies the Fisher Hill connection, then follows up with payment details.
-async function handleJoin(b, env, cors) {
-  if (!b.name || !b.email || !b.residency || !b.address || !b.membership)
-    return json({ error: "Missing required fields." }, 400, cors);
+async function handleJoin(b, env, respond) {
   const dues = b.membership === "family" ? "Family — $10/year" : "Individual — $5/year";
   const res = b.residency === "former" ? "Former Fisher Hill resident" : "Current Fisher Hill resident";
   await sendEmail(env, {
     to: boardRecipients(env),
     replyTo: b.email,
     subject: `${suspectTag(b)}[FHA Membership] ${b.name} — ${res}`,
-    text: `New membership request — verify the Fisher Hill connection, then send payment details (Venmo / FHA Chase, or mailing address for a check).\n\n` +
+    text: `New membership request — verify the Fisher Hill connection, then send the current payment instructions.\n\n` +
           `Name: ${b.name} <${b.email}>\nResidency: ${res}\nFisher Hill address: ${b.address}\nMembership: ${dues}\n` +
           (b.note ? `\nNote from applicant:\n${b.note}\n` : "")
   });
-  return json({ ok: true }, 200, cors);
+  return respond({ ok: true }, 200);
 }
 
 // Every submission — whatever the AI decides — waits for a human. The post is
-// parked in PENDING under a random token and the board gets one email with the
-// AI's verdict and Publish / Reject action links carrying that token.
-async function handlePost(b, env, cors, origin) {
-  const invalid = validatePost(b);
-  if (invalid) return json({ error: invalid }, 400, cors);
-
-  b.title = b.title.trim();
-  b.message = b.message.trim();
-  b.name = b.name.trim();
-  b.email = b.email.trim().toLowerCase();
+// stored authoritatively in a per-token Durable Object and the board gets one
+// email with the AI verdict and Publish / Reject confirmation links.
+async function handlePost(b, env, respond, origin) {
+  // The new form calls this field publicContact so publication is explicit.
+  // Keep accepting the old phone field while cached/older forms age out.
+  b.publicContact = publicContactValue(b);
 
   // Exact repeats usually come from a double click or retry. Treat them as a
   // successful submission without paying for another review or emailing the
   // board twice. Similar-but-not-identical posts still go to human review.
-  const duplicateKey = env.RATE_LIMIT
-    ? "dedupe:" + await sha256(postFingerprint(b))
-    : null;
-  if (duplicateKey && await env.RATE_LIMIT.get(duplicateKey)) {
-    return json({ ok: true, duplicate: true }, 200, cors);
+  let duplicateKey = null;
+  if (env.RATE_LIMIT) {
+    try {
+      duplicateKey = "dedupe:" + await sha256(postFingerprint(b));
+      if (await env.RATE_LIMIT.get(duplicateKey)) {
+        return respond({ ok: true, duplicate: true }, 200);
+      }
+    } catch (error) {
+      duplicateKey = null;
+      logError("dedupe_read_failed", { error: errorMessage(error) });
+    }
   }
 
+  if (!env.MODERATION_ACTIONS || typeof env.MODERATION_ACTIONS.getByName !== "function")
+    throw new Error("MODERATION_ACTIONS binding is unavailable");
   const r = await review(b, env);
 
   const token = randomToken();
-  await env.PENDING.put("post:" + token, JSON.stringify({ b, r, received: new Date().toISOString() }),
-    { expirationTtl: PENDING_TTL });
+  const received = new Date().toISOString();
+  const raw = JSON.stringify({ b, r, received });
+  const expiresAt = Date.parse(received) + PENDING_TTL * 1000;
+  await initializeActionToken(env, token, raw, expiresAt);
+  // Legacy fallback only. New reads and claims are authoritative in the DO, so
+  // KV propagation delay cannot make a fresh action link appear expired.
+  if (env.PENDING && typeof env.PENDING.put === "function") {
+    try { await env.PENDING.put("post:" + token, raw, { expirationTtl: PENDING_TTL }); }
+    catch (error) { logError("legacy_pending_write_failed", { error: errorMessage(error) }); }
+  }
 
   const hasEdits = !!(r.editedTitle || r.editedBody);
   const conf = typeof r.confidence === "number" ? r.confidence.toFixed(2) : "n/a";
@@ -239,13 +555,13 @@ async function handlePost(b, env, cors, origin) {
       (hasEdits
         ? `\nAI-cleaned version (this is what approval publishes):\nTitle: ${r.editedTitle || b.title}\nDetails: ${r.editedBody || b.message}\n`
         : "") +
-      "\nAPPROVE & PUBLISH (one click)\n" +
+      "\nAPPROVE & PUBLISH (confirmation required)\n" +
       `${origin}/action/publish?token=${token}\n` +
-      `Clicking this publishes${hasEdits ? " the AI-cleaned version" : " the submission"} after a confirmation page.\n\n` +
-      "REJECT & NOTIFY SUBMITTER (one click)\n" +
+      `Open the link, review the confirmation page, then confirm to publish${hasEdits ? " the AI-cleaned version" : " the submission"}.\n\n` +
+      "REJECT & NOTIFY SUBMITTER (confirmation required)\n" +
       `${origin}/action/reject?token=${token}\n` +
-      "Clicking this rejects the submission and emails a polite AI-drafted note after a confirmation page.\n\n" +
-      "Both action links are single-use and expire in 14 days.\n\n" +
+      "Open the link, review the confirmation page, then confirm to reject and email a polite AI-drafted note.\n\n" +
+      "The first confirmed choice is atomically claimed; later attempts cannot run a conflicting action. Links expire in 14 days.\n\n" +
       "SUBMISSION DETAILS\n" +
       submissionText(b) + "\n\n" +
       "WRITE YOUR OWN RESPONSE INSTEAD\n" +
@@ -253,55 +569,110 @@ async function handlePost(b, env, cors, origin) {
   });
 
   if (duplicateKey) {
-    await env.RATE_LIMIT.put(duplicateKey, "1", { expirationTtl: DEDUPE_TTL });
+    try { await env.RATE_LIMIT.put(duplicateKey, "1", { expirationTtl: DEDUPE_TTL }); }
+    catch (error) { logError("dedupe_write_failed", { error: errorMessage(error) }); }
   }
 
   // The submitter always sees a neutral "submitted for review" message on the site.
-  return json({ ok: true }, 200, cors);
+  return respond({ ok: true }, 200);
 }
 
 function validatePost(b) {
-  for (const field of ["title", "message", "name", "email", "postType"]) {
-    if (typeof b[field] !== "string" || !b[field].trim()) return "Missing required fields.";
-  }
-  const title = b.title.trim();
-  const message = b.message.trim();
-  if (title.length < 3 || title.length > 120) return "Please use a title between 3 and 120 characters.";
-  if (message.length < 12 || message.length > 900) return "Please add 12 to 900 characters of useful detail.";
-  if (b.name.trim().length > 120) return "Please shorten the name field.";
-  if (b.email.trim().length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(b.email.trim()))
-    return "Please enter a valid email address.";
-  if (b.postType === "Neighborhood event" && !isIsoDate(b.eventDate))
-    return "Please include the date when the event happens.";
+  const checked = validatePostBody(b);
+  return checked.error || null;
+}
+
+function validatePostBody(b) {
+  const checked = validateFields(b, POST_FIELDS);
+  if (checked.error) return checked;
+  const value = checked.value;
+  const title = value.title;
+  const message = value.message;
+  if (title.length < 3 || title.length > 120) return { error: "Please use a title between 3 and 120 characters." };
+  if (message.length < 12 || message.length > 900) return { error: "Please add 12 to 900 characters of useful detail." };
+  const contactError = validatePublicContact(publicContactValue(value));
+  if (contactError) return { error: contactError };
+  if (value.eventDate && !isIsoDate(value.eventDate)) return { error: "Please enter a valid event date." };
+  if (value.postType === "Neighborhood event" && !isIsoDate(value.eventDate))
+    return { error: "Please include the date when the event happens." };
 
   const wordsBeyondLinks = message.replace(/https?:\/\/\S+/gi, "").match(/[\p{L}\p{N}]/gu) || [];
-  if (wordsBeyondLinks.length < 8) return "Please add a short description instead of submitting only a link.";
-  return null;
+  if (wordsBeyondLinks.length < 8) return { error: "Please add a short description instead of submitting only a link." };
+  return { value };
 }
 
 function postFingerprint(b) {
   const normalize = value => String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
-  return [b.email, b.postType, b.title, b.message, b.eventDate, b.location].map(normalize).join("|");
+  return [b.email, b.postType, b.title, b.message, b.eventDate, b.location, publicContactValue(b)]
+    .map(normalize).join("|");
 }
 
-// Shared validation for the two action endpoints. Returns { key, raw } on
-// success or a Response to send straight back.
-async function loadPending(url, env) {
-  if (!env.PENDING) return page("Setup needed", "The PENDING KV namespace is not bound — see backend/wrangler.toml.", 500);
-  const token = url.searchParams.get("token") || "";
-  if (!/^[0-9a-f]{32}$/.test(token)) return page("Invalid link", "This action link is not valid.", 400);
-  const key = "post:" + token;
-  const raw = await env.PENDING.get(key);
-  if (!raw) return page("Link expired", "This action link was already used, or it expired (links last 14 days).", 410);
-  return { key, raw };
+// Returns the explicitly public contact value. `phone` is the pre-2026 field
+// name and remains supported so submissions from older cached pages are not lost.
+function publicContactValue(b) {
+  if (!b || typeof b !== "object") return "";
+  if (typeof b.publicContact === "string" && b.publicContact.trim()) return b.publicContact.trim();
+  return typeof b.phone === "string" ? b.phone.trim() : "";
+}
+
+function publicContactKind(value) {
+  const contact = String(value || "").trim();
+  if (!contact) return "";
+  if (/^[^\s@/?#]+@[^\s@/?#]+\.[^\s@/?#]+$/.test(contact)) return "email";
+
+  const phone = contact.match(/^(\+?[\d\s().-]+?)(?:\s*(?:x|ext\.?)\s*(\d{1,8}))?$/i);
+  if (phone) {
+    const digits = phone[1].replace(/\D/g, "");
+    if (digits.length >= 7 && digits.length <= 15) return "phone";
+  }
+
+  try {
+    const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(contact);
+    const url = new URL(hasScheme ? contact : "https://" + contact);
+    if (url.protocol === "https:" && url.hostname && !url.username && !url.password &&
+        (url.hostname.includes(".") || /^\d{1,3}(?:\.\d{1,3}){3}$/.test(url.hostname))) {
+      return "url";
+    }
+  } catch (error) {
+    // The caller turns an unrecognized value into a field-level validation error.
+  }
+  return null;
+}
+
+function validatePublicContact(value) {
+  const contact = String(value || "").trim();
+  if (!contact) return null;
+  if (contact.length > PUBLIC_CONTACT_MAX)
+    return `Please keep the public contact field to ${PUBLIC_CONTACT_MAX} characters or fewer.`;
+  if (!publicContactKind(contact))
+    return "Please enter a valid public phone number, email address, or secure https:// website URL.";
+  return null;
 }
 
 // GET /action/publish | /action/reject — show what's about to happen and a
 // confirm button. Nothing changes on GET, so email-scanner prefetches are harmless.
 async function confirmAction(url, env, act) {
-  const got = await loadPending(url, env);
-  if (got instanceof Response) return got;
-  const pending = JSON.parse(got.raw);
+  const token = url.searchParams.get("token") || "";
+  if (!/^[0-9a-f]{32}$/.test(token)) return page("Invalid link", "This action link is not valid.", 400);
+  let stored;
+  try { stored = await readActionToken(env, token); }
+  catch (error) {
+    logError("moderation_read_failed", { error: errorMessage(error) });
+    return page("Action unavailable", "The moderation store is temporarily unavailable. Nothing was changed.", 503);
+  }
+  if (!stored.initialized || stored.expired || !stored.payload)
+    return page("Link expired", "This moderation link expired, or its completed payload has already been removed.", 410);
+  if (stored.state && stored.state.kind) {
+    return page("Action already claimed",
+      "A board member already confirmed " + (stored.state.kind === "publish" ? "Publish" : "Reject") +
+      ". No second or conflicting action can run.", 409);
+  }
+  let pending;
+  try { pending = JSON.parse(stored.payload); }
+  catch (error) {
+    logError("moderation_payload_invalid", { error: errorMessage(error) });
+    return page("Action unavailable", "The stored submission could not be read. A board member must review it manually.", 500);
+  }
   const title = pending.r.editedTitle || pending.b.title;
   const detail = act === "publish"
     ? "Publish “" + title + "” to the neighborhood board" + (pending.r.editedTitle || pending.r.editedBody ? " (the AI-cleaned version)" : "")
@@ -311,18 +682,51 @@ async function confirmAction(url, env, act) {
            label: act === "publish" ? "Publish it" : "Send the note" });
 }
 
-// POST /action/publish | /action/reject — from the confirmation page's button.
-// The token is single-use: it is deleted before the action runs (so a double
-// click can't publish twice) and restored if the action fails.
-async function handleAction(url, env, act) {
-  const got = await loadPending(url, env);
-  if (got instanceof Response) return got;
-  const key = got.key, raw = got.raw;
-  await env.PENDING.delete(key);
-  const pending = JSON.parse(raw);
+// POST /action/publish | /action/reject — the per-token Durable Object persists
+// and returns the first confirmed choice plus payload before any external I/O.
+async function handleAction(url, env, act, ctx) {
+  const token = url.searchParams.get("token") || "";
+  if (!/^[0-9a-f]{32}$/.test(token)) return page("Invalid link", "This action link is not valid.", 400);
+  let claim;
+  try {
+    claim = await claimActionToken(env, token, act);
+  } catch (error) {
+    logError("moderation_claim_failed", { action: act, error: errorMessage(error) });
+    return page("Action unavailable", "The action lock is temporarily unavailable. Nothing was published or emailed.", 503);
+  }
+  if (!claim.initialized) return page("Link expired", "This moderation link has expired. Nothing was published or emailed.", 410);
+  if (claim.expired) return page("Link expired", "This moderation link has expired. Nothing was published or emailed.", 410);
+  if (!claim.claimed) {
+    return page("Action already claimed",
+      "A board member already confirmed " + (claim.state && claim.state.kind === "publish" ? "Publish" : "Reject") +
+      ". No second or conflicting action was run.", 409);
+  }
+
+  let pending;
+  try { pending = JSON.parse(claim.payload); }
+  catch (error) {
+    logError("moderation_payload_invalid", { action: act, error: errorMessage(error) });
+    return page("Manual follow-up required",
+      "The choice was safely claimed, but the stored submission could not be read. A board member must complete it manually.", 500);
+  }
+  const checked = validatePostBody(pending.b);
+  if (checked.error) {
+    logError("moderation_payload_validation_failed", { action: act, error: checked.error });
+    return page("Manual follow-up required",
+      "The choice was safely claimed, but the stored submission failed current validation. A board member must complete it manually.", 500);
+  }
+  pending.b = checked.value;
+  pending.r = normalizeReview(pending.r);
+
   try {
     if (act === "publish") {
-      await appendPost(env, pending.b, pending.r);
+      const published = await appendPost(env, pending.b, pending.r);
+      // GitHub is already updated at this point. A delivery failure must never
+      // make this claimed moderation action retryable or publish twice.
+      await notifyPublishedWithoutRollback(env, pending, published, ctx);
+      await completeActionWithoutRollback(env, token, act);
+      await deleteLegacyPendingPayload(env, token);
+      console.log({ event: "post_published", category: published.category });
       return page("Post published",
         "“" + (pending.r.editedTitle || pending.b.title) + "” is on its way to the board — the site picks it up in a minute or two.");
     }
@@ -331,10 +735,114 @@ async function handleAction(url, env, act) {
       subject: "About your Fisher Hill board post",
       text: await draftRejection(env, pending)
     });
+    await completeActionWithoutRollback(env, token, act);
+    await deleteLegacyPendingPayload(env, token);
     return page("Rejection sent", "A polite note was emailed to " + pending.b.email + ".");
   } catch (e) {
-    await env.PENDING.put(key, raw, { expirationTtl: PENDING_TTL });
-    return page("Something went wrong", "The action could not be completed. The link is still valid — try it again in a minute.", 500);
+    logError("moderation_side_effect_failed", { action: act, error: errorMessage(e) });
+    return page("Manual follow-up required",
+      "The choice was safely claimed, but automation could not finish it. It will not run again; a board member must complete it manually.", 500);
+  }
+}
+
+function actionStub(env, token) {
+  if (!env.MODERATION_ACTIONS || typeof env.MODERATION_ACTIONS.getByName !== "function")
+    throw new Error("MODERATION_ACTIONS binding is unavailable");
+  return env.MODERATION_ACTIONS.getByName(token);
+}
+
+async function callActionStub(env, token, operation, payload = {}) {
+  const response = await actionStub(env, token).fetch("https://moderation-action.internal/" + operation, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+  if (!response.ok) throw new Error(`Moderation ${operation} failed: ${response.status}`);
+  return response.json();
+}
+
+async function initializeActionToken(env, token, payload, expiresAt, allowExisting = false) {
+  const result = await callActionStub(env, token, "initialize", { payload, expiresAt });
+  if (!result || typeof result.initialized !== "boolean" || typeof result.expired !== "boolean")
+    throw new Error("Invalid moderation initialization response");
+  if (!allowExisting && !result.initialized) throw new Error("Moderation token collision");
+  if (result.expired) throw new Error("Moderation token expired during initialization");
+  return result;
+}
+
+async function readActionToken(env, token) {
+  let result = await callActionStub(env, token, "read");
+  if (!result || typeof result.initialized !== "boolean" || typeof result.expired !== "boolean")
+    throw new Error("Invalid moderation read response");
+  if (result.initialized) return result;
+  const legacy = await readLegacyPendingPayload(env, token);
+  if (!legacy) return result;
+  await initializeActionToken(env, token, legacy.payload, legacy.expiresAt, true);
+  result = await callActionStub(env, token, "read");
+  return result;
+}
+
+async function claimActionToken(env, token, kind) {
+  let result = await callActionStub(env, token, "claim", { kind });
+  if (!result || typeof result.initialized !== "boolean" || typeof result.claimed !== "boolean" ||
+      typeof result.expired !== "boolean") throw new Error("Invalid moderation claim response");
+  if (result.initialized) return result;
+  const legacy = await readLegacyPendingPayload(env, token);
+  if (!legacy) return result;
+  await initializeActionToken(env, token, legacy.payload, legacy.expiresAt, true);
+  result = await callActionStub(env, token, "claim", { kind });
+  return result;
+}
+
+async function readLegacyPendingPayload(env, token) {
+  if (!env.PENDING || typeof env.PENDING.get !== "function") return null;
+  const payload = await env.PENDING.get("post:" + token);
+  if (!payload) return null;
+  let pending;
+  try { pending = JSON.parse(payload); }
+  catch (error) { throw new Error("Legacy pending payload is invalid"); }
+  const received = Date.parse(pending.received || "");
+  if (!Number.isFinite(received)) throw new Error("Legacy pending payload has no valid timestamp");
+  const expiresAt = received + PENDING_TTL * 1000;
+  return expiresAt > Date.now() ? { payload, expiresAt } : null;
+}
+
+async function completeActionWithoutRollback(env, token, kind) {
+  try {
+    const result = await callActionStub(env, token, "complete", { kind });
+    if (!result || result.completed !== true) throw new Error("Moderation completion was not persisted");
+  } catch (error) {
+    // The external side effect already succeeded and the claim is permanent.
+    logError("moderation_completion_failed", { action: kind, error: errorMessage(error) });
+  }
+}
+
+async function deleteLegacyPendingPayload(env, token) {
+  if (!env.PENDING || typeof env.PENDING.delete !== "function") return;
+  try { await env.PENDING.delete("post:" + token); }
+  catch (error) { logError("legacy_pending_cleanup_failed", { error: errorMessage(error) }); }
+}
+
+async function notifyPublishedWithoutRollback(env, pending, published, ctx) {
+  const delivery = sendEmail(env, {
+    to: pending.b.email,
+    replyTo: env.BOARD_EMAIL,
+    subject: `[FHA] Your post is live: ${published.title}`,
+    text: `Good news — your Fisher Hill neighborhood post “${published.title}” was approved and published.\n\n` +
+      `View the neighborhood board: ${env.SITE_POSTS_URL || "https://wp-cna.github.io/FHA/posts.html"}\n\n` +
+      "It may take a minute or two for the latest version to appear.\n\n" +
+      "— The Fisher Hill Association board"
+  }).catch(error => {
+    logError("publication_notice_failed", { error: errorMessage(error) });
+  });
+
+  try {
+    if (ctx && typeof ctx.waitUntil === "function") ctx.waitUntil(delivery);
+    else await delivery;
+  } catch (error) {
+    // Defensive: even an unexpected execution-context error cannot undo a
+    // GitHub commit that has already succeeded.
+    logError("publication_notice_scheduling_failed", { error: errorMessage(error) });
   }
 }
 
@@ -390,7 +898,16 @@ function page(title, msg, status, confirm) {
     "form{margin:18px 0 0}button{background:#c01a8f;color:#fff;border:0;border-radius:10px;padding:12px 22px;font:inherit;font-weight:600;font-size:15px;cursor:pointer}" +
     "button:hover{background:#7a1059}</style></head>" +
     "<body><main><h1>" + esc(title) + "</h1><p>" + esc(msg) + "</p>" + form + "</main></body></html>";
-  return new Response(html, { status: status || 200, headers: { "Content-Type": "text/html; charset=utf-8" } });
+  return new Response(html, {
+    status: status || 200,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store",
+      "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'",
+      "Referrer-Policy": "no-referrer",
+      "X-Content-Type-Options": "nosniff"
+    }
+  });
 }
 
 async function review(b, env) {
@@ -402,7 +919,7 @@ async function review(b, env) {
       body: JSON.stringify({ model: MODEL, max_tokens: 400, system: REVIEW_SYSTEM, messages: [{ role: "user", content: user }] })
     });
     if (!response.ok) {
-      console.error("AI review request failed", { status: response.status });
+      logError("ai_review_request_failed", { status: response.status });
       return reviewFallback("The automated reviewer was unavailable; a board member should review this submission.");
     }
     const res = await response.json();
@@ -410,7 +927,7 @@ async function review(b, env) {
     const m = text.match(/\{[\s\S]*\}/);
     return normalizeReview(JSON.parse(m ? m[0] : text));
   } catch (error) {
-    console.error("AI review could not be parsed", { error: String(error && error.message || error) });
+    logError("ai_review_parse_failed", { error: errorMessage(error) });
     return reviewFallback("The automated reviewer could not complete its review; a board member should decide.");
   }
 }
@@ -457,7 +974,19 @@ async function appendPost(env, b, r) {
   if (!curRes.ok) throw new Error("GitHub read failed: " + curRes.status);
   const cur = await curRes.json();
   const data = JSON.parse(b64decode((cur.content || "").replace(/\n/g, "")));
-  const today = new Date().toISOString().slice(0, 10);
+  const published = buildPublishedPost(b, r);
+  data.posts.unshift(published);
+  data.updated = new Date().toISOString().slice(0, 10);
+  const content = b64encode(JSON.stringify(data, null, 2) + "\n");
+  const putRes = await fetch(api, {
+    method: "PUT", headers: h,
+    body: JSON.stringify({ message: `Add board post: ${b.title}`, content, sha: cur.sha })
+  });
+  if (!putRes.ok) throw new Error("GitHub write failed: " + putRes.status);
+  return published;
+}
+
+function buildPublishedPost(b, r, today = new Date().toISOString().slice(0, 10)) {
   const category = CATEGORY[b.postType] || "Neighborhood";
   const ttl = POST_TTL[category] != null ? POST_TTL[category] : DEFAULT_TTL;
   // A post is dated by the day it is ABOUT when the submitter gave an event
@@ -468,7 +997,7 @@ async function appendPost(env, b, r) {
   const [y, mo, d] = postDate.split("-").map(Number);
   const floor = addDays(today, MIN_EVENT_DAYS);
   const eventExpiry = eventDate ? addDays(eventDate, 1) : null;
-  data.posts.unshift({
+  return {
     title: r.editedTitle || b.title,
     category: category,
     fh: true,
@@ -479,15 +1008,9 @@ async function appendPost(env, b, r) {
     time: String(b.eventTime || "").slice(0, 60),
     location: String(b.location || "").slice(0, 120),
     summary: (r.editedBody || b.message).slice(0, 400),
-    source: b.name
-  });
-  data.updated = today;
-  const content = b64encode(JSON.stringify(data, null, 2) + "\n");
-  const putRes = await fetch(api, {
-    method: "PUT", headers: h,
-    body: JSON.stringify({ message: `Add board post: ${b.title}`, content, sha: cur.sha })
-  });
-  if (!putRes.ok) throw new Error("GitHub write failed: " + putRes.status);
+    source: b.name,
+    publicContact: publicContactValue(b)
+  };
 }
 
 async function sendEmail(env, { to, subject, text, replyTo }) {
@@ -514,8 +1037,14 @@ function submissionText(b) {
     b.eventTime ? `Event time: ${b.eventTime}` : null,
     b.location ? `Location: ${b.location}` : null
   ].filter(Boolean).join("\n");
+  const contact = publicContactValue(b);
   return `Type: ${b.postType}\nTitle: ${b.title}${when ? "\n" + when : ""}\n` +
-    `Details: ${b.message}\n\nSubmitted by: ${b.name} <${b.email}>${b.phone ? " · " + b.phone : ""}`;
+    `Details: ${b.message}\n\nSubmitted by: ${b.name} <${b.email}>` +
+    (contact ? `\nPublic contact (submitter approved for publication): ${contact}` : "\nPublic contact: (not provided)");
+}
+function errorMessage(error) { return String(error && error.message || error); }
+function logError(event, details) {
+  console.error({ event, ...(details || {}) });
 }
 function json(o, status, cors) {
   return new Response(JSON.stringify(o), { status: status || 200, headers: { "Content-Type": "application/json", ...cors } });
@@ -523,4 +1052,24 @@ function json(o, status, cors) {
 function b64encode(str) { const bytes = new TextEncoder().encode(str); let bin = ""; bytes.forEach(c => bin += String.fromCharCode(c)); return btoa(bin); }
 function b64decode(b64) { const bin = atob(b64); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
 
-export { boardRecipients, enforceRateLimits, normalizeReview, postFingerprint, reviewFallback, sha256, validatePost };
+export {
+  boardRecipients,
+  buildPublishedPost,
+  claimModerationAction,
+  completeModerationAction,
+  enforceEmailRateLimit,
+  enforceIpRateLimit,
+  initializeModerationAction,
+  normalizeReview,
+  postFingerprint,
+  publicContactKind,
+  publicContactValue,
+  readModerationAction,
+  readSubmissionBody,
+  reviewFallback,
+  sha256,
+  validateFields,
+  validatePost,
+  validatePostBody,
+  validatePublicContact
+};

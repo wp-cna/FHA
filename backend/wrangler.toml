@@ -1,17 +1,47 @@
 name = "fha-forms"
 main = "worker.js"
-compatibility_date = "2024-11-01"
+compatibility_date = "2026-08-14"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+[[ratelimits]]
+name = "IP_RATE_LIMITER"
+namespace_id = "2026081401"
+
+  [ratelimits.simple]
+  limit = 20
+  period = 60
+
+[[ratelimits]]
+name = "EMAIL_RATE_LIMITER"
+namespace_id = "2026081402"
+
+  [ratelimits.simple]
+  limit = 5
+  period = 60
+
+[[durable_objects.bindings]]
+name = "MODERATION_ACTIONS"
+class_name = "ModerationAction"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ModerationAction"]
 
 [vars]
 ALLOWED_ORIGIN = "https://wp-cna.github.io"
 BOARD_EMAIL = "fha.wp.info@gmail.com"
 BOARD_EMAILS = "fha.wp.info@gmail.com,michael@mdalton.com,michael.kushman@gmail.com"
-# Deploy only after mail.wp-cna.org is verified in Resend.
+# Deployment gate: add the FHA Resend account's three DNS records to the exact
+# mail.wp-cna.org subdomain and wait for it to show Verified before deploying.
 MAIL_FROM = "FHA Board <notifications@mail.wp-cna.org>"
 GITHUB_REPO = "wp-cna/FHA"
+SITE_POSTS_URL = "https://wp-cna.github.io/FHA/posts.html"
 
-# REQUIRED: pending board posts awaiting a human decision (the action links in
-# the review email).
+# Legacy payload fallback for moderation links issued by the pre-Durable-Object
+# Worker. New payloads and claims are authoritative in MODERATION_ACTIONS.
 #
 # This Worker deploys to the FHA's own Cloudflare account —
 # "Fha.wp.info@gmail.com's Account", id cdcfdd60928c28dda1c5ee6596239e79 —
@@ -23,9 +53,8 @@ GITHUB_REPO = "wp-cna/FHA"
 binding = "PENDING"
 id = "1ee1131f07f34e55bb123733aea2c08e"
 
-# Shared anti-abuse state: hourly sender/IP counters plus exact-submission
-# fingerprints. This is intentionally separate from PENDING so rate-limit and
-# dedupe keys can expire independently from board action links.
+# Exact-post fingerprints only. Sender and IP limits use the two native
+# Rate Limiting bindings above; KV is not safe for atomic counters.
 [[kv_namespaces]]
 binding = "RATE_LIMIT"
 id = "6f257facb5404553b35521ff1bb72b3a"
