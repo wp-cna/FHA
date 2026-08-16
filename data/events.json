@@ -1,43 +1,7 @@
 {
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "DJ Days – Saxon Woods Pool",
-      "category": "Parks & Recreation",
-      "date": "2026-08-15",
-      "dateLabel": "August 15, 2026",
-      "time": "12:00 PM – 4:00 PM",
-      "location": "Saxon Woods Park, 1800 Mamaroneck Avenue, White Plains, NY, 10605",
-      "summary": "Spend your summer at Westchester County Pools and Beaches!",
-      "url": "https://parksevents.westchestercountyny.gov/event/dj-days-saxon-woods-pool/2026-08-15",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
-      "title": "R&B Soul Line Dancing",
-      "category": "Learning",
-      "date": "2026-08-15",
-      "dateLabel": "August 15, 2026",
-      "time": "1:00 PM – 2:00 PM",
-      "location": "White Plains Public Library, Library Plaza, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Dance your way to better balance, coordination, and focus - all while having a great time!",
-      "url": "https://calendar.whiteplainslibrary.org/event/16079001",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Unearth a Story",
-      "category": "Workshop",
-      "date": "2026-08-15",
-      "dateLabel": "August 15, 2026",
-      "time": "2:00 PM – 3:30 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for Unearth a Story, a generative writing workshop designed to help participants uncover the stories inside you!",
-      "url": "https://calendar.whiteplainslibrary.org/event/16521952",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "TIPS for Teens",
       "category": "Learning",
