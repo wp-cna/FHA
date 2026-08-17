@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -1794,6 +1794,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Skate with Frosty aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "CUNY Information Session",
+      "category": "Workshop",
+      "date": "2026-12-14",
+      "dateLabel": "December 14, 2026",
+      "time": "6:00 PM – 7:00 PM",
+      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Interested in learning more about applying to and attending one of the City University of New York (CUNY) schools?",
+      "url": "https://calendar.whiteplainslibrary.org/event/16986269",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Transportation Commission Meeting",
