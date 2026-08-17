@@ -85,6 +85,11 @@ p{ line-height:1.6; color:#352c41; max-width:65ch; }
 
 .placeholder{ border:1px dashed var(--line); border-radius:10px; padding:22px 24px; background:var(--soft); color:var(--muted); font-size:15px; }
 
+/* About-page history section */
+.history .hist-credit{ font-size:14px; color:var(--muted); font-style:italic; margin:0 0 4px; }
+.history h3{ font-weight:700; font-size:clamp(1.05rem,1.8vw,1.2rem); letter-spacing:-.005em; margin:30px 0 2px; color:var(--brand); }
+.history h3:first-of-type{ margin-top:22px; }
+
 .officers{ list-style:none; margin:14px 0 0; padding:0; display:grid; gap:8px; }
 .officers li{ font-size:16px; }
 .officers strong{ font-weight:600; }
