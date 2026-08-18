@@ -1,32 +1,7 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "TIPS for Teens",
-      "category": "Learning",
-      "date": "2026-08-17",
-      "dateLabel": "August 17, 2026",
-      "time": "3:00 PM – 4:30 PM",
-      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "TIPS (Teen Information and Peer Services) is a leadership program where teens have the opportunity to discuss and learn about topics of community importance,…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16395257",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Neighborhood Nights",
-      "category": "Parks & Recreation",
-      "date": "2026-08-17",
-      "dateLabel": "August 17, 2026",
-      "time": "6:30 PM",
-      "location": "Gardella Park, White Plains, NY",
-      "summary": "Neighborhood Nights is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4349&month=8&year=2026&day=17&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Neighborhood Nights aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Transportation Commission Meeting",
       "category": "Civic",
@@ -559,6 +534,18 @@
       "source": "Westchester County Parks"
     },
     {
+      "title": "Rev250 Book Talk: George Washington's War in the North",
+      "category": "Learning",
+      "date": "2026-09-19",
+      "dateLabel": "September 19, 2026",
+      "time": "2:00 PM – 3:30 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Denham's book examines Washington's northern campaigns after the Battle of Monmouth in 1778.",
+      "url": "https://calendar.whiteplainslibrary.org/event/15941547",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Rosedale Residential Association - Septemberfest",
       "category": "Seasonal",
       "date": "2026-09-20",
@@ -867,6 +854,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Intro to Microsoft Excel, Part 1",
+      "category": "Learning",
+      "date": "2026-10-07",
+      "dateLabel": "October 7, 2026",
+      "time": "4:00 PM – 4:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn how to create a simple spreadsheet and use formulas and functions with Microsoft Excel, the premier spreadsheet program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17217585",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Zoning Board of Appeals",
       "category": "Civic",
       "date": "2026-10-07",
@@ -972,6 +971,18 @@
       "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Sustainable Westchester , in partnership with Healthy Home Academy , is offering a FREE 5-week Clean Energy Workforce Training program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17128804",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Intro to Microsoft Excel, Part 2",
+      "category": "Learning",
+      "date": "2026-10-14",
+      "dateLabel": "October 14, 2026",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This class is for those who can create a simple spreadsheet and use formulas in Excel.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17217628",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1099,6 +1110,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Intro to Microsoft Excel, Part 3",
+      "category": "Learning",
+      "date": "2026-10-21",
+      "dateLabel": "October 21, 2026",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn how to use absolute cell references and work with summary and detail worksheets.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17217680",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
@@ -1344,6 +1367,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "We will be hosting the following program in partnership with The College of Westchester What is YOUR personal brand saying about you?",
       "url": "https://calendar.whiteplainslibrary.org/event/16967770",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Ten Steps to Start Your Business",
+      "category": "Workshop",
+      "date": "2026-11-16",
+      "dateLabel": "November 16, 2026",
+      "time": "7:00 PM – 8:00 PM",
+      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Please join us to learn: Ten Steps to Start a Business; Personal Assessment; Writing a Business Plan, Choosing Your Business Structure: Pros and Cons of Sole…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17213597",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1757,6 +1792,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Creative Upcycling: The Junk Journal Workshop",
+      "category": "Workshop",
+      "date": "2026-12-11",
+      "dateLabel": "December 11, 2026",
+      "time": "2:00 PM – 3:30 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Discover the art of junk journaling!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17212945",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-12",
@@ -1832,6 +1879,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Holiday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Up in the Arctic: VR Search and Find!",
+      "category": "Learning",
+      "date": "2026-12-15",
+      "dateLabel": "December 15, 2026",
+      "time": "12:30 PM – 1:00 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "For children ages 2+ and their families.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17081974",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Planning Board Meeting",
