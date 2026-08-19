@@ -1,13 +1,14 @@
 name = "fha-forms"
+account_id = "cdcfdd60928c28dda1c5ee6596239e79"
 main = "worker.js"
 compatibility_date = "2024-11-01"
 
 [vars]
-ALLOWED_ORIGIN = "https://wp-cna.github.io"
+ALLOWED_ORIGIN = "https://wp-fha.org"
 BOARD_EMAIL = "fha.wp.info@gmail.com"
 BOARD_EMAILS = "fha.wp.info@gmail.com,michael@mdalton.com,michael.kushman@gmail.com"
-# Deploy only after mail.wp-cna.org is verified in Resend.
-MAIL_FROM = "FHA Board <notifications@mail.wp-cna.org>"
+# Deploy only after mail.wp-fha.org is verified in Resend.
+MAIL_FROM = "FHA Board <notifications@mail.wp-fha.org>"
 GITHUB_REPO = "wp-cna/FHA"
 
 # REQUIRED: pending board posts awaiting a human decision (the action links in

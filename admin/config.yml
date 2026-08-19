@@ -12,8 +12,8 @@ backend:
   # Sveltia auth Worker (shared with the WPCNA admin).
   base_url: https://wpcna-cms-auth.michael-kushman.workers.dev
 
-site_url: https://wp-cna.github.io/FHA/
-display_url: https://wp-cna.github.io/FHA/
+site_url: https://wp-fha.org/
+display_url: https://wp-fha.org/
 # Sveltia always normalizes the GLOBAL public_folder to a root-absolute path
 # ("/assets/uploads"), which would 404 on this /FHA/ subpath site — so any
 # future image/file field must set its own field-level
