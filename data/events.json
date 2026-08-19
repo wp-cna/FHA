@@ -1,32 +1,18 @@
 {
-  "updated": "2026-08-18",
+  "updated": "2026-08-19",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
-      "title": "Transportation Commission Meeting",
+      "title": "SCORE Meeting",
       "category": "Civic",
-      "date": "2026-08-18",
-      "dateLabel": "August 18, 2026",
-      "time": "9:15 AM – 10:15 AM",
-      "location": "City Hall Common Council Chambers, White Plains, NY",
-      "summary": "Transportation Commission Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3659&month=8&year=2026&day=18&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Planning Board Meeting",
-      "category": "Civic",
-      "date": "2026-08-18",
-      "dateLabel": "August 18, 2026",
-      "time": "7:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4356&month=8&year=2026&day=18&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+      "date": "2026-08-19",
+      "dateLabel": "August 19, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Monthly SCORE Chapter Meeting.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17225062",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Make Art with Artist Michael Albert",
@@ -182,13 +168,13 @@
       "dateLabel": "August 26, 2026",
       "time": "11:00 AM – 2:00 PM",
       "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
+      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
       "url": "https://calendar.whiteplainslibrary.org/event/17112575",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
     {
-      "title": "Pre Fall Season Meeting and Clinic on New Laws of the game",
+      "title": "Pre-Fall Season Meeting and Clinic on New Laws of the Game",
       "category": "Civic",
       "date": "2026-08-26",
       "dateLabel": "August 26, 2026",
@@ -300,18 +286,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Girls Varsity Swimming/Diving vs. Harrison",
-      "category": "Sports",
-      "date": "2026-09-08",
-      "dateLabel": "September 8, 2026",
-      "time": "4:30 PM",
-      "location": "White Plains High School, White Plains, NY",
-      "summary": "Girls Varsity Swimming/Diving hosts Harrison at White Plains High School.",
-      "url": "/sports/swimming-diving/",
-      "ctaLabel": "See the full schedule",
-      "source": "White Plains High School Athletics"
-    },
-    {
       "title": "Common Council Meeting",
       "category": "Civic",
       "date": "2026-09-08",
@@ -323,6 +297,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Girls Varsity Swimming/Diving vs. Harrison",
+      "category": "Sports",
+      "date": "2026-09-09",
+      "dateLabel": "September 9, 2026",
+      "time": "4:30 PM",
+      "location": "White Plains High School, White Plains, NY",
+      "summary": "Girls Varsity Swimming/Diving hosts Harrison at White Plains High School.",
+      "url": "/sports/swimming-diving/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "Girls Varsity Tennis at Harrison",
@@ -454,7 +440,7 @@
       "dateLabel": "September 16, 2026",
       "time": "11:00 AM – 2:00 PM",
       "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
+      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
       "url": "https://calendar.whiteplainslibrary.org/event/17112576",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -507,6 +493,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17160499",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Backyard Party - Teens",
+      "category": "Parks & Recreation",
+      "date": "2026-09-18",
+      "dateLabel": "September 18, 2026",
+      "time": "6:00 PM – 9:00 PM",
+      "location": "Delfino Park, White Plains, NY",
+      "summary": "Backyard Party - Teens is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4550&month=9&year=2026&day=18&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Backyard Party - Teens aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Truck Day",
@@ -731,6 +730,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Short-Story/Film Discussion Series",
+      "category": "Civic",
+      "date": "2026-10-01",
+      "dateLabel": "October 1, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17227314",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Wild America",
       "category": "Learning",
       "date": "2026-10-01",
@@ -891,6 +902,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Short-Story/Film Discussion Series",
+      "category": "Civic",
+      "date": "2026-10-08",
+      "dateLabel": "October 8, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17227718",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "\"Mi Gente Estuvo Aquí También\"",
       "category": "Learning",
       "date": "2026-10-08",
@@ -957,7 +980,7 @@
       "dateLabel": "October 14, 2026",
       "time": "11:00 AM – 2:00 PM",
       "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
+      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
       "url": "https://calendar.whiteplainslibrary.org/event/17112577",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -1270,6 +1293,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Short-Story/Film Discussion Series",
+      "category": "Civic",
+      "date": "2026-10-29",
+      "dateLabel": "October 29, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17227801",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Hispanic Heritage Luncheon",
       "category": "Parks & Recreation",
       "date": "2026-10-30",
@@ -1319,6 +1354,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Affordable Housing in White Plains",
+      "category": "Learning",
+      "date": "2026-11-09",
+      "dateLabel": "November 9, 2026",
+      "time": "6:30 PM – 8:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17225309",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Sugar: The Play",
