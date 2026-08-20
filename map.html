@@ -30,7 +30,12 @@
 
   .fh-hint{ position:absolute; right:clamp(14px,3vw,30px); bottom:clamp(40px,5vw,52px); z-index:3; margin:0; pointer-events:none;
     font-size:12px; font-weight:600; color:#fff; background:rgba(0,0,0,.42); padding:6px 11px; backdrop-filter:blur(3px); }
-  .fh-nav{ position:absolute; right:clamp(14px,3vw,30px); bottom:clamp(74px,9vw,96px); z-index:4; display:flex; gap:6px; }
+  /* Vertical column, centered on the right edge — clear of the parent page's
+     corner overlays (page label bottom-right, chip bottom-left, ENG/ESP
+     top-right), which crowd a bottom-right row on short viewports. */
+  .fh-nav{ position:fixed; right:clamp(10px,2vw,18px); top:calc(50% - 20px); transform:translateY(-50%); z-index:4;
+    display:grid; grid-template-columns:repeat(2,38px); gap:6px; }
+  #fh-recenter{ grid-column:1 / -1; width:auto; }
   .fh-nav button{ width:38px; height:38px; cursor:pointer; font-size:17px; line-height:1; color:#fff;
     background:rgba(0,0,0,.5); border:1px solid rgba(255,255,255,.28); border-radius:8px; backdrop-filter:blur(3px); }
   .fh-nav button:hover{ background:rgba(0,0,0,.72); }
@@ -82,8 +87,9 @@
   .fh-nav button{ touch-action:manipulation; -webkit-user-select:none; user-select:none; }
   @media (max-width:640px){
     .fh-hint{ font-size:11px; max-width:74vw; }
-    .fh-nav{ bottom:clamp(70px,16vw,96px); }
+    .fh-nav{ right:8px; grid-template-columns:repeat(2,44px); }
     .fh-nav button{ width:44px; height:44px; font-size:19px; }
+    #fh-recenter{ width:auto; }
     .fh-tag{ max-width:20ch; }
   }
   /* Embedded as a banner inside the FHA site: hide standalone-page chrome
