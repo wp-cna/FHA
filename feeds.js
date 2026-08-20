@@ -76,6 +76,13 @@
   }
 
   function postCard(p) {
+    // Published posts carry board-approved Spanish alongside the English
+    // (title_es / summary_es, stamped by the Worker at publish time); the
+    // toggle picks the language here, mirroring how events use summary_es.
+    var es = lang() === "es";
+    var title = (es && p.title_es) ? p.title_es : p.title;
+    var summary = (es && p.summary_es) ? p.summary_es : p.summary;
+    var byline = (es ? "Publicado por " : "Posted by ") + p.source;
     var card = el("article", "feed-card" + (p.fh ? " feed-card-fh" : ""));
     var body = el("div", "feed-body");
     var top = el("div", "feed-top");
@@ -92,14 +99,14 @@
       im.src = p.image; im.alt = p.title || "Posted photo"; im.loading = "lazy";
       ph.appendChild(im);
       body.appendChild(ph);
-      body.appendChild(el("h3", "feed-title", p.title));
+      body.appendChild(el("h3", "feed-title", title));
       var more = el("div", "feed-more");
       var pd0 = dateLabel(p); if (pd0) more.appendChild(el("p", "feed-date", pd0));
       more.appendChild(meta(p.time, p.location));
-      if (p.summary) more.appendChild(el("p", "feed-summary", p.summary));
+      if (summary) more.appendChild(el("p", "feed-summary", summary));
       if (p.source) {
         var act0 = el("div", "feed-actions");
-        act0.appendChild(el("span", "feed-source", "Posted by " + p.source));
+        act0.appendChild(el("span", "feed-source", byline));
         more.appendChild(act0);
       }
       body.appendChild(more);
@@ -117,13 +124,13 @@
         if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); toggle(); }
       });
     } else {
-      body.appendChild(el("h3", "feed-title", p.title));
+      body.appendChild(el("h3", "feed-title", title));
       var pd = dateLabel(p); if (pd) body.appendChild(el("p", "feed-date", pd));
       body.appendChild(meta(p.time, p.location));
-      if (p.summary) body.appendChild(el("p", "feed-summary", p.summary));
+      if (summary) body.appendChild(el("p", "feed-summary", summary));
       if (p.source) {
         var actions = el("div", "feed-actions");
-        actions.appendChild(el("span", "feed-source", "Posted by " + p.source));
+        actions.appendChild(el("span", "feed-source", byline));
         body.appendChild(actions);
       }
     }

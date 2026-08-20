@@ -514,8 +514,14 @@ async function appendPost(env, b, r, image) {
   const [y, mo, d] = postDate.split("-").map(Number);
   const floor = addDays(today, MIN_EVENT_DAYS);
   const eventExpiry = eventDate ? addDays(eventDate, 1) : null;
+  // Every published post ships with board-approved Spanish so the site's
+  // language toggle covers the board, not just its chrome. Best-effort: a
+  // failed translation publishes English-only rather than blocking Publish.
+  const es = await translatePost(env, r.editedTitle || b.title, (r.editedBody || b.message).slice(0, 400));
+
   data.posts.unshift({
     title: r.editedTitle || b.title,
+    ...(es ? { title_es: es.title_es, summary_es: es.summary_es } : {}),
     category: category,
     fh: true,
     date: postDate,
@@ -535,6 +541,31 @@ async function appendPost(env, b, r, image) {
     body: JSON.stringify({ message: `Add board post: ${b.title}`, content, sha: cur.sha })
   });
   if (!putRes.ok) throw new Error("GitHub write failed: " + putRes.status);
+}
+
+// Translates a post's final title and summary for the site's Spanish toggle.
+// Returns { title_es, summary_es } or null — never throws.
+async function translatePost(env, title, summary) {
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: MODEL, max_tokens: 600,
+        system: "You translate short neighborhood-board posts into warm, natural Latin American Spanish for a bilingual community site in White Plains, NY. Keep street names, place names, and proper nouns in their original form. Respond with ONLY a JSON object: {\"title_es\":\"...\",\"summary_es\":\"...\"}",
+        messages: [{ role: "user", content: `Title: ${title}\nSummary: ${summary}` }]
+      })
+    });
+    if (!res.ok) return null;
+    const out = await res.json();
+    const text = (out.content && out.content[0] && out.content[0].text) || "";
+    const m = text.match(/\{[\s\S]*\}/);
+    const parsed = JSON.parse(m ? m[0] : text);
+    if (typeof parsed.title_es !== "string" || typeof parsed.summary_es !== "string") return null;
+    return { title_es: parsed.title_es.slice(0, 120), summary_es: parsed.summary_es.slice(0, 500) };
+  } catch (e) {
+    return null;
+  }
 }
 
 async function sendEmail(env, { to, subject, text, replyTo, attachments }) {

@@ -24,9 +24,15 @@
       "time": "11 am",
       "location": "10 Sterling Ave, White Plains NY 10606",
       "summary": "Moving out tag sale.",
+<<<<<<< Updated upstream
       "image": "",
       "source": "Michael Kushman",
       "expires": "2026-08-17"
+=======
+      "source": "Michael Kushman",
+      "title_es": "Venta de garaje",
+      "summary_es": "Venta de garaje por mudanza."
+>>>>>>> Stashed changes
     },
     {
       "title": "Fisher Hill Block Party",
@@ -37,9 +43,15 @@
       "time": "",
       "location": "Ridgeview Ave (Midland Ave to Tibbits Ave)",
       "summary": "The FHA will be sponsoring a Fisher Hill Block Party on Sept 19th. The Block Party will be held on Ridgeview Ave between Midland Ave and Tibbits Ave. Ridgeview will be closed to automobiles between Midland and Tibbits.",
+<<<<<<< Updated upstream
       "image": "",
       "source": "Michael Dalton",
       "expires": "2026-09-20"
+=======
+      "source": "Michael Dalton",
+      "title_es": "Fiesta vecinal de Fisher Hill",
+      "summary_es": "La FHA patrocinará una fiesta vecinal de Fisher Hill el 19 de septiembre. La fiesta se celebrará en Ridgeview Ave, entre Midland Ave y Tibbits Ave. Ridgeview estará cerrada a los automóviles entre Midland y Tibbits."
+>>>>>>> Stashed changes
     },
     {
       "title": "Walworth Avenue Block Party",
@@ -50,9 +62,15 @@
       "time": "1:00 PM – 6:00 PM",
       "location": "Walworth Avenue (Tibbits to Rochambeau)",
       "summary": "Fisher Hill's annual block party returns — food, music, a kids' zone, and a meet-your-neighbors table. Street closed to traffic.",
+<<<<<<< Updated upstream
       "image": "",
       "source": "Fisher Hill Association",
       "expires": ""
+=======
+      "source": "Fisher Hill Association",
+      "title_es": "Fiesta vecinal de Walworth Avenue",
+      "summary_es": "Vuelve la fiesta vecinal anual de Fisher Hill: comida, música, una zona para niños y una mesa para conocer a sus vecinos. La calle estará cerrada al tráfico."
+>>>>>>> Stashed changes
     },
     {
       "title": "Fisher Hill Spring Cleanup Walk",
@@ -63,9 +81,15 @@
       "time": "9:00 AM – 11:30 AM",
       "location": "Mattison Park (check-in) + neighborhood supply stations",
       "summary": "Volunteers check in and sort out at Mattison Park, then fan out to assigned blocks. Supply stations with gloves and bags will also be posted around the neighborhood — including Mitchell & Sterling Avenue and near Tibbits Avenue — so you can grab what you need close to where you're working.",
+<<<<<<< Updated upstream
       "image": "",
       "source": "Fisher Hill Association",
       "expires": ""
+=======
+      "source": "Fisher Hill Association",
+      "title_es": "Caminata de limpieza de primavera de Fisher Hill",
+      "summary_es": "Los voluntarios se registran y se organizan en Mattison Park, y luego se reparten por las cuadras asignadas. También habrá estaciones con guantes y bolsas en distintos puntos del vecindario — incluidas Mitchell & Sterling Avenue y cerca de Tibbits Avenue — para que tome lo que necesite cerca de donde trabaje."
+>>>>>>> Stashed changes
     }
   ]
 }

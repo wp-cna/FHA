@@ -45,6 +45,8 @@ collections:
               - { name: time, label: "Time", widget: string, required: false, hint: 'e.g. "1:00 PM – 6:00 PM"' }
               - { name: location, label: "Location", widget: string, required: false }
               - { name: summary, label: "Summary", widget: text }
+              - { name: title_es, label: "Title (Spanish)", widget: string, required: false, hint: "Shown when the site's ESP toggle is on. Filled in automatically for posts published from the form; add or fix by hand here." }
+              - { name: summary_es, label: "Summary (Spanish)", widget: text, required: false }
               - { name: image, label: "Photo (lost & found)", widget: image, required: false, media_folder: "assets/posts", public_folder: "./assets/posts", hint: "Drag & drop or click to upload — used for lost-pet and lost-item posts. The board shows it as the face of the card." }
               - { name: source, label: "Posted by", widget: string }
               - { name: expires, label: "Expires", widget: string, required: false, hint: "YYYY-MM-DD — the site hides the post after this date. For an event, set this to the day AFTER it happens." }

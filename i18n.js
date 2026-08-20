@@ -24,6 +24,15 @@
     "Fisher Hill sits within walking distance of downtown White Plains — bounded by the Bronx River Parkway to the west and Post Road to the east, with the hospital, library, train station, and City Center just beyond. The Association keeps neighbors connected and informed.": "Fisher Hill está a poca distancia a pie del centro de White Plains, delimitado por el Bronx River Parkway al oeste y Post Road al este, con el hospital, la biblioteca, la estación de tren y el City Center justo al lado. La Asociación mantiene a los vecinos conectados e informados.",
     "Events around White Plains": "Eventos en White Plains",
     "See all events →": "Ver todos los eventos →",
+    // Posts — card chrome (tags + empty states; titles/summaries ship as
+    // title_es/summary_es in data/posts.json and are picked in feeds.js)
+    "Lost & Found": "Perdido y encontrado",
+    "Tag Sale": "Venta de garaje",
+    "Neighbor": "Vecinos",
+    "Business": "Negocio local",
+    "Neighborhood": "Vecindario",
+    "No neighborhood posts right now — check back soon.": "No hay publicaciones del vecindario por ahora — vuelva pronto.",
+    "Posts are unavailable right now.": "Las publicaciones no están disponibles en este momento.",
     // Posts
     "From around Fisher Hill.": "Desde Fisher Hill.",
     "Updates serving Fisher Hill and White Plains — neighborhood events, civic notices, and volunteer opportunities. Every posting is reviewed before it appears.": "Novedades para Fisher Hill y White Plains: eventos del vecindario, avisos cívicos y oportunidades de voluntariado. Cada publicación se revisa antes de aparecer.",
