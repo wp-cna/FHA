@@ -100,6 +100,14 @@ export default {
     // (so email link scanners that prefetch URLs can't trigger anything); the
     // page's button POSTs back to the same URL, which performs the action and
     // consumes the token.
+    // A reviewer-flagged photo is never attached to the board email; this page
+    // shows it on demand instead, behind a warning, for as long as the
+    // submission is pending. Viewing changes nothing and consumes nothing.
+    if (path === "/action/photo") {
+      if (request.method === "GET") return showPendingPhoto(url, env);
+      return json({ error: "Method not allowed" }, 405, cors);
+    }
+
     if (path === "/action/publish" || path === "/action/reject") {
       const act = path === "/action/publish" ? "publish" : "reject";
       if (request.method === "GET") return confirmAction(url, env, act);
@@ -247,7 +255,8 @@ async function handlePost(b, env, cors, origin) {
       `Reason: ${r.reason || "(none given)"}\n` +
       (image
         ? (r.photo === "REMOVE"
-            ? "Photo: attached, but the reviewer flagged it — approval publishes the TEXT ONLY, without the photo.\n"
+            ? "Photo: FLAGGED by the reviewer as unsuitable — NOT attached to this email, and approval publishes the TEXT ONLY.\n" +
+              `View it if you need to verify (opens in your browser): ${origin}/action/photo?token=${token}\n`
             : "Photo: attached below; approval publishes it with the post.\n")
         : "") +
       (hasEdits
@@ -264,7 +273,9 @@ async function handlePost(b, env, cors, origin) {
       submissionText(b) + "\n\n" +
       "WRITE YOUR OWN RESPONSE INSTEAD\n" +
       `${mailto}\n`,
-    attachments: image ? [{ filename: "submitted-photo." + image.ext, content: image.base64 }] : undefined
+    attachments: image && r.photo !== "REMOVE"
+      ? [{ filename: "submitted-photo." + image.ext, content: image.base64 }]
+      : undefined
   });
 
   if (duplicateKey) {
@@ -320,6 +331,33 @@ async function loadPending(url, env) {
   const raw = await env.PENDING.get(key);
   if (!raw) return page("Link expired", "This action link was already used, or it expired (links last 14 days).", 410);
   return { key, raw };
+}
+
+// GET /action/photo — shows a pending submission's photo behind a warning
+// header. Used when the reviewer flags a photo: the board email then carries
+// this link instead of the attachment, so nothing graphic lands in an inbox
+// unbidden. The image is embedded as a data URL; scanners that prefetch get
+// an HTML page, and nothing is consumed by viewing.
+async function showPendingPhoto(url, env) {
+  const got = await loadPending(url, env);
+  if (got instanceof Response) return got;
+  const pending = JSON.parse(got.raw);
+  if (!pending.image) return page("No photo", "This submission has no photo attached.", 404);
+  const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const html = "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">" +
+    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"robots\" content=\"noindex\">" +
+    "<title>Flagged photo — Fisher Hill Association</title>" +
+    "<style>body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#fceaf6;color:#211522;margin:0;display:grid;place-items:center;min-height:100vh}" +
+    "main{background:#fff;border:1px solid #ebe0e9;border-top:6px solid #c01a8f;border-radius:12px;padding:30px 34px;max-width:34rem;margin:20px}" +
+    "h1{font-size:20px;margin:0 0 8px}p{line-height:1.5;color:#352c41}" +
+    "img{max-width:100%;border-radius:10px;border:1px solid #ebe0e9;margin-top:14px}</style></head>" +
+    "<body><main><h1>Reviewer-flagged photo</h1>" +
+    "<p>The automated reviewer flagged this photo as unsuitable for the board, so it was not attached to the email. " +
+    "It is shown below for verification only. Approving the post publishes the text without it.</p>" +
+    "<p><b>Submission:</b> " + esc(pending.b.title || "") + "</p>" +
+    "<img src=\"data:" + pending.image.mediaType + ";base64," + pending.image.base64 + "\" alt=\"Flagged submission photo\">" +
+    "</main></body></html>";
+  return new Response(html, { status: 200, headers: { "Content-Type": "text/html; charset=utf-8" } });
 }
 
 // GET /action/publish | /action/reject — show what's about to happen and a
