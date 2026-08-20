@@ -1,80 +1,7 @@
 {
-  "updated": "2026-08-19",
+  "updated": "2026-08-20",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "SCORE Meeting",
-      "category": "Civic",
-      "date": "2026-08-19",
-      "dateLabel": "August 19, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Monthly SCORE Chapter Meeting.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17225062",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Make Art with Artist Michael Albert",
-      "category": "Workshop",
-      "date": "2026-08-19",
-      "dateLabel": "August 19, 2026",
-      "time": "3:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Meet American Pop Artist Michael Albert!",
-      "url": "https://calendar.whiteplainslibrary.org/event/16634423",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "August 19 — Downtown White Plains Rock the Block",
-      "category": "Music & Family",
-      "date": "2026-08-19",
-      "dateLabel": "August 19, 2026",
-      "time": "5:30 PM – 8:30 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "— Wednesday, August 19th 5:30 pm – 8:30 pm —The Band MemoBrass Queens THE BAND MEMO indie/alt rock, jam band that burst on the NYC scene last year with their…",
-      "url": "https://wpbid.com/events/august-19-downtown-white-plains-rock-the-block/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
-    {
-      "title": "Downtown White Plains Rock the Block 2026",
-      "category": "Music & Family",
-      "date": "2026-08-19",
-      "dateLabel": "August 19, 2026",
-      "time": "5:30 PM – 8:30 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Location: Mamaroneck Ave.",
-      "url": "https://wpbid.com/events/rock-the-block-2026/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
-    {
-      "title": "Rock the Block",
-      "category": "Parks & Recreation",
-      "date": "2026-08-19",
-      "dateLabel": "August 19, 2026",
-      "time": "5:30 PM – 8:30 PM",
-      "location": "Downtown White Plains, Mamaroneck Ave. between Maple Ave & East Post Rd.",
-      "summary": "Rock the Block is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4320&month=8&year=2026&day=19&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Rock the Block aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Resume Writing in the 21st Century",
-      "category": "Workshop",
-      "date": "2026-08-19",
-      "dateLabel": "August 19, 2026",
-      "time": "6:00 PM – 7:00 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We will be hosting the following program in partnership with The College of Westchester.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15937620",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "City Pools Close",
       "category": "Parks & Recreation",
@@ -83,7 +10,7 @@
       "time": "7:30 PM",
       "location": "KIttrell Pool on Fisher Ave, Gardella Pool, Ferris Ave.",
       "summary": "City Pools Close is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4538&month=8&year=2026&day=23&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4557&month=8&year=2026&day=23&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "City Pools Close aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -120,7 +47,7 @@
       "time": "5:30 PM – 7:30 PM",
       "location": "Kittrell Park, White Plains, NY",
       "summary": "Dog Swim is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4539&month=8&year=2026&day=24&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4576&month=8&year=2026&day=24&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Dog Swim aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -162,6 +89,19 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-08-26",
+      "dateLabel": "August 26, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4680&month=8&year=2026&day=26&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Sustainable Westchester",
       "category": "Learning",
       "date": "2026-08-26",
@@ -184,6 +124,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17092666",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Covid-19 and Flu Vaccine Clinics",
+      "category": "Parks & Recreation",
+      "date": "2026-08-27",
+      "dateLabel": "August 27, 2026",
+      "time": "10:30 AM – 12:30 PM",
+      "location": "Covid-19 and Flu Vaccine Clinic, Sunshine Pharmacy will be holding clinics to administer both Covid-19 and Seasonal Flu vaccines. Clinics will be at the white Plains Recreation and Parks Community Center at 65 Mitchell Place., To register, visit https://tinyurl.com/Wpvax2026 or call Sunshine Pharmacy at 914-607-3939, Other Dates:, Thursday, August 27, 10:30 am - 12:30 pm, Tuesday, September 22, 10:30 am - 1:00 pm, Wednesday, October 7, 10:00 am - 2:00 pm, ====================================, Jornada de vacunación contra el COVID-19 y la gripe, Sunshine Pharmacy organizará jornadas para administrar vacunas tanto contra el COVID-19 como contra la gripe estacional. Estas jornadas se llevarán a cabo en el White Plains Recreation and Parks Community Center, ubicado en 65 Mitchell Place., Para registrarse, visite https://tinyurl.com/Wpvax2026 o llame a Sunshine Pharmacy al 914-607-3939., Otras fechas:, Jueves 27 de agosto, de 10:30 a. m. a 12:30 p. m., Martes 22 de septiembre, de 10:30 a. m. a 1:00 p. m., Miércoles 7 de octubre, de 10:00 a. m. a 2:00 p. m.",
+      "summary": "Covid-19 and Flu Vaccine Clinics is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4693&month=8&year=2026&day=27&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Covid-19 and Flu Vaccine Clinics aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "DJ Days – Saxon Woods Pool",
@@ -235,6 +188,19 @@
       "source": "White Plains Public Schools"
     },
     {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-09-02",
+      "dateLabel": "September 2, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4681&month=9&year=2026&day=2&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Music at the Market",
       "category": "Parks & Recreation",
       "date": "2026-09-02",
@@ -242,7 +208,7 @@
       "time": "12:00 PM",
       "location": "Court St., White Plains, NY",
       "summary": "Music at the Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4323&month=9&year=2026&day=2&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4609&month=9&year=2026&day=2&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -268,7 +234,7 @@
       "time": "11:30 AM – 1:30 PM",
       "location": "Delfino Park, White Plains, NY",
       "summary": "Delfino Park Barbeque is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4543&month=9&year=2026&day=3&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4573&month=9&year=2026&day=3&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Delfino Park Barbeque aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -297,6 +263,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-09-09",
+      "dateLabel": "September 9, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4682&month=9&year=2026&day=9&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Girls Varsity Swimming/Diving vs. Harrison",
@@ -330,7 +309,7 @@
       "time": "8:30 AM",
       "location": "Liberty Park, White Plains, NY",
       "summary": "9/11 Day of Remembrance Ceremony is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4526&month=9&year=2026&day=11&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4569&month=9&year=2026&day=11&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "9/11 Day of Remembrance Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -434,6 +413,19 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-09-16",
+      "dateLabel": "September 16, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4683&month=9&year=2026&day=16&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Sustainable Westchester",
       "category": "Learning",
       "date": "2026-09-16",
@@ -453,7 +445,7 @@
       "time": "12:00 PM",
       "location": "Court St., White Plains, NY",
       "summary": "Music at the Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4324&month=9&year=2026&day=16&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4608&month=9&year=2026&day=16&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -502,7 +494,7 @@
       "time": "6:00 PM – 9:00 PM",
       "location": "Delfino Park, White Plains, NY",
       "summary": "Backyard Party - Teens is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4550&month=9&year=2026&day=18&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4560&month=9&year=2026&day=18&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Backyard Party - Teens aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -515,7 +507,7 @@
       "time": "10:00 AM – 2:00 PM",
       "location": "Gillie Recycling Center, White Plains, NY",
       "summary": "Truck Day is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4527&month=9&year=2026&day=19&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4555&month=9&year=2026&day=19&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Truck Day aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -594,6 +586,45 @@
       "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Covid-19 and Flu Vaccine Clinics",
+      "category": "Parks & Recreation",
+      "date": "2026-09-22",
+      "dateLabel": "September 22, 2026",
+      "time": "10:30 AM – 1:00 PM",
+      "location": "Covid-19 and Flu Vaccine Clinic, Sunshine Pharmacy will be holding clinics to administer both Covid-19 and Seasonal Flu vaccines. Clinics will be at the white Plains Recreation and Parks Community Center at 65 Mitchell Place., To register, visit https://tinyurl.com/Wpvax2026 or call Sunshine Pharmacy at 914-607-3939, Other Dates:, Thursday, August 27, 10:30 am - 12:30 pm, Tuesday, September 22, 10:30 am - 1:00 pm, Wednesday, October 7, 10:00 am - 2:00 pm, ====================================, Jornada de vacunación contra el COVID-19 y la gripe, Sunshine Pharmacy organizará jornadas para administrar vacunas tanto contra el COVID-19 como contra la gripe estacional. Estas jornadas se llevarán a cabo en el White Plains Recreation and Parks Community Center, ubicado en 65 Mitchell Place., Para registrarse, visite https://tinyurl.com/Wpvax2026 o llame a Sunshine Pharmacy al 914-607-3939., Otras fechas:, Jueves 27 de agosto, de 10:30 a. m. a 12:30 p. m., Martes 22 de septiembre, de 10:30 a. m. a 1:00 p. m., Miércoles 7 de octubre, de 10:00 a. m. a 2:00 p. m.",
+      "summary": "Covid-19 and Flu Vaccine Clinics is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4694&month=9&year=2026&day=22&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Covid-19 and Flu Vaccine Clinics aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "JazzFest",
+      "category": "Community",
+      "date": "2026-09-23",
+      "dateLabel": "September 23, 2026",
+      "time": "",
+      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
+      "summary": "JazzFest is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=23&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-09-23",
+      "dateLabel": "September 23, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4684&month=9&year=2026&day=23&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "JazzFest Downtown White Plains 2026",
       "category": "Food & Downtown",
       "date": "2026-09-23",
@@ -613,7 +644,7 @@
       "time": "12:00 PM",
       "location": "Court St., White Plains, NY",
       "summary": "Music at the Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4325&month=9&year=2026&day=23&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4607&month=9&year=2026&day=23&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -629,6 +660,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/16909957",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "JazzFest",
+      "category": "Community",
+      "date": "2026-09-24",
+      "dateLabel": "September 24, 2026",
+      "time": "",
+      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
+      "summary": "JazzFest is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=24&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Learn about 3D Printing (in the Igloo)",
@@ -656,6 +700,19 @@
       "summary_es": "Consolidated Annual Performance and Evaluation Report (CAPER) Public Hearing aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "JazzFest",
+      "category": "Community",
+      "date": "2026-09-25",
+      "dateLabel": "September 25, 2026",
+      "time": "",
+      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
+      "summary": "JazzFest is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=25&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Jazz at Noon: Vanisha Gould",
       "category": "Civic",
       "date": "2026-09-25",
@@ -668,6 +725,19 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "JazzFest",
+      "category": "Community",
+      "date": "2026-09-26",
+      "dateLabel": "September 26, 2026",
+      "time": "",
+      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
+      "summary": "JazzFest is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=26&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Fireside Nature Storytime",
       "category": "Parks & Recreation",
       "date": "2026-09-26",
@@ -678,6 +748,32 @@
       "url": "https://parksevents.westchestercountyny.gov/event/fireside-nature-storytime-3",
       "ctaLabel": "Open county parks page",
       "source": "Westchester County Parks"
+    },
+    {
+      "title": "Family Fun Wellness Festival",
+      "category": "Family",
+      "date": "2026-09-26",
+      "dateLabel": "September 26, 2026",
+      "time": "12:00 PM – 4:00 PM",
+      "location": "Tibbits Park, White Plains, NY",
+      "summary": "Family Fun Wellness Festival is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4697&month=9&year=2026&day=26&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Family Fun Wellness Festival aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "JazzFest",
+      "category": "Community",
+      "date": "2026-09-27",
+      "dateLabel": "September 27, 2026",
+      "time": "",
+      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
+      "summary": "JazzFest is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=27&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Girls Varsity Tennis vs. Harrison",
@@ -705,6 +801,19 @@
       "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-09-30",
+      "dateLabel": "September 30, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4685&month=9&year=2026&day=30&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Music at the Market",
       "category": "Parks & Recreation",
       "date": "2026-09-30",
@@ -712,7 +821,7 @@
       "time": "12:00 PM",
       "location": "Court St., White Plains, NY",
       "summary": "Music at the Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4326&month=9&year=2026&day=30&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4606&month=9&year=2026&day=30&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -736,7 +845,7 @@
       "dateLabel": "October 1, 2026",
       "time": "2:00 PM – 4:00 PM",
       "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed.",
+      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed.",
       "url": "https://calendar.whiteplainslibrary.org/event/17227314",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -773,7 +882,7 @@
       "time": "6:45 PM",
       "location": "Battle of White Plains Park, White Plains, NY",
       "summary": "Outdoor Movie is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4528&month=10&year=2026&day=2&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4584&month=10&year=2026&day=2&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Outdoor Movie aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -798,7 +907,7 @@
       "time": "10:00 AM – 2:00 PM",
       "location": "Gillie Park, White Plains, NY",
       "summary": "Halloween Pumpkin Patch is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4529&month=10&year=2026&day=4&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4583&month=10&year=2026&day=4&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Halloween Pumpkin Patch aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -865,6 +974,32 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-10-07",
+      "dateLabel": "October 7, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4686&month=10&year=2026&day=7&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Covid-19 and Flu Vaccine Clinics",
+      "category": "Parks & Recreation",
+      "date": "2026-10-07",
+      "dateLabel": "October 7, 2026",
+      "time": "10:00 AM – 2:00 PM",
+      "location": "Covid-19 and Flu Vaccine Clinic, Sunshine Pharmacy will be holding clinics to administer both Covid-19 and Seasonal Flu vaccines. Clinics will be at the white Plains Recreation and Parks Community Center at 65 Mitchell Place., To register, visit https://tinyurl.com/Wpvax2026 or call Sunshine Pharmacy at 914-607-3939, Other Dates:, Thursday, August 27, 10:30 am - 12:30 pm, Tuesday, September 22, 10:30 am - 1:00 pm, Wednesday, October 7, 10:00 am - 2:00 pm, ====================================, Jornada de vacunación contra el COVID-19 y la gripe, Sunshine Pharmacy organizará jornadas para administrar vacunas tanto contra el COVID-19 como contra la gripe estacional. Estas jornadas se llevarán a cabo en el White Plains Recreation and Parks Community Center, ubicado en 65 Mitchell Place., Para registrarse, visite https://tinyurl.com/Wpvax2026 o llame a Sunshine Pharmacy al 914-607-3939., Otras fechas:, Jueves 27 de agosto, de 10:30 a. m. a 12:30 p. m., Martes 22 de septiembre, de 10:30 a. m. a 1:00 p. m., Miércoles 7 de octubre, de 10:00 a. m. a 2:00 p. m.",
+      "summary": "Covid-19 and Flu Vaccine Clinics is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4695&month=10&year=2026&day=7&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Covid-19 and Flu Vaccine Clinics aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Intro to Microsoft Excel, Part 1",
       "category": "Learning",
       "date": "2026-10-07",
@@ -908,7 +1043,7 @@
       "dateLabel": "October 8, 2026",
       "time": "2:00 PM – 4:00 PM",
       "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed.",
+      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed.",
       "url": "https://calendar.whiteplainslibrary.org/event/17227718",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -972,6 +1107,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/16522047",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-10-14",
+      "dateLabel": "October 14, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4687&month=10&year=2026&day=14&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Sustainable Westchester",
@@ -1053,7 +1201,7 @@
       "time": "11:00 AM – 12:00 PM",
       "location": "Jack Harrington Greenway, White Plains, NY",
       "summary": "Red Leaf, Yellow Leaf, Fall Nature Walk is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4531&month=10&year=2026&day=17&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4582&month=10&year=2026&day=17&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Red Leaf, Yellow Leaf, Fall Nature Walk aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1066,7 +1214,7 @@
       "time": "3:00 PM – 4:40 PM",
       "location": "Library Plaza to Court Street, White Plains, NY",
       "summary": "Halloween Parade is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4530&month=10&year=2026&day=18&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4553&month=10&year=2026&day=18&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1133,6 +1281,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-10-21",
+      "dateLabel": "October 21, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4688&month=10&year=2026&day=21&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Intro to Microsoft Excel, Part 3",
@@ -1202,7 +1363,7 @@
       "time": "11:00 AM – 12:00 PM",
       "location": "Bark Dog Park, White Plains, NY",
       "summary": "Howl-o-Ween Bash - Dog Park Event is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4532&month=10&year=2026&day=24&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4581&month=10&year=2026&day=24&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Howl-o-Ween Bash - Dog Park Event aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1269,6 +1430,19 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-10-28",
+      "dateLabel": "October 28, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4689&month=10&year=2026&day=28&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Battle of White Plains (History in the Igloo)",
       "category": "Learning",
       "date": "2026-10-28",
@@ -1299,7 +1473,7 @@
       "dateLabel": "October 29, 2026",
       "time": "2:00 PM – 4:00 PM",
       "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed.",
+      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed.",
       "url": "https://calendar.whiteplainslibrary.org/event/17227801",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -1312,7 +1486,7 @@
       "time": "11:30 AM – 1:30 PM",
       "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
       "summary": "Hispanic Heritage Luncheon is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4544&month=10&year=2026&day=30&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4558&month=10&year=2026&day=30&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Hispanic Heritage Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1341,6 +1515,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-11-04",
+      "dateLabel": "November 4, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4690&month=11&year=2026&day=4&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Zoning Board of Appeals",
@@ -1375,10 +1562,23 @@
       "time": "5:00 PM – 8:00 PM",
       "location": "White Plains Community Center, 65 Mitchell Place, White Plains, NY",
       "summary": "Sugar: The Play is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4540&month=11&year=2026&day=10&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4575&month=11&year=2026&day=10&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Sugar: The Play aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-11-11",
+      "dateLabel": "November 11, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4691&month=11&year=2026&day=11&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Veteran's Day Ceremony",
@@ -1388,7 +1588,7 @@
       "time": "10:30 AM",
       "location": "Veteran's Memorial Garden located behind White Plains City Hall, 255 Main St., White Plains, NY",
       "summary": "Veteran's Day Ceremony is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4533&month=11&year=2026&day=11&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4562&month=11&year=2026&day=11&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Veteran's Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1469,6 +1669,19 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-11-18",
+      "dateLabel": "November 18, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4692&month=11&year=2026&day=18&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Successfully Navigating College Admissions",
       "category": "Learning",
       "date": "2026-11-18",
@@ -1524,7 +1737,7 @@
       "time": "11:30 AM – 1:30 PM",
       "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
       "summary": "Thanksgiving Luncheon is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4545&month=11&year=2026&day=24&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4570&month=11&year=2026&day=24&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Thanksgiving Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1537,7 +1750,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=25&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=11&year=2026&day=25&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1550,7 +1763,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=26&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=11&year=2026&day=26&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1563,7 +1776,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=27&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=11&year=2026&day=27&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1576,7 +1789,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=28&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=11&year=2026&day=28&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1589,7 +1802,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=29&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=11&year=2026&day=29&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1602,7 +1815,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=11&year=2026&day=30&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=11&year=2026&day=30&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1628,7 +1841,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=1&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=1&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1641,7 +1854,7 @@
       "time": "5:30 PM",
       "location": "Renaissance Plaza Park, White Plains, NY",
       "summary": "City Lights, Bright Holiday Lights - Tree Lighting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4535&month=12&year=2026&day=1&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4579&month=12&year=2026&day=1&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "City Lights, Bright Holiday Lights - Tree Lighting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1654,7 +1867,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=2&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=2&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1680,7 +1893,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=3&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=3&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1693,7 +1906,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=4&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=4&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1706,7 +1919,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=5&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=5&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1731,7 +1944,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=6&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=6&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1744,7 +1957,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=7&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=7&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1770,7 +1983,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=8&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=8&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1783,7 +1996,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=9&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=9&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1796,7 +2009,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=10&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=10&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1833,7 +2046,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=11&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=11&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1858,7 +2071,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=12&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=12&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1871,7 +2084,7 @@
       "time": "",
       "location": "City Hall, 255 Main St.",
       "summary": "Santa's Mailbox is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4534&month=12&year=2026&day=13&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=13&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1884,7 +2097,7 @@
       "time": "1:00 PM – 3:00 PM",
       "location": "Ebersole Ice Rink, White Plains, NY",
       "summary": "Skate with Frosty is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4536&month=12&year=2026&day=13&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4578&month=12&year=2026&day=13&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Skate with Frosty aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1922,7 +2135,7 @@
       "time": "11:30 AM – 1:30 PM",
       "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
       "summary": "Holiday Luncheon is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4546&month=12&year=2026&day=15&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4572&month=12&year=2026&day=15&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Holiday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -1973,7 +2186,7 @@
       "time": "10:30 PM",
       "location": "Main St. and Court St., White Plains, NY",
       "summary": "New Year's Eve Family Spectacular is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4537&month=12&year=2026&day=31&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4577&month=12&year=2026&day=31&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "New Year's Eve Family Spectacular aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
@@ -2012,7 +2225,7 @@
       "time": "11:30 AM – 1:30 PM",
       "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
       "summary": "Fall/Winter Birthday Luncheon is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4547&month=1&year=2027&day=13&calType=0",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4571&month=1&year=2027&day=13&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
