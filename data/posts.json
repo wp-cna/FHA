@@ -8,25 +8,12 @@
       "fh": true,
       "date": "2026-08-20",
       "dateLabel": "August 20, 2026",
-      "expires": "2026-08-22",
       "time": "",
       "location": "",
       "summary": "Container of lost dog treats missing - last seen at 10 sterling ave",
+      "image": "assets/posts/lost-2026-08-20-b66999a9.jpg",
       "source": "Michael Kushman",
-      "image": "assets/posts/lost-2026-08-20-b66999a9.jpg"
-    },
-    {
-      "title": "TEST — photo pipeline check, do not publish",
-      "category": "Lost & Found",
-      "fh": true,
-      "date": "2026-08-20",
-      "dateLabel": "August 20, 2026",
-      "expires": "2026-08-27",
-      "time": "",
-      "location": "",
-      "summary": "Automated end-to-end test of the new lost-and-found photo feature, part of the 2026-08-20 deploy. The attached image is a tiny test file. Please REJECT this post or simply ignore it — the link expires on its own. No action needed.",
-      "source": "Claude (automated test)",
-      "image": "assets/posts/lost-2026-08-20-122ff4fe.jpg"
+      "expires": "2026-08-22"
     },
     {
       "title": "Tag Sale",
@@ -34,11 +21,12 @@
       "fh": true,
       "date": "2026-08-16",
       "dateLabel": "August 16, 2026",
-      "expires": "2026-08-17",
       "time": "11 am",
       "location": "10 Sterling Ave, White Plains NY 10606",
       "summary": "Moving out tag sale.",
-      "source": "Michael Kushman"
+      "image": "",
+      "source": "Michael Kushman",
+      "expires": "2026-08-17"
     },
     {
       "title": "Fisher Hill Block Party",
@@ -46,11 +34,12 @@
       "fh": true,
       "date": "2026-09-19",
       "dateLabel": "September 19, 2026",
-      "expires": "2026-09-20",
       "time": "",
       "location": "Ridgeview Ave (Midland Ave to Tibbits Ave)",
       "summary": "The FHA will be sponsoring a Fisher Hill Block Party on Sept 19th. The Block Party will be held on Ridgeview Ave between Midland Ave and Tibbits Ave. Ridgeview will be closed to automobiles between Midland and Tibbits.",
-      "source": "Michael Dalton"
+      "image": "",
+      "source": "Michael Dalton",
+      "expires": "2026-09-20"
     },
     {
       "title": "Walworth Avenue Block Party",
@@ -61,7 +50,9 @@
       "time": "1:00 PM – 6:00 PM",
       "location": "Walworth Avenue (Tibbits to Rochambeau)",
       "summary": "Fisher Hill's annual block party returns — food, music, a kids' zone, and a meet-your-neighbors table. Street closed to traffic.",
-      "source": "Fisher Hill Association"
+      "image": "",
+      "source": "Fisher Hill Association",
+      "expires": ""
     },
     {
       "title": "Fisher Hill Spring Cleanup Walk",
@@ -72,7 +63,9 @@
       "time": "9:00 AM – 11:30 AM",
       "location": "Mattison Park (check-in) + neighborhood supply stations",
       "summary": "Volunteers check in and sort out at Mattison Park, then fan out to assigned blocks. Supply stations with gloves and bags will also be posted around the neighborhood — including Mitchell & Sterling Avenue and near Tibbits Avenue — so you can grab what you need close to where you're working.",
-      "source": "Fisher Hill Association"
+      "image": "",
+      "source": "Fisher Hill Association",
+      "expires": ""
     }
   ]
 }
