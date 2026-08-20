@@ -198,9 +198,21 @@ const BRAND = "#7c3aed";
     viewer = new Cesium.Viewer("cesiumContainer", {
       globe:false, baseLayer:false, baseLayerPicker:false, geocoder:false, homeButton:false,
       sceneModePicker:false, navigationHelpButton:false, animation:false, timeline:false,
-      fullscreenButton:false, infoBox:false, selectionIndicator:false
+      fullscreenButton:false, infoBox:false, selectionIndicator:false,
+      // Never show Cesium's raw developer error panel ("update your video
+      // drivers…") to neighbors — construction failures fall through to the
+      // catch below and get a human message instead.
+      showRenderLoopErrors:false
     });
-  } catch(e){ fail("The map renderer could not start."); return; }
+  } catch(e){
+    // Cesium may have painted partial widget DOM into the container before
+    // throwing (WebGL init fails on phones in Low Power Mode, Lockdown Mode,
+    // or under memory pressure). Clear it so only our fallback shows.
+    try { document.getElementById("cesiumContainer").innerHTML = ""; } catch(_){}
+    fail("The 3D map couldn't start on this device just now — the rest of the site works fine. " +
+         "<button onclick=\"location.reload()\" style=\"margin-top:12px;background:#7c3aed;color:#fff;border:0;border-radius:8px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer\">Try again</button>");
+    return;
+  }
 
   const scene = viewer.scene;
   if(scene.globe) scene.globe.show = false;
@@ -365,7 +377,9 @@ const BRAND = "#7c3aed";
   }).catch(function(err){
     if(window.console) console.error("Fisher Hill 3D map:", err);
     try { viewer.destroy(); } catch(e){}
-    fail("The map tiles could not load. Make sure billing is on, the Map Tiles API is enabled, and this page's address is allowed in the key's referrer restrictions.");
+    try { document.getElementById("cesiumContainer").innerHTML = ""; } catch(e2){}
+    fail("The map couldn't load just now. " +
+         "<button onclick=\"location.reload()\" style=\"margin-top:12px;background:#7c3aed;color:#fff;border:0;border-radius:8px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer\">Try again</button>");
   });
 })();
 
