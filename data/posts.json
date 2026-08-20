@@ -3,36 +3,6 @@
   "note": "Community postings serving Fisher Hill. Reviewed before posting.",
   "posts": [
     {
-      "title": "Lost dog treats (test post)",
-      "category": "Lost & Found",
-      "fh": true,
-      "date": "2026-08-20",
-      "dateLabel": "August 20, 2026",
-      "time": "",
-      "location": "",
-      "summary": "Container of lost dog treats missing - last seen at 10 sterling ave",
-      "image": "assets/posts/lost-2026-08-20-b66999a9.jpg",
-      "source": "Michael Kushman",
-      "expires": "2026-08-22",
-      "title_es": "Golosinas para perro perdidas (publicación de prueba)",
-      "summary_es": "Se perdió un envase de golosinas para perro — visto por última vez en 10 Sterling Ave."
-    },
-    {
-      "title": "Tag Sale",
-      "category": "Tag Sale",
-      "fh": true,
-      "date": "2026-08-16",
-      "dateLabel": "August 16, 2026",
-      "time": "11 am",
-      "location": "10 Sterling Ave, White Plains NY 10606",
-      "summary": "Moving out tag sale.",
-      "image": "",
-      "source": "Michael Kushman",
-      "expires": "2026-08-17",
-      "title_es": "Venta de garaje",
-      "summary_es": "Venta de garaje por mudanza."
-    },
-    {
       "title": "Fisher Hill Block Party",
       "category": "Neighborhood Event",
       "fh": true,
@@ -41,41 +11,11 @@
       "time": "",
       "location": "Ridgeview Ave (Midland Ave to Tibbits Ave)",
       "summary": "The FHA will be sponsoring a Fisher Hill Block Party on Sept 19th. The Block Party will be held on Ridgeview Ave between Midland Ave and Tibbits Ave. Ridgeview will be closed to automobiles between Midland and Tibbits.",
+      "title_es": "Fiesta vecinal de Fisher Hill",
+      "summary_es": "La FHA patrocinará una fiesta vecinal de Fisher Hill el 19 de septiembre. La fiesta se celebrará en Ridgeview Ave, entre Midland Ave y Tibbits Ave. Ridgeview estará cerrada a los automóviles entre Midland y Tibbits.",
       "image": "",
       "source": "Michael Dalton",
-      "expires": "2026-09-20",
-      "title_es": "Fiesta vecinal de Fisher Hill",
-      "summary_es": "La FHA patrocinará una fiesta vecinal de Fisher Hill el 19 de septiembre. La fiesta se celebrará en Ridgeview Ave, entre Midland Ave y Tibbits Ave. Ridgeview estará cerrada a los automóviles entre Midland y Tibbits."
-    },
-    {
-      "title": "Walworth Avenue Block Party",
-      "category": "Neighborhood Event",
-      "fh": true,
-      "date": "2026-06-20",
-      "dateLabel": "June 20, 2026",
-      "time": "1:00 PM – 6:00 PM",
-      "location": "Walworth Avenue (Tibbits to Rochambeau)",
-      "summary": "Fisher Hill's annual block party returns — food, music, a kids' zone, and a meet-your-neighbors table. Street closed to traffic.",
-      "image": "",
-      "source": "Fisher Hill Association",
-      "expires": "",
-      "title_es": "Fiesta vecinal de Walworth Avenue",
-      "summary_es": "Vuelve la fiesta vecinal anual de Fisher Hill: comida, música, una zona para niños y una mesa para conocer a sus vecinos. La calle estará cerrada al tráfico."
-    },
-    {
-      "title": "Fisher Hill Spring Cleanup Walk",
-      "category": "Volunteer",
-      "fh": true,
-      "date": "2026-06-27",
-      "dateLabel": "June 27, 2026",
-      "time": "9:00 AM – 11:30 AM",
-      "location": "Mattison Park (check-in) + neighborhood supply stations",
-      "summary": "Volunteers check in and sort out at Mattison Park, then fan out to assigned blocks. Supply stations with gloves and bags will also be posted around the neighborhood — including Mitchell & Sterling Avenue and near Tibbits Avenue — so you can grab what you need close to where you're working.",
-      "image": "",
-      "source": "Fisher Hill Association",
-      "expires": "",
-      "title_es": "Caminata de limpieza de primavera de Fisher Hill",
-      "summary_es": "Los voluntarios se registran y se organizan en Mattison Park, y luego se reparten por las cuadras asignadas. También habrá estaciones con guantes y bolsas en distintos puntos del vecindario — incluidas Mitchell & Sterling Avenue y cerca de Tibbits Avenue — para que tome lo que necesite cerca de donde trabaje."
+      "expires": "2026-09-20"
     }
   ]
 }
