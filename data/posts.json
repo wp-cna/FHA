@@ -1,7 +1,20 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-20",
   "note": "Community postings serving Fisher Hill. Reviewed before posting.",
   "posts": [
+    {
+      "title": "TEST — photo pipeline check, do not publish",
+      "category": "Lost & Found",
+      "fh": true,
+      "date": "2026-08-20",
+      "dateLabel": "August 20, 2026",
+      "expires": "2026-08-27",
+      "time": "",
+      "location": "",
+      "summary": "Automated end-to-end test of the new lost-and-found photo feature, part of the 2026-08-20 deploy. The attached image is a tiny test file. Please REJECT this post or simply ignore it — the link expires on its own. No action needed.",
+      "source": "Claude (automated test)",
+      "image": "assets/posts/lost-2026-08-20-122ff4fe.jpg"
+    },
     {
       "title": "Tag Sale",
       "category": "Tag Sale",
