@@ -38,10 +38,12 @@ The three things you guard against:
 2. BUSINESS REVIEWS — this board is NOT Yelp or Google Reviews. A neighbor reviewing, rating, ranking, praising, or criticizing a business or service (positive OR negative), or comparing businesses, does not belong here. Reject reviews; a business simply announcing itself is fine.
 3. Clear, serious violations — naming/attacking a specific person; harassing, threatening, or defamatory language; scams; or sharing a third party's private info. Reject the clear cases; ESCALATE the ambiguous ones.
 
+If the submission includes a PHOTO (lost-and-found posts may attach one), also judge the photo and set "photo" in your JSON: "OK" when it is an ordinary photo plausibly showing a pet or lost item, "REMOVE" when it is explicit, violent, or sexual content, shows a recognizable person or license plate as the main subject, contains readable private information, or is clearly unrelated to a lost pet or item. A REMOVE photo does not by itself reject the post — the text may still publish without it; only reject the whole post when the text itself fails the rules above.
+
 Be lenient on tone (only clearly abusive language fails), relevance, and writing quality. Prefer fixing over rejecting: if a small edit makes a post publishable (remove a third party's phone number, trim a slur), choose APPROVE_WITH_EDITS and return cleaned text. You cannot verify facts — never reject on suspicion alone; ESCALATE instead.
 
 Respond with ONLY a JSON object, no prose:
-{"decision":"APPROVE|APPROVE_WITH_EDITS|ESCALATE|REJECT","reason":"one sentence","failedCriteria":["..."],"editedTitle":null,"editedBody":null,"confidence":0.0}`;
+{"decision":"APPROVE|APPROVE_WITH_EDITS|ESCALATE|REJECT","reason":"one sentence","failedCriteria":["..."],"editedTitle":null,"editedBody":null,"confidence":0.0,"photo":"OK|REMOVE"}`;
 
 const CATEGORY = {
   "Neighborhood event": "Neighborhood Event",
@@ -218,10 +220,17 @@ async function handlePost(b, env, cors, origin) {
     return json({ ok: true, duplicate: true }, 200, cors);
   }
 
-  const r = await review(b, env);
+  // A photo rides along only on lost & found posts (the picker only appears
+  // there; this also guards direct POSTs). parseImage rejects anything that is
+  // not a small JPEG/PNG/WebP data URL.
+  const image = b.postType === "Lost & found (pet or item)" ? parseImage(b.imageData) : null;
+  delete b.imageData;
+
+  const r = await review(b, env, image);
 
   const token = randomToken();
-  await env.PENDING.put("post:" + token, JSON.stringify({ b, r, received: new Date().toISOString() }),
+  await env.PENDING.put("post:" + token,
+    JSON.stringify({ b, r, image, received: new Date().toISOString() }),
     { expirationTtl: PENDING_TTL });
 
   const hasEdits = !!(r.editedTitle || r.editedBody);
@@ -236,6 +245,11 @@ async function handlePost(b, env, cors, origin) {
       "AI VETTING\n" +
       `AI reviewer: ${r.decision || "(no decision)"} · confidence ${conf}\n` +
       `Reason: ${r.reason || "(none given)"}\n` +
+      (image
+        ? (r.photo === "REMOVE"
+            ? "Photo: attached, but the reviewer flagged it — approval publishes the TEXT ONLY, without the photo.\n"
+            : "Photo: attached below; approval publishes it with the post.\n")
+        : "") +
       (hasEdits
         ? `\nAI-cleaned version (this is what approval publishes):\nTitle: ${r.editedTitle || b.title}\nDetails: ${r.editedBody || b.message}\n`
         : "") +
@@ -249,7 +263,8 @@ async function handlePost(b, env, cors, origin) {
       "SUBMISSION DETAILS\n" +
       submissionText(b) + "\n\n" +
       "WRITE YOUR OWN RESPONSE INSTEAD\n" +
-      `${mailto}\n`
+      `${mailto}\n`,
+    attachments: image ? [{ filename: "submitted-photo." + image.ext, content: image.base64 }] : undefined
   });
 
   if (duplicateKey) {
@@ -277,6 +292,17 @@ function validatePost(b) {
   const wordsBeyondLinks = message.replace(/https?:\/\/\S+/gi, "").match(/[\p{L}\p{N}]/gu) || [];
   if (wordsBeyondLinks.length < 8) return "Please add a short description instead of submitting only a link.";
   return null;
+}
+
+// Accepts only a small image data URL (the client downscales to ~<700KB of
+// JPEG; the 1.4M-char cap allows headroom for direct PNG posts). Returns
+// { mediaType, base64, ext } or null — never throws on junk input.
+function parseImage(imageData) {
+  if (typeof imageData !== "string" || imageData.length > 1_400_000) return null;
+  const m = imageData.match(/^data:(image\/(?:jpeg|png|webp));base64,([A-Za-z0-9+/=]+)$/);
+  if (!m) return null;
+  const mediaType = m[1];
+  return { mediaType, base64: m[2], ext: mediaType === "image/png" ? "png" : mediaType === "image/webp" ? "webp" : "jpg" };
 }
 
 function postFingerprint(b) {
@@ -322,7 +348,7 @@ async function handleAction(url, env, act) {
   const pending = JSON.parse(raw);
   try {
     if (act === "publish") {
-      await appendPost(env, pending.b, pending.r);
+      await appendPost(env, pending.b, pending.r, pending.image);
       return page("Post published",
         "“" + (pending.r.editedTitle || pending.b.title) + "” is on its way to the board — the site picks it up in a minute or two.");
     }
@@ -393,13 +419,19 @@ function page(title, msg, status, confirm) {
   return new Response(html, { status: status || 200, headers: { "Content-Type": "text/html; charset=utf-8" } });
 }
 
-async function review(b, env) {
+async function review(b, env, image) {
   const user = submissionText(b);
+  // With a photo attached the reviewer sees it alongside the text and returns
+  // a "photo" verdict; without one the request is plain text as before.
+  const content = image
+    ? [{ type: "image", source: { type: "base64", media_type: image.mediaType, data: image.base64 } },
+       { type: "text", text: user + "\n\n(The image above was attached to this lost & found post.)" }]
+    : user;
   try {
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "Content-Type": "application/json" },
-      body: JSON.stringify({ model: MODEL, max_tokens: 400, system: REVIEW_SYSTEM, messages: [{ role: "user", content: user }] })
+      body: JSON.stringify({ model: MODEL, max_tokens: 400, system: REVIEW_SYSTEM, messages: [{ role: "user", content }] })
     });
     if (!response.ok) {
       console.error("AI review request failed", { status: response.status });
@@ -446,13 +478,27 @@ function normalizeReview(value) {
   const confidence = typeof value.confidence === "number" && Number.isFinite(value.confidence)
     ? Math.max(0, Math.min(1, value.confidence))
     : 0;
-  return { decision, reason, failedCriteria, editedTitle, editedBody, confidence };
+  const photo = value.photo === "REMOVE" ? "REMOVE" : "OK";
+  return { decision, reason, failedCriteria, editedTitle, editedBody, confidence, photo };
 }
 
-async function appendPost(env, b, r) {
+async function appendPost(env, b, r, image) {
   const repo = env.GITHUB_REPO, path = "data/posts.json";
   const api = `https://api.github.com/repos/${repo}/contents/${path}`;
   const h = { Authorization: `Bearer ${env.GITHUB_TOKEN}`, "User-Agent": "fha-forms", Accept: "application/vnd.github+json" };
+
+  // The photo publishes only when one was attached AND the reviewer did not
+  // flag it (the board email said which). It is committed first, so a failed
+  // posts.json write leaves at worst an unreferenced image file.
+  let imagePath = null;
+  if (image && r.photo !== "REMOVE") {
+    imagePath = `assets/posts/lost-${new Date().toISOString().slice(0, 10)}-${randomToken().slice(0, 8)}.${image.ext}`;
+    const imgRes = await fetch(`https://api.github.com/repos/${repo}/contents/${imagePath}`, {
+      method: "PUT", headers: h,
+      body: JSON.stringify({ message: `Add board post photo: ${b.title}`, content: image.base64 })
+    });
+    if (!imgRes.ok) throw new Error("GitHub image write failed: " + imgRes.status);
+  }
   const curRes = await fetch(api, { headers: h });
   if (!curRes.ok) throw new Error("GitHub read failed: " + curRes.status);
   const cur = await curRes.json();
@@ -479,7 +525,8 @@ async function appendPost(env, b, r) {
     time: String(b.eventTime || "").slice(0, 60),
     location: String(b.location || "").slice(0, 120),
     summary: (r.editedBody || b.message).slice(0, 400),
-    source: b.name
+    source: b.name,
+    ...(imagePath ? { image: imagePath } : {})
   });
   data.updated = today;
   const content = b64encode(JSON.stringify(data, null, 2) + "\n");
@@ -490,12 +537,12 @@ async function appendPost(env, b, r) {
   if (!putRes.ok) throw new Error("GitHub write failed: " + putRes.status);
 }
 
-async function sendEmail(env, { to, subject, text, replyTo }) {
+async function sendEmail(env, { to, subject, text, replyTo, attachments }) {
   const recipients = Array.isArray(to) ? to : [to];
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: env.MAIL_FROM, to: recipients, subject, text, reply_to: replyTo })
+    body: JSON.stringify({ from: env.MAIL_FROM, to: recipients, subject, text, reply_to: replyTo, attachments })
   });
   if (!res.ok) throw new Error("Email send failed: " + res.status);
   return res;

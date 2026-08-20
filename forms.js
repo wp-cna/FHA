@@ -16,10 +16,12 @@
       // submissions for the board instead of anything being dropped silently.
       var data = {};
       new FormData(f).forEach(function (v, k) { data[k] = v; });
+      // Lost & found posts may carry a downscaled photo (see posts.html).
+      if (formId === "post-form" && window.__fhaPostPhoto) data.imageData = window.__fhaPostPhoto;
 
       function show(ok, msg) {
         if (status) { status.hidden = false; status.textContent = msg; status.style.color = ok ? "" : "#c0392b"; }
-        if (ok) f.reset();
+        if (ok) { f.reset(); if (window.__fhaPostPhoto) { window.__fhaPostPhoto = null; var pv = document.getElementById("pf-photo-preview"); if (pv) pv.hidden = true; } }
         if (btn) btn.disabled = false;
       }
 

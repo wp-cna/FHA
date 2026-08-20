@@ -82,14 +82,50 @@
     if (p.fh) top.appendChild(el("span", "feed-tag feed-tag-fh", "Fisher Hill"));
     if (p.category) top.appendChild(el("span", "feed-tag", p.category));
     body.appendChild(top);
-    body.appendChild(el("h3", "feed-title", p.title));
-    var pd = dateLabel(p); if (pd) body.appendChild(el("p", "feed-date", pd));
-    body.appendChild(meta(p.time, p.location));
-    if (p.summary) body.appendChild(el("p", "feed-summary", p.summary));
-    if (p.source) {
-      var actions = el("div", "feed-actions");
-      actions.appendChild(el("span", "feed-source", "Posted by " + p.source));
-      body.appendChild(actions);
+
+    // A post with a photo (lost pets, mostly) leads with the picture and the
+    // title; the rest tucks behind a tap. The card keeps its place in the grid.
+    if (p.image) {
+      card.className += " feed-card-photo";
+      var ph = el("div", "feed-photo");
+      var im = el("img", null, null);
+      im.src = p.image; im.alt = p.title || "Posted photo"; im.loading = "lazy";
+      ph.appendChild(im);
+      body.appendChild(ph);
+      body.appendChild(el("h3", "feed-title", p.title));
+      var more = el("div", "feed-more");
+      var pd0 = dateLabel(p); if (pd0) more.appendChild(el("p", "feed-date", pd0));
+      more.appendChild(meta(p.time, p.location));
+      if (p.summary) more.appendChild(el("p", "feed-summary", p.summary));
+      if (p.source) {
+        var act0 = el("div", "feed-actions");
+        act0.appendChild(el("span", "feed-source", "Posted by " + p.source));
+        more.appendChild(act0);
+      }
+      body.appendChild(more);
+      var hint = el("p", "feed-expand-hint", "Details");
+      body.appendChild(hint);
+      card.tabIndex = 0;
+      card.setAttribute("role", "button");
+      card.setAttribute("aria-expanded", "false");
+      function toggle() {
+        var open = card.classList.toggle("open");
+        card.setAttribute("aria-expanded", open ? "true" : "false");
+      }
+      card.addEventListener("click", toggle);
+      card.addEventListener("keydown", function (ev) {
+        if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); toggle(); }
+      });
+    } else {
+      body.appendChild(el("h3", "feed-title", p.title));
+      var pd = dateLabel(p); if (pd) body.appendChild(el("p", "feed-date", pd));
+      body.appendChild(meta(p.time, p.location));
+      if (p.summary) body.appendChild(el("p", "feed-summary", p.summary));
+      if (p.source) {
+        var actions = el("div", "feed-actions");
+        actions.appendChild(el("span", "feed-source", "Posted by " + p.source));
+        body.appendChild(actions);
+      }
     }
     card.appendChild(body);
     return card;

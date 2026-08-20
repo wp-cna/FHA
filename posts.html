@@ -48,7 +48,7 @@
           <ul class="policy-list">
             <li>Neighborhood events, meetings, and gatherings</li>
             <li>Local businesses, shops, and services</li>
-            <li>Lost &amp; found — pets or items</li>
+            <li>Lost &amp; found — pets or items. A photo helps neighbors spot them; you can attach one below.</li>
             <li>Tag sales, yard sales, and giveaways</li>
             <li>Neighbor-to-neighbor needs, offers, and giveaways</li>
             <li>Civil and truthful, with your own contact info</li>
@@ -87,6 +87,15 @@
         </div>
         <div><label for="pf-title">Title</label><input id="pf-title" name="title" type="text" maxlength="120" required></div>
         <div><label for="pf-message">Details</label><textarea id="pf-message" name="message" maxlength="900" required></textarea></div>
+        <div id="pf-photo-wrap" hidden>
+          <label for="pf-photo">Photo of the pet or item (optional — it helps neighbors recognize them)</label>
+          <input id="pf-photo" type="file" accept="image/*">
+          <div class="photo-preview" id="pf-photo-preview" hidden>
+            <img id="pf-photo-img" alt="Photo preview">
+            <button type="button" class="photo-remove" id="pf-photo-remove">Remove photo</button>
+          </div>
+          <p class="cform-note" id="pf-photo-note">Photos are reviewed before anything appears on the board.</p>
+        </div>
         <div><label for="pf-eventdate">Event date — the day it happens, not today</label><input id="pf-eventdate" name="eventDate" type="date"></div>
         <div><label for="pf-eventtime">Event time — for example 1:00 PM to 6:00 PM (optional)</label><input id="pf-eventtime" name="eventTime" type="text" maxlength="60"></div>
         <div><label for="pf-location">Location — the street or place (optional)</label><input id="pf-location" name="location" type="text" maxlength="120"></div>
@@ -121,6 +130,57 @@
   }
   type.addEventListener("change", sync);
   sync();
+})();
+
+/* Lost & found posts may carry a photo. The picker only appears for that
+   category; the image is downscaled in the browser (max 1024px, JPEG) so the
+   upload stays small, and forms.js reads window.__fhaPostPhoto at submit. */
+(function () {
+  var type = document.getElementById("pf-type"), wrap = document.getElementById("pf-photo-wrap"),
+      input = document.getElementById("pf-photo"), preview = document.getElementById("pf-photo-preview"),
+      img = document.getElementById("pf-photo-img"), remove = document.getElementById("pf-photo-remove"),
+      note = document.getElementById("pf-photo-note");
+  if (!type || !wrap || !input) return;
+  var LOST = "Lost & found (pet or item)";
+
+  function clearPhoto() {
+    window.__fhaPostPhoto = null;
+    input.value = "";
+    preview.hidden = true;
+    img.removeAttribute("src");
+  }
+  function syncPhoto() {
+    wrap.hidden = type.value !== LOST;
+    if (wrap.hidden) clearPhoto();
+  }
+  type.addEventListener("change", syncPhoto);
+  syncPhoto();
+  remove.addEventListener("click", clearPhoto);
+
+  input.addEventListener("change", function () {
+    var file = input.files && input.files[0];
+    if (!file) { clearPhoto(); return; }
+    var reader = new FileReader();
+    reader.onerror = function () { clearPhoto(); note.textContent = "That photo couldn't be read — please try a different one."; };
+    reader.onload = function () {
+      var image = new Image();
+      image.onerror = function () { clearPhoto(); note.textContent = "That photo couldn't be read — please try a different one."; };
+      image.onload = function () {
+        var MAX = 1024, w = image.width, h = image.height;
+        if (w > MAX || h > MAX) { var s = MAX / Math.max(w, h); w = Math.round(w * s); h = Math.round(h * s); }
+        var c = document.createElement("canvas"); c.width = w; c.height = h;
+        c.getContext("2d").drawImage(image, 0, 0, w, h);
+        var data = c.toDataURL("image/jpeg", 0.8);
+        if (data.length > 700000) data = c.toDataURL("image/jpeg", 0.55);
+        window.__fhaPostPhoto = data;
+        img.src = data;
+        preview.hidden = false;
+        note.textContent = "Photos are reviewed before anything appears on the board.";
+      };
+      image.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
 })();
 </script>
 </body>
