@@ -107,10 +107,10 @@
     "Who can join": "Quién puede unirse",
     "Membership is open to current Fisher Hill residents and to former residents who'd like to stay connected. If you've moved away, just list the Fisher Hill address where you used to live.": "La membresía está abierta a los residentes actuales de Fisher Hill y a los exresidentes que deseen mantenerse conectados. Si se ha mudado, solo indique la dirección de Fisher Hill donde vivía.",
     "Dues": "Cuotas",
-    "Annual dues are $5 for an individual or $10 for a family. After you submit the form below, you can pay electronically or mail a check — payment details are confirmed once a board member verifies your Fisher Hill connection.": "Las cuotas anuales son de $5 por persona o $10 por familia. Después de enviar el formulario a continuación, puede pagar electrónicamente o enviar un cheque por correo — los detalles de pago se confirman una vez que un miembro de la directiva verifica su vínculo con Fisher Hill.",
+    "Annual dues are $5 for an individual or $10 for a family. After you submit the form below, you can pay by mailing a check made out to the Fisher Hill Association to: Michael Dalton, 10 Ridgeview Ave, White Plains, NY 10606.": "Las cuotas anuales son de $5 por persona o $10 por familia. Después de enviar el formulario a continuación, puede pagar enviando por correo un cheque a nombre de la Fisher Hill Association a: Michael Dalton, 10 Ridgeview Ave, White Plains, NY 10606.",
     // Payment-method list removed from join.html until FHA banking is settled;
     // restore these entries from git history alongside the HTML when it is.
-    "Payment instructions arrive in the follow-up email after a board member verifies your membership — no payment is collected on this site.": "Las instrucciones de pago llegan en el correo de seguimiento después de que un miembro de la directiva verifique su membresía — este sitio no cobra ningún pago.",
+    "No payment is collected on this site — a board member confirms your membership by email first.": "Este sitio no cobra ningún pago — primero un miembro de la directiva confirma su membresía por correo electrónico.",
     "Name": "Nombre",
     "Email": "Correo electrónico",
     "Residency": "Residencia",
