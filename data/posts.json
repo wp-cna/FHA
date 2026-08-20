@@ -3,6 +3,19 @@
   "note": "Community postings serving Fisher Hill. Reviewed before posting.",
   "posts": [
     {
+      "title": "Lost dog treats (test post)",
+      "category": "Lost & Found",
+      "fh": true,
+      "date": "2026-08-20",
+      "dateLabel": "August 20, 2026",
+      "expires": "2026-08-22",
+      "time": "",
+      "location": "",
+      "summary": "Container of lost dog treats missing - last seen at 10 sterling ave",
+      "source": "Michael Kushman",
+      "image": "assets/posts/lost-2026-08-20-b66999a9.jpg"
+    },
+    {
       "title": "TEST — photo pipeline check, do not publish",
       "category": "Lost & Found",
       "fh": true,
