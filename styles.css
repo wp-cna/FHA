@@ -107,8 +107,10 @@ p{ line-height:1.6; color:#352c41; max-width:65ch; }
 /* ── Photo posts (lost & found) ──────────────────────────── */
 /* The photo and the title are the card; everything else expands on tap. */
 .feed-card-photo{ cursor:pointer; }
-.feed-photo{ margin:0 -22px 12px; overflow:hidden; }
-.feed-photo img{ display:block; width:100%; height:170px; object-fit:cover; }
+.feed-photo{ margin:0 -22px 12px; overflow:hidden; background:var(--soft); }
+/* contain, not cover: the whole photo stays visible (a lost pet's face is
+   usually exactly where cover-cropping cuts), letterboxed on the soft tint */
+.feed-photo img{ display:block; width:100%; height:170px; object-fit:contain; }
 .feed-card-photo .feed-more{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
 .feed-card-photo.open .feed-more{ max-height:420px; }
 .feed-expand-hint{ margin:8px 0 0; font-size:12.5px; font-weight:700; color:var(--brand); letter-spacing:.04em; }
