@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-21",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -561,6 +561,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Wellness Connection",
+      "category": "Learning",
+      "date": "2026-09-21",
+      "dateLabel": "September 21, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Auditorium,Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17253864",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Finding the Best College Fit",
       "category": "Workshop",
       "date": "2026-09-21",
@@ -776,6 +788,18 @@
       "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Sunday Jazz Alfresco",
+      "category": "Food & Downtown",
+      "date": "2026-09-27",
+      "dateLabel": "September 27, 2026",
+      "time": "12:15 PM – 7:30 PM",
+      "location": "White Plains BID District, Downtown White Plains, NY 10601",
+      "summary": "SUNDAY, SEPT. 27Sunday Jazz Alfresco 12:15-7:30pm | FREE (Mamaroneck Ave. between E. Post Road and Maple Ave.) 12:15-1pmLuke Hart Collective Luke Hart is a…",
+      "url": "https://wpbid.com/events/sunday-jazz-alfresco/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
+    },
+    {
       "title": "Girls Varsity Tennis vs. Harrison",
       "category": "Sports",
       "date": "2026-09-28",
@@ -835,18 +859,6 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
       "url": "https://calendar.whiteplainslibrary.org/event/17183809",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Short-Story/Film Discussion Series",
-      "category": "Civic",
-      "date": "2026-10-01",
-      "dateLabel": "October 1, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17227314",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1033,18 +1045,6 @@
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Journey back in time to the Battle of White Plains, a pivotal moment in the American Revolutionary War.",
       "url": "https://calendar.whiteplainslibrary.org/event/15261880",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Short-Story/Film Discussion Series",
-      "category": "Civic",
-      "date": "2026-10-08",
-      "dateLabel": "October 8, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17227718",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1467,18 +1467,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Short-Story/Film Discussion Series",
-      "category": "Civic",
-      "date": "2026-10-29",
-      "dateLabel": "October 29, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17227801",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Hispanic Heritage Luncheon",
       "category": "Parks & Recreation",
       "date": "2026-10-30",
@@ -1743,6 +1731,18 @@
       "summary_es": "Thanksgiving Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Graphic Novel Chat & BINGO: Kitty Quest by Phil Corbett",
+      "category": "Learning",
+      "date": "2026-11-24",
+      "dateLabel": "November 24, 2026",
+      "time": "5:00 PM – 6:00 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for some fun by talking about Kitty Quest by Phil Corbett!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17254839",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-11-25",
@@ -1754,6 +1754,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Court Street Market",
+      "category": "Food & Downtown",
+      "date": "2026-11-25",
+      "dateLabel": "November 25, 2026",
+      "time": "8:30 AM – 3:00 PM",
+      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
+      "summary": "Court Street Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4698&month=11&year=2026&day=25&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Santa's Mailbox",
