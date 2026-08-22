@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21",
+  "updated": "2026-08-22",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -851,6 +851,18 @@
       "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Common Ground: Let's Keep Democracy Alive!",
+      "category": "Learning",
+      "date": "2026-09-30",
+      "dateLabel": "September 30, 2026",
+      "time": "6:00 PM – 8:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "All viewpoints are welcome in this respectful, inclusive space designed to foster dialogue, reflection, and understanding.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16630611",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "In-Person Registration: Day of the Dead Altar Workshop",
       "category": "Workshop",
       "date": "2026-10-01",
@@ -1095,6 +1107,18 @@
       "url": "https://wpbid.com/events/oktoberfest-2026/",
       "ctaLabel": "Open event page",
       "source": "White Plains Business Improvement District"
+    },
+    {
+      "title": "The Battle of White Plains: Washington & Howe in Westchester",
+      "category": "Learning",
+      "date": "2026-10-11",
+      "dateLabel": "October 11, 2026",
+      "time": "2:00 PM – 3:30 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "From the website of the publisher, The History Press: \"In October 1776 central Westchester witnessed a critical episode in the early campaign of George…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17262023",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Common Council Forum",
