@@ -1,20 +1,7 @@
 {
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "City Pools Close",
-      "category": "Parks & Recreation",
-      "date": "2026-08-23",
-      "dateLabel": "August 23, 2026",
-      "time": "7:30 PM",
-      "location": "KIttrell Pool on Fisher Ave, Gardella Pool, Ferris Ave.",
-      "summary": "City Pools Close is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4557&month=8&year=2026&day=23&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "City Pools Close aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Shrek Kids",
       "category": "Arts",
