@@ -1,56 +1,7 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-25",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Shrek Kids",
-      "category": "Arts",
-      "date": "2026-08-24",
-      "dateLabel": "August 24, 2026",
-      "time": "",
-      "location": "White Plains Performing Arts Center, 11 City Place, 3rd Floor, White Plains, NY 10601",
-      "summary": "Beauty is in the eye of the ogre in Shrek The Musical KIDS, based on the Oscar-winning DreamWorks Animation film and fantastic Broadway musical.",
-      "url": "https://wppac.com/shows/shrek-kids/",
-      "ctaLabel": "Open show page",
-      "source": "White Plains Performing Arts Center"
-    },
-    {
-      "title": "TIPS for Teens",
-      "category": "Learning",
-      "date": "2026-08-24",
-      "dateLabel": "August 24, 2026",
-      "time": "3:00 PM – 4:30 PM",
-      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "TIPS (Teen Information and Peer Services) is a leadership program where teens have the opportunity to discuss and learn about topics of community importance,…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16395258",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Dog Swim",
-      "category": "Parks & Recreation",
-      "date": "2026-08-24",
-      "dateLabel": "August 24, 2026",
-      "time": "5:30 PM – 7:30 PM",
-      "location": "Kittrell Park, White Plains, NY",
-      "summary": "Dog Swim is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4576&month=8&year=2026&day=24&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Dog Swim aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Destination College Workshop Series",
-      "category": "Workshop",
-      "date": "2026-08-24",
-      "dateLabel": "August 24, 2026",
-      "time": "7:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Workshop 12: The Transition Ahead (Decisions, Deposits & Life Skills) Focus: Preparing for independence and success after high school.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15097221",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Blood Drive",
       "category": "Learning",
@@ -124,6 +75,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Covid-19 and Flu Vaccine Clinics aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "City of White Plains Real Estate Committee",
+      "category": "Civic",
+      "date": "2026-08-27",
+      "dateLabel": "August 27, 2026",
+      "time": "1:00 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "City of White Plains Real Estate Committee is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4700&month=8&year=2026&day=27&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "City of White Plains Real Estate Committee aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "DJ Days – Saxon Woods Pool",
@@ -686,6 +650,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Jazz Stroll 2026",
+      "category": "Arts",
+      "date": "2026-09-24",
+      "dateLabel": "September 24, 2026",
+      "time": "5:30 PM – 9:00 PM",
+      "location": "White Plains BID District, Downtown White Plains, NY 10601",
+      "summary": "JAZZ STROLL: THURSDAY, SEPT.",
+      "url": "https://wpbid.com/events/jazz-stroll-2026/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
+    },
+    {
       "title": "Consolidated Annual Performance and Evaluation Report (CAPER) Public Hearing",
       "category": "Civic",
       "date": "2026-09-24",
@@ -1056,6 +1032,18 @@
       "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Led by genealogist Irisneri Alicea Flores, this presentation focuses on simplifying the research process while honoring the rich cultural and historical…",
       "url": "https://calendar.whiteplainslibrary.org/event/16859295",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Concerts in Motion",
+      "category": "Learning",
+      "date": "2026-10-09",
+      "dateLabel": "October 9, 2026",
+      "time": "2:00 PM – 3:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A concert for Highlighting Hispanic Heritage month.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17271282",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1474,6 +1462,18 @@
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Genealogical thinking makes your approach to searching for an ancestor&rsquo;s records into a logical and more productive endeavor.",
       "url": "https://calendar.whiteplainslibrary.org/event/17114309",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Unclaimed Funds Workshop",
+      "category": "Workshop",
+      "date": "2026-10-29",
+      "dateLabel": "October 29, 2026",
+      "time": "4:00 PM – 6:30 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Does New York State have money in your name?",
+      "url": "https://calendar.whiteplainslibrary.org/event/17268750",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1936,6 +1936,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Concerts in Motion",
+      "category": "Learning",
+      "date": "2026-12-04",
+      "dateLabel": "December 4, 2026",
+      "time": "2:00 PM – 3:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "performance for the Holidays",
+      "url": "https://calendar.whiteplainslibrary.org/event/17271541",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-05",
@@ -2201,6 +2213,30 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Up in the Arctic: VR Search and Find!",
+      "category": "Learning",
+      "date": "2026-12-22",
+      "dateLabel": "December 22, 2026",
+      "time": "12:30 PM – 1:00 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "For children ages 2+ and their families.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17081975",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Graphic Novel Chat & BINGO: Snowlands: A Blood Moon",
+      "category": "Learning",
+      "date": "2026-12-22",
+      "dateLabel": "December 22, 2026",
+      "time": "5:00 PM – 6:00 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for some fun by talking about Snowlands: A Blood Moon by Morr Meroz!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17255176",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "New Year's Eve Family Spectacular",
