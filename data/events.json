@@ -1,31 +1,7 @@
 {
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Blood Drive",
-      "category": "Learning",
-      "date": "2026-08-25",
-      "dateLabel": "August 25, 2026",
-      "time": "1:00 PM – 7:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Make your appointment online here , for questions and more information, contact Camilo Rubio at 914-784-4637 or crubio@nybc.org .",
-      "url": "https://calendar.whiteplainslibrary.org/event/16031563",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Under the Sea: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-08-25",
-      "dateLabel": "August 25, 2026",
-      "time": "1:00 PM – 1:30 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15773489",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -48,6 +24,18 @@
       "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
       "url": "https://calendar.whiteplainslibrary.org/event/17112575",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Women's Empowerment Hour",
+      "category": "Workshop",
+      "date": "2026-08-26",
+      "dateLabel": "August 26, 2026",
+      "time": "12:00 PM – 1:00 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Women's Empowerment Hour is a special time for women of the community to come together, connect, and lift each other up.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16482234",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -826,6 +814,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Women's Empowerment Hour",
+      "category": "Workshop",
+      "date": "2026-09-30",
+      "dateLabel": "September 30, 2026",
+      "time": "6:00 PM – 7:00 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Women's Empowerment Hour is a special time for women of the community to come together, connect, and lift each other up.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16482235",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "In-Person Registration: Day of the Dead Altar Workshop",
       "category": "Workshop",
       "date": "2026-10-01",
@@ -920,6 +920,18 @@
       "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "It seems that Gail Baines is having a bad day that only keeps getting worse, but her problems manage to be good news for Tyler&rsquo;s readers.",
       "url": "https://calendar.whiteplainslibrary.org/event/17115570",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Wellness Connection",
+      "category": "Learning",
+      "date": "2026-10-05",
+      "dateLabel": "October 5, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17276974",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1219,6 +1231,18 @@
       "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Wellness Connection",
+      "category": "Learning",
+      "date": "2026-10-19",
+      "dateLabel": "October 19, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17276975",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Creative Upcycling: The Junk Journal Workshop",
       "category": "Workshop",
       "date": "2026-10-19",
@@ -1450,6 +1474,18 @@
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Journey back in time to the Battle of White Plains, a pivotal moment in the American Revolutionary War.",
       "url": "https://calendar.whiteplainslibrary.org/event/15261886",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Women's Empowerment Hour",
+      "category": "Workshop",
+      "date": "2026-10-28",
+      "dateLabel": "October 28, 2026",
+      "time": "6:00 PM – 7:00 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Women's Empowerment Hour is a special time for women of the community to come together, connect, and lift each other up.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16482236",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
