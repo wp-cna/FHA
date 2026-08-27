@@ -1,56 +1,7 @@
 {
-  "updated": "2026-08-26",
+  "updated": "2026-08-27",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-08-26",
-      "dateLabel": "August 26, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4680&month=8&year=2026&day=26&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Sustainable Westchester",
-      "category": "Learning",
-      "date": "2026-08-26",
-      "dateLabel": "August 26, 2026",
-      "time": "11:00 AM – 2:00 PM",
-      "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
-      "url": "https://calendar.whiteplainslibrary.org/event/17112575",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Women's Empowerment Hour",
-      "category": "Workshop",
-      "date": "2026-08-26",
-      "dateLabel": "August 26, 2026",
-      "time": "12:00 PM – 1:00 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Women's Empowerment Hour is a special time for women of the community to come together, connect, and lift each other up.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16482234",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Pre-Fall Season Meeting and Clinic on New Laws of the Game",
-      "category": "Civic",
-      "date": "2026-08-26",
-      "dateLabel": "August 26, 2026",
-      "time": "6:30 PM – 8:30 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Sponsored by the Westchester Soccer Referee Organization.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17092666",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Covid-19 and Flu Vaccine Clinics",
       "category": "Parks & Recreation",
@@ -444,7 +395,7 @@
       "date": "2026-09-19",
       "dateLabel": "September 19, 2026",
       "time": "10:00 AM – 2:00 PM",
-      "location": "Gillie Recycling Center, White Plains, NY",
+      "location": "Gedney Recycling Center, Please note that Gedney Yard services and the TILI Shed will be closed due to Truck Day.",
       "summary": "Truck Day is listed on the official White Plains city calendar.",
       "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4555&month=9&year=2026&day=19&calType=0",
       "ctaLabel": "Open city page",
@@ -814,14 +765,14 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Women's Empowerment Hour",
-      "category": "Workshop",
+      "title": "Manage Your Career Like a Business",
+      "category": "Learning",
       "date": "2026-09-30",
       "dateLabel": "September 30, 2026",
-      "time": "6:00 PM – 7:00 PM",
+      "time": "6:00 PM – 7:30 PM",
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Women's Empowerment Hour is a special time for women of the community to come together, connect, and lift each other up.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16482235",
+      "summary": "In this interactive session, executive leader, strategist, and mentor Yvette Wynn shares practical lessons from more than 35 years of leadership in financial…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17286669",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -860,6 +811,18 @@
       "url": "https://wppac.com/shows/dear-evan-hansen/",
       "ctaLabel": "Open show page",
       "source": "White Plains Performing Arts Center"
+    },
+    {
+      "title": "The Salem Witch Trials: Reckoning and Reclaiming",
+      "category": "Learning",
+      "date": "2026-10-02",
+      "dateLabel": "October 2, 2026",
+      "time": "1:00 PM – 2:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Even after 300 years, Salem&rsquo;s witch trials remain a defining example of intolerance and injustice in American history.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17287694",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Outdoor Movie",
