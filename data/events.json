@@ -1,33 +1,7 @@
 {
-  "updated": "2026-08-27",
+  "updated": "2026-08-28",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Covid-19 and Flu Vaccine Clinics",
-      "category": "Parks & Recreation",
-      "date": "2026-08-27",
-      "dateLabel": "August 27, 2026",
-      "time": "10:30 AM – 12:30 PM",
-      "location": "Covid-19 and Flu Vaccine Clinic, Sunshine Pharmacy will be holding clinics to administer both Covid-19 and Seasonal Flu vaccines. Clinics will be at the white Plains Recreation and Parks Community Center at 65 Mitchell Place., To register, visit https://tinyurl.com/Wpvax2026 or call Sunshine Pharmacy at 914-607-3939, Other Dates:, Thursday, August 27, 10:30 am - 12:30 pm, Tuesday, September 22, 10:30 am - 1:00 pm, Wednesday, October 7, 10:00 am - 2:00 pm, ====================================, Jornada de vacunación contra el COVID-19 y la gripe, Sunshine Pharmacy organizará jornadas para administrar vacunas tanto contra el COVID-19 como contra la gripe estacional. Estas jornadas se llevarán a cabo en el White Plains Recreation and Parks Community Center, ubicado en 65 Mitchell Place., Para registrarse, visite https://tinyurl.com/Wpvax2026 o llame a Sunshine Pharmacy al 914-607-3939., Otras fechas:, Jueves 27 de agosto, de 10:30 a. m. a 12:30 p. m., Martes 22 de septiembre, de 10:30 a. m. a 1:00 p. m., Miércoles 7 de octubre, de 10:00 a. m. a 2:00 p. m.",
-      "summary": "Covid-19 and Flu Vaccine Clinics is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4693&month=8&year=2026&day=27&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Covid-19 and Flu Vaccine Clinics aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "City of White Plains Real Estate Committee",
-      "category": "Civic",
-      "date": "2026-08-27",
-      "dateLabel": "August 27, 2026",
-      "time": "1:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "City of White Plains Real Estate Committee is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4700&month=8&year=2026&day=27&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "City of White Plains Real Estate Committee aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "DJ Days – Saxon Woods Pool",
       "category": "Parks & Recreation",
@@ -2009,6 +1983,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Derek Hough Dance for the Holidays",
+      "category": "Community",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "8:00 PM – 10:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "This event is a joyous celebration of the most festive time of the year!",
+      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
