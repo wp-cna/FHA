@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-08-29",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -1142,6 +1142,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Miller House Open House",
+      "category": "Parks & Recreation",
+      "date": "2026-10-17",
+      "dateLabel": "October 17, 2026",
+      "time": "11:00 AM – 1:00 PM",
+      "location": "Miller House, 140 Virginia Road, White Plains, NY",
+      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
+      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-10-17",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
       "title": "Red Leaf, Yellow Leaf, Fall Nature Walk",
       "category": "Community",
       "date": "2026-10-17",
@@ -1341,6 +1353,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Freestyle Jam 2026",
+      "category": "Community",
+      "date": "2026-10-24",
+      "dateLabel": "October 24, 2026",
+      "time": "8:00 PM – 10:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "See TKA, George Lamond, Judy Torres, Shannon, The Cover Girls, Cynthia, Betty D, Coro, Soave and more.",
+      "url": "https://parksevents.westchestercountyny.gov/event/freestyle-jam-2026",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
       "title": "Demystifying Medicare",
       "category": "Civic",
       "date": "2026-10-25",
@@ -1462,6 +1486,30 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Hispanic Heritage Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "23rd Annual Fall Westchester County Home Show",
+      "category": "Arts",
+      "date": "2026-10-31",
+      "dateLabel": "October 31, 2026",
+      "time": "11:00 AM – 5:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "As one of Westchester County’s premier home expos, this highly anticipated event continues to be a vital resource for homeowners, contractors, and industry…",
+      "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-10-31",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
+      "title": "23rd Annual Fall Westchester County Home Show",
+      "category": "Arts",
+      "date": "2026-11-01",
+      "dateLabel": "November 1, 2026",
+      "time": "11:00 AM – 4:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "As one of Westchester County’s premier home expos, this highly anticipated event continues to be a vital resource for homeowners, contractors, and industry…",
+      "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-11-01",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Future is Female",
@@ -1688,6 +1736,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/15958436",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Miller House Open House",
+      "category": "Parks & Recreation",
+      "date": "2026-11-21",
+      "dateLabel": "November 21, 2026",
+      "time": "11:00 AM – 1:00 PM",
+      "location": "Miller House, 140 Virginia Road, White Plains, NY",
+      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
+      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-11-21",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Soap Making Class",
@@ -1983,18 +2043,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Derek Hough Dance for the Holidays",
-      "category": "Community",
-      "date": "2026-12-07",
-      "dateLabel": "December 7, 2026",
-      "time": "8:00 PM – 10:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "This event is a joyous celebration of the most festive time of the year!",
-      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
