@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29",
+  "updated": "2026-08-30",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -824,6 +824,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Jump into the Jurassic: VR Search and Find!",
+      "category": "Learning",
+      "date": "2026-10-03",
+      "dateLabel": "October 3, 2026",
+      "time": "11:00 AM – 11:30 AM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16799454",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Halloween Pumpkin Patch",
       "category": "Community",
       "date": "2026-10-04",
@@ -884,6 +896,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Jump into the Jurassic: VR Search and Find!",
+      "category": "Learning",
+      "date": "2026-10-06",
+      "dateLabel": "October 6, 2026",
+      "time": "12:30 PM – 1:00 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16799553",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Stretch you dough",
@@ -1118,6 +1142,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Jump into the Jurassic: VR Search and Find!",
+      "category": "Learning",
+      "date": "2026-10-16",
+      "dateLabel": "October 16, 2026",
+      "time": "12:30 PM – 1:00 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16799554",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Beginner Painting Workshop",
       "category": "Workshop",
       "date": "2026-10-16",
@@ -1178,18 +1214,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Wellness Connection",
-      "category": "Learning",
-      "date": "2026-10-19",
-      "dateLabel": "October 19, 2026",
-      "time": "4:00 PM – 5:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17276975",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Creative Upcycling: The Junk Journal Workshop",
@@ -2043,6 +2067,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Derek Hough Dance for the Holidays",
+      "category": "Community",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "8:00 PM – 10:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "This event is a joyous celebration of the most festive time of the year!",
+      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
