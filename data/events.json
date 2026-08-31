@@ -1,19 +1,7 @@
 {
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "DJ Days – Saxon Woods Pool",
-      "category": "Parks & Recreation",
-      "date": "2026-08-30",
-      "dateLabel": "August 30, 2026",
-      "time": "12:00 PM – 4:00 PM",
-      "location": "Saxon Woods Park, 1800 Mamaroneck Avenue, White Plains, NY, 10605",
-      "summary": "Spend your summer at Westchester County Pools and Beaches!",
-      "url": "https://parksevents.westchestercountyny.gov/event/dj-days-saxon-woods-pool/2026-08-30",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
     {
       "title": "International Overdose Awareness Day Event",
       "category": "Learning",
@@ -2180,6 +2168,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Miller House Open House",
+      "category": "Parks & Recreation",
+      "date": "2026-12-12",
+      "dateLabel": "December 12, 2026",
+      "time": "11:00 AM – 1:00 PM",
+      "location": "Miller House, 140 Virginia Road, White Plains, NY",
+      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
+      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-12-12",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
