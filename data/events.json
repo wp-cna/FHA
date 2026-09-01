@@ -1,32 +1,7 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "International Overdose Awareness Day Event",
-      "category": "Learning",
-      "date": "2026-08-31",
-      "dateLabel": "August 31, 2026",
-      "time": "5:00 PM – 7:00 PM",
-      "location": "White Plains Public Library, Library Plaza, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "International Overdose Awareness Day is observed in more than 40 countries as a time to raise awareness about overdose, reduce stigma, and remember lives that…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16948057",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Common Council Work Session",
-      "category": "Civic",
-      "date": "2026-08-31",
-      "dateLabel": "August 31, 2026",
-      "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Common Council Work Session is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4266&month=8&year=2026&day=31&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "First Day of School!",
       "category": "Learning",
@@ -430,7 +405,7 @@
       "date": "2026-09-21",
       "dateLabel": "September 21, 2026",
       "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "There are over 2,000 four-year colleges in the United States for students to consider.",
       "url": "https://calendar.whiteplainslibrary.org/event/16996672",
       "ctaLabel": "Open library page",
@@ -461,6 +436,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Covid-19 and Flu Vaccine Clinics aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "White Plains Beautification Foundation",
+      "category": "Learning",
+      "date": "2026-09-22",
+      "dateLabel": "September 22, 2026",
+      "time": "6:00 PM – 8:00 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Contact the Beautification Foundtaion for more informatiuon at info@wpbf.org or phone 914-683-5108",
+      "url": "https://calendar.whiteplainslibrary.org/event/17212608",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "JazzFest",
@@ -800,8 +787,8 @@
       "summary_es": "Outdoor Movie aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Sustainable White Plains",
-      "category": "Learning",
+      "title": "White Plains Sustainability Committee",
+      "category": "Civic",
       "date": "2026-10-03",
       "dateLabel": "October 3, 2026",
       "time": "10:00 AM – 2:00 PM",
@@ -1738,8 +1725,8 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Sustainable White Plains",
-      "category": "Learning",
+      "title": "White Plains Sustainability Committee",
+      "category": "Civic",
       "date": "2026-11-21",
       "dateLabel": "November 21, 2026",
       "time": "10:00 AM – 2:00 PM",
@@ -1901,6 +1888,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Finding the Best College Fit",
+      "category": "Workshop",
+      "date": "2026-11-30",
+      "dateLabel": "November 30, 2026",
+      "time": "6:30 PM – 7:30 PM",
+      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "There are over 2,000 four-year colleges in the United States for students to consider.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17325032",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Santa's Mailbox",
@@ -2394,6 +2393,71 @@
       "location": "White Plains, White Plains, NY",
       "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
       "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4361&month=1&year=2027&day=19&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Black History Month Celebration",
+      "category": "Parks & Recreation",
+      "date": "2027-02-11",
+      "dateLabel": "February 11, 2027",
+      "time": "11:30 AM – 1:30 PM",
+      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
+      "summary": "Black History Month Celebration is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4559&month=2&year=2027&day=11&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Black History Month Celebration aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Intergenerational Valentine's Day Dinner Dance",
+      "category": "Parks & Recreation",
+      "date": "2027-02-11",
+      "dateLabel": "February 11, 2027",
+      "time": "5:00 PM – 8:00 PM",
+      "location": "White Plains Community Center, 65 Mitchell Place, White Plains, NY",
+      "summary": "Intergenerational Valentine's Day Dinner Dance is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4574&month=2&year=2027&day=11&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Intergenerational Valentine's Day Dinner Dance aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Conservation Board Meeting",
+      "category": "Civic",
+      "date": "2027-02-15",
+      "dateLabel": "February 15, 2027",
+      "time": "7:30 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Conservation Board Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4150&month=2&year=2027&day=15&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Transportation Commission Meeting",
+      "category": "Civic",
+      "date": "2027-02-16",
+      "dateLabel": "February 16, 2027",
+      "time": "9:15 AM – 10:15 AM",
+      "location": "City Hall Common Council Chambers, White Plains, NY",
+      "summary": "Transportation Commission Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3665&month=2&year=2027&day=16&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Planning Board Meeting",
+      "category": "Civic",
+      "date": "2027-02-16",
+      "dateLabel": "February 16, 2027",
+      "time": "7:00 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4362&month=2&year=2027&day=16&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
