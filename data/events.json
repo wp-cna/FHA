@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -251,18 +251,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Sustainable Westchester",
-      "category": "Learning",
-      "date": "2026-09-16",
-      "dateLabel": "September 16, 2026",
-      "time": "11:00 AM – 2:00 PM",
-      "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
-      "url": "https://calendar.whiteplainslibrary.org/event/17112576",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Music at the Market",
@@ -1069,18 +1057,6 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Sustainable Westchester",
-      "category": "Learning",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "11:00 AM – 2:00 PM",
-      "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
-      "url": "https://calendar.whiteplainslibrary.org/event/17112577",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Virtual Clean Energy Workforce Opportuntiy",
       "category": "Workshop",
       "date": "2026-10-14",
@@ -1176,6 +1152,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Red Leaf, Yellow Leaf, Fall Nature Walk aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Young Musicians of Westchester: 'The Jazz Kwintet'",
+      "category": "Learning",
+      "date": "2026-10-17",
+      "dateLabel": "October 17, 2026",
+      "time": "2:00 PM – 3:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Young Musicians of Westchester, an all-volunteer nonprofit organization, assists musicians embarking on professional careers with opportunities to perform for…",
+      "url": "https://calendar.whiteplainslibrary.org/event/16413664",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Halloween Parade",
@@ -1560,18 +1548,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Affordable Housing in White Plains",
-      "category": "Learning",
-      "date": "2026-11-09",
-      "dateLabel": "November 9, 2026",
-      "time": "6:30 PM – 8:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17225309",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Sugar: The Play",
