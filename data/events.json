@@ -1,58 +1,7 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "First Day of School!",
-      "category": "Learning",
-      "date": "2026-09-02",
-      "dateLabel": "September 2, 2026",
-      "time": "",
-      "location": "White Plains City School District, White Plains, NY",
-      "summary": "First Day of School! is listed on the White Plains City School District calendar.",
-      "url": "https://www.whiteplainspublicschools.org/calendar",
-      "ctaLabel": "Open district calendar",
-      "source": "White Plains Public Schools"
-    },
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-09-02",
-      "dateLabel": "September 2, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4681&month=9&year=2026&day=2&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Music at the Market",
-      "category": "Parks & Recreation",
-      "date": "2026-09-02",
-      "dateLabel": "September 2, 2026",
-      "time": "12:00 PM",
-      "location": "Court St., White Plains, NY",
-      "summary": "Music at the Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4609&month=9&year=2026&day=2&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Zoning Board of Appeals",
-      "category": "Civic",
-      "date": "2026-09-02",
-      "dateLabel": "September 2, 2026",
-      "time": "7:00 PM – 9:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Zoning Board of Appeals is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4237&month=9&year=2026&day=2&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Delfino Park Barbeque",
       "category": "Parks & Recreation",
@@ -927,10 +876,22 @@
       "category": "Learning",
       "date": "2026-10-07",
       "dateLabel": "October 7, 2026",
-      "time": "4:00 PM – 4:15 PM",
+      "time": "4:00 PM – 5:15 PM",
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn how to create a simple spreadsheet and use formulas and functions with Microsoft Excel, the premier spreadsheet program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17217585",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Virtual Poetry Open Mic",
+      "category": "Learning",
+      "date": "2026-10-07",
+      "dateLabel": "October 7, 2026",
+      "time": "7:00 PM – 9:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Zork and Tim for our monthly virtual Poetry Open Mic!",
+      "url": "https://calendar.whiteplainslibrary.org/event/16563571",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1089,18 +1050,6 @@
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn about events in White Plains during the crucial year of 1776.",
       "url": "https://calendar.whiteplainslibrary.org/event/15261911",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Jump into the Jurassic: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-10-16",
-      "dateLabel": "October 16, 2026",
-      "time": "12:30 PM – 1:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16799554",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1537,6 +1486,18 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Virtual Poetry Open Mic",
+      "category": "Learning",
+      "date": "2026-11-04",
+      "dateLabel": "November 4, 2026",
+      "time": "7:00 PM – 9:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Zork and Tim for our monthly virtual Poetry Open Mic!",
+      "url": "https://calendar.whiteplainslibrary.org/event/16563572",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Zoning Board of Appeals",
       "category": "Civic",
       "date": "2026-11-04",
@@ -1917,6 +1878,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Virtual Poetry Open Mic",
+      "category": "Learning",
+      "date": "2026-12-02",
+      "dateLabel": "December 2, 2026",
+      "time": "7:00 PM – 9:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Zork and Tim for our monthly virtual Poetry Open Mic!",
+      "url": "https://calendar.whiteplainslibrary.org/event/16563573",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Zoning Board of Appeals",
       "category": "Civic",
       "date": "2026-12-02",
@@ -2032,18 +2005,6 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Derek Hough Dance for the Holidays",
-      "category": "Community",
-      "date": "2026-12-07",
-      "dateLabel": "December 7, 2026",
-      "time": "8:00 PM – 10:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "This event is a joyous celebration of the most festive time of the year!",
-      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-08",
@@ -2143,18 +2104,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Miller House Open House",
-      "category": "Parks & Recreation",
-      "date": "2026-12-12",
-      "dateLabel": "December 12, 2026",
-      "time": "11:00 AM – 1:00 PM",
-      "location": "Miller House, 140 Virginia Road, White Plains, NY",
-      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
-      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-12-12",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
