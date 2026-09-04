@@ -1,20 +1,7 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Delfino Park Barbeque",
-      "category": "Parks & Recreation",
-      "date": "2026-09-03",
-      "dateLabel": "September 3, 2026",
-      "time": "11:30 AM – 1:30 PM",
-      "location": "Delfino Park, White Plains, NY",
-      "summary": "Delfino Park Barbeque is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4573&month=9&year=2026&day=3&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Delfino Park Barbeque aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Intro to Google Sheets, Part 1",
       "category": "Learning",
@@ -711,6 +698,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "'Hamilton' Sing-along on Battle Hill",
+      "category": "Learning",
+      "date": "2026-10-02",
+      "dateLabel": "October 2, 2026",
+      "time": "6:45 PM – 9:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "The Library and Rec & Parks are joining forces for an epic Hamilton singalong on Battle of White Plains Park!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17356338",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Outdoor Movie",
       "category": "Community",
       "date": "2026-10-02",
@@ -761,13 +760,13 @@
       "summary_es": "Halloween Pumpkin Patch aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Pollinators of White Plains",
+      "title": "Annual Pollinators of White Plains",
       "category": "Learning",
       "date": "2026-10-04",
       "dateLabel": "October 4, 2026",
       "time": "1:00 PM – 4:00 PM",
       "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Pollinators of White Plains",
+      "summary": "For those who can contribute, please bring your extra native seeds and plants so that we can spread the love of native plants through White Plains and the…",
       "url": "https://calendar.whiteplainslibrary.org/event/16964004",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -808,18 +807,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Jump into the Jurassic: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-10-06",
-      "dateLabel": "October 6, 2026",
-      "time": "12:30 PM – 1:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16799553",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Stretch you dough",
