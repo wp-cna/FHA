@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -686,6 +686,18 @@
       "source": "White Plains Performing Arts Center"
     },
     {
+      "title": "The Feeding Circle Baby Cafe",
+      "category": "Civic",
+      "date": "2026-10-02",
+      "dateLabel": "October 2, 2026",
+      "time": "11:45 AM – 1:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16611374",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "The Salem Witch Trials: Reckoning and Reclaiming",
       "category": "Learning",
       "date": "2026-10-02",
@@ -780,18 +792,6 @@
       "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "It seems that Gail Baines is having a bad day that only keeps getting worse, but her problems manage to be good news for Tyler&rsquo;s readers.",
       "url": "https://calendar.whiteplainslibrary.org/event/17115570",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Wellness Connection",
-      "category": "Learning",
-      "date": "2026-10-05",
-      "dateLabel": "October 5, 2026",
-      "time": "4:00 PM – 5:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17276974",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1498,6 +1498,18 @@
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "The Feeding Circle Baby Cafe",
+      "category": "Civic",
+      "date": "2026-11-06",
+      "dateLabel": "November 6, 2026",
+      "time": "11:45 AM – 1:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16611375",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Sugar: The Play",
       "category": "Parks & Recreation",
       "date": "2026-11-10",
@@ -1916,6 +1928,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "The Feeding Circle Baby Cafe",
+      "category": "Civic",
+      "date": "2026-12-04",
+      "dateLabel": "December 4, 2026",
+      "time": "11:45 AM – 1:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16611376",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Concerts in Motion",
       "category": "Learning",
       "date": "2026-12-04",
@@ -1939,18 +1963,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Up in the Arctic: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-12-05",
-      "dateLabel": "December 5, 2026",
-      "time": "11:00 AM – 11:30 AM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For children ages 2+ and their families.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17082183",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Santa's Mailbox",
@@ -2157,18 +2169,6 @@
       "summary_es": "Holiday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Up in the Arctic: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-12-15",
-      "dateLabel": "December 15, 2026",
-      "time": "12:30 PM – 1:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For children ages 2+ and their families.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17081974",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Planning Board Meeting",
       "category": "Civic",
       "date": "2026-12-15",
@@ -2193,18 +2193,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Up in the Arctic: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-12-22",
-      "dateLabel": "December 22, 2026",
-      "time": "12:30 PM – 1:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For children ages 2+ and their families.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17081975",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Graphic Novel Chat & BINGO: Snowlands: A Blood Moon",
