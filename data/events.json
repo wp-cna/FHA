@@ -1,32 +1,7 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Intro to Google Sheets, Part 1",
-      "category": "Learning",
-      "date": "2026-09-08",
-      "dateLabel": "September 8, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Google Sheets is a free online spreadsheet program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17085083",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Common Council Meeting",
-      "category": "Civic",
-      "date": "2026-09-08",
-      "dateLabel": "September 8, 2026",
-      "time": "7:00 PM – 9:00 PM",
-      "location": "Common Council Chamber, 255 Main Street, 2nd Floor, White Plains NY 10601",
-      "summary": "Common Council Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3608&month=9&year=2026&day=8&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -1510,6 +1485,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Affordable Housing in White Plains",
+      "category": "Learning",
+      "date": "2026-11-09",
+      "dateLabel": "November 9, 2026",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17385100",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Sugar: The Play",
       "category": "Parks & Recreation",
       "date": "2026-11-10",
@@ -2015,6 +2002,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Affordable Housing in White Plains",
+      "category": "Learning",
+      "date": "2026-12-08",
+      "dateLabel": "December 8, 2026",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17385101",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Santa's Mailbox",
