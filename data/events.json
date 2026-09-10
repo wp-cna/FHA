@@ -1,32 +1,7 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-09-09",
-      "dateLabel": "September 9, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4682&month=9&year=2026&day=9&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Girls Varsity Swimming/Diving vs. Harrison",
-      "category": "Sports",
-      "date": "2026-09-09",
-      "dateLabel": "September 9, 2026",
-      "time": "4:30 PM",
-      "location": "White Plains High School, White Plains, NY",
-      "summary": "Girls Varsity Swimming/Diving hosts Harrison at White Plains High School.",
-      "url": "/sports/swimming-diving/",
-      "ctaLabel": "See the full schedule",
-      "source": "White Plains High School Athletics"
-    },
     {
       "title": "Girls Varsity Tennis at Harrison",
       "category": "Sports",
@@ -61,6 +36,30 @@
       "location": "Saxon Woods Park, 1800 Mamaroneck Avenue, White Plains, NY, 10605",
       "summary": "The Westchester County Parks popular Garage Sale returns to Saxon Woods Park in White Plains, Saturday, Sept.",
       "url": "https://parksevents.westchestercountyny.gov/event/saxon-woods-garage-sale",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
+      "title": "Fireside Nature Storytime",
+      "category": "Parks & Recreation",
+      "date": "2026-09-12",
+      "dateLabel": "September 12, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "Cranberry Lake Preserve, 1609 Old Orchard Street, North White Plains, NY, 10604",
+      "summary": "Enjoy children’s stories amongst the trees, with a campfire to keep warm!",
+      "url": "https://parksevents.westchestercountyny.gov/event/fireside-nature-storytime-4",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
+      "title": "Back-To-School Nature Escape",
+      "category": "Parks & Recreation",
+      "date": "2026-09-12",
+      "dateLabel": "September 12, 2026",
+      "time": "12:30 PM – 2:30 PM",
+      "location": "Cranberry Lake Preserve, 1609 Old Orchard Street, North White Plains, NY, 10604",
+      "summary": "Join preserve staff for an escape into nature this back-to-school season!",
+      "url": "https://parksevents.westchestercountyny.gov/event/back-to-school-nature-escape-2",
       "ctaLabel": "Open county parks page",
       "source": "Westchester County Parks"
     },
@@ -438,11 +437,11 @@
     },
     {
       "title": "Jazz Stroll 2026",
-      "category": "Arts",
+      "category": "Food & Downtown",
       "date": "2026-09-24",
       "dateLabel": "September 24, 2026",
       "time": "5:30 PM – 9:00 PM",
-      "location": "White Plains BID District, Downtown White Plains, NY 10601",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
       "summary": "JAZZ STROLL: THURSDAY, SEPT.",
       "url": "https://wpbid.com/events/jazz-stroll-2026/",
       "ctaLabel": "Open event page",
@@ -453,7 +452,7 @@
       "category": "Civic",
       "date": "2026-09-24",
       "dateLabel": "September 24, 2026",
-      "time": "6:30 PM",
+      "time": "6:30 PM – 8:30 PM",
       "location": "White Plains, White Plains, NY",
       "summary": "Consolidated Annual Performance and Evaluation Report (CAPER) Public Hearing is listed on the official White Plains city calendar.",
       "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4525&month=9&year=2026&day=24&calType=0",
@@ -543,8 +542,8 @@
       "date": "2026-09-27",
       "dateLabel": "September 27, 2026",
       "time": "12:15 PM – 7:30 PM",
-      "location": "White Plains BID District, Downtown White Plains, NY 10601",
-      "summary": "SUNDAY, SEPT. 27Sunday Jazz Alfresco 12:15-7:30pm | FREE (Mamaroneck Ave. between E. Post Road and Maple Ave.) 12:15-1pmLuke Hart Collective Luke Hart is a…",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "SUNDAY, SEPT. 27Sunday Jazz Alfresco Join us for JazzFest’s grand finale, Jazz Al Fresco, on Sunday, September 27th, 2026. Enjoy dining in the open, vibrant air of…",
       "url": "https://wpbid.com/events/sunday-jazz-alfresco/",
       "ctaLabel": "Open event page",
       "source": "White Plains Business Improvement District"
@@ -718,18 +717,6 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Bring in your broken household items and work with a volunteer Repair Coach to fix them!",
       "url": "https://calendar.whiteplainslibrary.org/event/15859288",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Jump into the Jurassic: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-10-03",
-      "dateLabel": "October 3, 2026",
-      "time": "11:00 AM – 11:30 AM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16799454",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1164,6 +1151,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "SCORE Meeting",
+      "category": "Civic",
+      "date": "2026-10-21",
+      "dateLabel": "October 21, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Monthly SCORE Chapter Meeting.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17396222",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Intro to Microsoft Excel, Part 3",
@@ -1632,6 +1631,18 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
       "url": "https://calendar.whiteplainslibrary.org/event/16748714",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Storybook Dancing with Steffi Nossen School of Dance",
+      "category": "Learning",
+      "date": "2026-11-19",
+      "dateLabel": "November 19, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Steffi Nossen School of Dance presents Storybook Dancing, a fun, movement-filled program for younger children!",
+      "url": "https://calendar.whiteplainslibrary.org/event/15908584",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -2179,6 +2190,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Storybook Dancing with Steffi Nossen School of Dance",
+      "category": "Learning",
+      "date": "2026-12-17",
+      "dateLabel": "December 17, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Steffi Nossen School of Dance presents Storybook Dancing, a fun, movement-filled program for younger children!",
+      "url": "https://calendar.whiteplainslibrary.org/event/15908585",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Conservation Board Meeting",
