@@ -1,19 +1,7 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Girls Varsity Tennis at Harrison",
-      "category": "Sports",
-      "date": "2026-09-10",
-      "dateLabel": "September 10, 2026",
-      "time": "4:30 PM",
-      "location": "HS Tennis Courts",
-      "summary": "Girls Varsity Tennis travels to face Harrison at HS Tennis Courts.",
-      "url": "/sports/tennis/",
-      "ctaLabel": "See the full schedule",
-      "source": "White Plains High School Athletics"
-    },
     {
       "title": "9/11 Day of Remembrance Ceremony",
       "category": "Parks & Recreation",
@@ -660,18 +648,6 @@
       "source": "White Plains Performing Arts Center"
     },
     {
-      "title": "The Feeding Circle Baby Cafe",
-      "category": "Civic",
-      "date": "2026-10-02",
-      "dateLabel": "October 2, 2026",
-      "time": "11:45 AM – 1:00 PM",
-      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16611374",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "The Salem Witch Trials: Reckoning and Reclaiming",
       "category": "Learning",
       "date": "2026-10-02",
@@ -942,6 +918,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Taking a Broad View",
+      "category": "Civic",
+      "date": "2026-10-13",
+      "dateLabel": "October 13, 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This virtual talk is based on the Derfner Museum&rsquo;s current exhibition, Taking a Broad View: Portrait Photography from the Collection, of which features…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17408149",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Common Council Forum",
       "category": "Civic",
       "date": "2026-10-13",
@@ -1077,6 +1065,18 @@
       "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Unlisted: Underappreciated Women Artists",
+      "category": "Civic",
+      "date": "2026-10-19",
+      "dateLabel": "October 19, 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Derfner Museum Senior Curator Emily O&rsquo;Leary for this virtual talk based on a previous exhibition focused on seventeen twentieth-century women…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17408469",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Creative Upcycling: The Junk Journal Workshop",
       "category": "Workshop",
       "date": "2026-10-19",
@@ -1161,18 +1161,6 @@
       "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Monthly SCORE Chapter Meeting.",
       "url": "https://calendar.whiteplainslibrary.org/event/17396222",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Intro to Microsoft Excel, Part 3",
-      "category": "Learning",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn how to use absolute cell references and work with summary and detail worksheets.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17217680",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
