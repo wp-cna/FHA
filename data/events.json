@@ -1,20 +1,7 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "9/11 Day of Remembrance Ceremony",
-      "category": "Parks & Recreation",
-      "date": "2026-09-11",
-      "dateLabel": "September 11, 2026",
-      "time": "8:30 AM",
-      "location": "Liberty Park, White Plains, NY",
-      "summary": "9/11 Day of Remembrance Ceremony is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4569&month=9&year=2026&day=11&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "9/11 Day of Remembrance Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Saxon Woods Garage Sale",
       "category": "Parks & Recreation",
@@ -62,6 +49,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17112139",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Design Review Board",
+      "category": "Civic",
+      "date": "2026-09-14",
+      "dateLabel": "September 14, 2026",
+      "time": "7:00 PM – 9:00 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Design Review Board is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4701&month=9&year=2026&day=14&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Design Review Board aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Transportation Commission Meeting",
@@ -123,19 +123,6 @@
       "url": "https://calendar.whiteplainslibrary.org/event/15733483",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
-    },
-    {
-      "title": "Planning Board Meeting",
-      "category": "Civic",
-      "date": "2026-09-15",
-      "dateLabel": "September 15, 2026",
-      "time": "7:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4357&month=9&year=2026&day=15&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Court Street Market",
@@ -334,6 +321,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17212608",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Planning Board Meeting",
+      "category": "Civic",
+      "date": "2026-09-22",
+      "dateLabel": "September 22, 2026",
+      "time": "7:00 PM",
+      "location": "Meeting moved to September 22nd in order to have a quorum., White Plains, NY",
+      "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4357&month=9&year=2026&day=22&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "JazzFest",
@@ -2254,6 +2254,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Zumba at the Library!",
+      "category": "Learning",
+      "date": "2027-01-09",
+      "dateLabel": "January 9, 2027",
+      "time": "10:30 AM – 11:30 AM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Zumba at the Library!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17165318",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Fall/Winter Birthday Luncheon",
