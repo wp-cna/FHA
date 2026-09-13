@@ -1,43 +1,7 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Saxon Woods Garage Sale",
-      "category": "Parks & Recreation",
-      "date": "2026-09-12",
-      "dateLabel": "September 12, 2026",
-      "time": "10:00 AM – 4:00 PM",
-      "location": "Saxon Woods Park, 1800 Mamaroneck Avenue, White Plains, NY, 10605",
-      "summary": "The Westchester County Parks popular Garage Sale returns to Saxon Woods Park in White Plains, Saturday, Sept.",
-      "url": "https://parksevents.westchestercountyny.gov/event/saxon-woods-garage-sale",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
-      "title": "Fireside Nature Storytime",
-      "category": "Parks & Recreation",
-      "date": "2026-09-12",
-      "dateLabel": "September 12, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "Cranberry Lake Preserve, 1609 Old Orchard Street, North White Plains, NY, 10604",
-      "summary": "Enjoy children’s stories amongst the trees, with a campfire to keep warm!",
-      "url": "https://parksevents.westchestercountyny.gov/event/fireside-nature-storytime-4",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
-      "title": "Back-To-School Nature Escape",
-      "category": "Parks & Recreation",
-      "date": "2026-09-12",
-      "dateLabel": "September 12, 2026",
-      "time": "12:30 PM – 2:30 PM",
-      "location": "Cranberry Lake Preserve, 1609 Old Orchard Street, North White Plains, NY, 10604",
-      "summary": "Join preserve staff for an escape into nature this back-to-school season!",
-      "url": "https://parksevents.westchestercountyny.gov/event/back-to-school-nature-escape-2",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
     {
       "title": "Future is Female",
       "category": "Learning",
