@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -1952,6 +1952,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Derek Hough Dance for the Holidays",
+      "category": "Community",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "8:00 PM – 10:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "This event is a joyous celebration of the most festive time of the year!",
+      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
