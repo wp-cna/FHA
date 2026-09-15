@@ -1,32 +1,7 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Future is Female",
-      "category": "Learning",
-      "date": "2026-09-14",
-      "dateLabel": "September 14, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "The premise of this highly praised work, set in 1930-31 Paris and London, and based on a true event, is that five famous female mystery writers, including…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17112139",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Design Review Board",
-      "category": "Civic",
-      "date": "2026-09-14",
-      "dateLabel": "September 14, 2026",
-      "time": "7:00 PM – 9:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Design Review Board is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4701&month=9&year=2026&day=14&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Design Review Board aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Transportation Commission Meeting",
       "category": "Civic",
@@ -600,18 +575,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Dear Evan Hansen",
-      "category": "Arts",
-      "date": "2026-10-02",
-      "dateLabel": "October 2, 2026",
-      "time": "",
-      "location": "White Plains Performing Arts Center, 11 City Place, 3rd Floor, White Plains, NY 10601",
-      "summary": "Featuring a Tony Award-winning book by Steven Levenson (Fosse/Verdon), and a score by Grammy®, Tony®, Emmy® and Academy Award® winners Benj Pasek and Justin Paul…",
-      "url": "https://wppac.com/shows/dear-evan-hansen/",
-      "ctaLabel": "Open show page",
-      "source": "White Plains Performing Arts Center"
-    },
-    {
       "title": "The Salem Witch Trials: Reckoning and Reclaiming",
       "category": "Learning",
       "date": "2026-10-02",
@@ -711,7 +674,7 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Stretch you dough",
+      "title": "Stretch Your Dough: Meals on a Budget",
       "category": "Civic",
       "date": "2026-10-06",
       "dateLabel": "October 6, 2026",
@@ -822,13 +785,13 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Concerts in Motion",
+      "title": "Hispanic Heritage Concert",
       "category": "Learning",
       "date": "2026-10-09",
       "dateLabel": "October 9, 2026",
       "time": "2:00 PM – 3:00 PM",
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "A concert for Highlighting Hispanic Heritage month.",
+      "summary": "Check the library page for registration, tickets, and any schedule updates.",
       "url": "https://calendar.whiteplainslibrary.org/event/17271282",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -919,6 +882,18 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Meet Sustainable Westchester!",
+      "category": "Learning",
+      "date": "2026-10-14",
+      "dateLabel": "October 14, 2026",
+      "time": "10:30 AM – 12:30 PM",
+      "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
+      "url": "https://calendar.whiteplainslibrary.org/event/17428092",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Virtual Clean Energy Workforce Opportuntiy",
       "category": "Workshop",
       "date": "2026-10-14",
@@ -927,18 +902,6 @@
       "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Sustainable Westchester , in partnership with Healthy Home Academy , is offering a FREE 5-week Clean Energy Workforce Training program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17128804",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Intro to Microsoft Excel, Part 2",
-      "category": "Learning",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This class is for those who can create a simple spreadsheet and use formulas in Excel.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17217628",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -2029,18 +1992,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Disney’S Frozen",
-      "category": "Arts",
-      "date": "2026-12-11",
-      "dateLabel": "December 11, 2026",
-      "time": "",
-      "location": "White Plains Performing Arts Center, 11 City Place, 3rd Floor, White Plains, NY 10601",
-      "summary": "Based on the Academy Award-winning animated feature film, Disney’s Frozen includes all the film’s beloved songs by Kristen Anderson-Lopez and Robert Lopez, along…",
-      "url": "https://wppac.com/shows/disneys-frozen/",
-      "ctaLabel": "Open show page",
-      "source": "White Plains Performing Arts Center"
-    },
-    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-11",
@@ -2359,18 +2310,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "9 To 5",
-      "category": "Arts",
-      "date": "2027-04-09",
-      "dateLabel": "April 9, 2027",
-      "time": "",
-      "location": "White Plains Performing Arts Center, 11 City Place, 3rd Floor, White Plains, NY 10601",
-      "summary": "9 to 5, with music and lyrics by Dolly Parton and book by Patricia Resnick, is based on the seminal 1980 hit movie.",
-      "url": "https://wppac.com/shows/9-to-5/",
-      "ctaLabel": "Open show page",
-      "source": "White Plains Performing Arts Center"
     }
   ]
 }
