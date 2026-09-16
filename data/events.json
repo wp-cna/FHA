@@ -1,68 +1,7 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Transportation Commission Meeting",
-      "category": "Civic",
-      "date": "2026-09-15",
-      "dateLabel": "September 15, 2026",
-      "time": "9:15 AM – 10:15 AM",
-      "location": "City Hall Common Council Chambers, White Plains, NY",
-      "summary": "Transportation Commission Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3660&month=9&year=2026&day=15&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "National Voter Registration Day",
-      "category": "Learning",
-      "date": "2026-09-15",
-      "dateLabel": "September 15, 2026",
-      "time": "12:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Sponsored by the League of Women Voters of White Plains.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16565153",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Powerful Public Speaking & Presentation Skills",
-      "category": "Workshop",
-      "date": "2026-09-15",
-      "dateLabel": "September 15, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We will be hosting the following program in partnership with The College of Westchester.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17054283",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Intro to Google Sheets, Part 2",
-      "category": "Learning",
-      "date": "2026-09-15",
-      "dateLabel": "September 15, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn to use the fill handle, the IF function and conditional formatting in Google Sheets.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17085159",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Grammy Nominee Flor Bromley in Concert",
-      "category": "Learning",
-      "date": "2026-09-15",
-      "dateLabel": "September 15, 2026",
-      "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "GRAMMY&reg; nominee Flor Bromley brings her joyful blend of music, storytelling, and global rhythms to the library in an interactive concert for the whole…",
-      "url": "https://calendar.whiteplainslibrary.org/event/15733483",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -785,18 +724,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Hispanic Heritage Concert",
-      "category": "Learning",
-      "date": "2026-10-09",
-      "dateLabel": "October 9, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Check the library page for registration, tickets, and any schedule updates.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17271282",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Day of the Dead Altar-Making Workshop",
       "category": "Workshop",
       "date": "2026-10-09",
@@ -863,7 +790,7 @@
       "dateLabel": "October 13, 2026",
       "time": "7:00 PM – 8:30 PM",
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Hosted by the League of Women Voters of White Plains",
+      "summary": "How to Ask a Question: While no questions will be taken from the floor, it&rsquo;s important that your voice is heard.",
       "url": "https://calendar.whiteplainslibrary.org/event/16522047",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -902,6 +829,18 @@
       "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Sustainable Westchester , in partnership with Healthy Home Academy , is offering a FREE 5-week Clean Energy Workforce Training program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17128804",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Intro to Microsoft Excel, Part 2",
+      "category": "Learning",
+      "date": "2026-10-14",
+      "dateLabel": "October 14, 2026",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This class is for those who can create a simple spreadsheet and use formulas in Excel.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17217628",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1550,18 +1489,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Storybook Dancing with Steffi Nossen School of Dance",
-      "category": "Learning",
-      "date": "2026-11-19",
-      "dateLabel": "November 19, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Steffi Nossen School of Dance presents Storybook Dancing, a fun, movement-filled program for younger children!",
-      "url": "https://calendar.whiteplainslibrary.org/event/15908584",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Art 101 *Name Mandalas*",
       "category": "Workshop",
       "date": "2026-11-20",
@@ -2107,18 +2034,6 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Storybook Dancing with Steffi Nossen School of Dance",
-      "category": "Learning",
-      "date": "2026-12-17",
-      "dateLabel": "December 17, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Steffi Nossen School of Dance presents Storybook Dancing, a fun, movement-filled program for younger children!",
-      "url": "https://calendar.whiteplainslibrary.org/event/15908585",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Conservation Board Meeting",
       "category": "Civic",
       "date": "2026-12-21",
@@ -2206,6 +2121,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Affordable Housing in White Plains",
+      "category": "Learning",
+      "date": "2027-01-13",
+      "dateLabel": "January 13, 2027",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17385102",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Conservation Board Meeting",
