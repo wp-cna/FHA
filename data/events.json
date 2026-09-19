@@ -1,32 +1,7 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Hispanic Heritage Month: Arepas",
-      "category": "Learning",
-      "date": "2026-09-18",
-      "dateLabel": "September 18, 2026",
-      "time": "1:00 PM – 2:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Registration is required.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17160499",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Backyard Party - Teens",
-      "category": "Parks & Recreation",
-      "date": "2026-09-18",
-      "dateLabel": "September 18, 2026",
-      "time": "6:00 PM – 9:00 PM",
-      "location": "Delfino Park, White Plains, NY",
-      "summary": "Backyard Party - Teens is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4560&month=9&year=2026&day=18&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Backyard Party - Teens aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Truck Day",
       "category": "Community",
@@ -285,6 +260,18 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "A Berklee College of Music graduate, Vanisha Gould is a key voice in New York&rsquo;s jazz scene, performing at leading venues and touring internationally.",
       "url": "https://calendar.whiteplainslibrary.org/event/15939222",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Cooking for Teens",
+      "category": "Learning",
+      "date": "2026-09-25",
+      "dateLabel": "September 25, 2026",
+      "time": "4:00 PM – 5:30 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A hands-on cooking lesson with Chef Giovanni Green.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17196139",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -661,6 +648,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Cooking for Teens",
+      "category": "Learning",
+      "date": "2026-10-09",
+      "dateLabel": "October 9, 2026",
+      "time": "4:00 PM – 5:30 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A hands-on cooking lesson with Chef Giovanni Green.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17196140",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Day of the Dead Altar-Making Workshop",
       "category": "Workshop",
       "date": "2026-10-09",
@@ -790,18 +789,6 @@
       "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Discover the joy of bringing canvas to life!",
       "url": "https://calendar.whiteplainslibrary.org/event/17158497",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Day of the Dead Altar-Making Workshop",
-      "category": "Workshop",
-      "date": "2026-10-16",
-      "dateLabel": "October 16, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17185060",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1004,18 +991,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Day of the Dead Altar-Making Workshop",
-      "category": "Workshop",
-      "date": "2026-10-23",
-      "dateLabel": "October 23, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17185566",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Howl-o-Ween Bash - Dog Park Event",
       "category": "Community",
       "date": "2026-10-24",
@@ -1174,6 +1149,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Hispanic Heritage Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Cooking for Teens",
+      "category": "Learning",
+      "date": "2026-10-30",
+      "dateLabel": "October 30, 2026",
+      "time": "4:00 PM – 5:30 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A hands-on cooking lesson with Chef Giovanni Green.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17196141",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "23rd Annual Fall Westchester County Home Show",
@@ -2092,6 +2079,18 @@
       "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "All About the City of White Plains Affordable Rental Housing Program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17385102",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Zumba at the Library!",
+      "category": "Learning",
+      "date": "2027-01-16",
+      "dateLabel": "January 16, 2027",
+      "time": "10:30 AM – 11:30 AM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Zumba at the Library!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17165319",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
