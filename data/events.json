@@ -1,19 +1,7 @@
 {
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Rosedale Residential Association - Septemberfest",
-      "category": "Seasonal",
-      "date": "2026-09-20",
-      "dateLabel": "September 20, 2026",
-      "time": "12:00 PM – 4:00 PM",
-      "location": "The Windward School, 1275 Mamaroneck Ave",
-      "summary": "Rosedale neighborhood \"picnic-style\" party with food & entertainment",
-      "url": "https://wprra.org/8th-annual-septemberfest-save-the-date/",
-      "ctaLabel": "Open Flyer",
-      "source": "Rosedale Residential Association"
-    },
     {
       "title": "Computer Basics",
       "category": "Learning",
