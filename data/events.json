@@ -1,57 +1,7 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "JazzFest",
-      "category": "Community",
-      "date": "2026-09-24",
-      "dateLabel": "September 24, 2026",
-      "time": "",
-      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
-      "summary": "JazzFest is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=24&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Learn about 3D Printing (in the Igloo)",
-      "category": "Learning",
-      "date": "2026-09-24",
-      "dateLabel": "September 24, 2026",
-      "time": "5:15 PM – 5:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn about 3D printing and how to use the Library's 3D printing services.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16978096",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Jazz Stroll 2026",
-      "category": "Food & Downtown",
-      "date": "2026-09-24",
-      "dateLabel": "September 24, 2026",
-      "time": "5:30 PM – 9:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "JAZZ STROLL: THURSDAY, SEPT.",
-      "url": "https://wpbid.com/events/jazz-stroll-2026/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
-    {
-      "title": "Consolidated Annual Performance and Evaluation Report (CAPER) Public Hearing",
-      "category": "Civic",
-      "date": "2026-09-24",
-      "dateLabel": "September 24, 2026",
-      "time": "6:30 PM – 8:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Consolidated Annual Performance and Evaluation Report (CAPER) Public Hearing is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4525&month=9&year=2026&day=24&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Consolidated Annual Performance and Evaluation Report (CAPER) Public Hearing aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "JazzFest",
       "category": "Community",
@@ -121,7 +71,7 @@
       "date": "2026-09-26",
       "dateLabel": "September 26, 2026",
       "time": "12:00 PM – 4:00 PM",
-      "location": "Tibbits Park, White Plains, NY",
+      "location": "White Plains City Center, 3rd Floor Apple Cinemas, White Plains, NY",
       "summary": "Family Fun Wellness Festival is listed on the official White Plains city calendar.",
       "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4697&month=9&year=2026&day=26&calType=0",
       "ctaLabel": "Open city page",
@@ -289,17 +239,17 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Outdoor Movie",
+      "title": "Outdoor Movie - Hamilton",
       "category": "Community",
       "date": "2026-10-02",
       "dateLabel": "October 2, 2026",
       "time": "6:45 PM",
       "location": "Battle of White Plains Park, White Plains, NY",
-      "summary": "Outdoor Movie is listed on the official White Plains city calendar.",
+      "summary": "Outdoor Movie - Hamilton is listed on the official White Plains city calendar.",
       "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4584&month=10&year=2026&day=2&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
-      "summary_es": "Outdoor Movie aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+      "summary_es": "Outdoor Movie - Hamilton aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "White Plains Sustainability Committee",
@@ -1215,7 +1165,7 @@
       "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "White Plains Beutification Foundation",
+      "title": "White Plains Beautification Foundation",
       "category": "Learning",
       "date": "2026-11-17",
       "dateLabel": "November 17, 2026",
