@@ -1,32 +1,7 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "JazzFest",
-      "category": "Community",
-      "date": "2026-09-25",
-      "dateLabel": "September 25, 2026",
-      "time": "",
-      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
-      "summary": "JazzFest is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=25&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Jazz at Noon: Vanisha Gould",
-      "category": "Civic",
-      "date": "2026-09-25",
-      "dateLabel": "September 25, 2026",
-      "time": "12:00 PM – 1:00 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "A Berklee College of Music graduate, Vanisha Gould is a key voice in New York&rsquo;s jazz scene, performing at leading venues and touring internationally.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15939222",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "JazzFest",
       "category": "Community",
@@ -39,19 +14,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Car Seat Check Up Event",
-      "category": "Community",
-      "date": "2026-09-26",
-      "dateLabel": "September 26, 2026",
-      "time": "10:00 AM – 2:00 PM",
-      "location": "Join us for our Car Seat Check Up Event at City Hall - 255 Main Street on Saturday, September 26th, 2026 (10AM-2PM). Officers will make certain your seat is: safe, no recalls, and no imperfections, age appropriate and installed properly., White Plains, NY",
-      "summary": "Car Seat Check Up Event is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4703&month=9&year=2026&day=26&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Car Seat Check Up Event aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Fireside Nature Storytime",
@@ -90,18 +52,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Sunday Jazz Alfresco",
-      "category": "Food & Downtown",
-      "date": "2026-09-27",
-      "dateLabel": "September 27, 2026",
-      "time": "12:15 PM – 7:30 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "SUNDAY, SEPT. 27Sunday Jazz Alfresco Join us for JazzFest’s grand finale, Jazz Al Fresco, on Sunday, September 27th, 2026. Enjoy dining in the open, vibrant air of…",
-      "url": "https://wpbid.com/events/sunday-jazz-alfresco/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
     },
     {
       "title": "Girls Varsity Tennis vs. Harrison",
@@ -326,7 +276,7 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Clean Energy Workforce Opportuntiy",
+      "title": "Clean Energy Workforce Opportunity",
       "category": "Workshop",
       "date": "2026-10-06",
       "dateLabel": "October 6, 2026",
@@ -435,18 +385,6 @@
       "url": "/sports/football/",
       "ctaLabel": "See the full schedule",
       "source": "White Plains High School Athletics"
-    },
-    {
-      "title": "Oktoberfest 2026",
-      "category": "Food & Downtown",
-      "date": "2026-10-11",
-      "dateLabel": "October 11, 2026",
-      "time": "1:00 PM – 6:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Downtown White Plains OktoberFest returns!",
-      "url": "https://wpbid.com/events/oktoberfest-2026/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
     },
     {
       "title": "The Battle of White Plains: Washington & Howe in Westchester",
@@ -1028,7 +966,7 @@
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "The Feeding Circle Baby Cafe",
+      "title": "The Feeding Circle Baby Café",
       "category": "Civic",
       "date": "2026-11-06",
       "dateLabel": "November 6, 2026",
@@ -1060,6 +998,18 @@
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn how fiber supports overall health, helps manage diabetes, promotes heart health, and can be incorporated into everyday meals.",
       "url": "https://calendar.whiteplainslibrary.org/event/16813453",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Intro to Google Sheets, Part 1",
+      "category": "Learning",
+      "date": "2026-11-10",
+      "dateLabel": "November 10, 2026",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Google Sheets is a free online spreadsheet program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17523523",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1163,6 +1113,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Intro to Google Sheets, Part 2",
+      "category": "Learning",
+      "date": "2026-11-17",
+      "dateLabel": "November 17, 2026",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "For people who already know how to create a simple spreadsheet.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17523931",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "White Plains Beautification Foundation",
@@ -1518,7 +1480,7 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "The Feeding Circle Baby Cafe",
+      "title": "The Feeding Circle Baby Café",
       "category": "Civic",
       "date": "2026-12-04",
       "dateLabel": "December 4, 2026",
@@ -1958,6 +1920,31 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Zumba at the Library!",
+      "category": "Learning",
+      "date": "2027-01-23",
+      "dateLabel": "January 23, 2027",
+      "time": "10:30 AM – 11:30 AM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Zumba at the Library!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17165320",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "CDBG - 2027-2028 Annual Action Plan Public Hearing 1",
+      "category": "Civic",
+      "date": "2027-01-28",
+      "dateLabel": "January 28, 2027",
+      "time": "6:30 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "CDBG - 2027-2028 Annual Action Plan Public Hearing 1 is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4704&month=1&year=2027&day=28&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "CDBG - 2027-2028 Annual Action Plan Public Hearing 1 aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Black History Month Celebration",
