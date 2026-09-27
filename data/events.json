@@ -1,45 +1,7 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "JazzFest",
-      "category": "Community",
-      "date": "2026-09-26",
-      "dateLabel": "September 26, 2026",
-      "time": "",
-      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
-      "summary": "JazzFest is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=26&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Fireside Nature Storytime",
-      "category": "Parks & Recreation",
-      "date": "2026-09-26",
-      "dateLabel": "September 26, 2026",
-      "time": "11:00 AM – 12:30 PM",
-      "location": "Cranberry Lake Preserve, 1609 Old Orchard Street, North White Plains, NY, 10604",
-      "summary": "Enjoy children’s stories amongst the trees, with a campfire to keep warm!",
-      "url": "https://parksevents.westchestercountyny.gov/event/fireside-nature-storytime-3",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
-      "title": "Family Fun Wellness Festival",
-      "category": "Family",
-      "date": "2026-09-26",
-      "dateLabel": "September 26, 2026",
-      "time": "12:00 PM – 4:00 PM",
-      "location": "White Plains City Center, 3rd Floor Apple Cinemas, White Plains, NY",
-      "summary": "Family Fun Wellness Festival is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4697&month=9&year=2026&day=26&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Family Fun Wellness Festival aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "JazzFest",
       "category": "Community",
@@ -214,6 +176,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Salsa with Addie",
+      "category": "Learning",
+      "date": "2026-10-03",
+      "dateLabel": "October 3, 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Partner work is encouraged.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17106202",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Halloween Pumpkin Patch",
       "category": "Community",
       "date": "2026-10-04",
@@ -363,18 +337,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Day of the Dead Altar-Making Workshop",
-      "category": "Workshop",
-      "date": "2026-10-09",
-      "dateLabel": "October 9, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17183978",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Boys Varsity Football vs. Roy C Ketcham/ Wappingers JHS",
       "category": "Sports",
       "date": "2026-10-09",
@@ -385,6 +347,18 @@
       "url": "/sports/football/",
       "ctaLabel": "See the full schedule",
       "source": "White Plains High School Athletics"
+    },
+    {
+      "title": "Salsa with Addie",
+      "category": "Learning",
+      "date": "2026-10-10",
+      "dateLabel": "October 10, 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Partner work is encouraged.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17106203",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "The Battle of White Plains: Washington & Howe in Westchester",
@@ -634,18 +608,6 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "SCORE Meeting",
-      "category": "Civic",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Monthly SCORE Chapter Meeting.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17396222",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
       "category": "Learning",
       "date": "2026-10-21",
@@ -742,18 +704,6 @@
       "url": "https://parksevents.westchestercountyny.gov/event/freestyle-jam-2026",
       "ctaLabel": "Open county parks page",
       "source": "Westchester County Parks"
-    },
-    {
-      "title": "Demystifying Medicare",
-      "category": "Civic",
-      "date": "2026-10-25",
-      "dateLabel": "October 25, 2026",
-      "time": "1:15 PM – 4:30 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This comprehensive program is designed for people who already have Medicare, as well as those soon to be 65, planning their retirement, or assisting relatives…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16486528",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Common Council Work Session",
@@ -889,6 +839,18 @@
       "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-10-31",
       "ctaLabel": "Open county parks page",
       "source": "Westchester County Parks"
+    },
+    {
+      "title": "Salsa with Addie",
+      "category": "Learning",
+      "date": "2026-10-31",
+      "dateLabel": "October 31, 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Partner work is encouraged.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17106204",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "23rd Annual Fall Westchester County Home Show",
@@ -1930,6 +1892,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Zumba at the Library!",
       "url": "https://calendar.whiteplainslibrary.org/event/17165320",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "White Bird: Holocaust Remembrance Day Discussion",
+      "category": "Learning",
+      "date": "2027-01-24",
+      "dateLabel": "January 24, 2027",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This event is intended for ages 10 and up, and we encourage parents and families to read the book along with their children and attend the event together!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17211936",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
