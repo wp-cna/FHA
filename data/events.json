@@ -1,20 +1,7 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "JazzFest",
-      "category": "Community",
-      "date": "2026-09-27",
-      "dateLabel": "September 27, 2026",
-      "time": "",
-      "location": "JazzFest Returns!, For more details about performance dates and times go to artswestchester.org/programs/jazzfest",
-      "summary": "JazzFest is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=27&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "JazzFest aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Girls Varsity Tennis vs. Harrison",
       "category": "Sports",
