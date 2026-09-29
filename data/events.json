@@ -1,31 +1,18 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
       "title": "Girls Varsity Tennis vs. Harrison",
       "category": "Sports",
-      "date": "2026-09-28",
-      "dateLabel": "September 28, 2026",
+      "date": "2026-09-29",
+      "dateLabel": "September 29, 2026",
       "time": "4:30 PM",
       "location": "White Plains High School, White Plains, NY",
       "summary": "Girls Varsity Tennis hosts Harrison at White Plains High School.",
       "url": "/sports/tennis/",
       "ctaLabel": "See the full schedule",
       "source": "White Plains High School Athletics"
-    },
-    {
-      "title": "Common Council Work Session",
-      "category": "Civic",
-      "date": "2026-09-28",
-      "dateLabel": "September 28, 2026",
-      "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Common Council Work Session is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4267&month=9&year=2026&day=28&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Court Street Market",
@@ -348,6 +335,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Oktoberfest 2026",
+      "category": "Food & Downtown",
+      "date": "2026-10-11",
+      "dateLabel": "October 11, 2026",
+      "time": "1:00 PM – 6:00 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Downtown White Plains OktoberFest returns!",
+      "url": "https://wpbid.com/events/oktoberfest-2026/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
+    },
+    {
       "title": "The Battle of White Plains: Washington & Howe in Westchester",
       "category": "Learning",
       "date": "2026-10-11",
@@ -356,6 +355,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "From the website of the publisher, The History Press: \"In October 1776 central Westchester witnessed a critical episode in the early campaign of George…",
       "url": "https://calendar.whiteplainslibrary.org/event/17262023",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Westchester During the Revolutionary War (History via Igloo)",
+      "category": "Learning",
+      "date": "2026-10-11",
+      "dateLabel": "October 11, 2026",
+      "time": "2:00 PM – 2:45 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn about Westchester County during the Revolutionary War and what happened throughout the conflict.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17531157",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -505,18 +516,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Unlisted: Underappreciated Women Artists",
-      "category": "Civic",
-      "date": "2026-10-19",
-      "dateLabel": "October 19, 2026",
-      "time": "3:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join Derfner Museum Senior Curator Emily O&rsquo;Leary for this virtual talk based on a previous exhibition focused on seventeen twentieth-century women…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17408469",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Creative Upcycling: The Junk Journal Workshop",
