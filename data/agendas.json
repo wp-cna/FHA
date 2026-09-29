@@ -20,19 +20,24 @@
   "board": [
     {
       "year": 2026,
-      "title": "[Placeholder] Board Meeting April 2026 — minutes",
-      "file": ""
+      "title": "August 17 Board Meeting - Agenda & Recap",
+      "file": "./assets/agendas/081726 FHA Board Meeting pdf.pdf"
     },
     {
-      "year": 2025,
-      "title": "[Placeholder] Board Meeting November 2025 — agenda",
-      "file": ""
+      "year": 2026,
+      "title": "April 16th Board Meeting - Agenda",
+      "file": "./assets/agendas/FHA Board Meeting Agenda 042026.pdf"
+    },
+    {
+      "year": 2026,
+      "title": "January 28th Board Meeting - Agenda & Recap",
+      "file": "./assets/agendas/012826 FHA Board Meeting Agenda & Minutes.pdf"
     }
   ],
   "mayor": [
     {
       "year": 2026,
-      "title": "[Placeholder] Mayor's Office Meeting Spring 2026 — minutes",
+      "title": "Placeholder for Mayor's Office meeting",
       "file": ""
     },
     {
