@@ -1,69 +1,7 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-09-30",
-      "dateLabel": "September 30, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4685&month=9&year=2026&day=30&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Music at the Market",
-      "category": "Parks & Recreation",
-      "date": "2026-09-30",
-      "dateLabel": "September 30, 2026",
-      "time": "12:00 PM",
-      "location": "Court St., White Plains, NY",
-      "summary": "Music at the Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4606&month=9&year=2026&day=30&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Music at the Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Healthy Relationships",
-      "category": "Learning",
-      "date": "2026-09-30",
-      "dateLabel": "September 30, 2026",
-      "time": "3:30 PM – 4:30 PM",
-      "location": "White Plains Public Library, Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for this discussion series on healthy relationship elements with My Sister's Place.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17252538",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Common Ground: Let's Keep Democracy Alive!",
-      "category": "Learning",
-      "date": "2026-09-30",
-      "dateLabel": "September 30, 2026",
-      "time": "6:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "All viewpoints are welcome in this respectful, inclusive space designed to foster dialogue, reflection, and understanding.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16630611",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Manage Your Career Like a Business",
-      "category": "Learning",
-      "date": "2026-09-30",
-      "dateLabel": "September 30, 2026",
-      "time": "6:00 PM – 7:30 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "In this interactive session, executive leader, strategist, and mentor Yvette Wynn shares practical lessons from more than 35 years of leadership in financial…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17286669",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "In-Person Registration: Day of the Dead Altar Workshop",
       "category": "Workshop",
@@ -101,25 +39,13 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Oktoberfest Pre-Party",
-      "category": "Food & Downtown",
-      "date": "2026-10-02",
-      "dateLabel": "October 2, 2026",
-      "time": "4:00 PM – 8:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Join Downtown White Plains for an Oktoberfest Pre-Party featuring drink specials, giveaways, contests, and chances to win Oktoberfest admission and gift cards…",
-      "url": "https://wpbid.com/events/oktoberfest-pre-party/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
-    {
       "title": "'Hamilton' Sing-along on Battle Hill",
       "category": "Learning",
       "date": "2026-10-02",
       "dateLabel": "October 2, 2026",
       "time": "6:45 PM – 9:00 PM",
       "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "The Library and Rec & Parks are joining forces for an epic Hamilton sing-along at Battle of White Plains Park!",
+      "summary": "The Library and Rec & Park are joining forces for an epic Hamilton sing-along at Battle of White Plains Park!",
       "url": "https://calendar.whiteplainslibrary.org/event/17356338",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -173,6 +99,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Halloween Pumpkin Patch aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Help Paint the New White Plains Mural",
+      "category": "Community",
+      "date": "2026-10-04",
+      "dateLabel": "October 4, 2026",
+      "time": "12:00 PM – 2:00 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Help Paint the New White Plains Mural is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4707&month=10&year=2026&day=4&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Help Paint the New White Plains Mural aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Annual Pollinators of White Plains",
@@ -315,7 +254,7 @@
       "category": "Sports",
       "date": "2026-10-09",
       "dateLabel": "October 9, 2026",
-      "time": "6:30 PM",
+      "time": "6:00 PM",
       "location": "White Plains HS, White Plains, NY",
       "summary": "Boys Varsity Football hosts Roy C Ketcham/ Wappingers JHS at White Plains HS.",
       "url": "/sports/football/",
@@ -333,18 +272,6 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17106203",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
-    },
-    {
-      "title": "Oktoberfest 2026",
-      "category": "Food & Downtown",
-      "date": "2026-10-11",
-      "dateLabel": "October 11, 2026",
-      "time": "1:00 PM – 6:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Downtown White Plains OktoberFest returns!",
-      "url": "https://wpbid.com/events/oktoberfest-2026/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
     },
     {
       "title": "The Battle of White Plains: Washington & Howe in Westchester",
@@ -766,13 +693,13 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Women's Empowerment Hour",
-      "category": "Workshop",
+      "title": "Navigating Your Career with Confidence",
+      "category": "Learning",
       "date": "2026-10-28",
       "dateLabel": "October 28, 2026",
       "time": "6:00 PM – 7:00 PM",
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Women's Empowerment Hour is a special time for women of the community to come together, connect, and lift each other up.",
+      "summary": "A successful career search starts with setting realistic goals and creating a manageable routine rather than applying to every opportunity you see.",
       "url": "https://calendar.whiteplainslibrary.org/event/16482236",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -934,6 +861,18 @@
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
       "url": "https://calendar.whiteplainslibrary.org/event/16907093",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Pop Up Friends of the Library Book Sale",
+      "category": "Civic",
+      "date": "2026-11-08",
+      "dateLabel": "November 8, 2026",
+      "time": "1:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Café,Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "The Friends of the Library are having a special book sale!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17445438",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1148,6 +1087,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Personal Branding: Are You Your Own CEO?",
+      "category": "Learning",
+      "date": "2026-11-18",
+      "dateLabel": "November 18, 2026",
+      "time": "6:00 PM – 7:30 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This program is hosted by Sister's Village E4th, a collaboration between the YWCA White Plains and Central Westchester, Women's Mentoring Network, and the…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17560127",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Successfully Navigating College Admissions",
@@ -1603,6 +1554,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Reflecting 2026 and goal setting",
+      "category": "Learning",
+      "date": "2026-12-09",
+      "dateLabel": "December 9, 2026",
+      "time": "6:00 PM – 7:30 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This program is hosted by Sister's Village E4th, a collaboration between the YWCA White Plains and Central Westchester, Women's Mentoring Network, and the…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17560175",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-10",
@@ -2016,6 +1979,58 @@
       "location": "White Plains, White Plains, NY",
       "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
       "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4362&month=2&year=2027&day=16&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Conservation Board Meeting",
+      "category": "Civic",
+      "date": "2027-03-15",
+      "dateLabel": "March 15, 2027",
+      "time": "7:30 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Conservation Board Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4151&month=3&year=2027&day=15&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Transportation Commission Meeting",
+      "category": "Civic",
+      "date": "2027-03-16",
+      "dateLabel": "March 16, 2027",
+      "time": "9:15 AM – 10:15 AM",
+      "location": "City Hall Common Council Chambers, White Plains, NY",
+      "summary": "Transportation Commission Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3666&month=3&year=2027&day=16&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "St. Patrick's Day Luncheon",
+      "category": "Parks & Recreation",
+      "date": "2027-03-16",
+      "dateLabel": "March 16, 2027",
+      "time": "11:30 AM – 1:30 PM",
+      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
+      "summary": "St. Patrick's Day Luncheon is listed on the official White Plains city calendar. It is set for White Plains Community Center - 65 Mitchell Place, White…",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4567&month=3&year=2027&day=16&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "St. Patrick's Day Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Planning Board Meeting",
+      "category": "Civic",
+      "date": "2027-03-16",
+      "dateLabel": "March 16, 2027",
+      "time": "7:00 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4363&month=3&year=2027&day=16&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
