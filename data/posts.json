@@ -1,7 +1,21 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-10-02",
   "note": "Community postings serving Fisher Hill. Reviewed before posting.",
   "posts": [
+    {
+      "title": "RCC - 125th Anniversary Celebration",
+      "title_es": "RCC - Celebración del 125 Aniversario",
+      "summary_es": "¡Todos están invitados! La Ridgeview Congregational Church celebrará su 125 Aniversario el domingo, 11 de octubre de 2026. Todos son bienvenidos a unirse a nosotros a las 10:30 para nuestro servicio de adoración de celebración, seguido de refrescos. Ministra Invitada: Rev. Dra. Marsha Williamsp",
+      "category": "Neighborhood Event",
+      "fh": true,
+      "date": "2026-10-11",
+      "dateLabel": "October 11, 2026",
+      "expires": "2026-10-12",
+      "time": "10:30am",
+      "location": "12 Ridgeview Ave, White Plains NY 10606",
+      "summary": "You are all Invited!\nThe Ridgeview Congregational Church will celebrate its 125th Anniversary on Sunday, October 11th, 2026. All are welcome to join us at 10:30 for our celebratory worship service, followed by refreshments. \nGuest Minister: Rev. Dr. Marsha Williamsp",
+      "source": "Michael Dalton"
+    },
     {
       "title": "Fisher Hill Block Party",
       "category": "Neighborhood Event",
