@@ -1,31 +1,7 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "In-Person Registration: Day of the Dead Altar Workshop",
-      "category": "Workshop",
-      "date": "2026-10-01",
-      "dateLabel": "October 1, 2026",
-      "time": "12:00 AM – 11:59 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17183809",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Wild America",
-      "category": "Learning",
-      "date": "2026-10-01",
-      "dateLabel": "October 1, 2026",
-      "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join the Wolf Conservation Center in a celebration of the United States of America&rsquo;s biodiversity in an exploration of the unique flora and fauna that…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16676001",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "The Salem Witch Trials: Reckoning and Reclaiming",
       "category": "Learning",
@@ -37,6 +13,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17287694",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Oktoberfest Pre-Party",
+      "category": "Food & Downtown",
+      "date": "2026-10-02",
+      "dateLabel": "October 2, 2026",
+      "time": "4:00 PM – 8:00 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Join Downtown White Plains for an Oktoberfest Pre-Party featuring drink specials, giveaways, contests, and chances to win Oktoberfest admission and gift cards…",
+      "url": "https://wpbid.com/events/oktoberfest-pre-party/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
     },
     {
       "title": "'Hamilton' Sing-along on Battle Hill",
@@ -274,6 +262,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Oktoberfest 2026",
+      "category": "Food & Downtown",
+      "date": "2026-10-11",
+      "dateLabel": "October 11, 2026",
+      "time": "1:00 PM – 6:00 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Downtown White Plains OktoberFest returns!",
+      "url": "https://wpbid.com/events/oktoberfest-2026/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
+    },
+    {
       "title": "The Battle of White Plains: Washington & Howe in Westchester",
       "category": "Learning",
       "date": "2026-10-11",
@@ -445,6 +445,18 @@
       "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Unlisted: Underappreciated Women Artists",
+      "category": "Civic",
+      "date": "2026-10-19",
+      "dateLabel": "October 19, 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Derfner Museum Senior Curator Emily O&rsquo;Leary for this virtual talk based on a previous exhibition focused on seventeen twentieth-century women…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17408469",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Creative Upcycling: The Junk Journal Workshop",
       "category": "Workshop",
       "date": "2026-10-19",
@@ -519,6 +531,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "SCORE Meeting",
+      "category": "Civic",
+      "date": "2026-10-21",
+      "dateLabel": "October 21, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Monthly SCORE Chapter Meeting.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17396222",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
