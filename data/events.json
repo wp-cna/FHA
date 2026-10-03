@@ -1,56 +1,7 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "The Salem Witch Trials: Reckoning and Reclaiming",
-      "category": "Learning",
-      "date": "2026-10-02",
-      "dateLabel": "October 2, 2026",
-      "time": "1:00 PM – 2:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Even after 300 years, Salem&rsquo;s witch trials remain a defining example of intolerance and injustice in American history.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17287694",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Oktoberfest Pre-Party",
-      "category": "Food & Downtown",
-      "date": "2026-10-02",
-      "dateLabel": "October 2, 2026",
-      "time": "4:00 PM – 8:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Join Downtown White Plains for an Oktoberfest Pre-Party featuring drink specials, giveaways, contests, and chances to win Oktoberfest admission and gift cards…",
-      "url": "https://wpbid.com/events/oktoberfest-pre-party/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
-    {
-      "title": "'Hamilton' Sing-along on Battle Hill",
-      "category": "Learning",
-      "date": "2026-10-02",
-      "dateLabel": "October 2, 2026",
-      "time": "6:45 PM – 9:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "The Library and Rec & Park are joining forces for an epic Hamilton sing-along at Battle of White Plains Park!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17356338",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Outdoor Movie - Hamilton",
-      "category": "Community",
-      "date": "2026-10-02",
-      "dateLabel": "October 2, 2026",
-      "time": "6:45 PM",
-      "location": "Battle of White Plains Park, White Plains, NY",
-      "summary": "Outdoor Movie - Hamilton is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4584&month=10&year=2026&day=2&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Outdoor Movie - Hamilton aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "White Plains Sustainability Committee",
       "category": "Civic",
@@ -262,18 +213,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Oktoberfest 2026",
-      "category": "Food & Downtown",
-      "date": "2026-10-11",
-      "dateLabel": "October 11, 2026",
-      "time": "1:00 PM – 6:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Downtown White Plains OktoberFest returns!",
-      "url": "https://wpbid.com/events/oktoberfest-2026/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
-    {
       "title": "The Battle of White Plains: Washington & Howe in Westchester",
       "category": "Learning",
       "date": "2026-10-11",
@@ -379,6 +318,18 @@
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn about events in White Plains during the crucial year of 1776.",
       "url": "https://calendar.whiteplainslibrary.org/event/15261911",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Chair Yoga with Maria Madhavi",
+      "category": "Learning",
+      "date": "2026-10-16",
+      "dateLabel": "October 16, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16845365",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -533,18 +484,6 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "SCORE Meeting",
-      "category": "Civic",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Monthly SCORE Chapter Meeting.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17396222",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
       "category": "Learning",
       "date": "2026-10-21",
@@ -592,6 +531,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Home Energy Savings Workshop aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Chair Yoga with Maria Madhavi",
+      "category": "Learning",
+      "date": "2026-10-23",
+      "dateLabel": "October 23, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16845366",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Earring Making Workshop",
@@ -749,6 +700,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Does New York State have money in your name?",
       "url": "https://calendar.whiteplainslibrary.org/event/17268750",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Chair Yoga with Maria Madhavi",
+      "category": "Learning",
+      "date": "2026-10-30",
+      "dateLabel": "October 30, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16845367",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1806,18 +1769,6 @@
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Zumba at the Library!",
-      "category": "Learning",
-      "date": "2027-01-09",
-      "dateLabel": "January 9, 2027",
-      "time": "10:30 AM – 11:30 AM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Zumba at the Library!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17165318",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Fall/Winter Birthday Luncheon",
       "category": "Parks & Recreation",
       "date": "2027-01-13",
@@ -1839,18 +1790,6 @@
       "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "All About the City of White Plains Affordable Rental Housing Program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17385102",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Zumba at the Library!",
-      "category": "Learning",
-      "date": "2027-01-16",
-      "dateLabel": "January 16, 2027",
-      "time": "10:30 AM – 11:30 AM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Zumba at the Library!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17165319",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1904,18 +1843,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Zumba at the Library!",
-      "category": "Learning",
-      "date": "2027-01-23",
-      "dateLabel": "January 23, 2027",
-      "time": "10:30 AM – 11:30 AM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Zumba at the Library!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17165320",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "White Bird: Holocaust Remembrance Day Discussion",
