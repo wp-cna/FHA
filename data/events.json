@@ -1,31 +1,7 @@
 {
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "White Plains Sustainability Committee",
-      "category": "Civic",
-      "date": "2026-10-03",
-      "dateLabel": "October 3, 2026",
-      "time": "10:00 AM – 2:00 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Bring in your broken household items and work with a volunteer Repair Coach to fix them!",
-      "url": "https://calendar.whiteplainslibrary.org/event/15859288",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Salsa with Addie",
-      "category": "Learning",
-      "date": "2026-10-03",
-      "dateLabel": "October 3, 2026",
-      "time": "3:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Partner work is encouraged.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17106202",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Halloween Pumpkin Patch",
       "category": "Community",
@@ -484,6 +460,18 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "SCORE Meeting",
+      "category": "Civic",
+      "date": "2026-10-21",
+      "dateLabel": "October 21, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Monthly SCORE Chapter Meeting.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17396222",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
       "category": "Learning",
       "date": "2026-10-21",
@@ -592,6 +580,18 @@
       "url": "https://parksevents.westchestercountyny.gov/event/freestyle-jam-2026",
       "ctaLabel": "Open county parks page",
       "source": "Westchester County Parks"
+    },
+    {
+      "title": "Demystifying Medicare",
+      "category": "Civic",
+      "date": "2026-10-25",
+      "dateLabel": "October 25, 2026",
+      "time": "1:15 PM – 4:30 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This comprehensive program is designed for people who already have Medicare, as well as those soon to be 65, planning their retirement, or assisting relatives…",
+      "url": "https://calendar.whiteplainslibrary.org/event/16486528",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Common Council Work Session",
