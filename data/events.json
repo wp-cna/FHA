@@ -1,45 +1,7 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Halloween Pumpkin Patch",
-      "category": "Community",
-      "date": "2026-10-04",
-      "dateLabel": "October 4, 2026",
-      "time": "10:00 AM – 2:00 PM",
-      "location": "Gillie Park, White Plains, NY",
-      "summary": "Halloween Pumpkin Patch is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4583&month=10&year=2026&day=4&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Halloween Pumpkin Patch aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Help Paint the New White Plains Mural",
-      "category": "Community",
-      "date": "2026-10-04",
-      "dateLabel": "October 4, 2026",
-      "time": "12:00 PM – 2:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Help Paint the New White Plains Mural is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4707&month=10&year=2026&day=4&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Help Paint the New White Plains Mural aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Annual Pollinators of White Plains",
-      "category": "Learning",
-      "date": "2026-10-04",
-      "dateLabel": "October 4, 2026",
-      "time": "1:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For those who can contribute, please bring your extra native seeds and plants so that we can spread the love of native plants through White Plains and the…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16964004",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Future is Female",
       "category": "Learning",
@@ -165,6 +127,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Day of the Dead Altar-Making Workshop",
+      "category": "Workshop",
+      "date": "2026-10-09",
+      "dateLabel": "October 9, 2026",
+      "time": "4:30 PM – 5:30 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17183978",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Boys Varsity Football vs. Roy C Ketcham/ Wappingers JHS",
       "category": "Sports",
       "date": "2026-10-09",
@@ -187,6 +161,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17106203",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Oktoberfest 2026",
+      "category": "Food & Downtown",
+      "date": "2026-10-11",
+      "dateLabel": "October 11, 2026",
+      "time": "1:00 PM – 6:00 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Downtown White Plains OktoberFest returns!",
+      "url": "https://wpbid.com/events/oktoberfest-2026/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
     },
     {
       "title": "The Battle of White Plains: Washington & Howe in Westchester",
