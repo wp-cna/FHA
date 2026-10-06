@@ -1,32 +1,7 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Future is Female",
-      "category": "Learning",
-      "date": "2026-10-05",
-      "dateLabel": "October 5, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "It seems that Gail Baines is having a bad day that only keeps getting worse, but her problems manage to be good news for Tyler&rsquo;s readers.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17115570",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Common Council Meeting",
-      "category": "Civic",
-      "date": "2026-10-05",
-      "dateLabel": "October 5, 2026",
-      "time": "7:00 PM",
-      "location": "Common Council Chamber, 255 Main Street, 2nd Floor, White Plains NY 10601",
-      "summary": "Common Council Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3609&month=10&year=2026&day=5&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Stretch Your Dough: Meals on a Budget",
       "category": "Civic",
@@ -36,18 +11,6 @@
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn practical strategies for preparing nutritious, delicious meals without overspending.",
       "url": "https://calendar.whiteplainslibrary.org/event/16812947",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Clean Energy Workforce Opportunity",
-      "category": "Workshop",
-      "date": "2026-10-06",
-      "dateLabel": "October 6, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Sustainable Westchester , in partnership with Healthy Home Academy , is offering a FREE 5-week Clean Energy Workforce Training program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17128789",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -265,7 +228,7 @@
       "date": "2026-10-14",
       "dateLabel": "October 14, 2026",
       "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Sustainable Westchester , in partnership with Healthy Home Academy , is offering a FREE 5-week Clean Energy Workforce Training program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17128804",
       "ctaLabel": "Open library page",
@@ -304,6 +267,18 @@
       "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Discover the joy of bringing canvas to life!",
       "url": "https://calendar.whiteplainslibrary.org/event/17158497",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Day of the Dead Altar-Making Workshop",
+      "category": "Workshop",
+      "date": "2026-10-16",
+      "dateLabel": "October 16, 2026",
+      "time": "4:30 PM – 5:30 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17185060",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -527,6 +502,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
       "url": "https://calendar.whiteplainslibrary.org/event/17124673",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Day of the Dead Altar-Making Workshop",
+      "category": "Workshop",
+      "date": "2026-10-23",
+      "dateLabel": "October 23, 2026",
+      "time": "4:30 PM – 5:30 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17185566",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1753,6 +1740,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Clean Energy Workforce Opportunity",
+      "category": "Workshop",
+      "date": "2027-01-12",
+      "dateLabel": "January 12, 2027",
+      "time": "2:00 PM – 3:00 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Sustainable Westchester , in partnership with Healthy Home Academy , is offering a FREE 5-week Clean Energy Workforce Training program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17128789",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Fall/Winter Birthday Luncheon",
