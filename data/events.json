@@ -1,19 +1,7 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Stretch Your Dough: Meals on a Budget",
-      "category": "Civic",
-      "date": "2026-10-06",
-      "dateLabel": "October 6, 2026",
-      "time": "1:00 PM – 2:30 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn practical strategies for preparing nutritious, delicious meals without overspending.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16812947",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -39,6 +27,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Covid-19 and Flu Vaccine Clinics aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Intro to Microsoft Excel, Part 1",
+      "category": "Learning",
+      "date": "2026-10-07",
+      "dateLabel": "October 7, 2026",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn how to create a simple spreadsheet and use formulas and functions with Microsoft Excel, the premier spreadsheet program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17217585",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Virtual Poetry Open Mic",
@@ -154,10 +154,10 @@
       "category": "Learning",
       "date": "2026-10-11",
       "dateLabel": "October 11, 2026",
-      "time": "2:00 PM – 2:45 PM",
+      "time": "3:30 PM – 4:15 PM",
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn about Westchester County during the Revolutionary War and what happened throughout the conflict.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17531157",
+      "url": "https://calendar.whiteplainslibrary.org/event/17603842",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -240,7 +240,7 @@
       "date": "2026-10-15",
       "dateLabel": "October 15, 2026",
       "time": "5:00 PM – 5:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn about events in White Plains during the crucial year of 1776.",
       "url": "https://calendar.whiteplainslibrary.org/event/15261911",
       "ctaLabel": "Open library page",
@@ -427,7 +427,7 @@
       "dateLabel": "October 21, 2026",
       "time": "2:00 PM – 4:00 PM",
       "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Monthly SCORE Chapter Meeting.",
+      "summary": "Monthly SCORE Chapter Meeting",
       "url": "https://calendar.whiteplainslibrary.org/event/17396222",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -1011,6 +1011,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Favorite Holiday Soups & Sweets",
+      "category": "Learning",
+      "date": "2026-11-17",
+      "dateLabel": "November 17, 2026",
+      "time": "5:30 PM – 6:30 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "In this virtual cooking class, you'll learn how to make a cozy pot of curried pumpkin soup.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17602717",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "White Plains Beautification Foundation",
       "category": "Learning",
       "date": "2026-11-17",
@@ -1464,18 +1476,6 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Derek Hough Dance for the Holidays",
-      "category": "Community",
-      "date": "2026-12-07",
-      "dateLabel": "December 7, 2026",
-      "time": "8:00 PM – 10:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "This event is a joyous celebration of the most festive time of the year!",
-      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-08",
@@ -1587,18 +1587,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Miller House Open House",
-      "category": "Parks & Recreation",
-      "date": "2026-12-12",
-      "dateLabel": "December 12, 2026",
-      "time": "11:00 AM – 1:00 PM",
-      "location": "Miller House, 140 Virginia Road, White Plains, NY",
-      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
-      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-12-12",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
