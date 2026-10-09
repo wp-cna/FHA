@@ -1,31 +1,7 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Battle of White Plains (History in the Igloo)",
-      "category": "Learning",
-      "date": "2026-10-08",
-      "dateLabel": "October 8, 2026",
-      "time": "12:00 PM – 12:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Journey back in time to the Battle of White Plains, a pivotal moment in the American Revolutionary War.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15261880",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "\"Mi Gente Estuvo Aquí También\"",
-      "category": "Learning",
-      "date": "2026-10-08",
-      "dateLabel": "October 8, 2026",
-      "time": "7:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Led by genealogist Irisneri Alicea Flores, this presentation focuses on simplifying the research process while honoring the rich cultural and historical…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16859295",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Day of the Dead Altar-Making Workshop",
       "category": "Workshop",
@@ -95,18 +71,6 @@
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Learn about Westchester County during the Revolutionary War and what happened throughout the conflict.",
       "url": "https://calendar.whiteplainslibrary.org/event/17603842",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Neighborhood Conditions Coordinator",
-      "category": "Learning",
-      "date": "2026-10-13",
-      "dateLabel": "October 13, 2026",
-      "time": "10:00 AM – 1:00 PM",
-      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Topics that she can assist with include, but are not limited to: Code enforcement information and guidance Tenant rights information and guidance Housing…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17396317",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -196,6 +160,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Yoga for Teens",
+      "category": "Learning",
+      "date": "2026-10-15",
+      "dateLabel": "October 15, 2026",
+      "time": "4:45 PM – 6:00 PM",
+      "location": "White Plains Public Library, Auditorium,Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for a relaxed yoga session.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17199705",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "White Plains in 1776 (History via Igloo)",
       "category": "Learning",
       "date": "2026-10-15",
@@ -216,6 +192,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
       "url": "https://calendar.whiteplainslibrary.org/event/16845365",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Jump into the Jurassic: VR Search and Find!",
+      "category": "Learning",
+      "date": "2026-10-16",
+      "dateLabel": "October 16, 2026",
+      "time": "12:30 PM – 1:00 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
+      "url": "https://calendar.whiteplainslibrary.org/event/16799554",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -302,6 +290,18 @@
       "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Join Derfner Museum Senior Curator Emily O&rsquo;Leary for this virtual talk based on a previous exhibition focused on seventeen twentieth-century women…",
       "url": "https://calendar.whiteplainslibrary.org/event/17408469",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Wellness Connection",
+      "category": "Learning",
+      "date": "2026-10-19",
+      "dateLabel": "October 19, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17276975",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -394,6 +394,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Intro to Microsoft Excel, Part 3",
+      "category": "Learning",
+      "date": "2026-10-21",
+      "dateLabel": "October 21, 2026",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn how to use absolute cell references and work with summary and detail worksheets.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17217680",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
       "category": "Learning",
       "date": "2026-10-21",
@@ -414,18 +426,6 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
       "url": "https://calendar.whiteplainslibrary.org/event/16748716",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Neighborhood Conditions Coordinator",
-      "category": "Learning",
-      "date": "2026-10-22",
-      "dateLabel": "October 22, 2026",
-      "time": "10:00 AM – 1:00 PM",
-      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Topics that she can assist with include, but are not limited to: Code enforcement information and guidance Tenant rights information and guidance Housing…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17396333",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -554,18 +554,6 @@
       "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Neighborhood Conditions Coordinator",
-      "category": "Learning",
-      "date": "2026-10-27",
-      "dateLabel": "October 27, 2026",
-      "time": "10:00 AM – 1:00 PM",
-      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Topics that she can assist with include, but are not limited to: Code enforcement information and guidance Tenant rights information and guidance Housing…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17396356",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
       "category": "Learning",
       "date": "2026-10-27",
@@ -601,6 +589,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Healthy Relationships",
+      "category": "Learning",
+      "date": "2026-10-28",
+      "dateLabel": "October 28, 2026",
+      "time": "3:30 PM – 4:30 PM",
+      "location": "White Plains Public Library, Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for this discussion series on healthy relationship elements with My Sister's Place.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17252540",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Battle of White Plains (History in the Igloo)",
@@ -1483,6 +1483,18 @@
       "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "All About the City of White Plains Affordable Rental Housing Program.",
       "url": "https://calendar.whiteplainslibrary.org/event/17385101",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "How to Help Cats in Your Neighborhood",
+      "category": "Civic",
+      "date": "2026-12-08",
+      "dateLabel": "December 8, 2026",
+      "time": "7:00 PM – 8:00 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join the Cat Protection Council of Westchester for a brief presentation, Q & A session, and demonstration of Trap-Neuter-Vaccinate-Return (TNVR).",
+      "url": "https://calendar.whiteplainslibrary.org/event/17616119",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
