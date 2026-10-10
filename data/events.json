@@ -1,31 +1,7 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Day of the Dead Altar-Making Workshop",
-      "category": "Workshop",
-      "date": "2026-10-09",
-      "dateLabel": "October 9, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17183978",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Boys Varsity Football vs. Roy C Ketcham/ Wappingers JHS",
-      "category": "Sports",
-      "date": "2026-10-09",
-      "dateLabel": "October 9, 2026",
-      "time": "6:00 PM",
-      "location": "White Plains HS, White Plains, NY",
-      "summary": "Boys Varsity Football hosts Roy C Ketcham/ Wappingers JHS at White Plains HS.",
-      "url": "/sports/football/",
-      "ctaLabel": "See the full schedule",
-      "source": "White Plains High School Athletics"
-    },
     {
       "title": "Salsa with Addie",
       "category": "Learning",
@@ -160,16 +136,17 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Yoga for Teens",
-      "category": "Learning",
-      "date": "2026-10-15",
-      "dateLabel": "October 15, 2026",
-      "time": "4:45 PM – 6:00 PM",
-      "location": "White Plains Public Library, Auditorium,Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for a relaxed yoga session.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17199705",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
+      "title": "Design Review Board",
+      "category": "Civic",
+      "date": "2026-10-14",
+      "dateLabel": "October 14, 2026",
+      "time": "7:00 PM – 9:00 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Design Review Board is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4709&month=10&year=2026&day=14&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Design Review Board aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "White Plains in 1776 (History via Igloo)",
@@ -674,6 +651,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Hispanic Heritage Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Cooking for Teens",
+      "category": "Learning",
+      "date": "2026-10-30",
+      "dateLabel": "October 30, 2026",
+      "time": "4:30 PM – 5:30 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A hands-on cooking lesson with Chef Giovanni Green.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17485705",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "23rd Annual Fall Westchester County Home Show",
@@ -1865,6 +1854,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "At the Farm: VR Search and Find! copy",
+      "category": "Learning",
+      "date": "2027-02-02",
+      "dateLabel": "February 2, 2027",
+      "time": "12:30 PM – 1:00 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "For children ages 2+ and their families.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17629703",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "African American Genealogy for Beginners",
       "category": "Learning",
       "date": "2027-02-04",
@@ -1873,6 +1874,18 @@
       "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Historian and educator Dennis Richmond, Jr.",
       "url": "https://calendar.whiteplainslibrary.org/event/17444829",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "At the Farm: VR Search and Find!",
+      "category": "Learning",
+      "date": "2027-02-06",
+      "dateLabel": "February 6, 2027",
+      "time": "11:00 AM – 11:30 AM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "For children ages 2+ and their families.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17629688",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
