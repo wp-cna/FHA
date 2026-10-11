@@ -1,27 +1,15 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
-      "title": "Salsa with Addie",
-      "category": "Learning",
-      "date": "2026-10-10",
-      "dateLabel": "October 10, 2026",
-      "time": "3:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Partner work is encouraged.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17106203",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Oktoberfest 2026",
+      "title": "Oktoberfest 2026 – RAIN OR SHINE",
       "category": "Food & Downtown",
       "date": "2026-10-11",
       "dateLabel": "October 11, 2026",
       "time": "1:00 PM – 6:00 PM",
       "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Downtown White Plains OktoberFest returns!",
+      "summary": "Downtown White Plains OktoberFest: RAIN OR SHINE Sunday October 11, 2026 from 1pm to 6pm on Mamaroneck Ave.",
       "url": "https://wpbid.com/events/oktoberfest-2026/",
       "ctaLabel": "Open event page",
       "source": "White Plains Business Improvement District"
@@ -147,6 +135,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Design Review Board aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Yoga for Teens",
+      "category": "Learning",
+      "date": "2026-10-15",
+      "dateLabel": "October 15, 2026",
+      "time": "4:45 PM – 6:00 PM",
+      "location": "White Plains Public Library, Auditorium,Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for a relaxed yoga session.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17199705",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "White Plains in 1776 (History via Igloo)",
