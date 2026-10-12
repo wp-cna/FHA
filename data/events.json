@@ -1,43 +1,7 @@
 {
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Oktoberfest 2026 – RAIN OR SHINE",
-      "category": "Food & Downtown",
-      "date": "2026-10-11",
-      "dateLabel": "October 11, 2026",
-      "time": "1:00 PM – 6:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Downtown White Plains OktoberFest: RAIN OR SHINE Sunday October 11, 2026 from 1pm to 6pm on Mamaroneck Ave.",
-      "url": "https://wpbid.com/events/oktoberfest-2026/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
-    {
-      "title": "The Battle of White Plains: Washington & Howe in Westchester",
-      "category": "Learning",
-      "date": "2026-10-11",
-      "dateLabel": "October 11, 2026",
-      "time": "2:00 PM – 3:30 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "From the website of the publisher, The History Press: \"In October 1776 central Westchester witnessed a critical episode in the early campaign of George…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17262023",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Westchester During the Revolutionary War (History via Igloo)",
-      "category": "Learning",
-      "date": "2026-10-11",
-      "dateLabel": "October 11, 2026",
-      "time": "3:30 PM – 4:15 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn about Westchester County during the Revolutionary War and what happened throughout the conflict.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17603842",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Taking a Broad View",
       "category": "Civic",
@@ -403,6 +367,18 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
       "url": "https://calendar.whiteplainslibrary.org/event/16748716",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Yoga for Teens",
+      "category": "Learning",
+      "date": "2026-10-22",
+      "dateLabel": "October 22, 2026",
+      "time": "4:45 PM – 6:00 PM",
+      "location": "White Plains Public Library, Auditorium,Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for a relaxed yoga session.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17199706",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
