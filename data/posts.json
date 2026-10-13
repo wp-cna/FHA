@@ -4,17 +4,18 @@
   "posts": [
     {
       "title": "RCC - 125th Anniversary Celebration",
-      "title_es": "RCC - Celebración del 125 Aniversario",
-      "summary_es": "¡Todos están invitados! La Ridgeview Congregational Church celebrará su 125 Aniversario el domingo, 11 de octubre de 2026. Todos son bienvenidos a unirse a nosotros a las 10:30 para nuestro servicio de adoración de celebración, seguido de refrescos. Ministra Invitada: Rev. Dra. Marsha Williamsp",
       "category": "Neighborhood Event",
       "fh": true,
       "date": "2026-10-11",
       "dateLabel": "October 11, 2026",
-      "expires": "2026-10-12",
       "time": "10:30am",
       "location": "12 Ridgeview Ave, White Plains NY 10606",
       "summary": "You are all Invited!\nThe Ridgeview Congregational Church will celebrate its 125th Anniversary on Sunday, October 11th, 2026. All are welcome to join us at 10:30 for our celebratory worship service, followed by refreshments. \nGuest Minister: Rev. Dr. Marsha Williamsp",
-      "source": "Michael Dalton"
+      "title_es": "RCC - Celebración del 125 Aniversario",
+      "summary_es": "¡Todos están invitados! La Ridgeview Congregational Church celebrará su 125 Aniversario el domingo, 11 de octubre de 2026. Todos son bienvenidos a unirse a nosotros a las 10:30 para nuestro servicio de adoración de celebración, seguido de refrescos. Ministra Invitada: Rev. Dra. Marsha Williamsp",
+      "image": "",
+      "source": "Michael Dalton",
+      "expires": "2026-10-12"
     },
     {
       "title": "Fisher Hill Block Party",
@@ -30,6 +31,21 @@
       "image": "",
       "source": "Michael Dalton",
       "expires": "2026-09-20"
+    },
+    {
+      "title": "BREAST CANCER AWARENESS MONTH",
+      "category": "Neighborhood",
+      "fh": true,
+      "date": "October 2026",
+      "dateLabel": "",
+      "time": "October",
+      "location": "White Plains Hospital",
+      "summary": "Health Matters - Brought to you by White Plains Hospital - October is Breast Cancer Awareness Month.  Click on the Hospital link below for more information.\nhttps://emailer.emfluence.com/viewaswebpage/966FF6CF-1131-4863-97B4-5AEFE5D1BF45",
+      "title_es": "",
+      "summary_es": "",
+      "image": "",
+      "source": "Michael Dalton",
+      "expires": "2026-11-01"
     }
   ]
 }
