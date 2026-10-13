@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -99,6 +99,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Design Review Board aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "White Plains to Debut Community Mural on October 15",
+      "category": "Community",
+      "date": "2026-10-15",
+      "dateLabel": "October 15, 2026",
+      "time": "3:30 PM",
+      "location": "70 Church Street, corner of Church Street & Hamilton Avenue, White Plains, NY",
+      "summary": "White Plains to Debut Community Mural on October 15 is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4710&month=10&year=2026&day=15&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains to Debut Community Mural on October 15 aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Yoga for Teens",
