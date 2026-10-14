@@ -1,31 +1,7 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Taking a Broad View",
-      "category": "Civic",
-      "date": "2026-10-13",
-      "dateLabel": "October 13, 2026",
-      "time": "3:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This virtual talk is based on the Derfner Museum&rsquo;s current exhibition, Taking a Broad View: Portrait Photography from the Collection , which features…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17408149",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Common Council Forum",
-      "category": "Civic",
-      "date": "2026-10-13",
-      "dateLabel": "October 13, 2026",
-      "time": "7:00 PM – 8:30 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "How to Ask a Question: While no questions will be taken from the floor, it&rsquo;s important that your voice is heard.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16522047",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -184,6 +160,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17185060",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "The Spot",
+      "category": "Parks & Recreation",
+      "date": "2026-10-16",
+      "dateLabel": "October 16, 2026",
+      "time": "6:00 PM – 9:00 PM",
+      "location": "White Plains Community Center, White Plains, NY",
+      "summary": "The Spot is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4711&month=10&year=2026&day=16&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "The Spot aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Miller House Open House",
@@ -889,6 +878,18 @@
       "summary_es": "Veteran's Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Salsa with Addie",
+      "category": "Learning",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Partner work is encouraged.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17640529",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "RECALCULATING",
       "category": "Learning",
       "date": "2026-11-15",
@@ -1545,7 +1546,7 @@
       "date": "2026-12-11",
       "dateLabel": "December 11, 2026",
       "time": "2:00 PM – 3:30 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Discover the art of junk journaling!",
       "url": "https://calendar.whiteplainslibrary.org/event/17212945",
       "ctaLabel": "Open library page",
