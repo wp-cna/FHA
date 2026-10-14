@@ -75,6 +75,39 @@
     return card;
   }
 
+  // A post summary as a paragraph in which any web address (http:// or
+  // https://) becomes a clickable link. Built from text nodes, never HTML,
+  // so nothing a poster types can inject markup.
+  var URL_RE = /https?:\/\/[^\s<>"]+/gi;
+  function summaryPara(text) {
+    var para = el("p", "feed-summary");
+    var s = String(text), last = 0, m;
+    URL_RE.lastIndex = 0;
+    while ((m = URL_RE.exec(s))) {
+      var url = m[0].replace(/[.,;:!?)\]'’”]+$/, "");   // leave trailing punctuation as text
+      if (m.index > last) para.appendChild(document.createTextNode(s.slice(last, m.index)));
+      var a = el("a", "feed-link", url);
+      a.href = url; a.target = "_blank"; a.rel = "external noopener";
+      a.addEventListener("click", function (ev) { ev.stopPropagation(); });
+      para.appendChild(a);
+      last = m.index + url.length;
+      URL_RE.lastIndex = last;
+    }
+    if (last < s.length) para.appendChild(document.createTextNode(s.slice(last)));
+    return para;
+  }
+
+  // Optional "Link" set in the admin: shown as a button, like event cards.
+  // Only plain http(s) addresses are accepted.
+  function postLink(p, es) {
+    if (typeof p.url !== "string" || !/^https?:\/\/\S+$/i.test(p.url.trim())) return null;
+    var a = el("a", "feed-btn", p.ctaLabel || (es ? "Más información" : "Read more"));
+    a.href = p.url.trim(); a.target = "_blank"; a.rel = "external noopener";
+    // Inside a photo card, open the link without also toggling the card.
+    a.addEventListener("click", function (ev) { ev.stopPropagation(); });
+    return a;
+  }
+
   function postCard(p) {
     // Published posts carry board-approved Spanish alongside the English
     // (title_es / summary_es, stamped by the Worker at publish time); the
@@ -103,10 +136,12 @@
       var more = el("div", "feed-more");
       var pd0 = dateLabel(p); if (pd0) more.appendChild(el("p", "feed-date", pd0));
       more.appendChild(meta(p.time, p.location));
-      if (summary) more.appendChild(el("p", "feed-summary", summary));
-      if (p.source) {
+      if (summary) more.appendChild(summaryPara(summary));
+      var link0 = postLink(p, es);
+      if (p.source || link0) {
         var act0 = el("div", "feed-actions");
-        act0.appendChild(el("span", "feed-source", byline));
+        if (link0) act0.appendChild(link0);
+        if (p.source) act0.appendChild(el("span", "feed-source", byline));
         more.appendChild(act0);
       }
       body.appendChild(more);
@@ -127,10 +162,12 @@
       body.appendChild(el("h3", "feed-title", title));
       var pd = dateLabel(p); if (pd) body.appendChild(el("p", "feed-date", pd));
       body.appendChild(meta(p.time, p.location));
-      if (summary) body.appendChild(el("p", "feed-summary", summary));
-      if (p.source) {
+      if (summary) body.appendChild(summaryPara(summary));
+      var link = postLink(p, es);
+      if (p.source || link) {
         var actions = el("div", "feed-actions");
-        actions.appendChild(el("span", "feed-source", byline));
+        if (link) actions.appendChild(link);
+        if (p.source) actions.appendChild(el("span", "feed-source", byline));
         body.appendChild(actions);
       }
     }
