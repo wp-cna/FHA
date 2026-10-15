@@ -1,81 +1,7 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4687&month=10&year=2026&day=14&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Meet Sustainable Westchester!",
-      "category": "Learning",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "10:30 AM – 12:30 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For more information contact Daniel Zitomer, Program Coordinator/Energy Advisor, at 914-242-4725 ext 114 or daniel@sustainablewestchester.org",
-      "url": "https://calendar.whiteplainslibrary.org/event/17445658",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Virtual Clean Energy Workforce Opportuntiy",
-      "category": "Workshop",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Sustainable Westchester , in partnership with Healthy Home Academy , is offering a FREE 5-week Clean Energy Workforce Training program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17128804",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Healthy Relationships",
-      "category": "Learning",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "3:30 PM – 4:30 PM",
-      "location": "White Plains Public Library, Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for this discussion series on healthy relationship elements with My Sister's Place.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17252539",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Intro to Microsoft Excel, Part 2",
-      "category": "Learning",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This class is for those who can create a simple spreadsheet and use formulas in Excel.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17217628",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Design Review Board",
-      "category": "Civic",
-      "date": "2026-10-14",
-      "dateLabel": "October 14, 2026",
-      "time": "7:00 PM – 9:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Design Review Board is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4709&month=10&year=2026&day=14&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Design Review Board aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "White Plains to Debut Community Mural on October 15",
       "category": "Community",
@@ -496,6 +422,19 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "White Plains Urban Renewal Agency Special Meeting",
+      "category": "Civic",
+      "date": "2026-10-26",
+      "dateLabel": "October 26, 2026",
+      "time": "2:30 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Urban Renewal Agency Special Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4712&month=10&year=2026&day=26&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Urban Renewal Agency Special Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Common Council Work Session",
       "category": "Civic",
       "date": "2026-10-26",
@@ -778,18 +717,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Affordable Housing in White Plains",
-      "category": "Learning",
-      "date": "2026-11-09",
-      "dateLabel": "November 9, 2026",
-      "time": "5:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17385100",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Community Forum: Waller Avenue Pocket Park",
       "category": "Community",
       "date": "2026-11-09",
@@ -1012,6 +939,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Anger Management for Teens",
+      "category": "Learning",
+      "date": "2026-11-18",
+      "dateLabel": "November 18, 2026",
+      "time": "5:00 PM – 5:45 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Details TBD",
+      "url": "https://calendar.whiteplainslibrary.org/event/17653163",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Personal Branding: Are You Your Own CEO?",
@@ -1454,18 +1393,6 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Affordable Housing in White Plains",
-      "category": "Learning",
-      "date": "2026-12-08",
-      "dateLabel": "December 8, 2026",
-      "time": "5:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17385101",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "How to Help Cats in Your Neighborhood",
       "category": "Civic",
       "date": "2026-12-08",
@@ -1742,18 +1669,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Affordable Housing in White Plains",
-      "category": "Learning",
-      "date": "2027-01-13",
-      "dateLabel": "January 13, 2027",
-      "time": "5:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "All About the City of White Plains Affordable Rental Housing Program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17385102",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Annual Pollinators of White Plains",
