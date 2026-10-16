@@ -1,44 +1,7 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "White Plains to Debut Community Mural on October 15",
-      "category": "Community",
-      "date": "2026-10-15",
-      "dateLabel": "October 15, 2026",
-      "time": "3:30 PM",
-      "location": "70 Church Street, corner of Church Street & Hamilton Avenue, White Plains, NY",
-      "summary": "White Plains to Debut Community Mural on October 15 is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4710&month=10&year=2026&day=15&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "White Plains to Debut Community Mural on October 15 aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Yoga for Teens",
-      "category": "Learning",
-      "date": "2026-10-15",
-      "dateLabel": "October 15, 2026",
-      "time": "4:45 PM – 6:00 PM",
-      "location": "White Plains Public Library, Auditorium,Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for a relaxed yoga session.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17199705",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "White Plains in 1776 (History via Igloo)",
-      "category": "Learning",
-      "date": "2026-10-15",
-      "dateLabel": "October 15, 2026",
-      "time": "5:00 PM – 5:45 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn about events in White Plains during the crucial year of 1776.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15261911",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Chair Yoga with Maria Madhavi",
       "category": "Learning",
