@@ -1,68 +1,7 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Chair Yoga with Maria Madhavi",
-      "category": "Learning",
-      "date": "2026-10-16",
-      "dateLabel": "October 16, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16845365",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Jump into the Jurassic: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-10-16",
-      "dateLabel": "October 16, 2026",
-      "time": "12:30 PM – 1:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16799554",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Beginner Painting Workshop",
-      "category": "Workshop",
-      "date": "2026-10-16",
-      "dateLabel": "October 16, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Discover the joy of bringing canvas to life!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17158497",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Day of the Dead Altar-Making Workshop",
-      "category": "Workshop",
-      "date": "2026-10-16",
-      "dateLabel": "October 16, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17185060",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "The Spot",
-      "category": "Parks & Recreation",
-      "date": "2026-10-16",
-      "dateLabel": "October 16, 2026",
-      "time": "6:00 PM – 9:00 PM",
-      "location": "White Plains Community Center, White Plains, NY",
-      "summary": "The Spot is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4711&month=10&year=2026&day=16&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "The Spot aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Miller House Open House",
       "category": "Parks & Recreation",
@@ -593,6 +532,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Repair Cafe Teen Volunteer Training",
+      "category": "Workshop",
+      "date": "2026-11-02",
+      "dateLabel": "November 2, 2026",
+      "time": "4:00 PM – 5:30 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We're looking for teens who want to learn skills and help repair fabric items at the White Plains Repair Cafe.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17221868",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Common Council Meeting",
       "category": "Civic",
       "date": "2026-11-02",
@@ -768,6 +719,18 @@
       "summary_es": "Veteran's Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Repair Cafe Teen Volunteer Training",
+      "category": "Workshop",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "time": "10:00 AM – 11:30 AM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We're looking for teens who want to learn skills and help repair fabric items at the White Plains Repair Cafe.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17221869",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Salsa with Addie",
       "category": "Learning",
       "date": "2026-11-14",
@@ -788,6 +751,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "RECALCULATING&hellip; Original one-act plays on the route to nowhere BREAKING THE NEWS by Keith Whelan A couple doesn&rsquo;t know how to tell their child the…",
       "url": "https://calendar.whiteplainslibrary.org/event/17169198",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Repair Cafe Teen Volunteer Training",
+      "category": "Workshop",
+      "date": "2026-11-16",
+      "dateLabel": "November 16, 2026",
+      "time": "4:00 PM – 5:30 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We're looking for teens who want to learn skills and help repair fabric items at the White Plains Repair Cafe.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17221870",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -910,7 +885,7 @@
       "dateLabel": "November 18, 2026",
       "time": "5:00 PM – 5:45 PM",
       "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Details TBD",
+      "summary": "Learn to manage anger before it leads to destructive behaviors.",
       "url": "https://calendar.whiteplainslibrary.org/event/17653163",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
