@@ -1,44 +1,7 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Miller House Open House",
-      "category": "Parks & Recreation",
-      "date": "2026-10-17",
-      "dateLabel": "October 17, 2026",
-      "time": "11:00 AM – 1:00 PM",
-      "location": "Miller House, 140 Virginia Road, White Plains, NY",
-      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
-      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-10-17",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
-      "title": "Red Leaf, Yellow Leaf, Fall Nature Walk",
-      "category": "Community",
-      "date": "2026-10-17",
-      "dateLabel": "October 17, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "Jack Harrington Greenway, White Plains, NY",
-      "summary": "Red Leaf, Yellow Leaf, Fall Nature Walk is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4582&month=10&year=2026&day=17&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Red Leaf, Yellow Leaf, Fall Nature Walk aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Young Musicians of Westchester: 'The Jazz Kwintet'",
-      "category": "Learning",
-      "date": "2026-10-17",
-      "dateLabel": "October 17, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Young Musicians of Westchester, an all-volunteer nonprofit organization, assists musicians embarking on professional careers with opportunities to perform for…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16413664",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Halloween Parade",
       "category": "Learning",
@@ -443,6 +406,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Does New York State have money in your name?",
       "url": "https://calendar.whiteplainslibrary.org/event/17268750",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Yoga for Teens",
+      "category": "Learning",
+      "date": "2026-10-29",
+      "dateLabel": "October 29, 2026",
+      "time": "4:45 PM – 6:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for a relaxed yoga session.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17678631",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -939,14 +914,26 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "White Plains Sustainability Committee",
-      "category": "Civic",
+      "title": "Upcyled Crafts",
+      "category": "Learning",
       "date": "2026-11-21",
       "dateLabel": "November 21, 2026",
       "time": "10:00 AM – 2:00 PM",
-      "location": "White Plains Public Library, Auditorium,Library Plaza,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Bring in your broken household items and work with a volunteer Repair Coach to fix them!",
-      "url": "https://calendar.whiteplainslibrary.org/event/15958436",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Kids and families are invited to work on sustainable craft projects with the White Plains High School GEMS (Girls Excelling in Math + Science.) This event…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17678738",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Bookbinding & Journalmaking Workshop",
+      "category": "Workshop",
+      "date": "2026-11-21",
+      "dateLabel": "November 21, 2026",
+      "time": "11:00 AM – 12:30 PM",
+      "location": "White Plains Public Library, The Edge, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Come learn to make small accordion books and create coptic stitch journals of your own!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17677767",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
