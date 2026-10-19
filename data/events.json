@@ -1,20 +1,7 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Halloween Parade",
-      "category": "Learning",
-      "date": "2026-10-18",
-      "dateLabel": "October 18, 2026",
-      "time": "3:00 PM – 4:40 PM",
-      "location": "Library Plaza to Court Street, White Plains, NY",
-      "summary": "Halloween Parade is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4553&month=10&year=2026&day=18&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Halloween Parade aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Unlisted: Underappreciated Women Artists",
       "category": "Civic",
