@@ -1,68 +1,7 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Unlisted: Underappreciated Women Artists",
-      "category": "Civic",
-      "date": "2026-10-19",
-      "dateLabel": "October 19, 2026",
-      "time": "3:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join Derfner Museum Senior Curator Emily O&rsquo;Leary for this virtual talk based on a previous exhibition focused on seventeen twentieth-century women…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17408469",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Wellness Connection",
-      "category": "Learning",
-      "date": "2026-10-19",
-      "dateLabel": "October 19, 2026",
-      "time": "4:00 PM – 5:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17276975",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Creative Upcycling: The Junk Journal Workshop",
-      "category": "Workshop",
-      "date": "2026-10-19",
-      "dateLabel": "October 19, 2026",
-      "time": "6:00 PM – 7:30 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Discover the art of junk journaling!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17158508",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Virtual College Financial Aid Workshop",
-      "category": "Workshop",
-      "date": "2026-10-19",
-      "dateLabel": "October 19, 2026",
-      "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join Shinara Sunderlal, Center Director at C2 Scarsdale, to discuss the financial aid application process to college, outline important dates, and discuss…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17139793",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Conservation Board Meeting",
-      "category": "Civic",
-      "date": "2026-10-19",
-      "dateLabel": "October 19, 2026",
-      "time": "7:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Conservation Board Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4146&month=10&year=2026&day=19&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Transportation Commission Meeting",
       "category": "Civic",
@@ -532,6 +471,18 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Common Ground: Civility",
+      "category": "Learning",
+      "date": "2026-11-04",
+      "dateLabel": "November 4, 2026",
+      "time": "6:00 PM – 8:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Find new ways to communicate with civility!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17499615",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Virtual Poetry Open Mic",
       "category": "Learning",
       "date": "2026-11-04",
@@ -589,6 +540,18 @@
       "location": "White Plains Public Library, Café,Community Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "The Friends of the Library are having a special book sale!",
       "url": "https://calendar.whiteplainslibrary.org/event/17445438",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Community Blood Pressure Screening",
+      "category": "Learning",
+      "date": "2026-11-09",
+      "dateLabel": "November 9, 2026",
+      "time": "4:00 PM – 8:00 PM",
+      "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Students from New York College School of Medicine will provide free, walk-up blood pressure screening.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17685472",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1089,6 +1052,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Wellness Connection",
+      "category": "Learning",
+      "date": "2026-11-30",
+      "dateLabel": "November 30, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17682455",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Common Council Work Session",
       "category": "Civic",
       "date": "2026-11-30",
@@ -1267,6 +1242,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Wellness Connection",
+      "category": "Learning",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17682456",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Common Council Meeting",
       "category": "Civic",
       "date": "2026-12-07",
@@ -1441,6 +1428,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Skate with Frosty aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Wellness Connection",
+      "category": "Learning",
+      "date": "2026-12-14",
+      "dateLabel": "December 14, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join Jeffrey from Inclure, a program developed by the Harris Project & WJCS that brings teens together for fun, supportive, and wellness-centered programming.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17682457",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "CUNY Information Session",
