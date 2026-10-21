@@ -1,33 +1,7 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Transportation Commission Meeting",
-      "category": "Civic",
-      "date": "2026-10-20",
-      "dateLabel": "October 20, 2026",
-      "time": "9:15 AM – 10:15 AM",
-      "location": "City Hall Common Council Chambers, White Plains, NY",
-      "summary": "Transportation Commission Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3661&month=10&year=2026&day=20&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Planning Board Meeting",
-      "category": "Civic",
-      "date": "2026-10-20",
-      "dateLabel": "October 20, 2026",
-      "time": "7:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4358&month=10&year=2026&day=20&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -239,6 +213,18 @@
       "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Girls Varsity Soccer vs. John Jay HS/ Van Wyck JHS",
+      "category": "Sports",
+      "date": "2026-10-26",
+      "dateLabel": "October 26, 2026",
+      "time": "6:30 PM",
+      "location": "White Plains HS, White Plains, NY",
+      "summary": "Girls Varsity Soccer hosts John Jay HS/ Van Wyck JHS at White Plains HS.",
+      "url": "/sports/soccer/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
+    },
+    {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
       "category": "Learning",
       "date": "2026-10-27",
@@ -251,7 +237,7 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Making a Monster, Adopting an Alien",
+      "title": "Cosmic Writers Presents: Making a Monster, Adopting an Alien",
       "category": "Workshop",
       "date": "2026-10-27",
       "dateLabel": "October 27, 2026",
@@ -344,6 +330,18 @@
       "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Join us for a relaxed yoga session.",
       "url": "https://calendar.whiteplainslibrary.org/event/17678631",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Consulado Movil en White Plains",
+      "category": "Learning",
+      "date": "2026-10-30",
+      "dateLabel": "October 30, 2026",
+      "time": "9:00 AM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium,Community Room,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Agenda tu cita: jueves 29 de octubre, a partir de las 9 a.m.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17507100",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -477,7 +475,7 @@
       "dateLabel": "November 4, 2026",
       "time": "6:00 PM – 8:00 PM",
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Find new ways to communicate with civility!",
+      "summary": "All viewpoints are welcome in this respectful, inclusive space designed to foster dialogue, reflection, and understanding.",
       "url": "https://calendar.whiteplainslibrary.org/event/17499615",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -754,6 +752,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Graphic Novel Chat & BINGO: Kitty Quest by Phil Corbett",
+      "category": "Learning",
+      "date": "2026-11-17",
+      "dateLabel": "November 17, 2026",
+      "time": "5:00 PM – 6:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for some fun by talking about Kitty Quest by Phil Corbett!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17691270",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Favorite Holiday Soups & Sweets",
       "category": "Learning",
       "date": "2026-11-17",
@@ -864,6 +874,19 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Repair Cafe",
+      "category": "Learning",
+      "date": "2026-11-21",
+      "dateLabel": "November 21, 2026",
+      "time": "10:00 AM – 2:00 PM",
+      "location": "White Plains Public Library, White Plains, NY",
+      "summary": "Repair Cafe is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4713&month=11&year=2026&day=21&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Repair Cafe aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Upcyled Crafts",
       "category": "Learning",
       "date": "2026-11-21",
@@ -954,7 +977,7 @@
       "date": "2026-11-24",
       "dateLabel": "November 24, 2026",
       "time": "5:00 PM – 6:00 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Join us for some fun by talking about Kitty Quest by Phil Corbett!",
       "url": "https://calendar.whiteplainslibrary.org/event/17254839",
       "ctaLabel": "Open library page",
