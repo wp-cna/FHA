@@ -1,68 +1,7 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4688&month=10&year=2026&day=21&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "SCORE Meeting",
-      "category": "Civic",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Monthly SCORE Chapter Meeting",
-      "url": "https://calendar.whiteplainslibrary.org/event/17396222",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Intro to Microsoft Excel, Part 3",
-      "category": "Learning",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn how to use absolute cell references and work with summary and detail worksheets.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17217680",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "The Legend of Sleepy Hollow (History via Igloo)",
-      "category": "Learning",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "5:00 PM – 5:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn about Washington Irving's \"The Legend of Sleepy Hollow\" and how it is a part of Westchester's local history.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15261762",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Successfully Navigating College Admissions",
-      "category": "Learning",
-      "date": "2026-10-21",
-      "dateLabel": "October 21, 2026",
-      "time": "7:30 PM – 8:30 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16748716",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Yoga for Teens",
       "category": "Learning",
@@ -334,18 +273,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Consulado Movil en White Plains",
-      "category": "Learning",
-      "date": "2026-10-30",
-      "dateLabel": "October 30, 2026",
-      "time": "9:00 AM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium,Community Room,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Agenda tu cita: jueves 29 de octubre, a partir de las 9 a.m.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17507100",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
       "title": "Chair Yoga with Maria Madhavi",
       "category": "Learning",
       "date": "2026-10-30",
@@ -473,8 +400,8 @@
       "category": "Learning",
       "date": "2026-11-04",
       "dateLabel": "November 4, 2026",
-      "time": "6:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "time": "6:30 PM – 8:00 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "All viewpoints are welcome in this respectful, inclusive space designed to foster dialogue, reflection, and understanding.",
       "url": "https://calendar.whiteplainslibrary.org/event/17499615",
       "ctaLabel": "Open library page",
