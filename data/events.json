@@ -1,32 +1,7 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Yoga for Teens",
-      "category": "Learning",
-      "date": "2026-10-22",
-      "dateLabel": "October 22, 2026",
-      "time": "4:45 PM – 6:00 PM",
-      "location": "White Plains Public Library, Auditorium,Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for a relaxed yoga session.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17199706",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Home Energy Savings Workshop",
-      "category": "Workshop",
-      "date": "2026-10-22",
-      "dateLabel": "October 22, 2026",
-      "time": "6:30 PM",
-      "location": "Home Energy Savings Workshop, The City of White Plains and Sustainable Westchester present the Home Energy Savings Workshop at the White Plains Public Library on Thursday, October 22, 2026, at 6:30 pm.",
-      "summary": "Home Energy Savings Workshop is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4702&month=10&year=2026&day=22&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Home Energy Savings Workshop aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Chair Yoga with Maria Madhavi",
       "category": "Learning",
@@ -119,7 +94,7 @@
       "date": "2026-10-25",
       "dateLabel": "October 25, 2026",
       "time": "1:15 PM – 4:30 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "This comprehensive program is designed for people who already have Medicare, as well as those soon to be 65, planning their retirement, or assisting relatives…",
       "url": "https://calendar.whiteplainslibrary.org/event/16486528",
       "ctaLabel": "Open library page",
