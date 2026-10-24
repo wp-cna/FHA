@@ -1,43 +1,7 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Chair Yoga with Maria Madhavi",
-      "category": "Learning",
-      "date": "2026-10-23",
-      "dateLabel": "October 23, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16845366",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Earring Making Workshop",
-      "category": "Workshop",
-      "date": "2026-10-23",
-      "dateLabel": "October 23, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17124673",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Day of the Dead Altar-Making Workshop",
-      "category": "Workshop",
-      "date": "2026-10-23",
-      "dateLabel": "October 23, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Children in grades 2-5 with their families will create an altar honoring a very special person already departed.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17185566",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Howl-o-Ween Bash - Dog Park Event",
       "category": "Community",
@@ -752,7 +716,7 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "College Tours (Igloo): Syracuse University",
+      "title": "College Tours (in the Igloo)",
       "category": "Learning",
       "date": "2026-11-19",
       "dateLabel": "November 19, 2026",
@@ -825,6 +789,18 @@
       "source": "Westchester County Parks"
     },
     {
+      "title": "\"Functional\" 3D Printing",
+      "category": "Learning",
+      "date": "2026-11-21",
+      "dateLabel": "November 21, 2026",
+      "time": "1:00 PM – 1:45 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn about \"Functional\" 3D printing and how to use the Library's 3D printing services.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17722541",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Soap Making Class",
       "category": "Workshop",
       "date": "2026-11-22",
@@ -837,7 +813,7 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Igloo Explore - The Adirondacks",
+      "title": "Virtual Tours (in the Igloo)",
       "category": "Learning",
       "date": "2026-11-23",
       "dateLabel": "November 23, 2026",
@@ -1167,6 +1143,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Future is Female",
+      "category": "Learning",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "2:00 PM – 3:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "\"A novel both majestic and intimate, original and masterful&hellip;utterly devastating yet ultimately uplifting.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17722354",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Wellness Connection",
       "category": "Learning",
       "date": "2026-12-07",
@@ -1265,6 +1253,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Learn about 3D Printing (in the Igloo)",
+      "category": "Learning",
+      "date": "2026-12-10",
+      "dateLabel": "December 10, 2026",
+      "time": "12:15 PM – 12:45 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn about 3D printing and how to use the Library's 3D printing services.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17722356",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Unsung Heroes Awards",
@@ -1418,6 +1418,18 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Virtual Tours (in the Igloo)",
+      "category": "Learning",
+      "date": "2026-12-17",
+      "dateLabel": "December 17, 2026",
+      "time": "12:15 PM – 12:45 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This series of programs allows participants to virtually visit selected locations via the Igloo panoramic video room in the library.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17722364",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Conservation Board Meeting",
       "category": "Civic",
       "date": "2026-12-21",
@@ -1443,6 +1455,30 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "College Tours (in the Igloo)",
+      "category": "Learning",
+      "date": "2026-12-27",
+      "dateLabel": "December 27, 2026",
+      "time": "2:00 PM – 2:45 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This series of programs allows prospective students to virtually visit selected college campuses via the Igloo panoramic video room in the library.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17722399",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Bubble, Comedy and Music Show featuring Turtle Dance Music",
+      "category": "Learning",
+      "date": "2026-12-29",
+      "dateLabel": "December 29, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Turtle Dance Music presents a Bubble, Comedy and Music Show: Reading Rocks!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17691887",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "New Year's Eve Family Spectacular",
       "category": "Family",
       "date": "2026-12-31",
@@ -1454,6 +1490,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "New Year's Eve Family Spectacular aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Future is Female",
+      "category": "Learning",
+      "date": "2027-01-04",
+      "dateLabel": "January 4, 2027",
+      "time": "2:00 PM – 3:00 PM",
+      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "&ldquo;A heartwarming memoir that creatively reconstructs the author&rsquo;s grandmother&rsquo;s voice to tell the story of 4 generations of strong…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17722636",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Common Council Meeting",
