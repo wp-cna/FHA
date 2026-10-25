@@ -1,57 +1,7 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Howl-o-Ween Bash - Dog Park Event",
-      "category": "Community",
-      "date": "2026-10-24",
-      "dateLabel": "October 24, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "Bark Dog Park, White Plains, NY",
-      "summary": "Howl-o-Ween Bash - Dog Park Event is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4581&month=10&year=2026&day=24&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Howl-o-Ween Bash - Dog Park Event aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Family Fun Wellness Festival",
-      "category": "Family",
-      "date": "2026-10-24",
-      "dateLabel": "October 24, 2026",
-      "time": "12:00 PM – 4:00 PM",
-      "location": "Family Fun Wellness Festival as part of Red Ribbon Week, Saturday, October 24, 12pm-4pm, White Plains City Center, Apple Cinemas, 3rd Floor",
-      "summary": "Family Fun Wellness Festival is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4708&month=10&year=2026&day=24&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Family Fun Wellness Festival aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "United Nations Day 2026",
-      "category": "Learning",
-      "date": "2026-10-24",
-      "dateLabel": "October 24, 2026",
-      "time": "1:30 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Sponsored by the City of White Plains Youth Bureau.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16653798",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Freestyle Jam 2026",
-      "category": "Community",
-      "date": "2026-10-24",
-      "dateLabel": "October 24, 2026",
-      "time": "8:00 PM – 10:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "See TKA, George Lamond, Judy Torres, Shannon, The Cover Girls, Cynthia, Betty D, Coro, Soave and more.",
-      "url": "https://parksevents.westchestercountyny.gov/event/freestyle-jam-2026",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
     {
       "title": "Demystifying Medicare",
       "category": "Civic",
@@ -266,7 +216,7 @@
       "date": "2026-10-31",
       "dateLabel": "October 31, 2026",
       "time": "3:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Partner work is encouraged.",
       "url": "https://calendar.whiteplainslibrary.org/event/17106204",
       "ctaLabel": "Open library page",
