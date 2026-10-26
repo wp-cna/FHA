@@ -1,19 +1,7 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Demystifying Medicare",
-      "category": "Civic",
-      "date": "2026-10-25",
-      "dateLabel": "October 25, 2026",
-      "time": "1:15 PM – 4:30 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This comprehensive program is designed for people who already have Medicare, as well as those soon to be 65, planning their retirement, or assisting relatives…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16486528",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "White Plains Urban Renewal Agency Special Meeting",
       "category": "Civic",
