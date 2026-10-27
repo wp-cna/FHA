@@ -1,45 +1,7 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "White Plains Urban Renewal Agency Special Meeting",
-      "category": "Civic",
-      "date": "2026-10-26",
-      "dateLabel": "October 26, 2026",
-      "time": "2:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "White Plains Urban Renewal Agency Special Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4712&month=10&year=2026&day=26&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "White Plains Urban Renewal Agency Special Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Common Council Work Session",
-      "category": "Civic",
-      "date": "2026-10-26",
-      "dateLabel": "October 26, 2026",
-      "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Common Council Work Session is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4268&month=10&year=2026&day=26&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Common Council Work Session aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Girls Varsity Soccer vs. John Jay HS/ Van Wyck JHS",
-      "category": "Sports",
-      "date": "2026-10-26",
-      "dateLabel": "October 26, 2026",
-      "time": "6:30 PM",
-      "location": "White Plains HS, White Plains, NY",
-      "summary": "Girls Varsity Soccer hosts John Jay HS/ Van Wyck JHS at White Plains HS.",
-      "url": "/sports/soccer/",
-      "ctaLabel": "See the full schedule",
-      "source": "White Plains High School Athletics"
-    },
     {
       "title": "The Legend of Sleepy Hollow (History via Igloo)",
       "category": "Learning",
@@ -187,18 +149,6 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "23rd Annual Fall Westchester County Home Show",
-      "category": "Arts",
-      "date": "2026-10-31",
-      "dateLabel": "October 31, 2026",
-      "time": "11:00 AM – 5:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "As one of Westchester County’s premier home expos, this highly anticipated event continues to be a vital resource for homeowners, contractors, and industry…",
-      "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-10-31",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
       "title": "Salsa with Addie",
       "category": "Learning",
       "date": "2026-10-31",
@@ -209,18 +159,6 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17106204",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
-    },
-    {
-      "title": "23rd Annual Fall Westchester County Home Show",
-      "category": "Arts",
-      "date": "2026-11-01",
-      "dateLabel": "November 1, 2026",
-      "time": "11:00 AM – 4:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "As one of Westchester County’s premier home expos, this highly anticipated event continues to be a vital resource for homeowners, contractors, and industry…",
-      "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-11-01",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
     },
     {
       "title": "Future is Female",
@@ -433,17 +371,17 @@
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Veteran's Day Ceremony",
+      "title": "Veterans Day Ceremony",
       "category": "Community",
       "date": "2026-11-11",
       "dateLabel": "November 11, 2026",
       "time": "10:30 AM",
-      "location": "Veteran's Memorial Garden located behind White Plains City Hall, 255 Main St., White Plains, NY",
-      "summary": "Veteran's Day Ceremony is listed on the official White Plains city calendar.",
+      "location": "Veterans Memorial Garden located behind White Plains City Hall, 255 Main St., White Plains, NY",
+      "summary": "Veterans Day Ceremony is listed on the official White Plains city calendar.",
       "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4562&month=11&year=2026&day=11&calType=0",
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
-      "summary_es": "Veteran's Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+      "summary_es": "Veterans Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Repair Cafe Teen Volunteer Training",
@@ -713,18 +651,6 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17677767",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
-    },
-    {
-      "title": "Miller House Open House",
-      "category": "Parks & Recreation",
-      "date": "2026-11-21",
-      "dateLabel": "November 21, 2026",
-      "time": "11:00 AM – 1:00 PM",
-      "location": "Miller House, 140 Virginia Road, White Plains, NY",
-      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
-      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-11-21",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
     },
     {
       "title": "\"Functional\" 3D Printing",
@@ -1118,18 +1044,6 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Derek Hough Dance for the Holidays",
-      "category": "Community",
-      "date": "2026-12-07",
-      "dateLabel": "December 7, 2026",
-      "time": "8:00 PM – 10:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "This event is a joyous celebration of the most festive time of the year!",
-      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
-    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-08",
@@ -1253,18 +1167,6 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Miller House Open House",
-      "category": "Parks & Recreation",
-      "date": "2026-12-12",
-      "dateLabel": "December 12, 2026",
-      "time": "11:00 AM – 1:00 PM",
-      "location": "Miller House, 140 Virginia Road, White Plains, NY",
-      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
-      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-12-12",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
@@ -1680,6 +1582,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "At the Farm: VR Search and Find! copy",
+      "category": "Learning",
+      "date": "2027-02-23",
+      "dateLabel": "February 23, 2027",
+      "time": "12:30 PM – 1:00 PM",
+      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "For children ages 2+ and their families.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17629704",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Conservation Board Meeting",
