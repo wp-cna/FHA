@@ -1,31 +1,7 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "The Legend of Sleepy Hollow (History via Igloo)",
-      "category": "Learning",
-      "date": "2026-10-27",
-      "dateLabel": "October 27, 2026",
-      "time": "12:00 PM – 12:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn about Washington Irving's \"The Legend of Sleepy Hollow\" and how it is a part of Westchester's local history.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15261810",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Cosmic Writers Presents: Making a Monster, Adopting an Alien",
-      "category": "Workshop",
-      "date": "2026-10-27",
-      "dateLabel": "October 27, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "There are monsters lurking inside us all, begging for us to tell their stories.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16570538",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -64,13 +40,13 @@
       "source": "White Plains Public Library"
     },
     {
-      "title": "Navigating Your Career with Confidence",
+      "title": "Navigating Your Career Search Without Burnout",
       "category": "Learning",
       "date": "2026-10-28",
       "dateLabel": "October 28, 2026",
       "time": "6:00 PM – 7:00 PM",
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "A successful career search starts with setting realistic goals and creating a manageable routine rather than applying to every opportunity you see.",
+      "summary": "Please join us to learn how to balance consistent effort with self-care.",
       "url": "https://calendar.whiteplainslibrary.org/event/16482236",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -98,6 +74,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17268750",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Girls Varsity Field Hockey at John Jay HS/ Van Wyck JHS",
+      "category": "Sports",
+      "date": "2026-10-29",
+      "dateLabel": "October 29, 2026",
+      "time": "4:30 PM",
+      "location": "JJ Turf",
+      "summary": "Girls Varsity Field Hockey travels to face John Jay HS/ Van Wyck JHS at JJ Turf.",
+      "url": "/sports/field-hockey/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "Yoga for Teens",
@@ -149,6 +137,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "23rd Annual Fall Westchester County Home Show",
+      "category": "Arts",
+      "date": "2026-10-31",
+      "dateLabel": "October 31, 2026",
+      "time": "11:00 AM – 5:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "As one of Westchester County’s premier home expos, this highly anticipated event continues to be a vital resource for homeowners, contractors, and industry…",
+      "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-10-31",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
       "title": "Salsa with Addie",
       "category": "Learning",
       "date": "2026-10-31",
@@ -159,6 +159,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17106204",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "23rd Annual Fall Westchester County Home Show",
+      "category": "Arts",
+      "date": "2026-11-01",
+      "dateLabel": "November 1, 2026",
+      "time": "11:00 AM – 4:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "As one of Westchester County’s premier home expos, this highly anticipated event continues to be a vital resource for homeowners, contractors, and industry…",
+      "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-11-01",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Future is Female",
@@ -562,7 +574,7 @@
       "dateLabel": "November 18, 2026",
       "time": "5:00 PM – 5:45 PM",
       "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn to manage anger before it leads to destructive behaviors.",
+      "summary": "Join author and educator Dave Wolffe to learn about anger management.",
       "url": "https://calendar.whiteplainslibrary.org/event/17653163",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -651,6 +663,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17677767",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Miller House Open House",
+      "category": "Parks & Recreation",
+      "date": "2026-11-21",
+      "dateLabel": "November 21, 2026",
+      "time": "11:00 AM – 1:00 PM",
+      "location": "Miller House, 140 Virginia Road, White Plains, NY",
+      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
+      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-11-21",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "\"Functional\" 3D Printing",
@@ -1044,6 +1068,18 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Derek Hough Dance for the Holidays",
+      "category": "Community",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "8:00 PM – 10:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "This event is a joyous celebration of the most festive time of the year!",
+      "url": "https://parksevents.westchestercountyny.gov/event/derek-hough-dance-for-the-holidays",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-08",
@@ -1167,6 +1203,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Miller House Open House",
+      "category": "Parks & Recreation",
+      "date": "2026-12-12",
+      "dateLabel": "December 12, 2026",
+      "time": "11:00 AM – 1:00 PM",
+      "location": "Miller House, 140 Virginia Road, White Plains, NY",
+      "summary": "Drop-in to visit the former home of the Ann and Elijah Miller family, an average colonial Westchester family whose lives were changed forever when Washington and…",
+      "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-12-12",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
     },
     {
       "title": "Santa's Mailbox",
@@ -1471,7 +1519,7 @@
       "summary_es": "CDBG - 2027-2028 Annual Action Plan Public Hearing 1 aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "Who am I",
+      "title": "Who am I? A Poetry writing and Open Mic Experience",
       "category": "Learning",
       "date": "2027-02-01",
       "dateLabel": "February 1, 2027",
