@@ -1,56 +1,7 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-10-28",
-      "dateLabel": "October 28, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4689&month=10&year=2026&day=28&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Healthy Relationships",
-      "category": "Learning",
-      "date": "2026-10-28",
-      "dateLabel": "October 28, 2026",
-      "time": "3:30 PM – 4:30 PM",
-      "location": "White Plains Public Library, Edge Mixing Area, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for this discussion series on healthy relationship elements with My Sister's Place.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17252540",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Battle of White Plains (History in the Igloo)",
-      "category": "Learning",
-      "date": "2026-10-28",
-      "dateLabel": "October 28, 2026",
-      "time": "5:00 PM – 5:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Journey back in time to the Battle of White Plains, a pivotal moment in the American Revolutionary War.",
-      "url": "https://calendar.whiteplainslibrary.org/event/15261886",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Navigating Your Career Search Without Burnout",
-      "category": "Learning",
-      "date": "2026-10-28",
-      "dateLabel": "October 28, 2026",
-      "time": "6:00 PM – 7:00 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Please join us to learn how to balance consistent effort with self-care.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16482236",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Genealogy: Genealogical Thinking",
       "category": "Learning",
@@ -1441,6 +1392,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "A Century of Homes:",
+      "category": "Civic",
+      "date": "2027-01-14",
+      "dateLabel": "January 14, 2027",
+      "time": "6:00 PM – 7:45 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Have you ever wondered why your house has that weird nook that seems to serve no purpose?",
+      "url": "https://calendar.whiteplainslibrary.org/event/17756841",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Annual Pollinators of White Plains",
