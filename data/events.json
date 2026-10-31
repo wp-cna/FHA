@@ -1,44 +1,7 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Chair Yoga with Maria Madhavi",
-      "category": "Learning",
-      "date": "2026-10-30",
-      "dateLabel": "October 30, 2026",
-      "time": "11:00 AM – 12:00 PM",
-      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16845367",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Hispanic Heritage Luncheon",
-      "category": "Parks & Recreation",
-      "date": "2026-10-30",
-      "dateLabel": "October 30, 2026",
-      "time": "11:30 AM – 1:30 PM",
-      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
-      "summary": "Hispanic Heritage Luncheon is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4558&month=10&year=2026&day=30&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Hispanic Heritage Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Cooking for Teens",
-      "category": "Learning",
-      "date": "2026-10-30",
-      "dateLabel": "October 30, 2026",
-      "time": "4:30 PM – 5:30 PM",
-      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "A hands-on cooking lesson with Chef Giovanni Green.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17485705",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "23rd Annual Fall Westchester County Home Show",
       "category": "Arts",
@@ -1422,6 +1385,18 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Earring Making Workshop",
+      "category": "Workshop",
+      "date": "2027-01-22",
+      "dateLabel": "January 22, 2027",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17781405",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "White Bird: Holocaust Remembrance Day Discussion",
       "category": "Learning",
       "date": "2027-01-24",
@@ -1570,6 +1545,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Earring Making Workshop",
+      "category": "Workshop",
+      "date": "2027-02-19",
+      "dateLabel": "February 19, 2027",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17781406",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Conservation Board Meeting",
