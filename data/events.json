@@ -1,19 +1,7 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "23rd Annual Fall Westchester County Home Show",
-      "category": "Arts",
-      "date": "2026-11-01",
-      "dateLabel": "November 1, 2026",
-      "time": "11:00 AM – 4:00 PM",
-      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
-      "summary": "As one of Westchester County’s premier home expos, this highly anticipated event continues to be a vital resource for homeowners, contractors, and industry…",
-      "url": "https://parksevents.westchestercountyny.gov/event/23rd-annual-fall-westchester-county-home-show/2026-11-01",
-      "ctaLabel": "Open county parks page",
-      "source": "Westchester County Parks"
-    },
     {
       "title": "Future is Female",
       "category": "Learning",
