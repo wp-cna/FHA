@@ -1,44 +1,7 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Future is Female",
-      "category": "Learning",
-      "date": "2026-11-02",
-      "dateLabel": "November 2, 2026",
-      "time": "2:00 PM – 3:00 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "A Best Book of the Year: The New York Times Book Review , The New Yorker , and Vanity Fair .",
-      "url": "https://calendar.whiteplainslibrary.org/event/17115851",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Repair Cafe Teen Volunteer Training",
-      "category": "Workshop",
-      "date": "2026-11-02",
-      "dateLabel": "November 2, 2026",
-      "time": "4:00 PM – 5:30 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We're looking for teens who want to learn skills and help repair fabric items at the White Plains Repair Cafe.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17221868",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Common Council Meeting",
-      "category": "Civic",
-      "date": "2026-11-02",
-      "dateLabel": "November 2, 2026",
-      "time": "7:00 PM",
-      "location": "Common Council Chamber, 255 Main Street, 2nd Floor, White Plains NY 10601",
-      "summary": "Common Council Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3610&month=11&year=2026&day=2&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -1058,6 +1021,18 @@
       "url": "https://parksevents.westchestercountyny.gov/event/miller-house-open-house-2/2026-12-12",
       "ctaLabel": "Open county parks page",
       "source": "Westchester County Parks"
+    },
+    {
+      "title": "Boys Varsity Basketball vs. Harrison",
+      "category": "Sports",
+      "date": "2026-12-12",
+      "dateLabel": "December 12, 2026",
+      "time": "1:00 PM",
+      "location": "White Plains High School, White Plains, NY",
+      "summary": "Boys Varsity Basketball hosts Harrison at White Plains High School.",
+      "url": "/sports/basketball/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "Santa's Mailbox",
