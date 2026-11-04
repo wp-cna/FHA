@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -1261,6 +1261,18 @@
       "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Girls Varsity Basketball vs. Harrison",
+      "category": "Sports",
+      "date": "2027-01-14",
+      "dateLabel": "January 14, 2027",
+      "time": "4:30 PM",
+      "location": "White Plains High School, White Plains, NY",
+      "summary": "Girls Varsity Basketball hosts Harrison at White Plains High School.",
+      "url": "/sports/basketball/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
+    },
+    {
       "title": "A Century of Homes:",
       "category": "Civic",
       "date": "2027-01-14",
@@ -1322,6 +1334,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Boys Varsity Swimming/Diving at Harrison",
+      "category": "Sports",
+      "date": "2027-01-20",
+      "dateLabel": "January 20, 2027",
+      "time": "5:00 PM",
+      "location": "LMK Pool",
+      "summary": "Boys Varsity Swimming/Diving travels to face Harrison at LMK Pool.",
+      "url": "/sports/swimming-diving/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "Earring Making Workshop",
