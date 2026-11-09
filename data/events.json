@@ -1,19 +1,7 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Pop Up Friends of the Library Book Sale",
-      "category": "Civic",
-      "date": "2026-11-08",
-      "dateLabel": "November 8, 2026",
-      "time": "1:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Café,Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "The Friends of the Library are having a special book sale!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17445438",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Community Blood Pressure Screening",
       "category": "Learning",
