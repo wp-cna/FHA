@@ -1,45 +1,7 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Community Blood Pressure Screening",
-      "category": "Learning",
-      "date": "2026-11-09",
-      "dateLabel": "November 9, 2026",
-      "time": "4:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Lobby, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Students from New York College School of Medicine will provide free, walk-up blood pressure screening.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17685472",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Community Forum: Waller Avenue Pocket Park",
-      "category": "Community",
-      "date": "2026-11-09",
-      "dateLabel": "November 9, 2026",
-      "time": "7:00 PM – 8:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Community Forum: Waller Avenue Pocket Park is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4706&month=11&year=2026&day=9&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Community Forum: Waller Avenue Pocket Park aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Design Review Board",
-      "category": "Civic",
-      "date": "2026-11-09",
-      "dateLabel": "November 9, 2026",
-      "time": "7:00 PM – 9:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Design Review Board is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4716&month=11&year=2026&day=9&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Design Review Board aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Step into a Safari: VR Search and Find!",
       "category": "Learning",
@@ -814,6 +776,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Affordable Housing in White Plains",
+      "category": "Civic",
+      "date": "2026-12-08",
+      "dateLabel": "December 8, 2026",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Sponsored by the City of White Plains Planning Department.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17385101",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "How to Help Cats in Your Neighborhood",
       "category": "Civic",
       "date": "2026-12-08",
@@ -1188,6 +1162,18 @@
       "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Affordable Housing in White Plains",
+      "category": "Civic",
+      "date": "2027-01-13",
+      "dateLabel": "January 13, 2027",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Sponsored by the City of White Plains Planning Department.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17385102",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Girls Varsity Basketball vs. Harrison",
       "category": "Sports",
       "date": "2027-01-14",
@@ -1273,6 +1259,18 @@
       "url": "/sports/swimming-diving/",
       "ctaLabel": "See the full schedule",
       "source": "White Plains High School Athletics"
+    },
+    {
+      "title": "Successfully Navigating College Admissions",
+      "category": "Learning",
+      "date": "2027-01-20",
+      "dateLabel": "January 20, 2027",
+      "time": "8:00 PM – 9:30 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17863107",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Earring Making Workshop",
@@ -1398,6 +1396,18 @@
       "summary_es": "Intergenerational Valentine's Day Dinner Dance aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Affordable Housing in White Plains",
+      "category": "Civic",
+      "date": "2027-02-11",
+      "dateLabel": "February 11, 2027",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Sponsored by the City of White Plains Planning Department.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17385103",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Conservation Board Meeting",
       "category": "Civic",
       "date": "2027-02-15",
@@ -1457,6 +1467,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
       "url": "https://calendar.whiteplainslibrary.org/event/17781406",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Successfully Navigating College Admissions",
+      "category": "Learning",
+      "date": "2027-02-24",
+      "dateLabel": "February 24, 2027",
+      "time": "8:30 PM – 10:00 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17863135",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
