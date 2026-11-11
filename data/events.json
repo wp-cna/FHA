@@ -1,56 +1,7 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Step into a Safari: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-11-10",
-      "dateLabel": "November 10, 2026",
-      "time": "12:30 PM – 1:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16636152",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Fiber: How to Get it and Why it Matters",
-      "category": "Learning",
-      "date": "2026-11-10",
-      "dateLabel": "November 10, 2026",
-      "time": "1:00 PM – 2:30 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn how fiber supports overall health, helps manage diabetes, promotes heart health, and can be incorporated into everyday meals.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16813453",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Intro to Google Sheets, Part 1",
-      "category": "Learning",
-      "date": "2026-11-10",
-      "dateLabel": "November 10, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Google Sheets is a free online spreadsheet program.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17523523",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Sugar: The Play",
-      "category": "Parks & Recreation",
-      "date": "2026-11-10",
-      "dateLabel": "November 10, 2026",
-      "time": "5:00 PM – 8:00 PM",
-      "location": "White Plains Community Center, 65 Mitchell Place, White Plains, NY",
-      "summary": "Sugar: The Play is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4575&month=11&year=2026&day=10&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Sugar: The Play aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -76,6 +27,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Veterans Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Board of Ethics Meeting",
+      "category": "Civic",
+      "date": "2026-11-13",
+      "dateLabel": "November 13, 2026",
+      "time": "3:00 PM",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Board of Ethics Meeting is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4717&month=11&year=2026&day=13&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Board of Ethics Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Repair Cafe Teen Volunteer Training",
@@ -1010,6 +974,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Holiday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Smiles Through Slime",
+      "category": "Workshop",
+      "date": "2026-12-15",
+      "dateLabel": "December 15, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Galaxy Hall, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Smiles Through Slime is a fun, hands-on workshop where kids can make their own slime to take home while learning about the science behind it!",
+      "url": "https://calendar.whiteplainslibrary.org/event/17701928",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Planning Board Meeting",
