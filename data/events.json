@@ -1,33 +1,7 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-11-11",
-      "dateLabel": "November 11, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4691&month=11&year=2026&day=11&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Veterans Day Ceremony",
-      "category": "Community",
-      "date": "2026-11-11",
-      "dateLabel": "November 11, 2026",
-      "time": "10:30 AM",
-      "location": "Veterans Memorial Garden located behind White Plains City Hall, 255 Main St., White Plains, NY",
-      "summary": "Veterans Day Ceremony is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4562&month=11&year=2026&day=11&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Veterans Day Ceremony aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Board of Ethics Meeting",
       "category": "Civic",
@@ -285,6 +259,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17139841",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Sip & Sew at Loola Doola Collective",
+      "category": "Learning",
+      "date": "2026-11-20",
+      "dateLabel": "November 20, 2026",
+      "time": "6:00 PM – 8:00 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Downtown Meetups Presents:Sip & Sew at Loola Doola CollectiveFriday, November 20 | 6 pm – 8 pm Beginner-friendly sewing, drinks & light bites $5 RSVP | Limited…",
+      "url": "https://wpbid.com/events/sip-sew-at-loola-doola-collective/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
     },
     {
       "title": "Repair Cafe",
