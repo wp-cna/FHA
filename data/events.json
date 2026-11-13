@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
@@ -267,7 +267,7 @@
       "dateLabel": "November 20, 2026",
       "time": "6:00 PM – 8:00 PM",
       "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Downtown Meetups Presents:Sip & Sew at Loola Doola CollectiveFriday, November 20 | 6 pm – 8 pm Beginner-friendly sewing, drinks & light bites $5 RSVP | Limited…",
+      "summary": "Downtown Meetups Presents:Sip & Sew at Loola Doola CollectiveFriday, November 20 | 6 pm – 8 pmJoin us for Sip & Sew at Loola Doola Collective!",
       "url": "https://wpbid.com/events/sip-sew-at-loola-doola-collective/",
       "ctaLabel": "Open event page",
       "source": "White Plains Business Improvement District"
@@ -432,6 +432,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Thanksgiving - City Offices Closed",
+      "category": "Community",
+      "date": "2026-11-26",
+      "dateLabel": "November 26, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Thanksgiving - City Offices Closed is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4718&month=11&year=2026&day=26&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Thanksgiving - City Offices Closed aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Santa's Mailbox",
@@ -1024,6 +1037,19 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Christmas - City Offices Closed",
+      "category": "Community",
+      "date": "2026-12-25",
+      "dateLabel": "December 25, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Christmas - City Offices Closed is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4719&month=12&year=2026&day=25&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Christmas - City Offices Closed aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "College Tours (in the Igloo)",
       "category": "Learning",
       "date": "2026-12-27",
@@ -1071,6 +1097,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "New Year's Eve Family Spectacular aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "New Year's Day - City Offices Closed",
+      "category": "Community",
+      "date": "2027-01-01",
+      "dateLabel": "January 1, 2027",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "New Year's Day - City Offices Closed is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4725&month=1&year=2027&day=1&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "New Year's Day - City Offices Closed aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Common Council Meeting",
@@ -1170,6 +1209,18 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17432643",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Martin Luther King Jr. Day - City Offices Closed",
+      "category": "Community",
+      "date": "2027-01-18",
+      "dateLabel": "January 18, 2027",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Martin Luther King Jr.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4723&month=1&year=2027&day=18&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains"
     },
     {
       "title": "Conservation Board Meeting",
@@ -1368,6 +1419,19 @@
       "url": "https://calendar.whiteplainslibrary.org/event/17385103",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
+    },
+    {
+      "title": "Presidents Day - City Offices Closed",
+      "category": "Community",
+      "date": "2027-02-15",
+      "dateLabel": "February 15, 2027",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "Presidents Day - City Offices Closed is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4724&month=2&year=2027&day=15&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "Presidents Day - City Offices Closed aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Conservation Board Meeting",
