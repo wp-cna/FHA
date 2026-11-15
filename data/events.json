@@ -1,31 +1,7 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Repair Cafe Teen Volunteer Training",
-      "category": "Workshop",
-      "date": "2026-11-14",
-      "dateLabel": "November 14, 2026",
-      "time": "10:00 AM – 11:30 AM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We're looking for teens who want to learn skills and help repair fabric items at the White Plains Repair Cafe.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17221869",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Salsa with Addie",
-      "category": "Learning",
-      "date": "2026-11-14",
-      "dateLabel": "November 14, 2026",
-      "time": "3:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Partner work is encouraged.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17640529",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "RECALCULATING",
       "category": "Learning",
@@ -528,7 +504,7 @@
       "date": "2026-11-30",
       "dateLabel": "November 30, 2026",
       "time": "6:30 PM – 7:30 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "There are over 2,000 four-year colleges in the United States for students to consider.",
       "url": "https://calendar.whiteplainslibrary.org/event/17325032",
       "ctaLabel": "Open library page",
