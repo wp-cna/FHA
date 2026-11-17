@@ -1,69 +1,7 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Last Day to Donate for Youth Bureau Thanksgiving Food Drive",
-      "category": "Parks & Recreation",
-      "date": "2026-11-16",
-      "dateLabel": "November 16, 2026",
-      "time": "",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Last Day to Donate for Youth Bureau Thanksgiving Food Drive is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4715&month=11&year=2026&day=16&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Last Day to Donate for Youth Bureau Thanksgiving Food Drive aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Repair Cafe Teen Volunteer Training",
-      "category": "Workshop",
-      "date": "2026-11-16",
-      "dateLabel": "November 16, 2026",
-      "time": "4:00 PM – 5:30 PM",
-      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We're looking for teens who want to learn skills and help repair fabric items at the White Plains Repair Cafe.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17221870",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "WOW Factor: Developing Your Personal Brand",
-      "category": "Workshop",
-      "date": "2026-11-16",
-      "dateLabel": "November 16, 2026",
-      "time": "6:00 PM – 7:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We will be hosting the following program in partnership with The College of Westchester What is YOUR personal brand saying about you?",
-      "url": "https://calendar.whiteplainslibrary.org/event/16967770",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Ten Steps to Start Your Business",
-      "category": "Workshop",
-      "date": "2026-11-16",
-      "dateLabel": "November 16, 2026",
-      "time": "7:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Virtual, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Please join us to learn: Ten Steps to Start a Business; Personal Assessment; Writing a Business Plan, Choosing Your Business Structure: Pros and Cons of Sole…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17213597",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Conservation Board Meeting",
-      "category": "Civic",
-      "date": "2026-11-16",
-      "dateLabel": "November 16, 2026",
-      "time": "7:30 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Conservation Board Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4147&month=11&year=2026&day=16&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Conservation Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Transportation Commission Meeting",
       "category": "Civic",
