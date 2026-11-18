@@ -1,81 +1,7 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Transportation Commission Meeting",
-      "category": "Civic",
-      "date": "2026-11-17",
-      "dateLabel": "November 17, 2026",
-      "time": "9:15 AM – 10:15 AM",
-      "location": "City Hall Common Council Chambers, White Plains, NY",
-      "summary": "Transportation Commission Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3662&month=11&year=2026&day=17&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Transportation Commission Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Intro to Google Sheets, Part 2",
-      "category": "Learning",
-      "date": "2026-11-17",
-      "dateLabel": "November 17, 2026",
-      "time": "4:00 PM – 5:15 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "For people who already know how to create a simple spreadsheet.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17523931",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Graphic Novel Chat & BINGO: Kitty Quest by Phil Corbett",
-      "category": "Learning",
-      "date": "2026-11-17",
-      "dateLabel": "November 17, 2026",
-      "time": "5:00 PM – 6:00 PM",
-      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for some fun by talking about Kitty Quest by Phil Corbett!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17691270",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Favorite Holiday Soups & Sweets",
-      "category": "Learning",
-      "date": "2026-11-17",
-      "dateLabel": "November 17, 2026",
-      "time": "5:30 PM – 6:30 PM",
-      "location": "White Plains Public Library, Ask Staff For More Information, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "In this virtual cooking class, you'll learn how to make a cozy pot of curried pumpkin soup.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17602717",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "White Plains Beautification Foundation",
-      "category": "Learning",
-      "date": "2026-11-17",
-      "dateLabel": "November 17, 2026",
-      "time": "6:00 PM – 8:00 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Contact the Foundation at info@wpbf.org or 914-683-5108 for details or visit their website at https://wpbf.org",
-      "url": "https://calendar.whiteplainslibrary.org/event/17504027",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Planning Board Meeting",
-      "category": "Civic",
-      "date": "2026-11-17",
-      "dateLabel": "November 17, 2026",
-      "time": "7:00 PM",
-      "location": "White Plains, White Plains, NY",
-      "summary": "Planning Board Meeting is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4359&month=11&year=2026&day=17&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
     {
       "title": "Court Street Market",
       "category": "Food & Downtown",
@@ -88,6 +14,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "SCORE Meeting",
+      "category": "Civic",
+      "date": "2026-11-18",
+      "dateLabel": "November 18, 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Monthly SCORE Chapter Meeting",
+      "url": "https://calendar.whiteplainslibrary.org/event/17944834",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Anger Management for Teens",
@@ -110,18 +48,6 @@
       "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "\"Personal Branding - Are You Your Own CEO\", presented by Jennefer Witter and hosted by Sister's Village E4th.",
       "url": "https://calendar.whiteplainslibrary.org/event/17560127",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Successfully Navigating College Admissions",
-      "category": "Learning",
-      "date": "2026-11-18",
-      "dateLabel": "November 18, 2026",
-      "time": "7:30 PM – 8:30 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
-      "url": "https://calendar.whiteplainslibrary.org/event/16748714",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -640,6 +566,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "WOW Factor: Developing Your Personal Brand",
+      "category": "Workshop",
+      "date": "2026-12-08",
+      "dateLabel": "December 8, 2026",
+      "time": "2:00 PM – 3:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We will be hosting the following program in partnership with The College of Westchester What is YOUR personal brand saying about you?",
+      "url": "https://calendar.whiteplainslibrary.org/event/17939920",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Affordable Housing in White Plains",
       "category": "Civic",
       "date": "2026-12-08",
@@ -1039,6 +977,42 @@
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Slam Dunk Showcase x 9th Crusader Classic",
+      "category": "Community",
+      "date": "2027-01-08",
+      "dateLabel": "January 8, 2027",
+      "time": "4:00 PM – 9:30 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "Friday, Saturday, and Sunday, January 8-10, 2027, at the historic Westchester County Center in White Plains, New York.",
+      "url": "https://parksevents.westchestercountyny.gov/event/slam-dunk-showcase-x-9th-crusader-classic/2027-01-08",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
+      "title": "Slam Dunk Showcase x 9th Crusader Classic",
+      "category": "Community",
+      "date": "2027-01-09",
+      "dateLabel": "January 9, 2027",
+      "time": "12:00 PM – 9:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "Friday, Saturday, and Sunday, January 8-10, 2027, at the historic Westchester County Center in White Plains, New York.",
+      "url": "https://parksevents.westchestercountyny.gov/event/slam-dunk-showcase-x-9th-crusader-classic-2",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
+      "title": "Slam Dunk Showcase x 9th Crusader Classic",
+      "category": "Community",
+      "date": "2027-01-10",
+      "dateLabel": "January 10, 2027",
+      "time": "12:00 PM – 7:00 PM",
+      "location": "Westchester County Center, 198 Central Avenue, White Plains, NY, 10606",
+      "summary": "Friday, Saturday, and Sunday, January 8-10, 2027, at the historic Westchester County Center in White Plains, New York.",
+      "url": "https://parksevents.westchestercountyny.gov/event/slam-dunk-showcase-x-9th-crusader-classic-3",
+      "ctaLabel": "Open county parks page",
+      "source": "Westchester County Parks"
+    },
+    {
       "title": "Clean Energy Workforce Opportunity",
       "category": "Workshop",
       "date": "2027-01-12",
@@ -1173,18 +1147,6 @@
       "url": "/sports/swimming-diving/",
       "ctaLabel": "See the full schedule",
       "source": "White Plains High School Athletics"
-    },
-    {
-      "title": "Successfully Navigating College Admissions",
-      "category": "Learning",
-      "date": "2027-01-20",
-      "dateLabel": "January 20, 2027",
-      "time": "8:00 PM – 9:30 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17863107",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
     },
     {
       "title": "Earring Making Workshop",
@@ -1394,18 +1356,6 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
       "url": "https://calendar.whiteplainslibrary.org/event/17781406",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Successfully Navigating College Admissions",
-      "category": "Learning",
-      "date": "2027-02-24",
-      "dateLabel": "February 24, 2027",
-      "time": "8:30 PM – 10:00 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
-      "url": "https://calendar.whiteplainslibrary.org/event/17863135",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
