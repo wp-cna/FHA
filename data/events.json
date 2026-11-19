@@ -1,64 +1,15 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
     {
-      "title": "Court Street Market",
-      "category": "Food & Downtown",
-      "date": "2026-11-18",
-      "dateLabel": "November 18, 2026",
-      "time": "8:30 AM – 3:00 PM",
-      "location": "Court Street Market, Variety of vendors every Wednesday from 8:30am until 3:30pm",
-      "summary": "Court Street Market is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4692&month=11&year=2026&day=18&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Court Street Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "SCORE Meeting",
-      "category": "Civic",
-      "date": "2026-11-18",
-      "dateLabel": "November 18, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Monthly SCORE Chapter Meeting",
-      "url": "https://calendar.whiteplainslibrary.org/event/17944834",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Anger Management for Teens",
-      "category": "Learning",
-      "date": "2026-11-18",
-      "dateLabel": "November 18, 2026",
-      "time": "5:00 PM – 5:45 PM",
-      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join author and educator Dave Wolffe to learn about anger management.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17653163",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Personal Branding: Are You Your Own CEO?",
-      "category": "Civic",
-      "date": "2026-11-18",
-      "dateLabel": "November 18, 2026",
-      "time": "6:00 PM – 7:30 PM",
-      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "\"Personal Branding - Are You Your Own CEO\", presented by Jennefer Witter and hosted by Sister's Village E4th.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17560127",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "College Tours (in the Igloo)",
+      "title": "Virtual College Tours (in the Igloo)",
       "category": "Learning",
       "date": "2026-11-19",
       "dateLabel": "November 19, 2026",
       "time": "4:30 PM – 5:00 PM",
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This series of programs allows prospective students to virtually visit selected college campuses via the Igloo panoramic video room in the library.",
+      "summary": "This series of programs allows prospective students to virtually visit selected college campuses via the Igloo panoramic video room in the Library.",
       "url": "https://calendar.whiteplainslibrary.org/event/17498114",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -143,7 +94,7 @@
       "dateLabel": "November 21, 2026",
       "time": "1:00 PM – 1:45 PM",
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Learn about \"Functional\" 3D printing and how to use the Library's 3D printing services.",
+      "summary": "Learn about \"functional\" 3D printing and how to use the Library's 3D printing services.",
       "url": "https://calendar.whiteplainslibrary.org/event/17722541",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -1149,6 +1100,18 @@
       "source": "White Plains High School Athletics"
     },
     {
+      "title": "Successfully Navigating College Admissions",
+      "category": "Learning",
+      "date": "2027-01-20",
+      "dateLabel": "January 20, 2027",
+      "time": "8:00 PM – 9:30 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17863107",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Earring Making Workshop",
       "category": "Workshop",
       "date": "2027-01-22",
@@ -1360,6 +1323,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Successfully Navigating College Admissions",
+      "category": "Learning",
+      "date": "2027-02-24",
+      "dateLabel": "February 24, 2027",
+      "time": "8:30 PM – 10:00 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17863135",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Genealogy: Kiss Me, I'm Irish!",
       "category": "Learning",
       "date": "2027-03-04",
@@ -1422,6 +1397,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Successfully Navigating College Admissions",
+      "category": "Learning",
+      "date": "2027-03-17",
+      "dateLabel": "March 17, 2027",
+      "time": "9:00 PM – 10:30 PM",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17863142",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "CDBG - Annual Action Plan 2027-2028 - Public Hearing 2",
