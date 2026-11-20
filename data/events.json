@@ -1,26 +1,14 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Virtual College Tours (in the Igloo)",
-      "category": "Learning",
-      "date": "2026-11-19",
-      "dateLabel": "November 19, 2026",
-      "time": "4:30 PM – 5:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This series of programs allows prospective students to virtually visit selected college campuses via the Igloo panoramic video room in the Library.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17498114",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Art 101 *Name Mandalas*",
       "category": "Workshop",
       "date": "2026-11-20",
       "dateLabel": "November 20, 2026",
       "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Turn your name into a work of art!",
       "url": "https://calendar.whiteplainslibrary.org/event/17139841",
       "ctaLabel": "Open library page",
@@ -391,6 +379,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Creative Writing Workshop for Grades 3-6",
+      "category": "Workshop",
+      "date": "2026-12-03",
+      "dateLabel": "December 3, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Grades 3-6 are invited to drop in for a creative writing workshop featuring a different topic each week.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17382437",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-04",
@@ -615,6 +615,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "Creative Writing Workshop for Grades 3-6",
+      "category": "Workshop",
+      "date": "2026-12-10",
+      "dateLabel": "December 10, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Grades 3-6 are invited to drop in for a creative writing workshop featuring a different topic each week.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17382438",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Unsung Heroes Awards",
       "category": "Learning",
       "date": "2026-12-10",
@@ -790,6 +802,18 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Storybook Dancing with Steffi Nossen School of Dance",
+      "category": "Learning",
+      "date": "2026-12-17",
+      "dateLabel": "December 17, 2026",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Steffi Nossen School of Dance presents Storybook Dancing, a fun, movement-filled program for younger children!",
+      "url": "https://calendar.whiteplainslibrary.org/event/15908585",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Virtual Tours (in the Igloo)",
       "category": "Learning",
       "date": "2026-12-17",
@@ -798,6 +822,18 @@
       "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "This series of programs allows participants to virtually visit selected locations via the Igloo panoramic video room in the library.",
       "url": "https://calendar.whiteplainslibrary.org/event/17722364",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Creative Writing Workshop for Grades 3-6",
+      "category": "Workshop",
+      "date": "2026-12-17",
+      "dateLabel": "December 17, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Rotary Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Grades 3-6 are invited to drop in for a creative writing workshop featuring a different topic each week.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17382439",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -840,12 +876,12 @@
       "summary_es": "Christmas - City Offices Closed aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
-      "title": "College Tours (in the Igloo)",
+      "title": "Virtual College Tours (in the Igloo)",
       "category": "Learning",
       "date": "2026-12-27",
       "dateLabel": "December 27, 2026",
       "time": "2:00 PM – 2:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
+      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "This series of programs allows prospective students to virtually visit selected college campuses via the Igloo panoramic video room in the library.",
       "url": "https://calendar.whiteplainslibrary.org/event/17722399",
       "ctaLabel": "Open library page",
@@ -926,6 +962,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Zoning Board of Appeals aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "The Feeding Circle Baby Café",
+      "category": "Civic",
+      "date": "2027-01-08",
+      "dateLabel": "January 8, 2027",
+      "time": "11:45 AM – 1:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17966266",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Slam Dunk Showcase x 9th Crusader Classic",
@@ -1197,6 +1245,18 @@
       "source": "White Plains Public Library"
     },
     {
+      "title": "The Feeding Circle Baby Café",
+      "category": "Civic",
+      "date": "2027-02-05",
+      "dateLabel": "February 5, 2027",
+      "time": "11:45 AM – 1:00 PM",
+      "location": "White Plains Public Library, Story Trove, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17966267",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "At the Farm: VR Search and Find!",
       "category": "Learning",
       "date": "2027-02-06",
@@ -1407,6 +1467,18 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "We are offering this Zoom presentation to help families of high school juniors, sophomores and freshmen better understand the college admissions process and…",
       "url": "https://calendar.whiteplainslibrary.org/event/17863142",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Earring Making Workshop",
+      "category": "Workshop",
+      "date": "2027-03-19",
+      "dateLabel": "March 19, 2027",
+      "time": "2:00 PM – 4:00 PM",
+      "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17781407",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
