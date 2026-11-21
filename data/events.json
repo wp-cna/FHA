@@ -1,31 +1,7 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Art 101 *Name Mandalas*",
-      "category": "Workshop",
-      "date": "2026-11-20",
-      "dateLabel": "November 20, 2026",
-      "time": "2:00 PM – 4:00 PM",
-      "location": "White Plains Public Library, Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Turn your name into a work of art!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17139841",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Sip & Sew at Loola Doola Collective",
-      "category": "Learning",
-      "date": "2026-11-20",
-      "dateLabel": "November 20, 2026",
-      "time": "6:00 PM – 8:00 PM",
-      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
-      "summary": "Downtown Meetups Presents:Sip & Sew at Loola Doola CollectiveFriday, November 20 | 6 pm – 8 pmJoin us for Sip & Sew at Loola Doola Collective!",
-      "url": "https://wpbid.com/events/sip-sew-at-loola-doola-collective/",
-      "ctaLabel": "Open event page",
-      "source": "White Plains Business Improvement District"
-    },
     {
       "title": "Repair Cafe",
       "category": "Learning",
@@ -951,6 +927,18 @@
       "summary_es": "Common Council Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Intro to Microsoft Excel, Part 1",
+      "category": "Learning",
+      "date": "2027-01-06",
+      "dateLabel": "January 6, 2027",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn how to create a simple spreadsheet and use formulas and functions with Microsoft Excel, the world's most popular spreadsheet program.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17981278",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Zoning Board of Appeals",
       "category": "Civic",
       "date": "2027-01-06",
@@ -1035,6 +1023,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Fall/Winter Birthday Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Intro to Microsoft Excel, Part 2",
+      "category": "Learning",
+      "date": "2027-01-13",
+      "dateLabel": "January 13, 2027",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "This class is for those who can create a simple spreadsheet and use formulas in Excel.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17981322",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Affordable Housing in White Plains",
@@ -1134,6 +1134,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Intro to Microsoft Excel, Part 3",
+      "category": "Learning",
+      "date": "2027-01-20",
+      "dateLabel": "January 20, 2027",
+      "time": "4:00 PM – 5:15 PM",
+      "location": "White Plains Public Library, Community Room, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Learn how to use absolute cell references and work with summary and detail worksheets.",
+      "url": "https://calendar.whiteplainslibrary.org/event/17981399",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Boys Varsity Swimming/Diving at Harrison",
