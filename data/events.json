@@ -1,19 +1,7 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Virtual Tours (in the Igloo)",
-      "category": "Learning",
-      "date": "2026-11-23",
-      "dateLabel": "November 23, 2026",
-      "time": "5:15 PM – 5:45 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "This series of programs allows participants to virtually visit selected locations via the Igloo panoramic video room in the library.",
-      "url": "https://calendar.whiteplainslibrary.org/event/17498293",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Thanksgiving Luncheon",
       "category": "Parks & Recreation",
@@ -307,6 +295,19 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-04",
+      "dateLabel": "December 4, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=4&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "The Feeding Circle Baby Café",
       "category": "Civic",
       "date": "2026-12-04",
@@ -332,6 +333,19 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-05",
+      "dateLabel": "December 5, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=5&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-06",
@@ -345,6 +359,19 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-06",
+      "dateLabel": "December 6, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=6&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Santa's Mailbox",
       "category": "Community",
       "date": "2026-12-07",
@@ -356,6 +383,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-07",
+      "dateLabel": "December 7, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=7&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Wellness Connection",
@@ -420,6 +460,19 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-08",
+      "dateLabel": "December 8, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=8&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "WOW Factor: Developing Your Personal Brand",
       "category": "Workshop",
       "date": "2026-12-08",
@@ -481,6 +534,31 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-09",
+      "dateLabel": "December 9, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=9&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Girls Varsity Bowling vs. Harrison",
+      "category": "Sports",
+      "date": "2026-12-09",
+      "dateLabel": "December 9, 2026",
+      "time": "3:45 PM",
+      "location": "Bowlerland, White Plains, NY",
+      "summary": "Girls Varsity Bowling hosts Harrison at Bowlerland.",
+      "url": "/sports/bowling/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
+    },
+    {
       "title": "Reflecting 2026 and goal setting",
       "category": "Learning",
       "date": "2026-12-09",
@@ -504,6 +582,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-10",
+      "dateLabel": "December 10, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=10&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Learn about 3D Printing (in the Igloo)",
@@ -555,6 +646,19 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-11",
+      "dateLabel": "December 11, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=11&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
       "title": "Creative Upcycling: The Junk Journal Workshop",
       "category": "Workshop",
       "date": "2026-12-11",
@@ -578,6 +682,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-12",
+      "dateLabel": "December 12, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=12&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Miller House Open House",
@@ -615,6 +732,19 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "White Plains Holiday Market",
+      "category": "Food & Downtown",
+      "date": "2026-12-13",
+      "dateLabel": "December 13, 2026",
+      "time": "",
+      "location": "White Plains, White Plains, NY",
+      "summary": "White Plains Holiday Market is listed on the official White Plains city calendar.",
+      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4726&month=12&year=2026&day=13&calType=0",
+      "ctaLabel": "Open city page",
+      "source": "City of White Plains",
+      "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
       "title": "Skate with Frosty",
@@ -1018,7 +1148,7 @@
       "dateLabel": "January 17, 2027",
       "time": "1:00 PM – 4:00 PM",
       "location": "White Plains Public Library, Auditorium,Museum Gallery, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "We will provide FREE native plants and seeds to create a beautiful garden that supports our native pollinators.",
+      "summary": "Learn how to grow a beautiful pollinator garden full of native plants to support the bees, butterflies, and birds.",
       "url": "https://calendar.whiteplainslibrary.org/event/17432643",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
@@ -1073,6 +1203,18 @@
       "ctaLabel": "Open city page",
       "source": "City of White Plains",
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
+    },
+    {
+      "title": "Girls Varsity Bowling vs. Harrison",
+      "category": "Sports",
+      "date": "2027-01-20",
+      "dateLabel": "January 20, 2027",
+      "time": "3:45 PM",
+      "location": "Bowlerland, White Plains, NY",
+      "summary": "Girls Varsity Bowling hosts Harrison at Bowlerland.",
+      "url": "/sports/bowling/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
     },
     {
       "title": "Intro to Microsoft Excel, Part 3",
