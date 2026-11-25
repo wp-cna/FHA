@@ -1,44 +1,7 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "note": "Auto-updated from the WPCNA / White Plains city calendar feed.",
   "events": [
-    {
-      "title": "Thanksgiving Luncheon",
-      "category": "Parks & Recreation",
-      "date": "2026-11-24",
-      "dateLabel": "November 24, 2026",
-      "time": "11:30 AM – 1:30 PM",
-      "location": "White Plains Community Center - 65 Mitchell Place, White Plains, NY",
-      "summary": "Thanksgiving Luncheon is listed on the official White Plains city calendar.",
-      "url": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4570&month=11&year=2026&day=24&calType=0",
-      "ctaLabel": "Open city page",
-      "source": "City of White Plains",
-      "summary_es": "Thanksgiving Luncheon aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
-    },
-    {
-      "title": "Step into a Safari: VR Search and Find!",
-      "category": "Learning",
-      "date": "2026-11-24",
-      "dateLabel": "November 24, 2026",
-      "time": "12:30 PM – 1:00 PM",
-      "location": "White Plains Public Library, The Igloo - Optimum Technology Room, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
-      "url": "https://calendar.whiteplainslibrary.org/event/16636153",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
-    {
-      "title": "Graphic Novel Chat & BINGO: Kitty Quest by Phil Corbett",
-      "category": "Learning",
-      "date": "2026-11-24",
-      "dateLabel": "November 24, 2026",
-      "time": "5:00 PM – 6:00 PM",
-      "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
-      "summary": "Join us for some fun by talking about Kitty Quest by Phil Corbett!",
-      "url": "https://calendar.whiteplainslibrary.org/event/17254839",
-      "ctaLabel": "Open library page",
-      "source": "White Plains Public Library"
-    },
     {
       "title": "Santa's Mailbox",
       "category": "Community",
@@ -270,6 +233,18 @@
       "summary_es": "Santa's Mailbox aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Neighborhood Conditions Coordinator",
+      "category": "Learning",
+      "date": "2026-12-03",
+      "dateLabel": "December 3, 2026",
+      "time": "10:00 AM – 1:00 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Topics that she can assist with include, but are not limited to: Code enforcement information and guidance Tenant rights information and guidance Housing…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17831757",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Creative Writing Workshop for Grades 3-6",
       "category": "Workshop",
       "date": "2026-12-03",
@@ -473,6 +448,18 @@
       "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Neighborhood Conditions Coordinator",
+      "category": "Learning",
+      "date": "2026-12-08",
+      "dateLabel": "December 8, 2026",
+      "time": "10:00 AM – 1:00 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Topics that she can assist with include, but are not limited to: Code enforcement information and guidance Tenant rights information and guidance Housing…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17831761",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "WOW Factor: Developing Your Personal Brand",
       "category": "Workshop",
       "date": "2026-12-08",
@@ -547,6 +534,18 @@
       "summary_es": "White Plains Holiday Market aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Boys Varsity Bowling vs. Harrison",
+      "category": "Sports",
+      "date": "2026-12-09",
+      "dateLabel": "December 9, 2026",
+      "time": "3:45 PM",
+      "location": "Bowlerland, White Plains, NY",
+      "summary": "Boys Varsity Bowling hosts Harrison at Bowlerland.",
+      "url": "/sports/bowling/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
+    },
+    {
       "title": "Girls Varsity Bowling vs. Harrison",
       "category": "Sports",
       "date": "2026-12-09",
@@ -557,6 +556,18 @@
       "url": "/sports/bowling/",
       "ctaLabel": "See the full schedule",
       "source": "White Plains High School Athletics"
+    },
+    {
+      "title": "Downtown Dance at Arthur Murray",
+      "category": "Food & Downtown",
+      "date": "2026-12-09",
+      "dateLabel": "December 9, 2026",
+      "time": "6:00 PM – 8:00 PM",
+      "location": "Downtown White Plains, Downtown White Plains, NY 10601",
+      "summary": "Downtown Meet-ups Presents:DOWNTOWN DANCE AT ARTHUR MURRAY WHITE PLAINSWEDNESDAY, DECEMBER 9 | 6 PM – 8 PM Get your dancing shoes ready because we are spicing…",
+      "url": "https://wpbid.com/events/downtown-dance-at-arthur-murray/",
+      "ctaLabel": "Open event page",
+      "source": "White Plains Business Improvement District"
     },
     {
       "title": "Reflecting 2026 and goal setting",
@@ -835,6 +846,18 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Craft and Chat",
+      "category": "Learning",
+      "date": "2026-12-16",
+      "dateLabel": "December 16, 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for a craft activity and some self-care conversation with Jay from My Sister's Place.",
+      "url": "https://calendar.whiteplainslibrary.org/event/18013496",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
       "title": "Learn to knit - Registration Required",
       "category": "Workshop",
       "date": "2026-12-16",
@@ -843,6 +866,18 @@
       "location": "White Plains Public Library, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Join us to learn the basics of knitting.",
       "url": "https://calendar.whiteplainslibrary.org/event/17158753",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Neighborhood Conditions Coordinator",
+      "category": "Learning",
+      "date": "2026-12-17",
+      "dateLabel": "December 17, 2026",
+      "time": "10:00 AM – 1:00 PM",
+      "location": "White Plains Public Library, Classroom 1, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Topics that she can assist with include, but are not limited to: Code enforcement information and guidance Tenant rights information and guidance Housing…",
+      "url": "https://calendar.whiteplainslibrary.org/event/17831768",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
@@ -1205,6 +1240,18 @@
       "summary_es": "Planning Board Meeting aparece en el calendario oficial de la ciudad de White Plains. Está programado en White Plains, NY. Consulte la página oficial de la ciudad para agendas, actualizaciones y cambios de ubicación."
     },
     {
+      "title": "Boys Varsity Bowling vs. Harrison",
+      "category": "Sports",
+      "date": "2027-01-20",
+      "dateLabel": "January 20, 2027",
+      "time": "3:45 PM",
+      "location": "Bowlerland, White Plains, NY",
+      "summary": "Boys Varsity Bowling hosts Harrison at Bowlerland.",
+      "url": "/sports/bowling/",
+      "ctaLabel": "See the full schedule",
+      "source": "White Plains High School Athletics"
+    },
+    {
       "title": "Girls Varsity Bowling vs. Harrison",
       "category": "Sports",
       "date": "2027-01-20",
@@ -1215,6 +1262,18 @@
       "url": "/sports/bowling/",
       "ctaLabel": "See the full schedule",
       "source": "White Plains High School Athletics"
+    },
+    {
+      "title": "Craft and Chat",
+      "category": "Learning",
+      "date": "2027-01-20",
+      "dateLabel": "January 20, 2027",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for a craft activity and some self-care conversation with Jay from My Sister's Place.",
+      "url": "https://calendar.whiteplainslibrary.org/event/18013497",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
     },
     {
       "title": "Intro to Microsoft Excel, Part 3",
@@ -1484,6 +1543,18 @@
       "location": "White Plains Public Library, Auditorium, 100 Martine Avenue, White Plains, NY 10601",
       "summary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
       "url": "https://calendar.whiteplainslibrary.org/event/17781406",
+      "ctaLabel": "Open library page",
+      "source": "White Plains Public Library"
+    },
+    {
+      "title": "Craft and Chat",
+      "category": "Learning",
+      "date": "2027-02-24",
+      "dateLabel": "February 24, 2027",
+      "time": "4:00 PM – 5:00 PM",
+      "location": "White Plains Public Library, Edge Media Lab, 100 Martine Avenue, White Plains, NY 10601",
+      "summary": "Join us for a craft activity and some self-care conversation with Jay from My Sister's Place.",
+      "url": "https://calendar.whiteplainslibrary.org/event/18013498",
       "ctaLabel": "Open library page",
       "source": "White Plains Public Library"
     },
