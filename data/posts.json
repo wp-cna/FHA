@@ -13,6 +13,8 @@
       "summary": "You are all Invited!\nThe Ridgeview Congregational Church will celebrate its 125th Anniversary on Sunday, October 11th, 2026. All are welcome to join us at 10:30 for our celebratory worship service, followed by refreshments. \nGuest Minister: Rev. Dr. Marsha Williamsp",
       "title_es": "RCC - Celebración del 125 Aniversario",
       "summary_es": "¡Todos están invitados! La Ridgeview Congregational Church celebrará su 125 Aniversario el domingo, 11 de octubre de 2026. Todos son bienvenidos a unirse a nosotros a las 10:30 para nuestro servicio de adoración de celebración, seguido de refrescos. Ministra Invitada: Rev. Dra. Marsha Williamsp",
+      "url": "",
+      "ctaLabel": "",
       "image": "",
       "source": "Michael Dalton",
       "expires": "2026-10-12"
@@ -28,6 +30,8 @@
       "summary": "The FHA will be sponsoring a Fisher Hill Block Party on Sept 19th. The Block Party will be held on Ridgeview Ave between Midland Ave and Tibbits Ave. Ridgeview will be closed to automobiles between Midland and Tibbits.",
       "title_es": "Fiesta vecinal de Fisher Hill",
       "summary_es": "La FHA patrocinará una fiesta vecinal de Fisher Hill el 19 de septiembre. La fiesta se celebrará en Ridgeview Ave, entre Midland Ave y Tibbits Ave. Ridgeview estará cerrada a los automóviles entre Midland y Tibbits.",
+      "url": "",
+      "ctaLabel": "",
       "image": "",
       "source": "Michael Dalton",
       "expires": "2026-09-20"
@@ -43,9 +47,28 @@
       "summary": "Health Matters - Brought to you by White Plains Hospital - October is Breast Cancer Awareness Month.  Click on the Hospital link below for more information.\nhttps://emailer.emfluence.com/viewaswebpage/966FF6CF-1131-4863-97B4-5AEFE5D1BF45",
       "title_es": "",
       "summary_es": "",
+      "url": "",
+      "ctaLabel": "",
       "image": "",
       "source": "Michael Dalton",
       "expires": "2026-11-01"
+    },
+    {
+      "title": "Upcoming change to the Hospital’s main entrance",
+      "category": "Neighborhood",
+      "fh": true,
+      "date": "2026-11-24",
+      "dateLabel": "November 24, 2026",
+      "time": "",
+      "location": "Maple Ave Entry to White Plains Hospital -",
+      "summary": "Beginning Monday 11/23/26, we will temporarily relocate the main driveway entry accessed from Maple and Davis Avenues to a new location further east on Maple Ave. This will allow us to close the existing hospital lobby and begin work on the new lobby. As part of this work, patients and visitors will enter the hospital through the Hospital’s outpatient imaging entrance arrival (currently to the right of the front door), through the duration of construction, which is on schedule to be completed by the end of next year.\n\nVehicles will now be directed to enter the driveway from Maple Ave to the east of Winslow Hall.  The entryway will be one-directional and vehicles will exit onto Maple, just to the east of Davis Avenue (now Divney Way). The traffic signal currently at Divney Way will move east to accommodate the temporary entrance and signal timings at Davis & Maple will be adjusted for this new need. The diagram below illustrates the pedestrian and vehicular routes.",
+      "title_es": "",
+      "summary_es": "",
+      "url": "",
+      "ctaLabel": "",
+      "image": "./assets/posts/pasted-image-1795565206627.png",
+      "source": "Michael Dalton",
+      "expires": ""
     }
   ]
 }
